@@ -10,22 +10,39 @@
 
 const {ccclass, property} = cc._decorator;
 
+import net_mgr from "./net_wrapper"
+import wx_mgr from "./wx_wrapper"
+import dispatcher from "./dispatcher"
+
 @ccclass
-export default class NewClass extends cc.Component {
+export class client extends cc.Component {
 
-    @property(cc.Label)
-    label: cc.Label = null;
-
-    @property
-    text: string = 'hello';
-
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
-
-    start () {
-
+    constructor() {
+        super();
+        this.init();
     },
 
-    // update (dt) {},
+    init(): void {
+        net_mgr.init("ws://127.0.0.1:10121");
+        wx_mgr.init();
+        dispatcher.register("on_msg", this.handle_msg, this);
+        dispatcher.register("start_show_card", this.handle_start_show_card, this);
+    },
+
+    login(): void {
+        let login_data = '{"cmd": "login", "code":"ABALKFJASLKDFJASLKcdlkj", "name":"xiedi", "sex":1}';
+        net_mgr.send_msg(login_data);
+    },
+
+    handle_msg(event_name, msg): void {
+        cc.log("handle msg: %s", msg);
+    },
+
+    handle_start_show_card(event_name): void {
+        cc.log("handle start show card");
+        dispatcher.fire("show_card")
+    }
 }
+
+var client_mgr = new client();
+export default client_mgr; 

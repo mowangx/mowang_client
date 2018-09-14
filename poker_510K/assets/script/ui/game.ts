@@ -12,6 +12,9 @@ import { Component } from "../../../creator";
 
 const {ccclass, property} = cc._decorator;
 
+import client_mgr from "./../logic/client"
+import dispatcher from "./../logic/dispatcher"
+
 @ccclass
 export default class game_scene extends cc.Component {
 
@@ -28,6 +31,8 @@ export default class game_scene extends cc.Component {
         cc.log("game load scene!");
         
 
+        dispatcher.register("show_card", this.show_card, this);
+
         this.schedule( function() {
             this.on_5_timer();
         }, 0.5);
@@ -37,12 +42,17 @@ export default class game_scene extends cc.Component {
         
     },
 
-    on_5_timer(): void {
+    on_5_timer(event_name): void {
+        dispatcher.fire("start_show_card");
+    },
+
+    show_card(event_name): void {
+        cc.log("show card");
         let card_num = Math.floor(Math.random() * 20);
         let cards: Array<Number> = [];
         for (let i =1; i<card_num; ++i) {
             cards.push(i);
         }
         this.player.getComponent("player").update_poker_cards(cards);
-    }
+    },
 }

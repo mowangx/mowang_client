@@ -10,22 +10,63 @@
 
 const {ccclass, property} = cc._decorator;
 
+import dispatcher from "./dispatcher"
+
 @ccclass
-export default class NewClass extends cc.Component {
+export class net_wrapper extends cc.Component {
 
-    @property(cc.Label)
-    label: cc.Label = null;
+    private ws: WebSocket = null;
 
-    @property
-    text: string = 'hello';
+    private msg: String = "";
 
-    // LIFE-CYCLE CALLBACKS:
+    init(url: string): void {
+        this.ws = new WebSocket(url);
 
-    // onLoad () {},
-
-    start () {
-
+        this.ws.onopen = this.on_open;
+        this.ws.onclose = this.on_close;
+        this.ws.onmessage = this.on_message;
+        this.ws.onerror = this.on_error;
+    },
+   
+    on_open(event): void {
+        
+    },
+      
+    on_close(event): void {
+       
     },
 
-    // update (dt) {},
+    on_message(event): void {
+        let start_idx = 0;
+        let end_idx = 0;
+        this.msg += event.data;
+        for (let i=0; i<this.msg.length; ++i) {
+            if (this.msg[i] == String.fromCharCode(2)) {
+                start_idx = i + 1;
+            }
+            else if (this.msg[i] == String.fromCharCode(3)) {
+                end_idx = i;
+            }
+        }
+        let json_msg = this.msg.substring(start_idx, end_idx);
+        dispatcher.fire("on_msg", json_msg);
+        this.msg = this.msg.substring(end_idx);
+    },
+    
+    on_error(event): void {
+       
+    },
+   
+    send_msg(data): void {
+        let msg = String.fromCharCode(2) + data + String.fromCharCode(3);
+        this.ws.send(msg);
+    },
+
+    is_valid(): Boolean {
+        return this.ws.readyState === WebSocket.OPEN;
+    }
 }
+
+var net_mgr = new net_wrapper();
+
+export default net_mgr;

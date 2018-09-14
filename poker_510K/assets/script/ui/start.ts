@@ -10,6 +10,8 @@
 
 const {ccclass, property} = cc._decorator;
 
+import client_mgr from "./../logic/client"
+
 @ccclass
 export default class NewClass extends cc.Component {
 
@@ -24,6 +26,7 @@ export default class NewClass extends cc.Component {
     // update (dt) {},
 
     on_click_start(): void {
+        client_mgr.login();
         cc.director.loadScene("game");
     }
 }
