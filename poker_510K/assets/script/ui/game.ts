@@ -14,6 +14,8 @@ const {ccclass, property} = cc._decorator;
 
 import client_mgr from "./../logic/client"
 import dispatcher from "./../logic/dispatcher"
+import {EventType} from "./../logic/consts"
+import { client } from "../../../build/wechatgame/src/project.dev.ab3b5";
 
 @ccclass
 export default class game_scene extends cc.Component {
@@ -31,28 +33,29 @@ export default class game_scene extends cc.Component {
         cc.log("game load scene!");
         
 
-        dispatcher.register("show_card", this.show_card, this);
+        dispatcher.add_dispatch(EventType.EVENT_SHOW_CARD, this.show_card, this);
 
-        this.schedule( function() {
-            this.on_5_timer();
-        }, 0.5);
+        // this.schedule( function() {
+        //     this.on_5_timer();
+        // }, 0.5);
+
+        client_mgr.create_room();
     },
 
     update (dt) {
         
     },
 
-    on_5_timer(event_name): void {
-        dispatcher.fire("start_show_card");
+    on_5_timer(): void {
+        dispatcher.dispatch(EventType.EVENT_START_SHOW_CARD);
     },
 
-    show_card(event_name): void {
+    show_card(cards: Array<Number>): void {
         cc.log("show card");
-        let card_num = Math.floor(Math.random() * 20);
-        let cards: Array<Number> = [];
-        for (let i =1; i<card_num; ++i) {
-            cards.push(i);
-        }
         this.player.getComponent("player").update_poker_cards(cards);
     },
+
+    on_click_ready(): void {
+        client_mgr.ready_start();
+    }
 }

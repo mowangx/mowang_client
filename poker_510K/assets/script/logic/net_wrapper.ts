@@ -10,6 +10,7 @@
 
 const {ccclass, property} = cc._decorator;
 
+import {EventType} from "./consts"
 import dispatcher from "./dispatcher"
 
 @ccclass
@@ -29,7 +30,7 @@ export class net_wrapper extends cc.Component {
     },
    
     on_open(event): void {
-        
+        cc.log("on connect server success");
     },
       
     on_close(event): void {
@@ -49,7 +50,7 @@ export class net_wrapper extends cc.Component {
             }
         }
         let json_msg = this.msg.substring(start_idx, end_idx);
-        dispatcher.fire("on_msg", json_msg);
+        dispatcher.dispatch(EventType.EVENT_RECV_MSG, json_msg);
         this.msg = this.msg.substring(end_idx);
     },
     

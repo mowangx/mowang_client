@@ -13,6 +13,7 @@ const {ccclass, property} = cc._decorator;
 import net_mgr from "./net_wrapper"
 import wx_mgr from "./wx_wrapper"
 import dispatcher from "./dispatcher"
+import {EventType} from "./consts"
 
 @ccclass
 export class client extends cc.Component {
@@ -23,10 +24,9 @@ export class client extends cc.Component {
     },
 
     init(): void {
-        net_mgr.init("ws://127.0.0.1:10121");
+        net_mgr.init("wss://www.mowang.com:10101");
         wx_mgr.init();
-        dispatcher.register("on_msg", this.handle_msg, this);
-        dispatcher.register("start_show_card", this.handle_start_show_card, this);
+        dispatcher.add_dispatch(EventType.EVENT_RECV_MSG, this.handle_msg, this);
     },
 
     login(): void {
@@ -34,13 +34,32 @@ export class client extends cc.Component {
         net_mgr.send_msg(login_data);
     },
 
-    handle_msg(event_name, msg): void {
+    handle_msg(msg): void {
+        let obj = JSON.parse(msg);
+        if (obj.cmd == "add_cards") {
+            this.handle_add_cards(obj);
+        }
         cc.log("handle msg: %s", msg);
     },
 
-    handle_start_show_card(event_name): void {
+    handle_add_cards(obj): void {
         cc.log("handle start show card");
-        dispatcher.fire("show_card")
+        dispatcher.dispatch(EventType.EVENT_SHOW_CARD, obj.cards);
+    }
+
+    create_room(): void {
+        let msg = '{"cmd": "create_room", "pwd": "test"}';
+        net_mgr.send_msg(msg);
+    }
+
+    ready_start(): void {
+        let msg = '{"cmd":"ready_start"}';
+        net_mgr.send_msg(msg);
+    }
+
+    pop_cards(cards: Array<Number>): void {
+        let msg = '{"cmd":"pop_cards", "cards": []}';
+        net_mgr.send_msg(msg);
     }
 }
 

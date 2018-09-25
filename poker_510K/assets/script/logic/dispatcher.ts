@@ -1,4 +1,6 @@
 
+import {EventType} from "./consts"
+
 /**
  * 事件
  */
@@ -8,26 +10,26 @@ export default class dispatcher {
  
     /** 
      * 注册事件
-     * @param name 事件名称
+     * @param event 事件类型
      * @param callback 回调函数
      * @param context 上下文
      */
-    public static register(name: string, callback: Function, context: any) {
-        let observers: observer[] = dispatcher.listeners[name];
+    public static add_dispatch(event: EventType, callback: Function, context: any) {
+        let observers: observer[] = dispatcher.listeners[event];
         if (!observers) {
-            dispatcher.listeners[name] = [];
+            dispatcher.listeners[event] = [];
         }
-        dispatcher.listeners[name].push(new observer(callback, context));
+        dispatcher.listeners[event].push(new observer(callback, context));
     }
  
     /**
      * 移除事件
-     * @param name 事件名称
+     * @param event 事件类型
      * @param callback 回调函数
      * @param context 上下文
      */
-    public static remove(name: string, callback: Function, context: any) {
-        let observers: observer[] = dispatcher.listeners[name];
+    public static remove(event: EventType, callback: Function, context: any) {
+        let observers: observer[] = dispatcher.listeners[event];
         if (!observers) return;
         let length = observers.length;
         for (let i = 0; i < length; i++) {
@@ -38,21 +40,21 @@ export default class dispatcher {
             }
         }
         if (observers.length == 0) {
-            delete dispatcher.listeners[name];
+            delete dispatcher.listeners[event];
         }
     }
  
     /**
      * 发送事件
-     * @param name 事件名称
+     * @param event 事件名称
      */
-    public static fire(name: string, ...args: any[]) {
-        let observers: observer[] = dispatcher.listeners[name];
+    public static dispatch(event: EventType, ...args: any[]) {
+        let observers: observer[] = dispatcher.listeners[event];
         if (!observers) return;
         let length = observers.length;
         for (let i = 0; i < length; i++) {
             let observer = observers[i];
-            observer.notify(name, ...args);
+            observer.notify(...args);
         }
     }
 }
