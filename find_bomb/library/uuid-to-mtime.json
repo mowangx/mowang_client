@@ -235,32 +235,32 @@
     "relativePath": "resource"
   },
   "9ea9e065-8b04-476e-a81f-ee762000dd8b": {
-    "asset": 1537923986363,
+    "asset": 1537966837321,
     "meta": 1537923986365,
     "relativePath": "scripts\\logic"
   },
   "4dd53dad-a525-40c7-9ee9-744351456e97": {
-    "asset": 1537963509062,
+    "asset": 1538022980253,
     "meta": 1537923994181,
     "relativePath": "scripts\\ui"
   },
   "2e1170de-dbd0-46ea-9390-68fe4c43de8d": {
-    "asset": 1537963499263,
+    "asset": 1538009622234,
     "meta": 1537924004703,
     "relativePath": "resource\\scene"
   },
   "0aadb38e-5557-4073-b276-8f79118864d4": {
-    "asset": 1537965644524,
-    "meta": 1537965644536,
+    "asset": 1538044290172,
+    "meta": 1538044290212,
     "relativePath": "resource\\scene\\game.fire"
   },
   "ff4ec357-dfb8-486f-9f74-61a78abfe0c1": {
-    "asset": 1537965610504,
+    "asset": 1538025513979,
     "meta": 1537925032538,
     "relativePath": "resource\\texture"
   },
   "6cb4815b-c038-4ec2-b967-4b85e8732481": {
-    "asset": 1537965631708,
+    "asset": 1538025537290,
     "meta": 1537925254119,
     "relativePath": "resource\\prefab"
   },
@@ -274,34 +274,84 @@
     "meta": 1537963422156,
     "relativePath": "scripts\\ui\\game.ts"
   },
-  "abb02a50-8455-477c-b5ca-87f8af2bbfb9": {
-    "asset": 1537966459934,
-    "meta": 1537966459947,
-    "relativePath": "resource\\scene\\start.fire"
-  },
-  "c8b3a309-7b84-40c8-9d91-62c43527a8a1": {
-    "asset": 1537963611657,
-    "meta": 1537963614517,
-    "relativePath": "scripts\\ui\\start.ts"
-  },
   "14ba90e2-88de-48a8-b09c-bb41b32379d3": {
     "asset": 1537965512245,
     "meta": 1537965610539,
     "relativePath": "resource\\texture\\btn_bg.png"
   },
-  "25959905-1723-45d9-9667-4299a68147db": {
-    "asset": 1537965628364,
-    "meta": 1537965628368,
-    "relativePath": "resource\\prefab\\btn_bg.prefab"
-  },
-  "40f419ed-3ea5-4160-9758-9d4abc7713d3": {
-    "asset": 1537966387409,
-    "meta": 1537966434814,
-    "relativePath": "scripts\\ui\\player.ts"
-  },
   "4d5a463b-0fe3-4f03-bda9-ea8fd7e57f87": {
     "asset": 1537966840046,
     "meta": 1537966842085,
     "relativePath": "scripts\\logic\\client.ts"
+  },
+  "40f419ed-3ea5-4160-9758-9d4abc7713d3": {
+    "asset": 1538023883619,
+    "meta": 1538023884229,
+    "relativePath": "scripts\\ui\\player.ts"
+  },
+  "4543bbf4-2223-4b75-9f77-ed964df3a1eb": {
+    "asset": 1538024630739,
+    "meta": 1538024657034,
+    "relativePath": "scripts\\ui\\tail_info.ts"
+  },
+  "34c05f9f-b432-44ba-b821-ca46b09c6ed4": {
+    "asset": 1538025006212,
+    "meta": 1538025007013,
+    "relativePath": "scripts\\ui\\head_info.ts"
+  },
+  "7305e1c2-9bf2-4603-b49b-f4537b747975": {
+    "asset": 1537965512245,
+    "meta": 1538025514014,
+    "relativePath": "resource\\texture\\btn_1.png"
+  },
+  "634285ab-0d13-4951-b4b6-28358ba60510": {
+    "asset": 1538011842698,
+    "meta": 1538025514018,
+    "relativePath": "resource\\texture\\btn_2.png"
+  },
+  "30bee51c-3b49-43fc-a19c-6659dbcf8473": {
+    "asset": 1538011958252,
+    "meta": 1538025514040,
+    "relativePath": "resource\\texture\\btn_3.png"
+  },
+  "f1c9f02e-e26a-4395-9af3-73927d8a1c86": {
+    "asset": 1538011890334,
+    "meta": 1538025514042,
+    "relativePath": "resource\\texture\\btn_4.png"
+  },
+  "d7ee8374-debb-4304-9a91-14b7ac4ca821": {
+    "asset": 1538011980022,
+    "meta": 1538025514061,
+    "relativePath": "resource\\texture\\btn_5.png"
+  },
+  "76a1b2f6-e1aa-49ef-87e1-9ab9b915d64d": {
+    "asset": 1538025528868,
+    "meta": 1538025528889,
+    "relativePath": "resource\\prefab\\btn_1.prefab"
+  },
+  "0f4c51c5-1017-4c36-a523-01e6bf2ef915": {
+    "asset": 1538025531629,
+    "meta": 1538025531633,
+    "relativePath": "resource\\prefab\\btn_2.prefab"
+  },
+  "7a4b7691-716b-4e89-a9e0-30b2cc0e2a5a": {
+    "asset": 1538025533718,
+    "meta": 1538025533723,
+    "relativePath": "resource\\prefab\\btn_3.prefab"
+  },
+  "d835469c-1a27-47ed-a575-e918b698f847": {
+    "asset": 1538025535462,
+    "meta": 1538025535467,
+    "relativePath": "resource\\prefab\\btn_4.prefab"
+  },
+  "7e131115-6818-40ec-97aa-47bab2070c92": {
+    "asset": 1538025537287,
+    "meta": 1538025537291,
+    "relativePath": "resource\\prefab\\btn_5.prefab"
+  },
+  "b90d71f5-479a-434e-91ee-062d5481395b": {
+    "asset": 1538026851722,
+    "meta": 1538026865153,
+    "relativePath": "scripts\\ui\\body_info.ts"
   }
 }

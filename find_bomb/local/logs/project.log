@@ -1,54 +1,53 @@
-2018-09-26T13:00:17.094Z - normal: Load ~/.CocosCreator/settings.json
-2018-09-26T13:00:17.099Z - normal: checking language setting...
-2018-09-26T13:00:17.100Z - normal: Language: zh
-2018-09-26T13:00:18.934Z - success: protocol editor-framework registered
-2018-09-26T13:00:18.934Z - success: protocol app registered
-2018-09-26T13:00:18.934Z - success: protocol theme registered
-2018-09-26T13:00:18.934Z - success: protocol packages registered
-2018-09-26T13:00:18.934Z - success: protocol unpack registerred
-2018-09-26T13:00:18.935Z - success: protocol disable-commonjs registerred
-2018-09-26T13:00:19.075Z - normal: connected!
-2018-09-26T13:00:19.077Z - normal: Check project D:\mw_client\trunk\find_bomb
-2018-09-26T13:00:19.080Z - normal: Initializing Cocos2d
-2018-09-26T13:00:19.286Z - normal: Initializing Asset Database
-2018-09-26T13:00:19.319Z - success: protocol uuid registerred
-2018-09-26T13:00:19.319Z - success: protocol db registerred
-2018-09-26T13:00:19.319Z - success: protocol thumbnail registerred
-2018-09-26T13:00:19.320Z - normal: Loading editor/builtin packages
-2018-09-26T13:00:19.339Z - success: anysdk loaded
-2018-09-26T13:00:19.452Z - success: assets loaded
-2018-09-26T13:00:19.454Z - success: builder loaded
-2018-09-26T13:00:19.456Z - success: cocos-analytics loaded
-2018-09-26T13:00:19.459Z - success: console loaded
-2018-09-26T13:00:19.461Z - success: hierarchy loaded
-2018-09-26T13:00:19.463Z - success: inspector loaded
-2018-09-26T13:00:19.464Z - success: keystore loaded
-2018-09-26T13:00:19.466Z - success: node-library loaded
-2018-09-26T13:00:19.467Z - success: package-asset loaded
-2018-09-26T13:00:19.469Z - success: preferences loaded
-2018-09-26T13:00:19.470Z - success: project-exporter loaded
-2018-09-26T13:00:19.492Z - success: project-importer loaded
-2018-09-26T13:00:19.494Z - success: project-settings loaded
-2018-09-26T13:00:19.495Z - success: ui-kit loaded
-2018-09-26T13:00:19.497Z - success: ui-grid loaded
-2018-09-26T13:00:19.500Z - success: scene loaded
-2018-09-26T13:00:19.501Z - success: sprite-editor loaded
-2018-09-26T13:00:19.503Z - success: store loaded
-2018-09-26T13:00:19.507Z - success: timeline loaded
-2018-09-26T13:00:19.507Z - normal: Loading builtin packages
-2018-09-26T13:00:19.509Z - success: asset-db-debugger loaded
-2018-09-26T13:00:19.510Z - success: code-editor loaded
-2018-09-26T13:00:19.510Z - success: color-picker loaded
-2018-09-26T13:00:19.512Z - success: package-manager loaded
-2018-09-26T13:00:19.515Z - success: sdkbox loaded
-2018-09-26T13:00:19.518Z - success: tester loaded
-2018-09-26T13:00:19.520Z - success: ui-kit-preview-extra loaded
-2018-09-26T13:00:19.521Z - success: ui-kit-preview loaded
-2018-09-26T13:00:19.522Z - success: ui-tree loaded
-2018-09-26T13:00:20.569Z - normal: Initializing project D:\mw_client\trunk\find_bomb
-2018-09-26T13:00:20.575Z - normal: Loading packages
-2018-09-26T13:00:20.579Z - normal: Watching packages
-2018-09-26T13:00:20.590Z - normal: Run Application
-2018-09-26T13:00:20.988Z - success: preview server running at http://localhost:7456
-2018-09-26T13:00:24.952Z - normal: 1.8.1
-2018-09-26T13:00:45.313Z - info: shutdown preview server
+2018-09-27T10:24:02.637Z - normal: Load ~/.CocosCreator/settings.json
+2018-09-27T10:24:02.641Z - normal: checking language setting...
+2018-09-27T10:24:02.642Z - normal: Language: zh
+2018-09-27T10:24:04.445Z - success: protocol editor-framework registered
+2018-09-27T10:24:04.445Z - success: protocol app registered
+2018-09-27T10:24:04.445Z - success: protocol theme registered
+2018-09-27T10:24:04.445Z - success: protocol packages registered
+2018-09-27T10:24:04.445Z - success: protocol unpack registerred
+2018-09-27T10:24:04.445Z - success: protocol disable-commonjs registerred
+2018-09-27T10:24:04.612Z - normal: connected!
+2018-09-27T10:24:04.613Z - normal: Check project D:\mw_client\trunk\find_bomb
+2018-09-27T10:24:04.615Z - normal: Initializing Cocos2d
+2018-09-27T10:24:04.813Z - normal: Initializing Asset Database
+2018-09-27T10:24:04.846Z - success: protocol uuid registerred
+2018-09-27T10:24:04.847Z - success: protocol db registerred
+2018-09-27T10:24:04.847Z - success: protocol thumbnail registerred
+2018-09-27T10:24:04.847Z - normal: Loading editor/builtin packages
+2018-09-27T10:24:04.866Z - success: anysdk loaded
+2018-09-27T10:24:04.976Z - success: assets loaded
+2018-09-27T10:24:04.978Z - success: builder loaded
+2018-09-27T10:24:04.980Z - success: cocos-analytics loaded
+2018-09-27T10:24:04.982Z - success: console loaded
+2018-09-27T10:24:04.984Z - success: hierarchy loaded
+2018-09-27T10:24:04.986Z - success: inspector loaded
+2018-09-27T10:24:04.988Z - success: keystore loaded
+2018-09-27T10:24:04.990Z - success: node-library loaded
+2018-09-27T10:24:04.991Z - success: package-asset loaded
+2018-09-27T10:24:04.993Z - success: preferences loaded
+2018-09-27T10:24:04.994Z - success: project-exporter loaded
+2018-09-27T10:24:05.014Z - success: project-importer loaded
+2018-09-27T10:24:05.016Z - success: project-settings loaded
+2018-09-27T10:24:05.017Z - success: ui-kit loaded
+2018-09-27T10:24:05.018Z - success: ui-grid loaded
+2018-09-27T10:24:05.021Z - success: scene loaded
+2018-09-27T10:24:05.022Z - success: sprite-editor loaded
+2018-09-27T10:24:05.025Z - success: store loaded
+2018-09-27T10:24:05.028Z - success: timeline loaded
+2018-09-27T10:24:05.028Z - normal: Loading builtin packages
+2018-09-27T10:24:05.030Z - success: asset-db-debugger loaded
+2018-09-27T10:24:05.031Z - success: code-editor loaded
+2018-09-27T10:24:05.032Z - success: color-picker loaded
+2018-09-27T10:24:05.033Z - success: package-manager loaded
+2018-09-27T10:24:05.036Z - success: sdkbox loaded
+2018-09-27T10:24:05.040Z - success: tester loaded
+2018-09-27T10:24:05.042Z - success: ui-kit-preview-extra loaded
+2018-09-27T10:24:05.043Z - success: ui-kit-preview loaded
+2018-09-27T10:24:05.046Z - success: ui-tree loaded
+2018-09-27T10:24:06.071Z - normal: Initializing project D:\mw_client\trunk\find_bomb
+2018-09-27T10:24:06.076Z - normal: Loading packages
+2018-09-27T10:24:06.080Z - normal: Watching packages
+2018-09-27T10:24:06.090Z - normal: Run Application
+2018-09-27T10:24:06.471Z - success: preview server running at http://localhost:7456
+2018-09-27T10:24:10.523Z - normal: 1.8.1
