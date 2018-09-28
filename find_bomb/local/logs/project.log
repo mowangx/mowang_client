@@ -1,53 +1,1286 @@
-2018-09-27T10:24:02.637Z - normal: Load ~/.CocosCreator/settings.json
-2018-09-27T10:24:02.641Z - normal: checking language setting...
-2018-09-27T10:24:02.642Z - normal: Language: zh
-2018-09-27T10:24:04.445Z - success: protocol editor-framework registered
-2018-09-27T10:24:04.445Z - success: protocol app registered
-2018-09-27T10:24:04.445Z - success: protocol theme registered
-2018-09-27T10:24:04.445Z - success: protocol packages registered
-2018-09-27T10:24:04.445Z - success: protocol unpack registerred
-2018-09-27T10:24:04.445Z - success: protocol disable-commonjs registerred
-2018-09-27T10:24:04.612Z - normal: connected!
-2018-09-27T10:24:04.613Z - normal: Check project D:\mw_client\trunk\find_bomb
-2018-09-27T10:24:04.615Z - normal: Initializing Cocos2d
-2018-09-27T10:24:04.813Z - normal: Initializing Asset Database
-2018-09-27T10:24:04.846Z - success: protocol uuid registerred
-2018-09-27T10:24:04.847Z - success: protocol db registerred
-2018-09-27T10:24:04.847Z - success: protocol thumbnail registerred
-2018-09-27T10:24:04.847Z - normal: Loading editor/builtin packages
-2018-09-27T10:24:04.866Z - success: anysdk loaded
-2018-09-27T10:24:04.976Z - success: assets loaded
-2018-09-27T10:24:04.978Z - success: builder loaded
-2018-09-27T10:24:04.980Z - success: cocos-analytics loaded
-2018-09-27T10:24:04.982Z - success: console loaded
-2018-09-27T10:24:04.984Z - success: hierarchy loaded
-2018-09-27T10:24:04.986Z - success: inspector loaded
-2018-09-27T10:24:04.988Z - success: keystore loaded
-2018-09-27T10:24:04.990Z - success: node-library loaded
-2018-09-27T10:24:04.991Z - success: package-asset loaded
-2018-09-27T10:24:04.993Z - success: preferences loaded
-2018-09-27T10:24:04.994Z - success: project-exporter loaded
-2018-09-27T10:24:05.014Z - success: project-importer loaded
-2018-09-27T10:24:05.016Z - success: project-settings loaded
-2018-09-27T10:24:05.017Z - success: ui-kit loaded
-2018-09-27T10:24:05.018Z - success: ui-grid loaded
-2018-09-27T10:24:05.021Z - success: scene loaded
-2018-09-27T10:24:05.022Z - success: sprite-editor loaded
-2018-09-27T10:24:05.025Z - success: store loaded
-2018-09-27T10:24:05.028Z - success: timeline loaded
-2018-09-27T10:24:05.028Z - normal: Loading builtin packages
-2018-09-27T10:24:05.030Z - success: asset-db-debugger loaded
-2018-09-27T10:24:05.031Z - success: code-editor loaded
-2018-09-27T10:24:05.032Z - success: color-picker loaded
-2018-09-27T10:24:05.033Z - success: package-manager loaded
-2018-09-27T10:24:05.036Z - success: sdkbox loaded
-2018-09-27T10:24:05.040Z - success: tester loaded
-2018-09-27T10:24:05.042Z - success: ui-kit-preview-extra loaded
-2018-09-27T10:24:05.043Z - success: ui-kit-preview loaded
-2018-09-27T10:24:05.046Z - success: ui-tree loaded
-2018-09-27T10:24:06.071Z - normal: Initializing project D:\mw_client\trunk\find_bomb
-2018-09-27T10:24:06.076Z - normal: Loading packages
-2018-09-27T10:24:06.080Z - normal: Watching packages
-2018-09-27T10:24:06.090Z - normal: Run Application
-2018-09-27T10:24:06.471Z - success: preview server running at http://localhost:7456
-2018-09-27T10:24:10.523Z - normal: 1.8.1
+2018-09-28T10:41:32.561Z - normal: Load ~/.CocosCreator/settings.json
+2018-09-28T10:41:32.565Z - normal: checking language setting...
+2018-09-28T10:41:32.566Z - normal: Language: zh
+2018-09-28T10:41:34.353Z - success: protocol editor-framework registered
+2018-09-28T10:41:34.353Z - success: protocol app registered
+2018-09-28T10:41:34.353Z - success: protocol theme registered
+2018-09-28T10:41:34.354Z - success: protocol packages registered
+2018-09-28T10:41:34.354Z - success: protocol unpack registerred
+2018-09-28T10:41:34.354Z - success: protocol disable-commonjs registerred
+2018-09-28T10:41:34.496Z - normal: connected!
+2018-09-28T10:41:34.499Z - normal: Check project D:\mw_client\trunk\find_bomb
+2018-09-28T10:41:34.501Z - normal: Initializing Cocos2d
+2018-09-28T10:41:34.696Z - normal: Initializing Asset Database
+2018-09-28T10:41:34.730Z - success: protocol uuid registerred
+2018-09-28T10:41:34.730Z - success: protocol db registerred
+2018-09-28T10:41:34.730Z - success: protocol thumbnail registerred
+2018-09-28T10:41:34.730Z - normal: Loading editor/builtin packages
+2018-09-28T10:41:34.749Z - success: anysdk loaded
+2018-09-28T10:41:34.857Z - success: assets loaded
+2018-09-28T10:41:34.859Z - success: builder loaded
+2018-09-28T10:41:34.861Z - success: cocos-analytics loaded
+2018-09-28T10:41:34.864Z - success: console loaded
+2018-09-28T10:41:34.866Z - success: hierarchy loaded
+2018-09-28T10:41:34.868Z - success: inspector loaded
+2018-09-28T10:41:34.869Z - success: keystore loaded
+2018-09-28T10:41:34.871Z - success: node-library loaded
+2018-09-28T10:41:34.873Z - success: package-asset loaded
+2018-09-28T10:41:34.874Z - success: preferences loaded
+2018-09-28T10:41:34.875Z - success: project-exporter loaded
+2018-09-28T10:41:34.895Z - success: project-importer loaded
+2018-09-28T10:41:34.897Z - success: project-settings loaded
+2018-09-28T10:41:34.898Z - success: ui-kit loaded
+2018-09-28T10:41:34.900Z - success: ui-grid loaded
+2018-09-28T10:41:34.902Z - success: scene loaded
+2018-09-28T10:41:34.903Z - success: sprite-editor loaded
+2018-09-28T10:41:34.905Z - success: store loaded
+2018-09-28T10:41:34.909Z - success: timeline loaded
+2018-09-28T10:41:34.909Z - normal: Loading builtin packages
+2018-09-28T10:41:34.911Z - success: asset-db-debugger loaded
+2018-09-28T10:41:34.912Z - success: code-editor loaded
+2018-09-28T10:41:34.912Z - success: color-picker loaded
+2018-09-28T10:41:34.914Z - success: package-manager loaded
+2018-09-28T10:41:34.917Z - success: sdkbox loaded
+2018-09-28T10:41:34.920Z - success: tester loaded
+2018-09-28T10:41:34.921Z - success: ui-kit-preview-extra loaded
+2018-09-28T10:41:34.922Z - success: ui-kit-preview loaded
+2018-09-28T10:41:34.923Z - success: ui-tree loaded
+2018-09-28T10:41:35.940Z - normal: Initializing project D:\mw_client\trunk\find_bomb
+2018-09-28T10:41:35.943Z - normal: Loading packages
+2018-09-28T10:41:35.946Z - normal: Watching packages
+2018-09-28T10:41:35.957Z - normal: Run Application
+2018-09-28T10:41:36.741Z - success: preview server running at http://localhost:7456
+2018-09-28T10:41:40.983Z - normal: 1.8.1
+2018-09-28T10:54:37.089Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T10:54:37.092Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T10:54:37.092Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T10:54:37.405Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T10:54:39.242Z - normal: Compiled project javascript file successfully
+2018-09-28T10:54:39.243Z - normal: Start building assets
+2018-09-28T10:54:39.243Z - normal: Start spawn build-worker
+2018-09-28T10:54:39.947Z - normal: Finish spawn build-worker
+2018-09-28T10:54:39.947Z - normal: Start init build-worker
+2018-09-28T10:54:42.001Z - normal: 1.8.1
+2018-09-28T10:54:42.073Z - normal: Finish init build-worker
+2018-09-28T10:54:42.073Z - normal: Start build-assets in worker
+2018-09-28T10:54:42.413Z - normal: Finish build-assets in worker
+2018-09-28T10:54:42.418Z - normal: Finish building assets
+2018-09-28T10:54:42.429Z - normal: Start building raw assets
+2018-09-28T10:54:42.430Z - normal: Start building plugin scripts
+2018-09-28T10:54:42.450Z - normal: Finish building raw assets
+2018-09-28T10:54:42.453Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T10:54:42.727Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T10:54:44.519Z - normal: Initializing...
+
+2018-09-28T10:54:44.525Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T10:54:45.535Z - normal: starting ide...
+
+2018-09-28T10:54:48.430Z - normal: IDE server has started, listening on http://127.0.0.1:30622
+
+2018-09-28T10:54:48.434Z - normal: initialization finished
+
+2018-09-28T11:04:22.134Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T11:04:22.137Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T11:04:22.137Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T11:04:22.138Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T11:04:24.288Z - normal: Compiled project javascript file successfully
+2018-09-28T11:04:24.288Z - normal: Start building assets
+2018-09-28T11:04:24.289Z - normal: Start spawn build-worker
+2018-09-28T11:04:25.009Z - normal: Finish spawn build-worker
+2018-09-28T11:04:25.009Z - normal: Start init build-worker
+2018-09-28T11:04:27.079Z - normal: 1.8.1
+2018-09-28T11:04:27.142Z - normal: Finish init build-worker
+2018-09-28T11:04:27.142Z - normal: Start build-assets in worker
+2018-09-28T11:04:27.556Z - normal: Finish build-assets in worker
+2018-09-28T11:04:27.562Z - normal: Finish building assets
+2018-09-28T11:04:27.575Z - normal: Start building raw assets
+2018-09-28T11:04:27.575Z - normal: Start building plugin scripts
+2018-09-28T11:04:27.605Z - normal: Finish building raw assets
+2018-09-28T11:04:27.607Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T11:04:27.864Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T11:04:29.782Z - normal: Initializing...
+
+2018-09-28T11:04:29.788Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T11:04:29.803Z - normal: IDE server has started, listening on http://127.0.0.1:30622
+
+2018-09-28T11:04:29.803Z - normal: initialization finished
+
+2018-09-28T11:04:47.429Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T11:04:47.429Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T11:04:47.429Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T11:04:47.429Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T11:04:49.548Z - normal: Compiled project javascript file successfully
+2018-09-28T11:04:49.549Z - normal: Start building assets
+2018-09-28T11:04:49.549Z - normal: Start spawn build-worker
+2018-09-28T11:04:50.261Z - normal: Finish spawn build-worker
+2018-09-28T11:04:50.261Z - normal: Start init build-worker
+2018-09-28T11:04:52.315Z - normal: 1.8.1
+2018-09-28T11:04:52.387Z - normal: Finish init build-worker
+2018-09-28T11:04:52.387Z - normal: Start build-assets in worker
+2018-09-28T11:04:52.810Z - normal: Finish build-assets in worker
+2018-09-28T11:04:52.815Z - normal: Finish building assets
+2018-09-28T11:04:52.838Z - normal: Start building raw assets
+2018-09-28T11:04:52.838Z - normal: Start building plugin scripts
+2018-09-28T11:04:52.851Z - normal: Finish building raw assets
+2018-09-28T11:04:52.853Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T11:04:53.105Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T11:05:02.513Z - normal: Initializing...
+
+2018-09-28T11:05:02.519Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T11:05:02.541Z - normal: IDE server has started, listening on http://127.0.0.1:30622
+
+2018-09-28T11:05:02.541Z - normal: initialization finished
+
+2018-09-28T11:05:34.242Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T11:05:34.243Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T11:05:34.244Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T11:05:34.245Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T11:05:36.311Z - normal: Compiled project javascript file successfully
+2018-09-28T11:05:36.311Z - normal: Start building assets
+2018-09-28T11:05:36.311Z - normal: Start spawn build-worker
+2018-09-28T11:05:37.029Z - normal: Finish spawn build-worker
+2018-09-28T11:05:37.029Z - normal: Start init build-worker
+2018-09-28T11:05:39.406Z - normal: 1.8.1
+2018-09-28T11:05:39.471Z - normal: Finish init build-worker
+2018-09-28T11:05:39.471Z - normal: Start build-assets in worker
+2018-09-28T11:05:39.792Z - normal: Finish build-assets in worker
+2018-09-28T11:05:39.797Z - normal: Finish building assets
+2018-09-28T11:05:39.805Z - normal: Start building raw assets
+2018-09-28T11:05:39.806Z - normal: Start building plugin scripts
+2018-09-28T11:05:39.839Z - normal: Finish building raw assets
+2018-09-28T11:05:39.842Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T11:05:40.100Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T11:05:41.651Z - normal: Initializing...
+
+2018-09-28T11:05:41.657Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T11:05:42.668Z - normal: starting ide...
+
+2018-09-28T11:05:45.536Z - normal: IDE server has started, listening on http://127.0.0.1:20702
+
+2018-09-28T11:05:45.539Z - normal: initialization finished
+
+2018-09-28T11:30:30.525Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T11:30:30.527Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T11:30:30.528Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T11:30:30.528Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T11:30:32.725Z - normal: Compiled project javascript file successfully
+2018-09-28T11:30:32.725Z - normal: Start building assets
+2018-09-28T11:30:32.726Z - normal: Start spawn build-worker
+2018-09-28T11:30:33.450Z - normal: Finish spawn build-worker
+2018-09-28T11:30:33.450Z - normal: Start init build-worker
+2018-09-28T11:30:35.570Z - normal: 1.8.1
+2018-09-28T11:30:35.635Z - normal: Finish init build-worker
+2018-09-28T11:30:35.635Z - normal: Start build-assets in worker
+2018-09-28T11:30:36.006Z - normal: Finish build-assets in worker
+2018-09-28T11:30:36.017Z - normal: Finish building assets
+2018-09-28T11:30:36.028Z - normal: Start building raw assets
+2018-09-28T11:30:36.029Z - normal: Start building plugin scripts
+2018-09-28T11:30:36.051Z - normal: Finish building raw assets
+2018-09-28T11:30:36.055Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T11:30:36.313Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T11:30:38.519Z - normal: Initializing...
+
+2018-09-28T11:30:38.525Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T11:30:38.540Z - normal: IDE server has started, listening on http://127.0.0.1:20702
+
+2018-09-28T11:30:38.540Z - normal: initialization finished
+
+2018-09-28T11:34:52.873Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T11:34:52.875Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T11:34:52.875Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T11:34:52.876Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T11:34:55.306Z - normal: Compiled project javascript file successfully
+2018-09-28T11:34:55.306Z - normal: Start building assets
+2018-09-28T11:34:55.306Z - normal: Start spawn build-worker
+2018-09-28T11:34:56.091Z - normal: Finish spawn build-worker
+2018-09-28T11:34:56.091Z - normal: Start init build-worker
+2018-09-28T11:34:58.153Z - normal: 1.8.1
+2018-09-28T11:34:58.216Z - normal: Finish init build-worker
+2018-09-28T11:34:58.216Z - normal: Start build-assets in worker
+2018-09-28T11:34:58.540Z - normal: Finish build-assets in worker
+2018-09-28T11:34:58.545Z - normal: Finish building assets
+2018-09-28T11:34:58.555Z - normal: Start building raw assets
+2018-09-28T11:34:58.556Z - normal: Start building plugin scripts
+2018-09-28T11:34:58.580Z - normal: Finish building raw assets
+2018-09-28T11:34:58.583Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T11:34:58.897Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T11:35:00.803Z - normal: Initializing...
+
+2018-09-28T11:35:00.810Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T11:35:01.823Z - normal: starting ide...
+
+2018-09-28T11:35:04.750Z - normal: IDE server has started, listening on http://127.0.0.1:15302
+initialization finished
+
+2018-09-28T11:35:43.157Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T11:35:43.158Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T11:35:43.158Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T11:35:43.159Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T11:35:44.960Z - normal: Compiled project javascript file successfully
+2018-09-28T11:35:44.961Z - normal: Start building assets
+2018-09-28T11:35:44.961Z - normal: Start spawn build-worker
+2018-09-28T11:35:45.669Z - normal: Finish spawn build-worker
+2018-09-28T11:35:45.669Z - normal: Start init build-worker
+2018-09-28T11:35:47.759Z - normal: 1.8.1
+2018-09-28T11:35:47.822Z - normal: Finish init build-worker
+2018-09-28T11:35:47.823Z - normal: Start build-assets in worker
+2018-09-28T11:35:48.142Z - normal: Finish build-assets in worker
+2018-09-28T11:35:48.151Z - normal: Finish building assets
+2018-09-28T11:35:48.160Z - normal: Start building raw assets
+2018-09-28T11:35:48.161Z - normal: Start building plugin scripts
+2018-09-28T11:35:48.180Z - normal: Finish building raw assets
+2018-09-28T11:35:48.185Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T11:35:48.442Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T11:36:14.125Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T11:36:14.125Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T11:36:14.125Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T11:36:14.125Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T11:36:16.074Z - normal: Compiled project javascript file successfully
+2018-09-28T11:36:16.074Z - normal: Start building assets
+2018-09-28T11:36:16.075Z - normal: Start spawn build-worker
+2018-09-28T11:36:16.792Z - normal: Finish spawn build-worker
+2018-09-28T11:36:16.792Z - normal: Start init build-worker
+2018-09-28T11:36:18.874Z - normal: 1.8.1
+2018-09-28T11:36:18.942Z - normal: Finish init build-worker
+2018-09-28T11:36:18.942Z - normal: Start build-assets in worker
+2018-09-28T11:36:19.270Z - normal: Finish build-assets in worker
+2018-09-28T11:36:19.274Z - normal: Finish building assets
+2018-09-28T11:36:19.282Z - normal: Start building raw assets
+2018-09-28T11:36:19.283Z - normal: Start building plugin scripts
+2018-09-28T11:36:19.292Z - normal: Finish building raw assets
+2018-09-28T11:36:19.294Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T11:36:19.522Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T11:36:23.317Z - normal: Initializing...
+
+2018-09-28T11:36:23.323Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T11:36:24.330Z - normal: starting ide...
+
+2018-09-28T11:36:27.234Z - normal: IDE server has started, listening on http://127.0.0.1:20560
+
+2018-09-28T11:36:27.237Z - normal: initialization finished
+
+2018-09-28T11:36:56.500Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T11:36:56.501Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T11:36:56.501Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T11:36:56.502Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T11:36:58.341Z - normal: Compiled project javascript file successfully
+2018-09-28T11:36:58.341Z - normal: Start building assets
+2018-09-28T11:36:58.341Z - normal: Start spawn build-worker
+2018-09-28T11:36:59.081Z - normal: Finish spawn build-worker
+2018-09-28T11:36:59.081Z - normal: Start init build-worker
+2018-09-28T11:37:01.143Z - normal: 1.8.1
+2018-09-28T11:37:01.209Z - normal: Finish init build-worker
+2018-09-28T11:37:01.209Z - normal: Start build-assets in worker
+2018-09-28T11:37:01.535Z - normal: Finish build-assets in worker
+2018-09-28T11:37:01.540Z - normal: Finish building assets
+2018-09-28T11:37:01.549Z - normal: Start building raw assets
+2018-09-28T11:37:01.550Z - normal: Start building plugin scripts
+2018-09-28T11:37:01.564Z - normal: Finish building raw assets
+2018-09-28T11:37:01.566Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T11:37:01.829Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T11:37:03.677Z - normal: Initializing...
+
+2018-09-28T11:37:03.683Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T11:37:04.695Z - normal: starting ide...
+
+2018-09-28T11:37:07.645Z - normal: IDE server has started, listening on http://127.0.0.1:23343
+
+2018-09-28T11:37:07.647Z - normal: initialization finished
+
+2018-09-28T11:45:26.709Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T11:45:26.711Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T11:45:26.711Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T11:45:26.712Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T11:45:28.862Z - normal: Compiled project javascript file successfully
+2018-09-28T11:45:28.862Z - normal: Start building assets
+2018-09-28T11:45:28.862Z - normal: Start spawn build-worker
+2018-09-28T11:45:29.640Z - normal: Finish spawn build-worker
+2018-09-28T11:45:29.641Z - normal: Start init build-worker
+2018-09-28T11:45:31.976Z - normal: 1.8.1
+2018-09-28T11:45:32.042Z - normal: Finish init build-worker
+2018-09-28T11:45:32.043Z - normal: Start build-assets in worker
+2018-09-28T11:45:32.371Z - normal: Finish build-assets in worker
+2018-09-28T11:45:32.375Z - normal: Finish building assets
+2018-09-28T11:45:32.385Z - normal: Start building raw assets
+2018-09-28T11:45:32.386Z - normal: Start building plugin scripts
+2018-09-28T11:45:32.459Z - normal: Finish building raw assets
+2018-09-28T11:45:32.471Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T11:45:32.838Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T11:45:34.506Z - normal: Initializing...
+
+2018-09-28T11:45:34.512Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T11:45:35.525Z - normal: starting ide...
+
+2018-09-28T11:45:38.459Z - normal: IDE server has started, listening on http://127.0.0.1:33212
+
+2018-09-28T11:45:38.459Z - normal: initialization finished
+
+2018-09-28T11:57:49.110Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (D:\CocosCreator\resources\app.asar\editor\builtin\builder\panel\builder.js:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-28T11:57:56.469Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (D:\CocosCreator\resources\app.asar\editor\builtin\builder\panel\builder.js:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-28T11:58:01.606Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T11:58:01.608Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T11:58:01.608Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T11:58:01.608Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T11:58:03.443Z - normal: Compiled project javascript file successfully
+2018-09-28T11:58:03.443Z - normal: Start building assets
+2018-09-28T11:58:03.444Z - normal: Start spawn build-worker
+2018-09-28T11:58:04.175Z - normal: Finish spawn build-worker
+2018-09-28T11:58:04.175Z - normal: Start init build-worker
+2018-09-28T11:58:06.209Z - normal: 1.8.1
+2018-09-28T11:58:06.274Z - normal: Finish init build-worker
+2018-09-28T11:58:06.274Z - normal: Start build-assets in worker
+2018-09-28T11:58:06.599Z - normal: Finish build-assets in worker
+2018-09-28T11:58:06.605Z - normal: Finish building assets
+2018-09-28T11:58:06.613Z - normal: Start building raw assets
+2018-09-28T11:58:06.613Z - normal: Start building plugin scripts
+2018-09-28T11:58:06.630Z - normal: Finish building raw assets
+2018-09-28T11:58:06.634Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T11:58:06.894Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T11:58:09.302Z - normal: Initializing...
+
+2018-09-28T11:58:09.308Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T11:58:10.319Z - normal: starting ide...
+
+2018-09-28T11:58:13.207Z - normal: IDE server has started, listening on http://127.0.0.1:51734
+
+2018-09-28T11:58:13.208Z - normal: initialization finished
+
+2018-09-28T12:04:32.374Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T12:04:32.377Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T12:04:32.377Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T12:04:32.378Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T12:04:34.391Z - normal: Compiled project javascript file successfully
+2018-09-28T12:04:34.391Z - normal: Start building assets
+2018-09-28T12:04:34.391Z - normal: Start spawn build-worker
+2018-09-28T12:04:35.125Z - normal: Finish spawn build-worker
+2018-09-28T12:04:35.125Z - normal: Start init build-worker
+2018-09-28T12:04:37.151Z - normal: 1.8.1
+2018-09-28T12:04:37.210Z - normal: Finish init build-worker
+2018-09-28T12:04:37.210Z - normal: Start build-assets in worker
+2018-09-28T12:04:37.534Z - normal: Finish build-assets in worker
+2018-09-28T12:04:37.540Z - normal: Finish building assets
+2018-09-28T12:04:37.549Z - normal: Start building raw assets
+2018-09-28T12:04:37.549Z - normal: Start building plugin scripts
+2018-09-28T12:04:37.570Z - normal: Finish building raw assets
+2018-09-28T12:04:37.573Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T12:04:37.830Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T12:04:40.159Z - normal: Initializing...
+
+2018-09-28T12:04:40.165Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T12:04:41.177Z - normal: starting ide...
+
+2018-09-28T12:04:44.076Z - normal: IDE server has started, listening on http://127.0.0.1:41503
+
+2018-09-28T12:04:44.079Z - normal: initialization finished
+
+2018-09-28T12:13:23.388Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (D:\CocosCreator\resources\app.asar\editor\builtin\builder\panel\builder.js:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-28T12:13:28.877Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T12:13:28.879Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T12:13:28.879Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T12:13:28.880Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T12:13:30.759Z - normal: Compiled project javascript file successfully
+2018-09-28T12:13:30.759Z - normal: Start building assets
+2018-09-28T12:13:30.759Z - normal: Start spawn build-worker
+2018-09-28T12:13:31.503Z - normal: Finish spawn build-worker
+2018-09-28T12:13:31.503Z - normal: Start init build-worker
+2018-09-28T12:13:33.563Z - normal: 1.8.1
+2018-09-28T12:13:33.627Z - normal: Finish init build-worker
+2018-09-28T12:13:33.627Z - normal: Start build-assets in worker
+2018-09-28T12:13:33.950Z - normal: Finish build-assets in worker
+2018-09-28T12:13:33.955Z - normal: Finish building assets
+2018-09-28T12:13:33.962Z - normal: Start building raw assets
+2018-09-28T12:13:33.963Z - normal: Start building plugin scripts
+2018-09-28T12:13:34.004Z - normal: Finish building raw assets
+2018-09-28T12:13:34.008Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T12:13:34.275Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T12:13:38.871Z - normal: Initializing...
+
+2018-09-28T12:13:38.876Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T12:13:39.888Z - normal: starting ide...
+
+2018-09-28T12:13:42.860Z - normal: IDE server has started, listening on http://127.0.0.1:56340
+
+2018-09-28T12:13:42.863Z - normal: initialization finished
+
+2018-09-28T12:24:57.218Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T12:24:57.220Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T12:24:57.221Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T12:24:57.222Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T12:24:59.094Z - normal: Compiled project javascript file successfully
+2018-09-28T12:24:59.094Z - normal: Start building assets
+2018-09-28T12:24:59.094Z - normal: Start spawn build-worker
+2018-09-28T12:24:59.824Z - normal: Finish spawn build-worker
+2018-09-28T12:24:59.824Z - normal: Start init build-worker
+2018-09-28T12:25:01.832Z - normal: 1.8.1
+2018-09-28T12:25:01.891Z - normal: Finish init build-worker
+2018-09-28T12:25:01.891Z - normal: Start build-assets in worker
+2018-09-28T12:25:02.208Z - normal: Finish build-assets in worker
+2018-09-28T12:25:02.212Z - normal: Finish building assets
+2018-09-28T12:25:02.221Z - normal: Start building raw assets
+2018-09-28T12:25:02.222Z - normal: Start building plugin scripts
+2018-09-28T12:25:02.236Z - normal: Finish building raw assets
+2018-09-28T12:25:02.238Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T12:25:02.499Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully
+2018-09-28T12:25:04.076Z - normal: Initializing...
+
+2018-09-28T12:25:04.082Z - normal: idePortFile: C:\Users\xietieyong\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-09-28T12:25:05.094Z - normal: starting ide...
+
+2018-09-28T12:25:08.038Z - normal: IDE server has started, listening on http://127.0.0.1:15618
+
+2018-09-28T12:25:08.041Z - normal: initialization finished
+
+2018-09-28T12:32:42.323Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\mw_client\\trunk\\find_bomb\\build",
+  "debug": true,
+  "dest": "D:\\mw_client\\trunk\\find_bomb\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.find_bomb",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "0aadb38e-5557-4073-b276-8f79118864d4",
+    "97af4a92-c09d-4064-9475-cc593bd9f863"
+  ],
+  "sourceMaps": false,
+  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
+  "template": "link",
+  "title": "find_bomb",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "faf0b2aa-0bd4-4b",
+  "zipCompressJs": true,
+  "project": "D:\\mw_client\\trunk\\find_bomb",
+  "projectName": "find_bomb",
+  "debugBuildWorker": false
+}
+2018-09-28T12:32:42.325Z - normal: Building D:\mw_client\trunk\find_bomb
+2018-09-28T12:32:42.325Z - normal: Destination D:\mw_client\trunk\find_bomb\build\wechatgame
+2018-09-28T12:32:42.326Z - normal: Delete D:\mw_client\trunk\find_bomb\build\wechatgame\**\*
+2018-09-28T12:32:44.787Z - normal: Compiled project javascript file successfully
+2018-09-28T12:32:44.787Z - normal: Start building assets
+2018-09-28T12:32:44.787Z - normal: Start spawn build-worker
+2018-09-28T12:32:45.539Z - normal: Finish spawn build-worker
+2018-09-28T12:32:45.539Z - normal: Start init build-worker
+2018-09-28T12:32:47.650Z - normal: 1.8.1
+2018-09-28T12:32:47.710Z - normal: Finish init build-worker
+2018-09-28T12:32:47.710Z - normal: Start build-assets in worker
+2018-09-28T12:32:48.053Z - normal: Finish build-assets in worker
+2018-09-28T12:32:48.063Z - normal: Finish building assets
+2018-09-28T12:32:48.077Z - normal: Start building raw assets
+2018-09-28T12:32:48.078Z - normal: Start building plugin scripts
+2018-09-28T12:32:48.105Z - normal: Finish building raw assets
+2018-09-28T12:32:48.107Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-28T12:32:48.384Z - normal: Built to "D:\mw_client\trunk\find_bomb\build\wechatgame" successfully

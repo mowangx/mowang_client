@@ -2,6 +2,8 @@
 cc._RF.push(module, '34c05+ftDJEurghykawnG7U', 'head_info', __filename);
 // scripts/ui/head_info.ts
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var dispatcher_1 = require("../logic/dispatcher");
 // Learn TypeScript:
 //  - [Chinese] http://www.cocos.com/docs/creator/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/typescript/index.html
@@ -11,8 +13,8 @@ cc._RF.push(module, '34c05+ftDJEurghykawnG7U', 'head_info', __filename);
 // Learn life-cycle callbacks:
 //  - [Chinese] http://www.cocos.com/docs/creator/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
-Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var consts_1 = require("./../logic/consts");
 var head_info = /** @class */ (function (_super) {
     __extends(head_info, _super);
     function head_info() {
@@ -25,6 +27,7 @@ var head_info = /** @class */ (function (_super) {
     // LIFE-CYCLE CALLBACKS:
     // onLoad () {},
     head_info.prototype.start = function () {
+        dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_1, this.on_game_over, this);
     };
     // update (dt) {},
     head_info.prototype.init_head = function (lvl) {
@@ -47,8 +50,8 @@ var head_info = /** @class */ (function (_super) {
         else if (lvl == 5) {
             lvl_desc = '传奇';
         }
-        this.lvl_label.string = '当前挑战：' + lvl_desc;
-        this.time_label.string = '00 : 00';
+        this.lvl_label.string = '挑战:' + lvl_desc;
+        this.time_label.string = '00:00';
     };
     head_info.prototype.on_1_minute_timer = function () {
         this.play_time += 1;
@@ -56,20 +59,26 @@ var head_info = /** @class */ (function (_super) {
         var second = this.play_time % 60;
         if (minute < 10) {
             if (second < 10) {
-                this.time_label.string = '0' + minute + ' : 0' + second;
+                this.time_label.string = '0' + minute + ':0' + second;
             }
             else {
-                this.time_label.string = '0' + minute + ' : ' + second;
+                this.time_label.string = '0' + minute + ':' + second;
             }
         }
         else {
             if (second < 10) {
-                this.time_label.string = '' + minute + ' : 0' + second;
+                this.time_label.string = '' + minute + ':0' + second;
             }
             else {
-                this.time_label.string = '' + minute + ' : ' + second;
+                this.time_label.string = '' + minute + ':' + second;
             }
         }
+    };
+    head_info.prototype.on_click_bomb_btn = function () {
+        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_CLICK_BOMB_BTN);
+    };
+    head_info.prototype.on_game_over = function (result, lvl) {
+        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_GAME_OVER_2, result, lvl, this.play_time);
     };
     __decorate([
         property(cc.Label)

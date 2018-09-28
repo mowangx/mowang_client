@@ -13,30 +13,41 @@ cc._RF.push(module, '4d5a4Y7D+NPA72p6o/X5X+H', 'client');
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var NewClass = /** @class */ (function (_super) {
-    __extends(NewClass, _super);
-    function NewClass() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.label = null;
-        _this.text = 'hello';
+var dispatcher_1 = require("./dispatcher");
+var consts_1 = require("./consts");
+var client = /** @class */ (function (_super) {
+    __extends(client, _super);
+    function client() {
+        var _this = _super.call(this) || this;
+        _this.result = false;
+        _this.lvl = 1;
+        _this.play_time = 0;
+        dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_2, _this.on_game_over, _this);
         return _this;
-        // update (dt) {},
     }
-    // LIFE-CYCLE CALLBACKS:
-    // onLoad () {},
-    NewClass.prototype.start = function () {
+    client.prototype.init = function () {
     };
-    __decorate([
-        property(cc.Label)
-    ], NewClass.prototype, "label", void 0);
-    __decorate([
-        property
-    ], NewClass.prototype, "text", void 0);
-    NewClass = __decorate([
+    client.prototype.on_game_over = function (result, lvl, play_time) {
+        this.result = result;
+        this.lvl = lvl;
+        this.play_time = play_time;
+    };
+    client.prototype.get_result = function () {
+        return this.result;
+    };
+    client.prototype.get_lvl = function () {
+        return this.lvl;
+    };
+    client.prototype.get_play_time = function () {
+        return this.play_time;
+    };
+    client = __decorate([
         ccclass
-    ], NewClass);
-    return NewClass;
+    ], client);
+    return client;
 }(cc.Component));
-exports.default = NewClass;
+exports.client = client;
+var client_mgr = new client();
+exports.default = client_mgr;
 
 cc._RF.pop();

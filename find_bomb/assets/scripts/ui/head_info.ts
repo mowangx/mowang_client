@@ -1,3 +1,5 @@
+import dispatcher from "../logic/dispatcher";
+
 // Learn TypeScript:
 //  - [Chinese] http://www.cocos.com/docs/creator/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/typescript/index.html
@@ -9,6 +11,9 @@
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
 
 const {ccclass, property} = cc._decorator;
+
+import dispatcher from "./../logic/dispatcher"
+import {EventType} from "./../logic/consts"
 
 @ccclass
 export default class head_info extends cc.Component {
@@ -27,6 +32,7 @@ export default class head_info extends cc.Component {
     // onLoad () {},
 
     start () {
+        dispatcher.add_dispatch(EventType.EVENT_GAME_OVER_1, this.on_game_over, this)
 
     },
 
@@ -53,8 +59,8 @@ export default class head_info extends cc.Component {
             lvl_desc = '传奇';
         }
 
-        this.lvl_label.string = '当前挑战：' + lvl_desc;
-        this.time_label.string = '00 : 00';
+        this.lvl_label.string = '挑战:' + lvl_desc;
+        this.time_label.string = '00:00';
     },
 
     on_1_minute_timer(): void {
@@ -63,19 +69,27 @@ export default class head_info extends cc.Component {
         let second = this.play_time % 60;
         if (minute < 10) {
             if (second < 10) {
-                this.time_label.string = '0' + minute + ' : 0' + second;
+                this.time_label.string = '0' + minute + ':0' + second;
             }
             else{
-                this.time_label.string = '0' + minute + ' : ' + second;
+                this.time_label.string = '0' + minute + ':' + second;
             }
         }
         else {
             if (second < 10) {
-                this.time_label.string = '' + minute + ' : 0' + second;
+                this.time_label.string = '' + minute + ':0' + second;
             }
             else{
-                this.time_label.string = '' + minute + ' : ' + second;
+                this.time_label.string = '' + minute + ':' + second;
             }
         }
     },
+
+    on_click_bomb_btn(): void {
+        dispatcher.dispatch(EventType.EVENT_CLICK_BOMB_BTN);
+    }
+
+    on_game_over(result: boolean, lvl: number) {
+        dispatcher.dispatch(EventType.EVENT_GAME_OVER_2, result, lvl, this.play_time);
+    }
 }

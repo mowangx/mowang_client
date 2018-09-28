@@ -10,6 +10,8 @@
 
 const {ccclass, property} = cc._decorator;
 
+import client_mgr from "./../logic/client"
+
 @ccclass
 export default class player extends cc.Component {
 
@@ -27,6 +29,7 @@ export default class player extends cc.Component {
     start () {
         this.head_node = this.head_info.getComponent("head_info");
         this.body_node = this.body_info.getComponent("body_info");
+        this.ready_start(client_mgr.get_lvl());
     },
 
     // update (dt) {},

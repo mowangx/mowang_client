@@ -13,6 +13,7 @@ cc._RF.push(module, '79e08S9ePlGt5MxH0Mi5CC8', 'game');
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var client_1 = require("./../logic/client");
 var game = /** @class */ (function (_super) {
     __extends(game, _super);
     function game() {
@@ -22,7 +23,9 @@ var game = /** @class */ (function (_super) {
         // update (dt) {},
     }
     // LIFE-CYCLE CALLBACKS:
-    // onLoad () {},
+    game.prototype.onLoad = function () {
+        client_1.default.init();
+    };
     game.prototype.start = function () {
     };
     __decorate([

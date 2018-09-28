@@ -10,6 +10,8 @@
 
 const {ccclass, property} = cc._decorator;
 
+import client_mgr from "./../logic/client"
+
 @ccclass
 export default class game extends cc.Component {
 
@@ -18,10 +20,11 @@ export default class game extends cc.Component {
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        client_mgr.init();
+    },
 
     start () {
-
     },
 
     // update (dt) {},

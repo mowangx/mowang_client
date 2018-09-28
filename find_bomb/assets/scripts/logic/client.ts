@@ -10,22 +10,42 @@
 
 const {ccclass, property} = cc._decorator;
 
+import dispatcher from "./dispatcher"
+import {EventType} from "./consts"
+
 @ccclass
-export default class NewClass extends cc.Component {
+export class client extends cc.Component {
 
-    @property(cc.Label)
-    label: cc.Label = null;
+    private result: boolean = false;
+    private lvl: number = 1;
+    private play_time: number = 0;
 
-    @property
-    text: string = 'hello';
-
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
-
-    start () {
-
+    constructor() {
+        super();
+        dispatcher.add_dispatch(EventType.EVENT_GAME_OVER_2, this.on_game_over, this);
     },
 
-    // update (dt) {},
+    init(): void {
+    },
+
+    on_game_over(result: boolean, lvl: number, play_time: number) : void {
+        this.result = result;
+        this.lvl = lvl;
+        this.play_time = play_time;
+    },
+
+    get_result(): boolean {
+        return this.result;
+    },
+    
+    get_lvl(): number {
+        return this.lvl;
+    },
+
+    get_play_time(): number {
+        return this.play_time;
+    }
 }
+
+var client_mgr = new client();
+export default client_mgr; 

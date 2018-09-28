@@ -13,6 +13,7 @@ cc._RF.push(module, '40f41ntPqVBYJdYnUq8dxPT', 'player');
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var client_1 = require("./../logic/client");
 var player = /** @class */ (function (_super) {
     __extends(player, _super);
     function player() {
@@ -27,6 +28,7 @@ var player = /** @class */ (function (_super) {
     player.prototype.start = function () {
         this.head_node = this.head_info.getComponent("head_info");
         this.body_node = this.body_info.getComponent("body_info");
+        this.ready_start(client_1.default.get_lvl());
     };
     // update (dt) {},
     player.prototype.ready_start = function (lvl) {
