@@ -27,7 +27,7 @@ var head_info = /** @class */ (function (_super) {
     // LIFE-CYCLE CALLBACKS:
     // onLoad () {},
     head_info.prototype.start = function () {
-        dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_1, this.on_game_over, this);
+        dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_2, this.on_game_over, this);
     };
     // update (dt) {},
     head_info.prototype.init_head = function (lvl) {
@@ -78,7 +78,7 @@ var head_info = /** @class */ (function (_super) {
         dispatcher_1.default.dispatch(consts_1.EventType.EVENT_CLICK_BOMB_BTN);
     };
     head_info.prototype.on_game_over = function (result, lvl) {
-        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_GAME_OVER_2, result, lvl, this.play_time);
+        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_GAME_OVER_3, result, lvl, this.play_time);
     };
     __decorate([
         property(cc.Label)

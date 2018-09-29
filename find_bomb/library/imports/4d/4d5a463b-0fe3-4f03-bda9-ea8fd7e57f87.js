@@ -22,7 +22,7 @@ var client = /** @class */ (function (_super) {
         _this.result = false;
         _this.lvl = 1;
         _this.play_time = 0;
-        dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_2, _this.on_game_over, _this);
+        dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_3, _this.on_game_over, _this);
         return _this;
     }
     client.prototype.init = function () {

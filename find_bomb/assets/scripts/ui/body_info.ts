@@ -73,6 +73,9 @@ export default class body_info extends cc.Component {
     @property(cc.Prefab)
     bomb_node: cc.Prefab = null;
 
+    @property(cc.Prefab)
+    num_label: cc.Prefab = null;
+
     @property(Number)
     click_x: Number = 0;
 
@@ -80,7 +83,7 @@ export default class body_info extends cc.Component {
     click_y: Number = 0;
 
     @property(Number)
-    lvl: Number = 0;
+    lvl: number = 0;
 
     @property([Number])
     bomb_list: Array<Number> = []
@@ -118,8 +121,7 @@ export default class body_info extends cc.Component {
 
     start () {
         for (let i=0; i<81; ++i) {
-            this.text_list[i] = new cc.Node('text');
-            this.text_list[i].addComponent(cc.Label);
+            this.text_list[i] = cc.instantiate(this.num_label);
             this.bomb_node_list[i] = cc.instantiate(this.bomb_node);
             this.grid_status[i] = false;
         }
@@ -168,6 +170,9 @@ export default class body_info extends cc.Component {
         for (let i=0; i<this.grid_status.length; ++i) {
             this.grid_status[i] = false;
         }
+        for (let i=0; i<this.bomb_list.length; ++i) {
+            this.bomb_list[i] = -1;
+        }
     },
 
     init_grid_list(grid_lvl_list, normal_grid): void {
@@ -183,11 +188,11 @@ export default class body_info extends cc.Component {
     }
 
     init_bomb_list(): void {
-        let bomb_num = this.get_random_bomb_num()
+        let coln_num = this.get_coln_num();
+        let max_index = coln_num * coln_num - 1;
+        let bomb_num = this.get_random_bomb_num() + this.lvl;
         for (let i=0; i<bomb_num; ++i) {
             let idx = 0;
-            let coln_num = this.get_coln_num();
-            let max_index = coln_num * coln_num - 1;
             for (let i=0; i<coln_num; ++i) {
                 idx = this.get_random_range(0, max_index);
                 if (this.bomb_list.indexOf(idx) >= 0) {
@@ -199,6 +204,8 @@ export default class body_info extends cc.Component {
             }
             this.bomb_list[i] = idx;
         }
+        
+        this.optimizate_bomb_list(max_index);
     },
 
     get_random_bomb_num(): number {
@@ -225,12 +232,48 @@ export default class body_info extends cc.Component {
             max_num = 16;
         }
         return this.get_random_range(min_num, max_num);
-    }
+    },
 
     get_random_range(min: number, max: number): number {  
         var Range = max - min;  
         var Rand = Math.random();  
         return(min + Math.round(Rand * Range));  
+    },
+
+    optimizate_bomb_list(max_index: number): void {
+        let desc_bomb_num = this.lvl;
+        for (let i=0; i<max_index; ++i) {
+            let around_indexes = this.get_around_indexs(i);
+            let cur_bomb_num = this.get_bomb_num(i, around_indexes);
+            if (cur_bomb_num < 4) {
+                continue;
+            }
+
+            for (let j=0; j<around_indexes.length; ++j) {
+                let idx = i + around_indexes[j];
+                if (idx >= this.bomb_list.length || this.bomb_list[idx] < 0) {
+                    continue;
+                }
+
+                this.bomb_list[idx] = -1;
+                desc_bomb_num -= 1;
+                break;
+            }
+        }
+
+        for (let i=0; i<20; ++i) {
+            if (desc_bomb_num < 1) {
+                return;
+            }
+
+            let idx = this.get_random_range(0, this.bomb_list.length - 1);
+            if (this.bomb_list[idx] < 0) {
+                continue;
+            }
+
+            this.bomb_list[idx] = -1;
+            desc_bomb_num -= 1;
+        }
     },
 
     on_touch_end(event): void {
@@ -344,7 +387,8 @@ export default class body_info extends cc.Component {
             let check_indexes = this.get_around_indexs(idx);
             let bomb_num = this.get_bomb_num(idx, check_indexes);
             if (bomb_num > 0) {
-                replace_node.getComponent(cc.Label).string = '' + bomb_num;
+                let cur_label = replace_node.getComponent(cc.Label);
+                cur_label.string = '' + bomb_num;
             }
             else {
                 let cur_ingore_indexes = ignore_indexes.concat([idx]);
@@ -497,6 +541,7 @@ export default class body_info extends cc.Component {
     },
 
     show_grid_delay(): void {
+        dispatcher.dispatch(EventType.EVENT_GAME_OVER_1)
         this.bomb_flag = false;
         let max_coln_num = this.get_coln_num();
         let len = max_coln_num * max_coln_num;
@@ -518,7 +563,7 @@ export default class body_info extends cc.Component {
      }
 
     on_game_over(result: boolean): void {
-        dispatcher.dispatch(EventType.EVENT_GAME_OVER_1, result, this.lvl);
+        dispatcher.dispatch(EventType.EVENT_GAME_OVER_2, result, this.lvl);
         cc.director.loadScene("result");
     }
 }

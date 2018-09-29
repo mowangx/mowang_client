@@ -37,10 +37,6 @@ window._CCSettings = {
             "d77oN03rtDBJqRFLesTKgh": [
                 "resource/texture/btn_5.png",
                 "cc.Texture2D"
-            ],
-            "60XDsFEJtNKr9ERm00YHL5": [
-                "resource/texture/result_bg.png",
-                "cc.Texture2D"
             ]
         },
         internal: {
@@ -70,15 +66,7 @@ window._CCSettings = {
         }
     ],
     packedAssets: {
-        "07cdd102a": [
-            "29FYIk+N1GYaeWH/q1NxQO",
-            "47ebRaO21DnpVQOFJMsRvV",
-            "66bJ5b4PZAtoMwAiKDdmLS",
-            "97r0qSwJ1AZJR1zFk72fhj",
-            "e97GVMl6JHh5Ml5qEDdSGa",
-            "f0BIwQ8D5Ml7nTNQbh1YlS"
-        ],
-        "0df90ad08": [
+        "0817a96c8": [
             "05ED2Ywf9EWoE9q98cnPX+",
             "0arbOOVVdAc7J2j3kRiGTU",
             "0fTFHFEBdMNqUjAea/LvkV",
@@ -86,6 +74,7 @@ window._CCSettings = {
             "29FYIk+N1GYaeWH/q1NxQO",
             "47ebRaO21DnpVQOFJMsRvV",
             "478d0jd2xMkbcv2SXbW0Nl",
+            "66DolvNM5KnqQrFibMElfk",
             "76obL24apJ74fhmrm5FdZN",
             "7aS3aRcWtOiangMLLMDipa",
             "7eExEVaBhA7JeqR7qyBwyS",
@@ -96,13 +85,21 @@ window._CCSettings = {
             "f0BIwQ8D5Ml7nTNQbh1YlS",
             "f16cvKl5RAY7uffdazCseW",
             "f293U7WE9MpqnRXlDy2X0s"
+        ],
+        "0c86a6ca0": [
+            "29FYIk+N1GYaeWH/q1NxQO",
+            "47ebRaO21DnpVQOFJMsRvV",
+            "97r0qSwJ1AZJR1zFk72fhj",
+            "e97GVMl6JHh5Ml5qEDdSGa",
+            "f0BIwQ8D5Ml7nTNQbh1YlS",
+            "f293U7WE9MpqnRXlDy2X0s"
         ]
     },
     orientation: "",
     debug: true,
     "md5AssetsMap": {
-        "07/07cdd102a.json": "227b2",
-        "0d/0df90ad08.json": "8ef31",
+        "08/0817a96c8.json": "250db",
+        "0c/0c86a6ca0.json": "246e0",
         "assets/resource/texture/bg_6.jpeg": "bd8f4",
         "assets/resource/texture/bomb.png": "a6321",
         "assets/resource/texture/btn_1.png": "fb60c",
@@ -110,7 +107,6 @@ window._CCSettings = {
         "assets/resource/texture/btn_3.png": "55152",
         "assets/resource/texture/btn_4.png": "224b7",
         "assets/resource/texture/btn_5.png": "912a6",
-        "assets/resource/texture/result_bg.png": "61a04",
         "internal/image/default_btn_disabled.png": "286c6",
         "internal/image/default_btn_normal.png": "1ecb7",
         "internal/image/default_btn_pressed.png": "bedf4"

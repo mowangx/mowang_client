@@ -32,7 +32,7 @@ export default class head_info extends cc.Component {
     // onLoad () {},
 
     start () {
-        dispatcher.add_dispatch(EventType.EVENT_GAME_OVER_1, this.on_game_over, this)
+        dispatcher.add_dispatch(EventType.EVENT_GAME_OVER_2, this.on_game_over, this)
 
     },
 
@@ -90,6 +90,6 @@ export default class head_info extends cc.Component {
     }
 
     on_game_over(result: boolean, lvl: number) {
-        dispatcher.dispatch(EventType.EVENT_GAME_OVER_2, result, lvl, this.play_time);
+        dispatcher.dispatch(EventType.EVENT_GAME_OVER_3, result, lvl, this.play_time);
     }
 }

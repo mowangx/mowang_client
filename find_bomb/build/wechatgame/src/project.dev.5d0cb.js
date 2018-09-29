@@ -54,6 +54,7 @@ require = function e(t, n, r) {
         _this.normal_grid_4 = null;
         _this.normal_grid_5 = null;
         _this.bomb_node = null;
+        _this.num_label = null;
         _this.click_x = 0;
         _this.click_y = 0;
         _this.lvl = 0;
@@ -78,8 +79,7 @@ require = function e(t, n, r) {
       };
       body_info.prototype.start = function() {
         for (var i = 0; i < 81; ++i) {
-          this.text_list[i] = new cc.Node("text");
-          this.text_list[i].addComponent(cc.Label);
+          this.text_list[i] = cc.instantiate(this.num_label);
           this.bomb_node_list[i] = cc.instantiate(this.bomb_node);
           this.grid_status[i] = false;
         }
@@ -107,6 +107,7 @@ require = function e(t, n, r) {
           child_node.parent = this.hide_node;
         }
         for (var i = 0; i < this.grid_status.length; ++i) this.grid_status[i] = false;
+        for (var i = 0; i < this.bomb_list.length; ++i) this.bomb_list[i] = -1;
       };
       body_info.prototype.init_grid_list = function(grid_lvl_list, normal_grid) {
         for (var i = 0; i < grid_lvl_list.length; i++) {
@@ -120,11 +121,11 @@ require = function e(t, n, r) {
         }
       };
       body_info.prototype.init_bomb_list = function() {
-        var bomb_num = this.get_random_bomb_num();
+        var coln_num = this.get_coln_num();
+        var max_index = coln_num * coln_num - 1;
+        var bomb_num = this.get_random_bomb_num() + this.lvl;
         for (var i = 0; i < bomb_num; ++i) {
           var idx = 0;
-          var coln_num = this.get_coln_num();
-          var max_index = coln_num * coln_num - 1;
           for (var i_1 = 0; i_1 < coln_num; ++i_1) {
             idx = this.get_random_range(0, max_index);
             if (this.bomb_list.indexOf(idx) >= 0) continue;
@@ -132,6 +133,7 @@ require = function e(t, n, r) {
           }
           this.bomb_list[i] = idx;
         }
+        this.optimizate_bomb_list(max_index);
       };
       body_info.prototype.get_random_bomb_num = function() {
         var min_num = 0;
@@ -158,6 +160,28 @@ require = function e(t, n, r) {
         var Range = max - min;
         var Rand = Math.random();
         return min + Math.round(Rand * Range);
+      };
+      body_info.prototype.optimizate_bomb_list = function(max_index) {
+        var desc_bomb_num = this.lvl;
+        for (var i = 0; i < max_index; ++i) {
+          var around_indexes = this.get_around_indexs(i);
+          var cur_bomb_num = this.get_bomb_num(i, around_indexes);
+          if (cur_bomb_num < 4) continue;
+          for (var j = 0; j < around_indexes.length; ++j) {
+            var idx = i + around_indexes[j];
+            if (idx >= this.bomb_list.length || this.bomb_list[idx] < 0) continue;
+            this.bomb_list[idx] = -1;
+            desc_bomb_num -= 1;
+            break;
+          }
+        }
+        for (var i = 0; i < 20; ++i) {
+          if (desc_bomb_num < 1) return;
+          var idx = this.get_random_range(0, this.bomb_list.length - 1);
+          if (this.bomb_list[idx] < 0) continue;
+          this.bomb_list[idx] = -1;
+          desc_bomb_num -= 1;
+        }
       };
       body_info.prototype.on_touch_end = function(event) {
         var lvl_node = this.get_lvl_node();
@@ -234,7 +258,8 @@ require = function e(t, n, r) {
             }
             return;
           }
-          replace_node.getComponent(cc.Label).string = "" + bomb_num;
+          var cur_label = replace_node.getComponent(cc.Label);
+          cur_label.string = "" + bomb_num;
         }
         var grid = this.get_grid_node(idx);
         replace_node.parent = grid;
@@ -328,6 +353,7 @@ require = function e(t, n, r) {
         this.schedule(this.show_grid_delay, .1);
       };
       body_info.prototype.show_grid_delay = function() {
+        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_GAME_OVER_1);
         this.bomb_flag = false;
         var max_coln_num = this.get_coln_num();
         var len = max_coln_num * max_coln_num;
@@ -344,7 +370,7 @@ require = function e(t, n, r) {
         this.bomb_flag = true;
       };
       body_info.prototype.on_game_over = function(result) {
-        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_GAME_OVER_1, result, this.lvl);
+        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_GAME_OVER_2, result, this.lvl);
         cc.director.loadScene("result");
       };
       __decorate([ property(cc.Node) ], body_info.prototype, "bomb_lvl_1", void 0);
@@ -366,6 +392,7 @@ require = function e(t, n, r) {
       __decorate([ property(cc.Prefab) ], body_info.prototype, "normal_grid_4", void 0);
       __decorate([ property(cc.Prefab) ], body_info.prototype, "normal_grid_5", void 0);
       __decorate([ property(cc.Prefab) ], body_info.prototype, "bomb_node", void 0);
+      __decorate([ property(cc.Prefab) ], body_info.prototype, "num_label", void 0);
       __decorate([ property(Number) ], body_info.prototype, "click_x", void 0);
       __decorate([ property(Number) ], body_info.prototype, "click_y", void 0);
       __decorate([ property(Number) ], body_info.prototype, "lvl", void 0);
@@ -399,7 +426,7 @@ require = function e(t, n, r) {
         _this.result = false;
         _this.lvl = 1;
         _this.play_time = 0;
-        dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_2, _this.on_game_over, _this);
+        dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_3, _this.on_game_over, _this);
         return _this;
       }
       client.prototype.init = function() {};
@@ -437,7 +464,8 @@ require = function e(t, n, r) {
     var EventType;
     (function(EventType) {
       EventType[EventType["EVENT_GAME_OVER_1"] = 1] = "EVENT_GAME_OVER_1";
-      EventType[EventType["EVENT_GAME_OVER_2"] = 2] = "EVENT_GAME_OVER_2";
+      EventType[EventType["EVENT_GAME_OVER_2"] = 1] = "EVENT_GAME_OVER_2";
+      EventType[EventType["EVENT_GAME_OVER_3"] = 2] = "EVENT_GAME_OVER_3";
       EventType[EventType["EVENT_CLICK_BOMB_BTN"] = 3] = "EVENT_CLICK_BOMB_BTN";
     })(EventType = exports.EventType || (exports.EventType = {}));
     cc._RF.pop();
@@ -550,7 +578,7 @@ require = function e(t, n, r) {
         return _this;
       }
       head_info.prototype.start = function() {
-        dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_1, this.on_game_over, this);
+        dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_2, this.on_game_over, this);
       };
       head_info.prototype.init_head = function(lvl) {
         this.play_time = 0;
@@ -571,7 +599,7 @@ require = function e(t, n, r) {
         dispatcher_1.default.dispatch(consts_1.EventType.EVENT_CLICK_BOMB_BTN);
       };
       head_info.prototype.on_game_over = function(result, lvl) {
-        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_GAME_OVER_2, result, lvl, this.play_time);
+        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_GAME_OVER_3, result, lvl, this.play_time);
       };
       __decorate([ property(cc.Label) ], head_info.prototype, "lvl_label", void 0);
       __decorate([ property(cc.Label) ], head_info.prototype, "time_label", void 0);
@@ -682,36 +710,53 @@ require = function e(t, n, r) {
       value: true
     });
     var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var dispatcher_1 = require("./../logic/dispatcher");
+    var consts_1 = require("./../logic/consts");
     var tail_info = function(_super) {
       __extends(tail_info, _super);
       function tail_info() {
         var _this = null !== _super && _super.apply(this, arguments) || this;
         _this.player = null;
+        _this.game_over_flag = false;
         return _this;
       }
       tail_info.prototype.start = function() {
         this.player_node = this.player.getComponent("player");
+        this.game_over_flag = false;
+        dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_1, this.on_game_over, this);
       };
       tail_info.prototype.on_click_lvl_1 = function() {
+        if (this.game_over_flag) return;
         this.player_node.ready_start(1);
       };
       tail_info.prototype.on_click_lvl_2 = function() {
+        if (this.game_over_flag) return;
         this.player_node.ready_start(2);
       };
       tail_info.prototype.on_click_lvl_3 = function() {
+        if (this.game_over_flag) return;
         this.player_node.ready_start(3);
       };
       tail_info.prototype.on_click_lvl_4 = function() {
+        if (this.game_over_flag) return;
         this.player_node.ready_start(4);
       };
       tail_info.prototype.on_click_lvl_5 = function() {
+        if (this.game_over_flag) return;
         this.player_node.ready_start(5);
       };
+      tail_info.prototype.on_game_over = function() {
+        this.game_over_flag = true;
+      };
       __decorate([ property(cc.Node) ], tail_info.prototype, "player", void 0);
+      __decorate([ property(Boolean) ], tail_info.prototype, "game_over_flag", void 0);
       tail_info = __decorate([ ccclass ], tail_info);
       return tail_info;
     }(cc.Component);
     exports.default = tail_info;
     cc._RF.pop();
-  }, {} ]
+  }, {
+    "./../logic/consts": "consts",
+    "./../logic/dispatcher": "dispatcher"
+  } ]
 }, {}, [ "client", "consts", "dispatcher", "body_info", "game", "head_info", "player", "result", "tail_info" ]);

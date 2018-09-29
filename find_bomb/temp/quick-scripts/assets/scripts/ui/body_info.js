@@ -38,6 +38,7 @@ var body_info = /** @class */ (function (_super) {
         _this.normal_grid_4 = null;
         _this.normal_grid_5 = null;
         _this.bomb_node = null;
+        _this.num_label = null;
         _this.click_x = 0;
         _this.click_y = 0;
         _this.lvl = 0;
@@ -63,8 +64,7 @@ var body_info = /** @class */ (function (_super) {
     };
     body_info.prototype.start = function () {
         for (var i = 0; i < 81; ++i) {
-            this.text_list[i] = new cc.Node('text');
-            this.text_list[i].addComponent(cc.Label);
+            this.text_list[i] = cc.instantiate(this.num_label);
             this.bomb_node_list[i] = cc.instantiate(this.bomb_node);
             this.grid_status[i] = false;
         }
@@ -109,6 +109,9 @@ var body_info = /** @class */ (function (_super) {
         for (var i = 0; i < this.grid_status.length; ++i) {
             this.grid_status[i] = false;
         }
+        for (var i = 0; i < this.bomb_list.length; ++i) {
+            this.bomb_list[i] = -1;
+        }
     };
     body_info.prototype.init_grid_list = function (grid_lvl_list, normal_grid) {
         for (var i = 0; i < grid_lvl_list.length; i++) {
@@ -122,11 +125,11 @@ var body_info = /** @class */ (function (_super) {
         }
     };
     body_info.prototype.init_bomb_list = function () {
-        var bomb_num = this.get_random_bomb_num();
+        var coln_num = this.get_coln_num();
+        var max_index = coln_num * coln_num - 1;
+        var bomb_num = this.get_random_bomb_num() + this.lvl;
         for (var i = 0; i < bomb_num; ++i) {
             var idx = 0;
-            var coln_num = this.get_coln_num();
-            var max_index = coln_num * coln_num - 1;
             for (var i_1 = 0; i_1 < coln_num; ++i_1) {
                 idx = this.get_random_range(0, max_index);
                 if (this.bomb_list.indexOf(idx) >= 0) {
@@ -138,6 +141,7 @@ var body_info = /** @class */ (function (_super) {
             }
             this.bomb_list[i] = idx;
         }
+        this.optimizate_bomb_list(max_index);
     };
     body_info.prototype.get_random_bomb_num = function () {
         var min_num = 0;
@@ -168,6 +172,36 @@ var body_info = /** @class */ (function (_super) {
         var Range = max - min;
         var Rand = Math.random();
         return (min + Math.round(Rand * Range));
+    };
+    body_info.prototype.optimizate_bomb_list = function (max_index) {
+        var desc_bomb_num = this.lvl;
+        for (var i = 0; i < max_index; ++i) {
+            var around_indexes = this.get_around_indexs(i);
+            var cur_bomb_num = this.get_bomb_num(i, around_indexes);
+            if (cur_bomb_num < 4) {
+                continue;
+            }
+            for (var j = 0; j < around_indexes.length; ++j) {
+                var idx = i + around_indexes[j];
+                if (idx >= this.bomb_list.length || this.bomb_list[idx] < 0) {
+                    continue;
+                }
+                this.bomb_list[idx] = -1;
+                desc_bomb_num -= 1;
+                break;
+            }
+        }
+        for (var i = 0; i < 20; ++i) {
+            if (desc_bomb_num < 1) {
+                return;
+            }
+            var idx = this.get_random_range(0, this.bomb_list.length - 1);
+            if (this.bomb_list[idx] < 0) {
+                continue;
+            }
+            this.bomb_list[idx] = -1;
+            desc_bomb_num -= 1;
+        }
     };
     body_info.prototype.on_touch_end = function (event) {
         var lvl_node = this.get_lvl_node();
@@ -269,7 +303,8 @@ var body_info = /** @class */ (function (_super) {
             var check_indexes = this.get_around_indexs(idx);
             var bomb_num = this.get_bomb_num(idx, check_indexes);
             if (bomb_num > 0) {
-                replace_node.getComponent(cc.Label).string = '' + bomb_num;
+                var cur_label = replace_node.getComponent(cc.Label);
+                cur_label.string = '' + bomb_num;
             }
             else {
                 var cur_ingore_indexes = ignore_indexes.concat([idx]);
@@ -409,6 +444,7 @@ var body_info = /** @class */ (function (_super) {
         this.schedule(this.show_grid_delay, 0.1);
     };
     body_info.prototype.show_grid_delay = function () {
+        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_GAME_OVER_1);
         this.bomb_flag = false;
         var max_coln_num = this.get_coln_num();
         var len = max_coln_num * max_coln_num;
@@ -427,7 +463,7 @@ var body_info = /** @class */ (function (_super) {
         this.bomb_flag = true;
     };
     body_info.prototype.on_game_over = function (result) {
-        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_GAME_OVER_1, result, this.lvl);
+        dispatcher_1.default.dispatch(consts_1.EventType.EVENT_GAME_OVER_2, result, this.lvl);
         cc.director.loadScene("result");
     };
     __decorate([
@@ -487,6 +523,9 @@ var body_info = /** @class */ (function (_super) {
     __decorate([
         property(cc.Prefab)
     ], body_info.prototype, "bomb_node", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], body_info.prototype, "num_label", void 0);
     __decorate([
         property(Number)
     ], body_info.prototype, "click_x", void 0);

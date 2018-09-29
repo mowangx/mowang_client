@@ -22,7 +22,7 @@ export class client extends cc.Component {
 
     constructor() {
         super();
-        dispatcher.add_dispatch(EventType.EVENT_GAME_OVER_2, this.on_game_over, this);
+        dispatcher.add_dispatch(EventType.EVENT_GAME_OVER_3, this.on_game_over, this);
     },
 
     init(): void {

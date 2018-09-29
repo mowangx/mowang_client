@@ -395,8 +395,8 @@
     "_color": {
       "__type__": "cc.Color",
       "r": 250,
-      "g": 8,
-      "b": 211,
+      "g": 250,
+      "b": 8,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -469,8 +469,8 @@
     "_color": {
       "__type__": "cc.Color",
       "r": 250,
-      "g": 8,
-      "b": 211,
+      "g": 250,
+      "b": 8,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -15143,6 +15143,9 @@
     "bomb_node": {
       "__uuid__": "c41596b9-4438-4175-8453-0391231ccd40"
     },
+    "num_label": {
+      "__uuid__": "660e896f-34ce-4a9e-a42b-1626cc1257e4"
+    },
     "click_x": 0,
     "click_y": 0,
     "lvl": 0,
@@ -16526,7 +16529,8 @@
     "_enabled": true,
     "player": {
       "__id__": 5
-    }
+    },
+    "game_over_flag": false
   },
   {
     "__type__": "cc.Widget",
