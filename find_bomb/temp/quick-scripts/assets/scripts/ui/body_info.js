@@ -125,23 +125,138 @@ var body_info = /** @class */ (function (_super) {
         }
     };
     body_info.prototype.init_bomb_list = function () {
-        var coln_num = this.get_coln_num();
-        var max_index = coln_num * coln_num - 1;
-        var bomb_num = this.get_random_bomb_num() + this.lvl;
-        for (var i = 0; i < bomb_num; ++i) {
-            var idx = 0;
-            for (var i_1 = 0; i_1 < coln_num; ++i_1) {
-                idx = this.get_random_range(0, max_index);
+        if (this.lvl == 1) {
+            this.init_bombo_list_1();
+        }
+        else if (this.lvl == 2) {
+            this.init_bomb_list_2();
+        }
+        else if (this.lvl == 3) {
+            this.init_bomb_list_3();
+        }
+        else if (this.lvl == 4) {
+            this.init_bomb_list_4();
+        }
+        else {
+            this.init_bomb_list_5();
+        }
+        // let coln_num = this.get_coln_num();
+        // let max_index = coln_num * coln_num - 1;
+        // let bomb_num = this.get_random_bomb_num() + this.lvl;
+        // for (let i=0; i<bomb_num; ++i) {
+        //     let idx = 0;
+        //     for (let i=0; i<coln_num; ++i) {
+        //         idx = this.get_random_range(0, max_index);
+        //         if (this.bomb_list.indexOf(idx) >= 0) {
+        //             continue;
+        //         } 
+        //         else {
+        //             break;
+        //         }
+        //     }
+        //     this.bomb_list[i] = idx;
+        // }
+        // this.optimizate_bomb_list(max_index);
+    };
+    body_info.prototype.init_bombo_list_1 = function () {
+        var start_indexes = [0, 3, 10];
+        var j_ary = [3, 2, 3];
+        for (var i = 0; i < start_indexes.length; ++i) {
+            var random_idx = 0;
+            if (i == 0) {
+                random_idx = this.get_random_range(0, 5);
+            }
+            else if (i == 1) {
+                random_idx = this.get_random_range(0, 9);
+            }
+            else {
+                random_idx = this.get_random_range(0, 8);
+            }
+            this.bomb_list[i] = this.get_real_random_idx(start_indexes[i], random_idx, j_ary[i], 5);
+        }
+    };
+    body_info.prototype.init_bomb_list_2 = function () {
+        var start_indexes = [0, 2, 4, 18, 20, 22];
+        for (var i = 0; i < start_indexes.length; ++i) {
+            var random_idx = this.get_random_range(0, 5);
+            this.bomb_list[i] = this.get_real_random_idx(start_indexes[i], random_idx, 2, 6);
+        }
+    };
+    body_info.prototype.init_bomb_list_3 = function () {
+        var start_indexes = [0, 3, 5, 14, 24, 28, 30, 39];
+        var j_ary = [3, 2, 2, 3, 4, 2, 2, 3];
+        for (var i = 0; i < start_indexes.length; ++i) {
+            var random_idx = this.get_random_range(0, i == 4 ? 6 : 5);
+            if (i == 4) {
+                var random_idx_1 = this.get_random_range(0, 6);
+                var idx = this.get_real_random_idx(start_indexes[i], random_idx_1, j_ary[i], 7);
+                this.bomb_list[i] = random_idx_1 > 3 ? (idx + 1) : idx;
+            }
+            else {
+                var random_idx_2 = this.get_random_range(0, 5);
+                this.bomb_list[i] = this.get_real_random_idx(start_indexes[i], random_idx_2, j_ary[i], 7);
+            }
+        }
+    };
+    body_info.prototype.init_bomb_list_4 = function () {
+        var start_indexes = [0, 2, 6, 18, 32, 36, 38, 48];
+        var random_indexes = [];
+        var j_ary = [2, 4, 2, 4, 4, 2, 2, 4];
+        for (var i = 0; i < 20; ++i) {
+            var idx = this.get_random_range(0, 7);
+            if (random_indexes.indexOf(idx) >= 0) {
+                continue;
+            }
+            random_indexes.push(idx);
+            if (random_indexes.length > 3) {
+                break;
+            }
+        }
+        var k = 0;
+        for (var i = 0; i < start_indexes.length; ++i) {
+            var len = random_indexes.indexOf(i) >= 0 ? 2 : 1;
+            var cur_len = 0;
+            for (var j = 0; j < 5; ++j) {
+                var random_idx = this.get_random_range(0, 7);
+                var idx = this.get_real_random_idx(start_indexes[i], random_idx, j_ary[i], 8);
                 if (this.bomb_list.indexOf(idx) >= 0) {
                     continue;
                 }
-                else {
+                this.bomb_list[k] = idx;
+                k += 1;
+                cur_len += 1;
+                if (cur_len >= len) {
                     break;
                 }
             }
-            this.bomb_list[i] = idx;
         }
-        this.optimizate_bomb_list(max_index);
+    };
+    body_info.prototype.init_bomb_list_5 = function () {
+        var start_indexes = [0, 5, 7, 18, 36, 38, 49, 67];
+        var j_ary = [5, 2, 2, 5, 2, 2, 5, 5];
+        var k = 0;
+        for (var i = 0; i < start_indexes.length; ++i) {
+            var cur_len = 0;
+            for (var j = 0; j < 5; ++j) {
+                var random_idx = this.get_random_range(0, i == 3 ? 10 : 9);
+                var idx = this.get_real_random_idx(start_indexes[i], random_idx, j_ary[i], 9);
+                if (i == 3 && random_idx == 10) {
+                    idx += 4;
+                }
+                if (this.bomb_list.indexOf(idx) >= 0) {
+                    continue;
+                }
+                this.bomb_list[k] = idx;
+                k += 1;
+                cur_len += 1;
+                if (cur_len > 1) {
+                    break;
+                }
+            }
+        }
+    };
+    body_info.prototype.get_real_random_idx = function (start_index, random_idx, j, coln) {
+        return start_index + Math.floor(random_idx / j) * coln + random_idx % j;
     };
     body_info.prototype.get_random_bomb_num = function () {
         var min_num = 0;

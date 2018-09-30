@@ -12,6 +12,7 @@ const {ccclass, property} = cc._decorator;
 
 import dispatcher from "./dispatcher"
 import {EventType} from "./consts"
+import wx_mgr from "./wx_wrapper"
 
 @ccclass
 export class client extends cc.Component {
@@ -26,6 +27,7 @@ export class client extends cc.Component {
     },
 
     init(): void {
+        wx_mgr.init();
     },
 
     on_game_over(result: boolean, lvl: number, play_time: number) : void {

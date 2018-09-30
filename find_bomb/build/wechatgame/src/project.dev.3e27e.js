@@ -121,19 +121,84 @@ require = function e(t, n, r) {
         }
       };
       body_info.prototype.init_bomb_list = function() {
-        var coln_num = this.get_coln_num();
-        var max_index = coln_num * coln_num - 1;
-        var bomb_num = this.get_random_bomb_num() + this.lvl;
-        for (var i = 0; i < bomb_num; ++i) {
-          var idx = 0;
-          for (var i_1 = 0; i_1 < coln_num; ++i_1) {
-            idx = this.get_random_range(0, max_index);
-            if (this.bomb_list.indexOf(idx) >= 0) continue;
-            break;
-          }
-          this.bomb_list[i] = idx;
+        1 == this.lvl ? this.init_bombo_list_1() : 2 == this.lvl ? this.init_bomb_list_2() : 3 == this.lvl ? this.init_bomb_list_3() : 4 == this.lvl ? this.init_bomb_list_4() : this.init_bomb_list_5();
+      };
+      body_info.prototype.init_bombo_list_1 = function() {
+        var start_indexes = [ 0, 3, 10 ];
+        var j_ary = [ 3, 2, 3 ];
+        for (var i = 0; i < start_indexes.length; ++i) {
+          var random_idx = 0;
+          random_idx = 0 == i ? this.get_random_range(0, 5) : 1 == i ? this.get_random_range(0, 9) : this.get_random_range(0, 8);
+          this.bomb_list[i] = this.get_real_random_idx(start_indexes[i], random_idx, j_ary[i], 5);
         }
-        this.optimizate_bomb_list(max_index);
+      };
+      body_info.prototype.init_bomb_list_2 = function() {
+        var start_indexes = [ 0, 2, 4, 18, 20, 22 ];
+        for (var i = 0; i < start_indexes.length; ++i) {
+          var random_idx = this.get_random_range(0, 5);
+          this.bomb_list[i] = this.get_real_random_idx(start_indexes[i], random_idx, 2, 6);
+        }
+      };
+      body_info.prototype.init_bomb_list_3 = function() {
+        var start_indexes = [ 0, 3, 5, 14, 24, 28, 30, 39 ];
+        var j_ary = [ 3, 2, 2, 3, 4, 2, 2, 3 ];
+        for (var i = 0; i < start_indexes.length; ++i) {
+          var random_idx = this.get_random_range(0, 4 == i ? 6 : 5);
+          if (4 == i) {
+            var random_idx_1 = this.get_random_range(0, 6);
+            var idx = this.get_real_random_idx(start_indexes[i], random_idx_1, j_ary[i], 7);
+            this.bomb_list[i] = random_idx_1 > 3 ? idx + 1 : idx;
+          } else {
+            var random_idx_2 = this.get_random_range(0, 5);
+            this.bomb_list[i] = this.get_real_random_idx(start_indexes[i], random_idx_2, j_ary[i], 7);
+          }
+        }
+      };
+      body_info.prototype.init_bomb_list_4 = function() {
+        var start_indexes = [ 0, 2, 6, 18, 32, 36, 38, 48 ];
+        var random_indexes = [];
+        var j_ary = [ 2, 4, 2, 4, 4, 2, 2, 4 ];
+        for (var i = 0; i < 20; ++i) {
+          var idx = this.get_random_range(0, 7);
+          if (random_indexes.indexOf(idx) >= 0) continue;
+          random_indexes.push(idx);
+          if (random_indexes.length > 3) break;
+        }
+        var k = 0;
+        for (var i = 0; i < start_indexes.length; ++i) {
+          var len = random_indexes.indexOf(i) >= 0 ? 2 : 1;
+          var cur_len = 0;
+          for (var j = 0; j < 5; ++j) {
+            var random_idx = this.get_random_range(0, 7);
+            var idx = this.get_real_random_idx(start_indexes[i], random_idx, j_ary[i], 8);
+            if (this.bomb_list.indexOf(idx) >= 0) continue;
+            this.bomb_list[k] = idx;
+            k += 1;
+            cur_len += 1;
+            if (cur_len >= len) break;
+          }
+        }
+      };
+      body_info.prototype.init_bomb_list_5 = function() {
+        var start_indexes = [ 0, 5, 7, 18, 36, 38, 49, 67 ];
+        var j_ary = [ 5, 2, 2, 5, 2, 2, 5, 5 ];
+        var k = 0;
+        for (var i = 0; i < start_indexes.length; ++i) {
+          var cur_len = 0;
+          for (var j = 0; j < 5; ++j) {
+            var random_idx = this.get_random_range(0, 3 == i ? 10 : 9);
+            var idx = this.get_real_random_idx(start_indexes[i], random_idx, j_ary[i], 9);
+            3 == i && 10 == random_idx && (idx += 4);
+            if (this.bomb_list.indexOf(idx) >= 0) continue;
+            this.bomb_list[k] = idx;
+            k += 1;
+            cur_len += 1;
+            if (cur_len > 1) break;
+          }
+        }
+      };
+      body_info.prototype.get_real_random_idx = function(start_index, random_idx, j, coln) {
+        return start_index + Math.floor(random_idx / j) * coln + random_idx % j;
       };
       body_info.prototype.get_random_bomb_num = function() {
         var min_num = 0;
@@ -419,6 +484,7 @@ require = function e(t, n, r) {
     var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
     var dispatcher_1 = require("./dispatcher");
     var consts_1 = require("./consts");
+    var wx_wrapper_1 = require("./wx_wrapper");
     var client = function(_super) {
       __extends(client, _super);
       function client() {
@@ -429,7 +495,9 @@ require = function e(t, n, r) {
         dispatcher_1.default.add_dispatch(consts_1.EventType.EVENT_GAME_OVER_3, _this.on_game_over, _this);
         return _this;
       }
-      client.prototype.init = function() {};
+      client.prototype.init = function() {
+        wx_wrapper_1.default.init();
+      };
       client.prototype.on_game_over = function(result, lvl, play_time) {
         this.result = result;
         this.lvl = lvl;
@@ -453,7 +521,8 @@ require = function e(t, n, r) {
     cc._RF.pop();
   }, {
     "./consts": "consts",
-    "./dispatcher": "dispatcher"
+    "./dispatcher": "dispatcher",
+    "./wx_wrapper": "wx_wrapper"
   } ],
   consts: [ function(require, module, exports) {
     "use strict";
@@ -758,5 +827,90 @@ require = function e(t, n, r) {
   }, {
     "./../logic/consts": "consts",
     "./../logic/dispatcher": "dispatcher"
-  } ]
-}, {}, [ "client", "consts", "dispatcher", "body_info", "game", "head_info", "player", "result", "tail_info" ]);
+  } ],
+  wx_wrapper: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "c96d2kgnOdJ/JeS+nta0Rkk", "wx_wrapper");
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var wx_wrapper = function(_super) {
+      __extends(wx_wrapper, _super);
+      function wx_wrapper() {
+        return _super.call(this) || this;
+      }
+      wx_wrapper.prototype.init = function() {
+        var self = this;
+        wx.login({
+          success: function() {
+            self.on_login_success();
+          }
+        });
+      };
+      wx_wrapper.prototype.on_login_success = function() {
+        var self = this;
+        wx.getUserInfo({
+          success: function(res) {
+            self.on_get_user_info_success(res);
+          },
+          fail: function(res) {
+            self.on_get_user_info_failed(res);
+          }
+        });
+        wx.onShareAppMessage(function() {
+          return {
+            title: "扫雷",
+            imageUrl: "res/raw-assets/resource/texture/share_img.png"
+          };
+        });
+        console.log("on login success");
+      };
+      wx_wrapper.prototype.on_get_user_info_success = function(res) {
+        var self = this;
+        wx.showShareMenu({
+          success: function() {
+            self.on_share_success();
+          },
+          fail: function() {
+            self.on_share_failed();
+          },
+          complete: function() {
+            self.on_share_complete();
+          }
+        });
+        console.log("get user info success");
+      };
+      wx_wrapper.prototype.on_get_user_info_failed = function(res) {
+        var self = this;
+        wx.showShareMenu({
+          success: function() {
+            self.on_share_success();
+          },
+          fail: function() {
+            self.on_share_failed();
+          },
+          complete: function() {
+            self.on_share_complete();
+          }
+        });
+        console.log("get user info failed!");
+      };
+      wx_wrapper.prototype.on_share_success = function() {
+        console.log("on share success");
+      };
+      wx_wrapper.prototype.on_share_failed = function() {
+        console.log("on share failed");
+      };
+      wx_wrapper.prototype.on_share_complete = function() {
+        console.log("on share complete");
+      };
+      wx_wrapper = __decorate([ ccclass ], wx_wrapper);
+      return wx_wrapper;
+    }(cc.Component);
+    exports.wx_wrapper = wx_wrapper;
+    var wx_mgr = new wx_wrapper();
+    exports.default = wx_mgr;
+    cc._RF.pop();
+  }, {} ]
+}, {}, [ "client", "consts", "dispatcher", "wx_wrapper", "body_info", "game", "head_info", "player", "result", "tail_info" ]);

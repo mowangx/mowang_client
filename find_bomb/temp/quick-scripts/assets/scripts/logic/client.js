@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var dispatcher_1 = require("./dispatcher");
 var consts_1 = require("./consts");
+var wx_wrapper_1 = require("./wx_wrapper");
 var client = /** @class */ (function (_super) {
     __extends(client, _super);
     function client() {
@@ -26,6 +27,7 @@ var client = /** @class */ (function (_super) {
         return _this;
     }
     client.prototype.init = function () {
+        wx_wrapper_1.default.init();
     };
     client.prototype.on_game_over = function (result, lvl, play_time) {
         this.result = result;
