@@ -11,6 +11,8 @@
 const {ccclass, property} = cc._decorator;
 
 import client_mgr from "./../logic/client"
+import dispatcher from "./../logic/dispatcher"
+import {EventType} from "./../logic/consts"
 
 @ccclass
 export default class result extends cc.Component {
@@ -21,23 +23,18 @@ export default class result extends cc.Component {
     @property(cc.Node)
     rank_node: cc.Node = null;
 
-    //private tex: cc.Texture2D = null;
-
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {},
 
     start () {
-        //this.tex = new cc.Texture2D();
-        this._show = cc.moveTo(0.5, 0, 50);
     },
 
     // update (dt) {
-    //     this.updaet_sub_domain_canvas();
     // },
 
     on_click_continue(): void {
-        cc.director.loadScene("game");
+        dispatcher.dispatch(EventType.EVENT_START_GAME);
     },
 
     on_click_share(): void {
@@ -59,17 +56,6 @@ export default class result extends cc.Component {
             play_time: client_mgr.get_play_time()
         });
         
-        this.rank_node.runAction(this._show);
+        this.rank_node.runAction(cc.moveTo(0.5, 0.5, 0));
     },
-
-    // updaet_sub_domain_canvas (): void {
-    //     // if (!this.tex) {
-    //     //     return;
-    //     // }
-    //     // var openDataContext = wx.getOpenDataContext();
-    //     // var sharedCanvas = openDataContext.canvas;
-    //     // this.tex.initWithElement(sharedCanvas);
-    //     // this.tex.handleLoadedTexture();
-    //     // this.rank_node.spriteFrame = new cc.SpriteFrame(this.tex);
-    // },
 }

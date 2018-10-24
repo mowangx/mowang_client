@@ -39,14 +39,13 @@ export default class head_info extends cc.Component {
     // onLoad () {},
 
     start () {
-        this.open_btn.interactable = false;
-        this.flag_btn.interactable = true;
         dispatcher.add_dispatch(EventType.EVENT_GAME_OVER, this.on_game_over, this)
+        dispatcher.add_dispatch(EventType.EVENT_START_GAME, this.on_start_game, this);
     },
 
     // update (dt) {},
 
-    init_head(lvl: number): void {
+    init_head(): void {
         this.play_time = 0;
         this.unschedule(this.on_1_minute_timer);
         this.schedule(this.on_1_minute_timer, 1);
@@ -110,7 +109,22 @@ export default class head_info extends cc.Component {
     },
 
     on_game_over(result: boolean) {
+        this.unschedule(this.on_1_minute_timer);
+        this.open_btn.node.active = false;
+        this.flag_btn.node.active = false;
         client_mgr.set_result(result);
         client_mgr.set_play_time(this.play_time);
+    },
+
+    on_start_game(): void {
+        this.open_btn.node.active = true;
+        this.flag_btn.node.active = true;
+        if (this.open_btn.interactable) {
+            this.open_btn.interactable = false;
+        }
+        if (!this.flag_btn.interactable) {
+            this.flag_btn.interactable = true;
+        }
+        this.init_head();
     },
 }

@@ -163,6 +163,7 @@ export default class body_info extends cc.Component {
             this.bomb_node_list[i] = cc.instantiate(this.bomb_node);
             this.grid_status[i] = false;
         }
+        dispatcher.add_dispatch(EventType.EVENT_START_GAME, this.on_start_game, this);
         dispatcher.add_dispatch(EventType.EVENT_CLICK_OPEN_BTN, this.on_change_open, this);
         dispatcher.add_dispatch(EventType.EVENT_CLICK_FLAG_BTN, this.on_change_flag, this)
         this.result_node = cc.instantiate(this.result_panel);
@@ -308,7 +309,7 @@ export default class body_info extends cc.Component {
                 this.bomb_list[i] = this.get_real_random_idx(start_indexes[i], random_idx, j_ary[i], 7);
             }
         }
-    }
+    },
 
     init_bomb_list_4(): void {
         let start_indexes = [0, 2, 6, 18, 32, 36, 38, 48];
@@ -342,7 +343,7 @@ export default class body_info extends cc.Component {
                 }
             }
         }
-    }
+    },
 
     init_bomb_list_5(): void {
         let start_indexes = [0, 5, 7, 18, 36, 38, 49, 67];
@@ -367,11 +368,11 @@ export default class body_info extends cc.Component {
                 }
             }
         }
-    }
+    },
 
     get_real_random_idx(start_index: number, random_idx: number, j: number, coln: number): number {
         return start_index + Math.floor(random_idx / j) * coln + random_idx % j;
-    }
+    },
 
     get_random_range(min: number, max: number): number {  
         var Range = max - min;  
@@ -402,7 +403,7 @@ export default class body_info extends cc.Component {
         else {
             return this.bomb_lvl_5;
         }
-    }
+    },
 
     get_grid_nodes(): Array<cc.Node> {
         if (client_mgr.get_lvl() == 1) {
@@ -420,12 +421,12 @@ export default class body_info extends cc.Component {
         else {
             return this.grid_lvl_5;
         }
-    }
+    },
 
     get_grid_node(idx: number): cc.Node {
         let grids = this.get_grid_nodes();
         return grids[idx];
-    }
+    },
 
     check_click(): void {
         let grids = this.get_grid_nodes();
@@ -685,6 +686,11 @@ export default class body_info extends cc.Component {
 
         this.unschedule(this.show_grid_delay);
         this.on_game_over(false);
+     },
+
+     on_start_game(): void {
+        this.result_node.parent = this.hide_node;
+        this.init_body();
      },
 
      on_change_open(): void {
