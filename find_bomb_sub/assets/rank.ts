@@ -13,9 +13,7 @@ const {ccclass, property} = cc._decorator;
 import user_info from "./user_info"
 
 @ccclass
-export default class rank extends cc.Component {
-
-    // LIFE-CYCLE CALLBACKS:
+export default class sub_game extends cc.Component {
 
     @property(cc.Sprite)
     user_icon_1: cc.Sprite = null;
@@ -28,25 +26,29 @@ export default class rank extends cc.Component {
 
     @property(cc.Label)
     rank_label: cc.Label = null;
-    
+
     private user_info_list: Array<user_info> = [];
 
     // onLoad () {}
 
     start () {
+        console.log("start load!!!!!!!")
         let self = this;
         wx.onMessage(data => {
-            let key_name = 't_' + data.lvl;
-            let play_time = '' + data.play_time;
-            console.log('set user cloud storage:', play_time)
-            wx.setUserCloudStorage({
-                KVDataList: [{
-                    key: key_name,
-                    value: play_time
-                }]
-            });
-            self.show_rank(data.lvl);
+            if (data && data.play_time) {
+                let key_name = 't_' + data.lvl;
+                let play_time = '' + data.play_time;
+                console.log('set user cloud storage 222:', play_time)
+                wx.setUserCloudStorage({
+                    KVDataList: [{
+                        key: key_name,
+                        value: play_time
+                    }]
+                });
+                //self.show_rank(data.lvl);
+            }
         });
+        self.show_rank(1);
     },
 
     // update (dt) {}
@@ -106,7 +108,7 @@ export default class rank extends cc.Component {
             return;
         }
         rank_desc += user_info_1.get_user_name() +  " " + user_info_1.get_playt_time();
-        this.show_user_info(user_info_1, this.user_icon_1);
+        this.show_user_info(user_info_1, 1);
         let user_info_2 = null;
         for (let i=0; i<this.user_info_list.length; ++i) {
             let avatar_info = this.user_info_list[i];
@@ -123,7 +125,7 @@ export default class rank extends cc.Component {
             return;
         }
         rank_desc += "\r\n" + user_info_2.get_user_name() +  " " + user_info_2.get_playt_time();
-        this.show_user_info(user_info_2, this.user_icon_2);
+        this.show_user_info(user_info_2, 2);
         let user_info_3 = null;
         for (let i=0; i<this.user_info_list.length; ++i) {
             let avatar_info = this.user_info_list[i];
@@ -144,21 +146,33 @@ export default class rank extends cc.Component {
             return;
         }
         rank_desc += "\r\n" + user_info_3.get_user_name() +  " " + user_info_3.get_playt_time();
-        this.show_user_info(user_info_3, this.user_icon_3);
+        this.show_user_info(user_info_3, 3);
         this.rank_label.string = rank_desc;
     },
 
-    show_user_info(user, user_icon): void {
+    show_user_info(user, idx): void {
         if (!user) {
+            console.log("show user info failed!!!!");
             return;
         }
-        console.log(user.get_user_name() + '\'s info has been getten.');
+        console.log(user.get_user_name() + '\'s info has been getten.', idx,  user.get_avatar_url());
+        let user_icon = null;
+        if (idx == 1) {
+            user_icon = this.user_icon_1;
+        }
+        else if (idx == 2) {
+            user_icon = this.user_icon_2;
+        }
+        else {
+            user_icon = this.user_icon_3;
+        }
         cc.loader.load({
             url: user.get_avatar_url(), 
             type: 'png'
         }, (err, texture) => {
             if (err) console.error(err);
             user_icon.spriteFrame = new cc.SpriteFrame(texture);
+            console.log("load user icon success");
         });
     },
 }
