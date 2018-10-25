@@ -34,7 +34,7 @@ export default class result extends cc.Component {
     // },
 
     on_click_continue(): void {
-        dispatcher.dispatch(EventType.EVENT_START_GAME);
+        cc.director.loadScene("game");
     },
 
     on_click_share(): void {
@@ -56,6 +56,6 @@ export default class result extends cc.Component {
             play_time: client_mgr.get_play_time()
         });
         
-        this.rank_node.runAction(cc.moveTo(0.5, 0.5, 0));
+        this.rank_node.runAction(cc.moveTo(0.5, 0.5, -30));
     },
 }

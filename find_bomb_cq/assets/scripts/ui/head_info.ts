@@ -34,18 +34,22 @@ export default class head_info extends cc.Component {
     @property(cc.Button)
     flag_btn: cc.Button = null;
 
+    private game_over: boolean = null;
+
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {},
 
     start () {
         dispatcher.add_dispatch(EventType.EVENT_GAME_OVER, this.on_game_over, this)
-        dispatcher.add_dispatch(EventType.EVENT_START_GAME, this.on_start_game, this);
+        this.init_head();
     },
 
     // update (dt) {},
 
     init_head(): void {
+        console.log("init head info 2222222");
+        this.game_over = false;
         this.play_time = 0;
         this.unschedule(this.on_1_minute_timer);
         this.schedule(this.on_1_minute_timer, 1);
@@ -93,38 +97,34 @@ export default class head_info extends cc.Component {
     },
 
     on_click_back_btn(): void {
+        if (this.game_over) {
+            return;
+        }
         cc.director.loadScene("start");
     },
 
     on_click_open_btn(): void {
+        if (this.game_over) {
+            return;
+        }
         this.open_btn.interactable = false;
         this.flag_btn.interactable = true;
         dispatcher.dispatch(EventType.EVENT_CLICK_OPEN_BTN);
     },
 
     on_cick_flag_btn(): void {
+        if (this.game_over) {
+            return;
+        }
         this.open_btn.interactable = true;
         this.flag_btn.interactable = false;
         dispatcher.dispatch(EventType.EVENT_CLICK_FLAG_BTN);
     },
 
     on_game_over(result: boolean) {
+        this.game_over = true;
         this.unschedule(this.on_1_minute_timer);
-        this.open_btn.node.active = false;
-        this.flag_btn.node.active = false;
         client_mgr.set_result(result);
         client_mgr.set_play_time(this.play_time);
-    },
-
-    on_start_game(): void {
-        this.open_btn.node.active = true;
-        this.flag_btn.node.active = true;
-        if (this.open_btn.interactable) {
-            this.open_btn.interactable = false;
-        }
-        if (!this.flag_btn.interactable) {
-            this.flag_btn.interactable = true;
-        }
-        this.init_head();
     },
 }

@@ -33,14 +33,11 @@ export default class body_info extends cc.Component {
     @property(cc.Node)
     bomb_lvl_5: cc.Node = null;
 
-    @property(cc.Node)
-    hide_node: cc.Node = null;
-    
-    @property([cc.Node])
-    grid_list: Array<cc.Node> = [];
+    private hide_node: cc.Node = null;
+    private grid_list: Array<cc.Node> = [];
 
-    @property([cc.Node])
-    bomb_node_list: Array<cc.Node> = [];
+    private bomb_node_list: Array<cc.Node> = [];
+    private flag_node_list: Array<cc.Node> = [];
 
     @property([cc.Node])
     grid_lvl_1: Array<cc.Node> = [];
@@ -64,6 +61,9 @@ export default class body_info extends cc.Component {
     bomb_node: cc.Prefab = null;
 
     @property(cc.Prefab)
+    flag_node: cc.Prefab = null;
+
+    @property(cc.Prefab)
     num_0: cc.Prefab = null;
 
     @property(cc.Prefab)
@@ -84,53 +84,39 @@ export default class body_info extends cc.Component {
     @property(cc.Prefab)
     num_6: cc.Prefab = null;
 
-    @property(Number)
-    click_x: Number = 0;
+    @property(cc.Node)
+    bg_info: cc.Node = null;
 
-    @property(Number)
-    click_y: Number = 0;
+    @property(cc.Prefab)
+    bg_panel: cc.Prefab = null;
 
-    @property([Number])
-    bomb_list: Array<Number> = [];
+    private bg_node: cc.Node = null;
 
-    @property([Boolean])
-    grid_status: Array<boolean> = [];
+    
+    private click_x: Number = 0;
+    private click_y: Number = 0;
 
-    @property(Boolean)
-    tip_flag: boolean = false;
+    private bomb_list: Array<Number> = [];
 
-    @property(Boolean)
-    game_over_flag = false;
+    private grid_status: Array<boolean> = [];
+    private tip_flag: boolean = false;
+    private game_over_flag = false;
 
     @property(cc.Node)
     result_info: cc.Node = null;
 
-    @property(cc.Node)
-    result_node: cc.Node = null;
+    private result_node: cc.Node = null;
 
     @property(cc.Prefab)
     result_panel: cc.Prefab = null;
 
-    @property([cc.Node])
-    num_0_pool: Array<cc.Node> = [];
-
-    @property([cc.Node])
-    num_1_pool: Array<cc.Node> = [];
-
-    @property([cc.Node])
-    num_2_pool: Array<cc.Node> = [];
-
-    @property([cc.Node])
-    num_3_pool: Array<cc.Node> = [];
-
-    @property([cc.Node])
-    num_4_pool: Array<cc.Node> = [];
-
-    @property([cc.Node])
-    num_5_pool: Array<cc.Node> = [];
-
-    @property([cc.Node])
-    num_6_pool: Array<cc.Node> = [];
+    private num_0_pool: Array<cc.Node> = [];
+    private num_1_pool: Array<cc.Node> = [];
+    private num_2_pool: Array<cc.Node> = [];
+    private num_3_pool: Array<cc.Node> = [];
+    private num_4_pool: Array<cc.Node> = [];
+    private num_5_pool: Array<cc.Node> = [];
+    private num_6_pool: Array<cc.Node> = [];
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -161,17 +147,19 @@ export default class body_info extends cc.Component {
             this.num_5_pool[i] = cc.instantiate(this.num_5);
             this.num_6_pool[i] = cc.instantiate(this.num_6);
             this.bomb_node_list[i] = cc.instantiate(this.bomb_node);
+            this.flag_node_list[i] = cc.instantiate(this.flag_node);
             this.grid_status[i] = false;
         }
-        dispatcher.add_dispatch(EventType.EVENT_START_GAME, this.on_start_game, this);
         dispatcher.add_dispatch(EventType.EVENT_CLICK_OPEN_BTN, this.on_change_open, this);
         dispatcher.add_dispatch(EventType.EVENT_CLICK_FLAG_BTN, this.on_change_flag, this)
         this.result_node = cc.instantiate(this.result_panel);
+        this.init_body();
     },
 
     // update (dt) {},
 
     init_body(): void {
+        console.log("init body info 33333333");
         this.hide_all();
         this.game_over_flag = false;
         this.tip_flag = false;
@@ -228,6 +216,10 @@ export default class body_info extends cc.Component {
         }
         for (let i=0; i<this.bomb_node_list.length; ++i) {
             let child_node = this.bomb_node_list[i];
+            child_node.parent = this.hide_node;
+        }
+        for (let i=0; i<this.flag_node_list.length; ++i) {
+            let child_node = this.flag_node_list[i];
             child_node.parent = this.hide_node;
         }
         for (let i=0; i<this.grid_status.length; ++i) {
@@ -484,7 +476,12 @@ export default class body_info extends cc.Component {
 
         let replace_node = null;
         if (this.tip_flag || this.bomb_list.indexOf(idx) >= 0) {
-            replace_node = this.bomb_node_list[idx];
+            if (this.tip_flag) {
+                replace_node = this.flag_node_list[idx];
+            }
+            else {
+                replace_node = this.bomb_node_list[idx];
+            }
 
             let grid = this.get_grid_node(idx);
             replace_node.parent = grid;
@@ -687,12 +684,6 @@ export default class body_info extends cc.Component {
         this.unschedule(this.show_grid_delay);
         this.on_game_over(false);
      },
-
-     on_start_game(): void {
-        this.result_node.parent = this.hide_node;
-        this.init_body();
-     },
-
      on_change_open(): void {
         this.tip_flag = false;
      },
@@ -702,6 +693,14 @@ export default class body_info extends cc.Component {
      },
 
     on_game_over(result: boolean): void {
+        client_mgr.set_game_over(true);
+
+        this.bg_node = cc.instantiate(this.bg_panel);
+        this.bg_node.parent = this.bg_info;
+        this.bg_node.setPosition(cc.v2(0, 0));
+        this.bg_node.width = this.bg_info.width;
+        this.bg_node.height = this.bg_info.height;
+
         dispatcher.dispatch(EventType.EVENT_GAME_OVER, result);
         this.result_node.parent = this.result_info;
         this.result_node.setPosition(cc.v2(0, 0));
