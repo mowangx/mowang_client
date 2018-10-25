@@ -107,7 +107,7 @@ export default class sub_game extends cc.Component {
             this.rank_label.string = rank_desc;
             return;
         }
-        rank_desc += user_info_1.get_user_name() +  " " + user_info_1.get_playt_time();
+        rank_desc += user_info_1.get_user_name() +  "   " + user_info_1.get_playt_time();
         this.show_user_info(user_info_1, 1);
         let user_info_2 = null;
         for (let i=0; i<this.user_info_list.length; ++i) {
@@ -124,7 +124,7 @@ export default class sub_game extends cc.Component {
             this.rank_label.string = rank_desc;
             return;
         }
-        rank_desc += "\r\n" + user_info_2.get_user_name() +  " " + user_info_2.get_playt_time();
+        rank_desc += "\r\n" + user_info_2.get_user_name() +  "   " + user_info_2.get_playt_time();
         this.show_user_info(user_info_2, 2);
         let user_info_3 = null;
         for (let i=0; i<this.user_info_list.length; ++i) {
@@ -145,7 +145,7 @@ export default class sub_game extends cc.Component {
             this.rank_label.string = rank_desc;
             return;
         }
-        rank_desc += "\r\n" + user_info_3.get_user_name() +  " " + user_info_3.get_playt_time();
+        rank_desc += "\r\n" + user_info_3.get_user_name() +  "   " + user_info_3.get_playt_time();
         this.show_user_info(user_info_3, 3);
         this.rank_label.string = rank_desc;
     },

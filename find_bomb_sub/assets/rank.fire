@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.8119047619047619,
-      "y": 0.8119047619047619,
+      "x": 0.41736525582109363,
+      "y": 0.41736525582109363,
       "z": 1
     },
     "_quat": {
@@ -102,8 +102,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 400,
-      "height": 420
+      "width": 420,
+      "height": 160
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -112,8 +112,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 200,
-      "y": 210,
+      "x": 210,
+      "y": 80,
       "z": 0
     },
     "_scale": {
@@ -763,7 +763,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 30,
+      "x": 60,
       "y": 85,
       "z": 0
     },
@@ -807,7 +807,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$horizontalAlign": 1,
+    "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 3,
@@ -823,8 +823,8 @@
     "_enabled": true,
     "_designResolution": {
       "__type__": "cc.Size",
-      "width": 400,
-      "height": 420
+      "width": 420,
+      "height": 160
     },
     "_fitWidth": true,
     "_fitHeight": true,
