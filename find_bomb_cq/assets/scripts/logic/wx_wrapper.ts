@@ -27,7 +27,7 @@ export class wx_wrapper extends cc.Component {
 
         wx.onShareAppMessage(function() {
             return {
-                "title": "扫雷战士",
+                "title": "扫雷传奇",
                 "imageUrl": "res/raw-assets/share.jpg",
             };
         });
@@ -41,6 +41,13 @@ export class wx_wrapper extends cc.Component {
             complete: function() {
                 self.on_share_complete();
             }
+        });
+    },
+
+    share_game(): void {
+        wx.shareAppMessage({
+            "title": "扫雷传奇,踩不到算你赢",
+            "imageUrl": "res/raw-assets/share.jpg",
         });
     },
 

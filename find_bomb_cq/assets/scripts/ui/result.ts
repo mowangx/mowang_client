@@ -38,7 +38,7 @@ export default class result extends cc.Component {
     },
 
     on_click_share(): void {
-        
+        client_mgr.share_game();
     },
 
     init_panel(result: boolean): void {

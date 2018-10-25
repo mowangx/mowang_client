@@ -693,8 +693,6 @@ export default class body_info extends cc.Component {
      },
 
     on_game_over(result: boolean): void {
-        client_mgr.set_game_over(true);
-
         this.bg_node = cc.instantiate(this.bg_panel);
         this.bg_node.parent = this.bg_info;
         this.bg_node.setPosition(cc.v2(0, 0));

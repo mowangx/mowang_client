@@ -18,7 +18,7 @@ export default class start_game extends cc.Component {
     // onLoad () {}
 
     start () {
-
+        client_mgr.init();
     }
 
     // update (dt) {}

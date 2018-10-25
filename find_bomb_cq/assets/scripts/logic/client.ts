@@ -32,6 +32,10 @@ export class client extends cc.Component {
         wx_mgr.init();
     },
 
+    share_game(): void {
+        wx_mgr.share_game();
+    }
+
     set_result(result: boolean): void {
         this.result = result;
     },
