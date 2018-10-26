@@ -44,7 +44,7 @@ export default class result extends cc.Component {
     init_panel(result: boolean): void {
         let content_desc = "";
         if (result) {
-            content_desc = "用时: " + client_mgr.get_play_time() + "秒";
+            content_desc = "呦，赢了，本次用时: " + client_mgr.get_play_time() + "秒";
         } 
         else {
             content_desc = "您踩到屎了\r\n祝您天天走狗屎运!";
