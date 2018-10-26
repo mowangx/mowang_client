@@ -44,17 +44,21 @@ export default class result extends cc.Component {
     init_panel(result: boolean): void {
         let content_desc = "";
         if (result) {
-            content_desc = "用时: " + client_mgr.get_play_time();
+            content_desc = "用时: " + client_mgr.get_play_time() + "秒";
         } 
         else {
             content_desc = "您踩到屎了\r\n祝您天天走狗屎运!";
         }
         this.content_label.string = content_desc;
+
+        let play_game_time = result ? client_mgr.get_play_time() : 0;
         
         wx.getOpenDataContext().postMessage({
             lvl: client_mgr.get_lvl(),
-            play_time: client_mgr.get_play_time()
+            play_time: play_game_time
         });
+
+        console.log("send play msg to sub contnet");
         
         this.rank_node.runAction(cc.moveTo(0.5, 0.5, -30));
     },
