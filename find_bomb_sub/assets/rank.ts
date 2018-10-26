@@ -27,53 +27,50 @@ export default class sub_game extends cc.Component {
     @property(cc.Label)
     rank_label: cc.Label = null;
 
+    private nick_name: string = '';
+    private play_time: number = 0;
+    private lvl: number = 1;
+
     private user_info_list: Array<user_info> = [];
 
     // onLoad () {}
 
     start () {
-        console.log("start load!!!!!!!")
+        console.log("start load sub content!!!!!!!");
         let self = this;
         wx.onMessage(data => {
-            if (data && data.play_time) {
-                let key_name = 't_' + data.lvl;
-                let play_time = '' + data.play_time;
-                console.log('set user cloud storage 222:', play_time)
-                wx.setUserCloudStorage({
-                    KVDataList: [{
-                        key: key_name,
-                        value: play_time
-                    }]
-                });
-                //self.show_rank(data.lvl);
+            console.log("recv main msg!!!!", data.lvl, data.play_time);
+            if (data && data.lvl) {
+                self.play_time = data.play_time;
+                self.lvl = data.lvl;
+                self.show_rank();
             }
         });
-        self.show_rank(1);
     },
 
     // update (dt) {}
 
-    show_rank(lvl: number): void {
+    show_rank(): void {
+        this.clear_rank()
+
         let self = this;
-        // wx.getUserInfo({
-        //     openIdList: ['selfOpenId'],
-        //     lang: 'zh_CN',
-        //     success: (res) => {
-        //         console.log('get user info success', res.data);
-        //         this.own_user_info = true;
-        //         let avatar_info = res.data[0];
-        //         self.add_user_info(avatar_info, lvl);
-        //     },
-        // });
+        wx.getUserInfo({
+            openIdList: ['selfOpenId'],
+            lang: 'zh_CN',
+            success: (res) => {
+                console.log('get user info success', res.data);
+                self.nick_name = res.data[0].nickName ? res.data[0].nickName : res.data[0].nickname;
+            },
+        });
 
         wx.getFriendCloudStorage({
-            keyList: ['t_' + lvl],
+            keyList: ['t_' + self.lvl],
             success: function (res) {
                 console.log('get friend cloud storage success', res.data)
                 for (let i = 0; i < res.data.length; i++) {
                     let avatar_info = res.data[i];
                     if (avatar_info) {
-                        self.add_user_info(avatar_info, lvl);
+                        self.add_user_info(avatar_info);
                     }
                 }
                 self.on_show_rank();
@@ -81,17 +78,51 @@ export default class sub_game extends cc.Component {
         });
     },
 
-    add_user_info(user, lvl: number): void {
+    clear_rank(): void {
+        console.log("clear rank");
+        this.user_info_list = [];
+        this.user_icon_1.spriteFrame = null;
+        this.user_icon_2.spriteFrame = null;
+        this.user_icon_3.spriteFrame = null;
+    },
+
+    add_user_info(user): void {
         let avatar_info = new user_info();
         avatar_info.set_avatar_url(user.avatarUrl);
-        avatar_info.set_user_name(user.nickName ? user.nickName : user.nickname);
-        let key_name = 't_' + lvl;
+        let nick_name = user.nickName ? user.nickName : user.nickname;
+        avatar_info.set_user_name(nick_name);
+        let key_name = 't_' + this.lvl;
         for (let i=0; i<user.KVDataList.length; ++i) {
-            if (user.KVDataList[i].key == key_name) {
-                avatar_info.set_play_time(Number(user.KVDataList[i].value));
+            let play_time = Number(user.KVDataList[i].value);
+            if (!play_time) {
+                play_time = 0;
+            }
+            avatar_info.set_play_time(play_time);
+            if (user.KVDataList[i].key != key_name) {
+                continue;
+            }
+            if (this.nick_name != nick_name) {
+                continue;
+            }
+            if (!play_time || (this.play_time > 0 && play_time > this.play_time)) {
+                play_time = this.play_time;
+                this.sync_user_info();
+                avatar_info.set_play_time(play_time);
             }
         }
         this.user_info_list.push(avatar_info);
+    },
+
+    sync_user_info(): void {
+        let key_name = 't_' + this.lvl;
+        let play_time = '' + this.play_time;
+        console.log('set user cloud storage 222:', play_time);
+        wx.setUserCloudStorage({
+            KVDataList: [{
+                key: key_name,
+                value: play_time
+            }]
+        });
     },
 
     on_show_rank(): void {
@@ -99,7 +130,8 @@ export default class sub_game extends cc.Component {
         let user_info_1 = null;
         for (let i=0; i<this.user_info_list.length; ++i) {
             let avatar_info = this.user_info_list[i];
-            if (!user_info_1 || avatar_info.get_playt_time() < user_info_1.get_playt_time()) {
+            if (!user_info_1 || user_info_1.get_play_time() < 1 || 
+            (avatar_info.get_play_time() < user_info_1.get_play_time() && avatar_info.get_play_time() > 0)) {
                 user_info_1 = avatar_info;
             }
         }
@@ -107,16 +139,16 @@ export default class sub_game extends cc.Component {
             this.rank_label.string = rank_desc;
             return;
         }
-        rank_desc += user_info_1.get_user_name() +  "   " + user_info_1.get_playt_time();
+        rank_desc += user_info_1.get_user_name() + this.get_play_time_desc(user_info_1);
         this.show_user_info(user_info_1, 1);
         let user_info_2 = null;
         for (let i=0; i<this.user_info_list.length; ++i) {
             let avatar_info = this.user_info_list[i];
-            if (avatar_info.get_user_name() == user_info_1.get_user_name() && 
-            avatar_info.get_avatar_url() == user_info_1.get_avatar_url()) {
+            if (avatar_info.get_user_name() == user_info_1.get_user_name()) {
                 continue;
             }
-            if (!user_info_2 || avatar_info.get_playt_time() < user_info_2.get_playt_time()) {
+            if (!user_info_2 || user_info_2.get_play_time() < 1 || 
+            (avatar_info.get_play_time() < user_info_2.get_play_time() && avatar_info.get_play_time() > 0)) {
                 user_info_2 = avatar_info;
             }
         }
@@ -124,20 +156,19 @@ export default class sub_game extends cc.Component {
             this.rank_label.string = rank_desc;
             return;
         }
-        rank_desc += "\r\n" + user_info_2.get_user_name() +  "   " + user_info_2.get_playt_time();
+        rank_desc += "\r\n" + user_info_2.get_user_name() + this.get_play_time_desc(user_info_2);
         this.show_user_info(user_info_2, 2);
         let user_info_3 = null;
         for (let i=0; i<this.user_info_list.length; ++i) {
             let avatar_info = this.user_info_list[i];
-            if (avatar_info.get_user_name() == user_info_1.get_user_name() && 
-            avatar_info.get_avatar_url() == user_info_1.get_avatar_url()) {
+            if (avatar_info.get_user_name() == user_info_1.get_user_name()) {
                 continue;
             }
-            if (avatar_info.get_user_name() == user_info_2.get_user_name() && 
-            avatar_info.get_avatar_url() == user_info_2.get_avatar_url()) {
+            if (avatar_info.get_user_name() == user_info_2.get_user_name()) {
                 continue;
             }
-            if (!user_info_3 || avatar_info.get_playt_time() < user_info_3.get_playt_time()) {
+            if (!user_info_3 || user_info_3.get_play_time() < 1 || 
+            (avatar_info.get_play_time() < user_info_3.get_play_time() && avatar_info.get_play_time() > 0)) {
                 user_info_3 = avatar_info;
             }
         }
@@ -145,9 +176,18 @@ export default class sub_game extends cc.Component {
             this.rank_label.string = rank_desc;
             return;
         }
-        rank_desc += "\r\n" + user_info_3.get_user_name() +  "   " + user_info_3.get_playt_time();
+        rank_desc += "\r\n" + user_info_3.get_user_name() + this.get_play_time_desc(user_info_3);
         this.show_user_info(user_info_3, 3);
         this.rank_label.string = rank_desc;
+    },
+
+    get_play_time_desc(avatar_info): string {
+        if (avatar_info.get_play_time() < 1) {
+            return "   踩屎了";
+        }
+        else {
+            return "   " + avatar_info.get_play_time() + "秒";
+        }
     },
 
     show_user_info(user, idx): void {

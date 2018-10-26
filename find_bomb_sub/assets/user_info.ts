@@ -37,7 +37,7 @@ export default class user_info extends cc.Component {
         this.play_time = time;
     },
 
-    get_playt_time(): number {
+    get_play_time(): number {
         return this.play_time;
     },
 }
