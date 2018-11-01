@@ -1,4 +1,12 @@
 {
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
   "appKey": "",
   "appSecret": "",
   "encryptJs": true,
@@ -29,19 +37,11 @@
   "title": "find_bomb_cq",
   "webOrientation": "auto",
   "wechatgame": {
-    "appid": "wx73030c7ed36ad90e",
+    "appid": "wxd97796b14725318d",
     "isSubdomain": false,
     "orientation": "portrait",
     "subContext": "find_bomb_sub"
   },
   "xxteaKey": "faf0b2aa-0bd4-4b",
-  "zipCompressJs": true,
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "pathPattern": "",
-    "scheme": "https",
-    "host": "",
-    "skipRecord": false,
-    "recordPath": ""
-  }
+  "zipCompressJs": true
 }
