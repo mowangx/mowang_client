@@ -25,6 +25,7 @@ export default class game extends cc.Component {
     },
 
     start () {
+        console.log("init game 00000000");
     },
 
     // update (dt) {},

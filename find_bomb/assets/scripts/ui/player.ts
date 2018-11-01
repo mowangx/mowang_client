@@ -27,15 +27,15 @@ export default class player extends cc.Component {
     },
 
     start () {
-        this.head_node = this.head_info.getComponent("head_info");
-        this.body_node = this.body_info.getComponent("body_info");
-        this.ready_start(client_mgr.get_lvl());
     },
 
     // update (dt) {},
 
-    ready_start(lvl: number): void {
-        this.head_node.init_head(lvl);
-        this.body_node.init_body(lvl);
-    },
+    // ready_start(): void {
+    //     console.log("init player 111111");
+    //     this.head_node = this.head_info.getComponent("head_info");
+    //     this.head_node.init_head();
+    //     this.body_node = this.body_info.getComponent("body_info");
+    //     this.body_node.init_body();
+    // },
 }

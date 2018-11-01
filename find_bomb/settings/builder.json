@@ -3,6 +3,7 @@
   "appSecret": "",
   "encryptJs": true,
   "excludeScenes": [],
+  "fb-instant-games": {},
   "includeAnySDK": false,
   "includeSDKBox": false,
   "inlineSpriteFrames": true,
@@ -20,14 +21,27 @@
   },
   "packageName": "org.cocos2d.find_bomb",
   "privateKey": "",
-  "renderMode": "0",
-  "startScene": "0aadb38e-5557-4073-b276-8f79118864d4",
-  "title": "find_bomb",
-  "webOrientation": "auto",
-  "wechatgame": {
-    "appid": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
     "orientation": "portrait"
   },
+  "startScene": "54511e6c-5caa-4eca-a9e1-4a8f2cba050a",
+  "title": "find_bomb_cq",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "wx73030c7ed36ad90e",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": "find_bomb_sub"
+  },
   "xxteaKey": "faf0b2aa-0bd4-4b",
-  "zipCompressJs": true
+  "zipCompressJs": true,
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "pathPattern": "",
+    "scheme": "https",
+    "host": "",
+    "skipRecord": false,
+    "recordPath": ""
+  }
 }

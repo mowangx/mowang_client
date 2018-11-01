@@ -14,53 +14,59 @@ const {ccclass, property} = cc._decorator;
 
 import dispatcher from "./../logic/dispatcher"
 import {EventType} from "./../logic/consts"
+import client_mgr from "./../logic/client"
 
 @ccclass
 export default class head_info extends cc.Component {
 
     @property(cc.Label)
-    lvl_label: cc.Label = null;
-
-    @property(cc.Label)
     time_label: cc.Label = null;
 
-    @property(Number)
-    play_time: number = 0;
+    private play_time: number = 0;
+
+    private lvl_desc: string = "";
+
+    @property(cc.Button)
+    flag_btn: cc.Button = null;
+
+    private game_over: boolean = null;
 
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {},
 
     start () {
-        dispatcher.add_dispatch(EventType.EVENT_GAME_OVER_2, this.on_game_over, this)
-
+        dispatcher.add_dispatch(EventType.EVENT_GAME_OVER, this.on_game_over, this)
+        this.init_head();
     },
 
     // update (dt) {},
 
-    init_head(lvl: number): void {
+    init_head(): void {
+        console.log("init head info 2222222");
+        this.game_over = false;
         this.play_time = 0;
         this.unschedule(this.on_1_minute_timer);
         this.schedule(this.on_1_minute_timer, 1);
-        let lvl_desc = ''
-        if (lvl == 1) {
-            lvl_desc = '入门';
-        }
-        else if (lvl == 2) {
-            lvl_desc = '精英';
-        }
-        else if (lvl == 3) {
-            lvl_desc = '大师';
-        }
-        else if (lvl == 4) {
-            lvl_desc = '史诗';
-        }
-        else if (lvl == 5) {
-            lvl_desc = '传奇';
-        }
-
-        this.lvl_label.string = '挑战:' + lvl_desc;
         this.time_label.string = '00:00';
+    },
+
+    get_lvl_desc(): string {
+        if (client_mgr.get_lvl() == 1) {
+            return "挑战入门\r\n";
+        }
+        else if (client_mgr.get_lvl() == 2) {
+            return "挑战精英\r\n";
+        }
+        else if (client_mgr.get_lvl() == 3) {
+            return "挑战大师\r\n";
+        }
+        else if (client_mgr.get_lvl() == 4) {
+            return "挑战史诗\r\n";
+        }
+        else {
+            return "挑战传奇\r\n";
+        }
     },
 
     on_1_minute_timer(): void {
@@ -85,11 +91,24 @@ export default class head_info extends cc.Component {
         }
     },
 
-    on_click_bomb_btn(): void {
-        dispatcher.dispatch(EventType.EVENT_CLICK_BOMB_BTN);
-    }
+    on_click_back_btn(): void {
+        if (this.game_over) {
+            return;
+        }
+        cc.director.loadScene("start");
+    },
 
-    on_game_over(result: boolean, lvl: number) {
-        dispatcher.dispatch(EventType.EVENT_GAME_OVER_3, result, lvl, this.play_time);
-    }
+    on_cick_flag_btn(): void {
+        if (this.game_over) {
+            return;
+        }
+        dispatcher.dispatch(EventType.EVENT_CLICK_FLAG_BTN);
+    },
+
+    on_game_over(result: boolean) {
+        this.game_over = true;
+        this.unschedule(this.on_1_minute_timer);
+        client_mgr.set_result(result);
+        client_mgr.set_play_time(this.play_time);
+    },
 }

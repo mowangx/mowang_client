@@ -18,12 +18,37 @@ export class wx_wrapper extends cc.Component {
     },
 
     init(): void {
-        var self = this
-        wx.login({
-            success: function () {
-                self.on_login_success();
+        var self = this;
+        // wx.login({
+        //     success: function () {
+        //         self.on_login_success();
+        //     }
+        // });
+
+        wx.onShareAppMessage(function() {
+            return {
+                "title": "扫雷传奇",
+                "imageUrl": "res/raw-assets/share.jpg",
+            };
+        });
+        wx.showShareMenu({
+            success: function() {
+                self.on_share_success();
+            },
+            fail: function() {
+                self.on_share_failed();
+            },
+            complete: function() {
+                self.on_share_complete();
             }
-        })
+        });
+    },
+
+    share_game(): void {
+        wx.shareAppMessage({
+            "title": "扫雷传奇,踩不到算你赢",
+            "imageUrl": "res/raw-assets/share.jpg",
+        });
     },
 
     on_login_success(): void {
@@ -38,11 +63,10 @@ export class wx_wrapper extends cc.Component {
         });
         wx.onShareAppMessage(function() {
             return {
-                "title": "扫雷",
-                "imageUrl": "res/raw-assets/resource/texture/share_img.png",
+                "title": "扫雷战士",
+                "imageUrl": "res/raw-assets/share.jpg",
             };
-        })
-        console.log("on login success");
+        });
     },
 
     on_get_user_info_success(res): void {
@@ -58,7 +82,6 @@ export class wx_wrapper extends cc.Component {
                 self.on_share_complete();
             }
         });
-        console.log("get user info success");
         // self.has_get_user_info = true;
         // var userInfo = res.userInfo
         // this.nickname = userInfo.nickName
@@ -84,7 +107,6 @@ export class wx_wrapper extends cc.Component {
                 self.on_share_complete();
             }
         });
-        console.log("get user info failed!")
     },
 
     on_share_success(): void {

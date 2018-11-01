@@ -11,68 +11,55 @@
 const {ccclass, property} = cc._decorator;
 
 import client_mgr from "./../logic/client"
+import dispatcher from "./../logic/dispatcher"
+import {EventType} from "./../logic/consts"
 
 @ccclass
 export default class result extends cc.Component {
 
-    @property(cc.Node)
-    result_info: cc.Node = null;
-
-    @property(cc.Node)
-    title_info: cc.Node = null;
-
-    @property(cc.Node)
-    content_info: cc.Node = null;
-
-    @property(cc.Node)
-    back_info: cc.Node = null;
-
     @property(cc.Label)
-    result_label: cc.Label = null;
+    content_label: cc.Label = null;
 
-    @property(cc.Label)
-    content_label_1: cc.Label = null;
-
-    @property(cc.Label)
-    content_label_2: cc.Label = null;
+    @property(cc.Node)
+    rank_node: cc.Node = null;
 
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {},
 
     start () {
-        this.result_label.string = "扫雷结果"
-        if (client_mgr.get_result()) {
-            this.content_label_1.string = "恭喜成功排除所有地雷, 通关时间: " + client_mgr.get_play_time();
-            if (client_mgr.get_lvl() < 5) {
-                this.content_label_2.string = "解锁下一等级: " + this.get_next_lvl_desc();
-            }
-        }
-        else {
-            this.content_label_1.string = "很遗憾, 敌人过于狡猾, 未能排除所有地雷";
-        }
     },
 
-    // update (dt) {},
+    // update (dt) {
+    // },
 
-    get_next_lvl_desc(): String {
-        let lvl = client_mgr.get_lvl();
-        if (lvl == 1) {
-            return "精英";
-        }
-        else if (lvl == 2) {
-            return "大师";
-        }
-        else if (lvl == 3) {
-            return "史诗";
-        }
-        else if (lvl == 4) {
-            return "传奇";
-        }
-        return "";
-    }
-
-    on_click_btn(): void {
+    on_click_continue(): void {
         cc.director.loadScene("game");
-    }
+    },
+
+    on_click_share(): void {
+        client_mgr.share_game();
+    },
+
+    init_panel(result: boolean): void {
+        let content_desc = "";
+        if (result) {
+            content_desc = "呦，赢了，本次用时: " + client_mgr.get_play_time() + "秒";
+        } 
+        else {
+            content_desc = "咦，踩雷了，我不服!";
+        }
+        this.content_label.string = content_desc;
+
+        let play_game_time = result ? client_mgr.get_play_time() : 0;
+        
+        wx.getOpenDataContext().postMessage({
+            lvl: client_mgr.get_lvl(),
+            play_time: play_game_time
+        });
+
+        console.log("send play msg to sub contnet");
+        
+        this.rank_node.runAction(cc.moveTo(0.5, 0.5, 0));
+    },
 }

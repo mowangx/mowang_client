@@ -13,6 +13,7 @@ const {ccclass, property} = cc._decorator;
 import dispatcher from "./../logic/dispatcher"
 import {EventType} from "./../logic/consts"
 import { rand } from "../../../creator";
+import client_mgr from "./../logic/client"
 
 @ccclass
 export default class body_info extends cc.Component {
@@ -32,14 +33,11 @@ export default class body_info extends cc.Component {
     @property(cc.Node)
     bomb_lvl_5: cc.Node = null;
 
-    @property(cc.Node)
-    hide_node: cc.Node = null;
-    
-    @property([cc.Node])
-    grid_list: Array<cc.Node> = [];
+    private hide_node: cc.Node = null;
+    private grid_list: Array<cc.Node> = [];
 
-    @property([cc.Node])
-    bomb_node_list: Array<cc.Node> = [];
+    private bomb_node_list: Array<cc.Node> = [];
+    private flag_node_list: Array<cc.Node> = [];
 
     @property([cc.Node])
     grid_lvl_1: Array<cc.Node> = [];
@@ -57,49 +55,72 @@ export default class body_info extends cc.Component {
     grid_lvl_5: Array<cc.Node> = [];
 
     @property(cc.Prefab)
-    normal_grid_1: cc.Prefab = null;
-
-    @property(cc.Prefab)
-    normal_grid_2: cc.Prefab = null;
-
-    @property(cc.Prefab)
-    normal_grid_3: cc.Prefab = null;
-
-    @property(cc.Prefab)
-    normal_grid_4: cc.Prefab = null;
-    
-    @property(cc.Prefab)
-    normal_grid_5: cc.Prefab = null;
+    normal_grid: cc.Prefab = null;
 
     @property(cc.Prefab)
     bomb_node: cc.Prefab = null;
 
     @property(cc.Prefab)
-    num_label: cc.Prefab = null;
+    flag_node: cc.Prefab = null;
 
-    @property(Number)
-    click_x: Number = 0;
+    @property(cc.Prefab)
+    num_0: cc.Prefab = null;
 
-    @property(Number)
-    click_y: Number = 0;
+    @property(cc.Prefab)
+    num_1: cc.Prefab = null;
 
-    @property(Number)
-    lvl: number = 0;
+    @property(cc.Prefab)
+    num_2: cc.Prefab = null;
 
-    @property([Number])
-    bomb_list: Array<Number> = []
+    @property(cc.Prefab)
+    num_3: cc.Prefab = null;
 
-    @property([cc.Node])
-    text_list: Array<cc.Node> = [];
+    @property(cc.Prefab)
+    num_4: cc.Prefab = null;
 
-    @property([Boolean])
-    grid_status: Array<boolean> = []
+    @property(cc.Prefab)
+    num_5: cc.Prefab = null;
 
-    @property(Boolean)
-    bomb_flag: boolean = false;
+    @property(cc.Prefab)
+    num_6: cc.Prefab = null;
 
-    @property(Boolean)
-    game_over_flag = false;
+    @property(cc.Node)
+    bg_info: cc.Node = null;
+
+    @property(cc.Prefab)
+    bg_panel: cc.Prefab = null;
+
+    private bg_node: cc.Node = null;
+
+    
+    private click_x: Number = 0;
+    private click_y: Number = 0;
+
+    private bomb_list: Array<Number> = [];
+
+    private grid_status: Array<boolean> = [];
+    private tip_flag: boolean = false;
+    private game_over_flag = false;
+
+    @property(cc.Node)
+    result_info: cc.Node = null;
+
+    private win_node: cc.Node = null;
+    private lose_node: cc.Node = null;
+
+    @property(cc.Prefab)
+    win_panel: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    lose_panel: cc.Prefab = null;
+
+    private num_0_pool: Array<cc.Node> = [];
+    private num_1_pool: Array<cc.Node> = [];
+    private num_2_pool: Array<cc.Node> = [];
+    private num_3_pool: Array<cc.Node> = [];
+    private num_4_pool: Array<cc.Node> = [];
+    private num_5_pool: Array<cc.Node> = [];
+    private num_6_pool: Array<cc.Node> = [];
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -122,34 +143,45 @@ export default class body_info extends cc.Component {
 
     start () {
         for (let i=0; i<81; ++i) {
-            this.text_list[i] = cc.instantiate(this.num_label);
+            this.num_0_pool[i] = cc.instantiate(this.num_0);
+            this.num_1_pool[i] = cc.instantiate(this.num_1);
+            this.num_2_pool[i] = cc.instantiate(this.num_2);
+            this.num_3_pool[i] = cc.instantiate(this.num_3);
+            this.num_4_pool[i] = cc.instantiate(this.num_4);
+            this.num_5_pool[i] = cc.instantiate(this.num_5);
+            this.num_6_pool[i] = cc.instantiate(this.num_6);
             this.bomb_node_list[i] = cc.instantiate(this.bomb_node);
+            this.flag_node_list[i] = cc.instantiate(this.flag_node);
             this.grid_status[i] = false;
         }
-        dispatcher.add_dispatch(EventType.EVENT_CLICK_BOMB_BTN, this.on_change_bomb_flag, this);
+        dispatcher.add_dispatch(EventType.EVENT_CLICK_OPEN_BTN, this.on_change_open, this);
+        dispatcher.add_dispatch(EventType.EVENT_CLICK_FLAG_BTN, this.on_change_flag, this)
+        this.win_node = cc.instantiate(this.win_panel);
+        this.lose_node = cc.instantiate(this.lose_panel);
+        this.init_body();
     },
 
     // update (dt) {},
 
-    init_body(lvl: number): void {
+    init_body(): void {
+        console.log("init body info 33333333");
         this.hide_all();
         this.game_over_flag = false;
-        this.bomb_flag = false;
-        this.lvl = lvl;
-        if (this.lvl == 1) {
-            this.init_grid_list(this.grid_lvl_1, this.normal_grid_1);
+        this.tip_flag = false;
+        if (client_mgr.get_lvl() == 1) {
+            this.init_grid_list(this.grid_lvl_1);
         }
-        else if (this.lvl == 2) {
-            this.init_grid_list(this.grid_lvl_2, this.normal_grid_2);
+        else if (client_mgr.get_lvl() == 2) {
+            this.init_grid_list(this.grid_lvl_2);
         }
-        else if (this.lvl == 3) {
-            this.init_grid_list(this.grid_lvl_3, this.normal_grid_3);
+        else if (client_mgr.get_lvl() == 3) {
+            this.init_grid_list(this.grid_lvl_3);
         }
-        else if (this.lvl == 4) {
-            this.init_grid_list(this.grid_lvl_4, this.normal_grid_4);
+        else if (client_mgr.get_lvl() == 4) {
+            this.init_grid_list(this.grid_lvl_4);
         }
-        else if (this.lvl == 5) {
-            this.init_grid_list(this.grid_lvl_5, this.normal_grid_5);
+        else if (client_mgr.get_lvl() == 5) {
+            this.init_grid_list(this.grid_lvl_5);
         }
         this.init_bomb_list();
     },
@@ -159,13 +191,40 @@ export default class body_info extends cc.Component {
             let child_node = this.grid_list[i];
             child_node.parent = this.hide_node;
         }
-
-        for (let i=0; i<this.text_list.length; ++i) {
-            let child_node = this.text_list[i];
+        for (let i=0; i<this.num_0_pool.length; ++i) {
+            let child_node = this.num_0_pool[i];
+            child_node.parent = this.hide_node;
+        }
+        for (let i=0; i<this.num_1_pool.length; ++i) {
+            let child_node = this.num_1_pool[i];
+            child_node.parent = this.hide_node;
+        }
+        for (let i=0; i<this.num_2_pool.length; ++i) {
+            let child_node = this.num_2_pool[i];
+            child_node.parent = this.hide_node;
+        }
+        for (let i=0; i<this.num_3_pool.length; ++i) {
+            let child_node = this.num_3_pool[i];
+            child_node.parent = this.hide_node;
+        }
+        for (let i=0; i<this.num_4_pool.length; ++i) {
+            let child_node = this.num_4_pool[i];
+            child_node.parent = this.hide_node;
+        }
+        for (let i=0; i<this.num_5_pool.length; ++i) {
+            let child_node = this.num_5_pool[i];
+            child_node.parent = this.hide_node;
+        }
+        for (let i=0; i<this.num_6_pool.length; ++i) {
+            let child_node = this.num_6_pool[i];
             child_node.parent = this.hide_node;
         }
         for (let i=0; i<this.bomb_node_list.length; ++i) {
             let child_node = this.bomb_node_list[i];
+            child_node.parent = this.hide_node;
+        }
+        for (let i=0; i<this.flag_node_list.length; ++i) {
+            let child_node = this.flag_node_list[i];
             child_node.parent = this.hide_node;
         }
         for (let i=0; i<this.grid_status.length; ++i) {
@@ -176,9 +235,9 @@ export default class body_info extends cc.Component {
         }
     },
 
-    init_grid_list(grid_lvl_list, normal_grid): void {
+    init_grid_list(grid_lvl_list): void {
         for (let i = 0 ; i < grid_lvl_list.length; i ++) {
-            this.grid_list[i] = cc.instantiate(normal_grid);
+            this.grid_list[i] = cc.instantiate(this.normal_grid);
             let node = this.grid_list[i];
             let parent_node = grid_lvl_list[i];
             node.parent = parent_node;
@@ -186,42 +245,24 @@ export default class body_info extends cc.Component {
             node.width = parent_node.width;
             node.height = parent_node.height;
         }
-    }
+    },
 
     init_bomb_list(): void {
-        if (this.lvl == 1) {
+        if (client_mgr.get_lvl() == 1) {
             this.init_bombo_list_1();
         }
-        else if(this.lvl == 2) {
+        else if(client_mgr.get_lvl() == 2) {
             this.init_bomb_list_2();
         }
-        else if(this.lvl == 3) {
+        else if(client_mgr.get_lvl() == 3) {
             this.init_bomb_list_3();
         }
-        else if(this.lvl ==4) {
+        else if(client_mgr.get_lvl() ==4) {
             this.init_bomb_list_4();
         }
         else {
             this.init_bomb_list_5();
         }
-        // let coln_num = this.get_coln_num();
-        // let max_index = coln_num * coln_num - 1;
-        // let bomb_num = this.get_random_bomb_num() + this.lvl;
-        // for (let i=0; i<bomb_num; ++i) {
-        //     let idx = 0;
-        //     for (let i=0; i<coln_num; ++i) {
-        //         idx = this.get_random_range(0, max_index);
-        //         if (this.bomb_list.indexOf(idx) >= 0) {
-        //             continue;
-        //         } 
-        //         else {
-        //             break;
-        //         }
-        //     }
-        //     this.bomb_list[i] = idx;
-        // }
-        
-        // this.optimizate_bomb_list(max_index);
     },
 
     init_bombo_list_1(): void {
@@ -265,7 +306,7 @@ export default class body_info extends cc.Component {
                 this.bomb_list[i] = this.get_real_random_idx(start_indexes[i], random_idx, j_ary[i], 7);
             }
         }
-    }
+    },
 
     init_bomb_list_4(): void {
         let start_indexes = [0, 2, 6, 18, 32, 36, 38, 48];
@@ -299,7 +340,7 @@ export default class body_info extends cc.Component {
                 }
             }
         }
-    }
+    },
 
     init_bomb_list_5(): void {
         let start_indexes = [0, 5, 7, 18, 36, 38, 49, 67];
@@ -324,78 +365,16 @@ export default class body_info extends cc.Component {
                 }
             }
         }
-    }
+    },
 
     get_real_random_idx(start_index: number, random_idx: number, j: number, coln: number): number {
         return start_index + Math.floor(random_idx / j) * coln + random_idx % j;
-    }
-
-    get_random_bomb_num(): number {
-        let min_num = 0;
-        let max_num = 0;
-        if (this.lvl == 1) {
-            min_num = 3;
-            max_num = 4;
-        }
-        else if (this.lvl == 2) {
-            min_num = 5;
-            max_num = 6;
-        }
-        else if (this.lvl == 3) {
-            min_num = 8;
-            max_num = 9;
-        }
-        else if (this.lvl == 4) {
-            min_num = 11;
-            max_num = 12;
-        }
-        else {
-            min_num = 15;
-            max_num = 16;
-        }
-        return this.get_random_range(min_num, max_num);
     },
 
     get_random_range(min: number, max: number): number {  
         var Range = max - min;  
         var Rand = Math.random();  
         return(min + Math.round(Rand * Range));  
-    },
-
-    optimizate_bomb_list(max_index: number): void {
-        let desc_bomb_num = this.lvl;
-        for (let i=0; i<max_index; ++i) {
-            let around_indexes = this.get_around_indexs(i);
-            let cur_bomb_num = this.get_bomb_num(i, around_indexes);
-            if (cur_bomb_num < 4) {
-                continue;
-            }
-
-            for (let j=0; j<around_indexes.length; ++j) {
-                let idx = i + around_indexes[j];
-                if (idx >= this.bomb_list.length || this.bomb_list[idx] < 0) {
-                    continue;
-                }
-
-                this.bomb_list[idx] = -1;
-                desc_bomb_num -= 1;
-                break;
-            }
-        }
-
-        for (let i=0; i<20; ++i) {
-            if (desc_bomb_num < 1) {
-                return;
-            }
-
-            let idx = this.get_random_range(0, this.bomb_list.length - 1);
-            if (this.bomb_list[idx] < 0) {
-                continue;
-            }
-
-            this.bomb_list[idx] = -1;
-            desc_bomb_num -= 1;
-        }
     },
 
     on_touch_end(event): void {
@@ -406,45 +385,45 @@ export default class body_info extends cc.Component {
     },
 
     get_lvl_node(): cc.Node {
-        if (this.lvl == 1) {
+        if (client_mgr.get_lvl() == 1) {
             return this.bomb_lvl_1;
         }
-        else if (this.lvl == 2) {
+        else if (client_mgr.get_lvl() == 2) {
             return this.bomb_lvl_2;
         }
-        else if (this.lvl == 3) {
+        else if (client_mgr.get_lvl() == 3) {
             return this.bomb_lvl_3;
         }
-        else if (this.lvl == 4) {
+        else if (client_mgr.get_lvl() == 4) {
             return this.bomb_lvl_4;
         }
         else {
             return this.bomb_lvl_5;
         }
-    }
+    },
 
     get_grid_nodes(): Array<cc.Node> {
-        if (this.lvl == 1) {
+        if (client_mgr.get_lvl() == 1) {
             return this.grid_lvl_1;
         }
-        else if (this.lvl == 2) {
+        else if (client_mgr.get_lvl() == 2) {
             return this.grid_lvl_2;
         }
-        else if (this.lvl == 3) {
+        else if (client_mgr.get_lvl() == 3) {
             return this.grid_lvl_3;
         }
-        else if (this.lvl == 4) {
+        else if (client_mgr.get_lvl() == 4) {
             return this.grid_lvl_4;
         }
         else {
             return this.grid_lvl_5;
         }
-    }
+    },
 
     get_grid_node(idx: number): cc.Node {
         let grids = this.get_grid_nodes();
         return grids[idx];
-    }
+    },
 
     check_click(): void {
         let grids = this.get_grid_nodes();
@@ -469,27 +448,31 @@ export default class body_info extends cc.Component {
         }
 
         this.update_grid_node(idx, []);
-        if (this.bomb_flag) {
-            this.bomb_flag = false;
+        if (this.tip_flag) {
             this.grid_status[idx] = false;
+            this.tip_flag = false;
         }
         else if (this.bomb_list.indexOf(idx) >= 0) {
             this.game_over_flag = true;
             this.show_all_grid();
         }
-        else {
-            let max_coln_num = this.get_coln_num();
-            let len = max_coln_num * max_coln_num;
-            for (let i=0; i<len; ++i) {
-                if (this.grid_status[i] || this.bomb_list.indexOf(i) >= 0) {
-                    continue;
-                }
-
-                return ;
-            }
+        else if (this.check_game_over()) {
             this.on_game_over(true);
         }
     },
+
+    check_game_over(): boolean {
+        let max_coln_num = this.get_coln_num();
+        let len = max_coln_num * max_coln_num;
+        for (let i=0; i<len; ++i) {
+            if (this.grid_status[i] || this.bomb_list.indexOf(i) >= 0) {
+                continue;
+            }
+
+            return false;
+        }
+        return true;
+    }
 
     update_grid_node(idx: number, ignore_indexes: Array<number>) : void {
         this.grid_status[idx] = true;
@@ -498,21 +481,56 @@ export default class body_info extends cc.Component {
         child_node.parent = this.hide_node;
 
         let replace_node = null;
-        if (this.bomb_flag || this.bomb_list.indexOf(idx) >= 0) {
-            replace_node = this.bomb_node_list[idx];
+        if (this.tip_flag || this.bomb_list.indexOf(idx) >= 0) {
+            if (this.tip_flag) {
+                replace_node = this.flag_node_list[idx];
+            }
+            else {
+                replace_node = this.bomb_node_list[idx];
+            }
+
+            let grid = this.get_grid_node(idx);
+            replace_node.parent = grid;
+            replace_node.setPosition(cc.p(0, 0));
+            replace_node.width = grid.width;
+            replace_node.height = grid.height;
         }
         else {
             let bomb_node = this.bomb_node_list[idx];
             bomb_node.parent = this.hide_node;
 
-            replace_node = this.text_list[idx];
             let check_indexes = this.get_around_indexs(idx);
             let bomb_num = this.get_bomb_num(idx, check_indexes);
-            if (bomb_num > 0) {
-                let cur_label = replace_node.getComponent(cc.Label);
-                cur_label.string = '' + bomb_num;
+
+            if (bomb_num == 0) {
+                replace_node = this.num_0_pool[idx];
             }
-            else {
+            else if (bomb_num == 1) {
+                replace_node = this.num_1_pool[idx];
+            }
+            else if (bomb_num == 2) {
+                replace_node = this.num_2_pool[idx];
+            }
+            else if (bomb_num == 3) {
+                replace_node = this.num_3_pool[idx];
+            }
+            else if (bomb_num == 4) {
+                replace_node = this.num_4_pool[idx];
+            }
+            else if (bomb_num == 5) {
+                replace_node = this.num_5_pool[idx];
+            }
+            else if (bomb_num == 6) {
+                replace_node = this.num_6_pool[idx];
+            }
+            
+            let grid = this.get_grid_node(idx);
+            replace_node.parent = grid;
+            replace_node.setPosition(cc.p(0, 0));
+            replace_node.width = grid.width;
+            replace_node.height = grid.height;
+
+            if (bomb_num == 0) {
                 let cur_ingore_indexes = ignore_indexes.concat([idx]);
                 for (let i=0; i<check_indexes.length; ++i) {
                     let cur_idx = idx + check_indexes[i];
@@ -531,11 +549,6 @@ export default class body_info extends cc.Component {
                 return;
             }
         }
-        let grid = this.get_grid_node(idx);
-        replace_node.parent = grid;
-        replace_node.setPosition(cc.p(0, 0));
-        replace_node.width = grid.width;
-        replace_node.height = grid.height;
     }
 
     get_around_indexs(idx: number): Array<number> {
@@ -623,16 +636,16 @@ export default class body_info extends cc.Component {
     },
 
     get_coln_num(): number {
-        if (this.lvl == 1) {
+        if (client_mgr.get_lvl() == 1) {
             return 5;
         }
-        else if (this.lvl == 2) {
+        else if (client_mgr.get_lvl() == 2) {
             return 6;
         }
-        else if (this.lvl == 3) {
+        else if (client_mgr.get_lvl() == 3) {
             return 7;
         }
-        else if (this.lvl == 4) {
+        else if (client_mgr.get_lvl() == 4) {
             return 8;
         }
         else {
@@ -663,8 +676,6 @@ export default class body_info extends cc.Component {
     },
 
     show_grid_delay(): void {
-        dispatcher.dispatch(EventType.EVENT_GAME_OVER_1)
-        this.bomb_flag = false;
         let max_coln_num = this.get_coln_num();
         let len = max_coln_num * max_coln_num;
         for (let i=0 ; i<len; ++i) {
@@ -680,12 +691,23 @@ export default class body_info extends cc.Component {
         this.on_game_over(false);
      },
 
-     on_change_bomb_flag(): void {
-        this.bomb_flag = true;
-     }
+     on_change_flag(): void {
+        this.tip_flag = true;
+     },
 
     on_game_over(result: boolean): void {
-        dispatcher.dispatch(EventType.EVENT_GAME_OVER_2, result, this.lvl);
-        cc.director.loadScene("result");
-    }
+        this.bg_node = cc.instantiate(this.bg_panel);
+        this.bg_node.parent = this.bg_info;
+        this.bg_node.setPosition(cc.v2(0, 0));
+        this.bg_node.width = this.bg_info.width;
+        this.bg_node.height = this.bg_info.height;
+
+        dispatcher.dispatch(EventType.EVENT_GAME_OVER, result);
+        let result_node = result ? this.win_node : this.lose_node;
+        result_node.parent = this.result_info;
+        result_node.setPosition(cc.v2(0, 0));
+        result_node.width = this.result_info.width;
+        result_node.height = this.result_info.height;
+        result_node.getComponent("result").init_panel(result);
+    },
 }
