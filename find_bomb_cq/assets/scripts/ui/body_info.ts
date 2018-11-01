@@ -105,10 +105,14 @@ export default class body_info extends cc.Component {
     @property(cc.Node)
     result_info: cc.Node = null;
 
-    private result_node: cc.Node = null;
+    private win_node: cc.Node = null;
+    private lose_node: cc.Node = null;
 
     @property(cc.Prefab)
-    result_panel: cc.Prefab = null;
+    win_panel: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    lose_panel: cc.Prefab = null;
 
     private num_0_pool: Array<cc.Node> = [];
     private num_1_pool: Array<cc.Node> = [];
@@ -152,7 +156,8 @@ export default class body_info extends cc.Component {
         }
         dispatcher.add_dispatch(EventType.EVENT_CLICK_OPEN_BTN, this.on_change_open, this);
         dispatcher.add_dispatch(EventType.EVENT_CLICK_FLAG_BTN, this.on_change_flag, this)
-        this.result_node = cc.instantiate(this.result_panel);
+        this.win_node = cc.instantiate(this.win_panel);
+        this.lose_node = cc.instantiate(this.lose_panel);
         this.init_body();
     },
 
@@ -700,10 +705,11 @@ export default class body_info extends cc.Component {
         this.bg_node.height = this.bg_info.height;
 
         dispatcher.dispatch(EventType.EVENT_GAME_OVER, result);
-        this.result_node.parent = this.result_info;
-        this.result_node.setPosition(cc.v2(0, 0));
-        this.result_node.width = this.result_info.width;
-        this.result_node.height = this.result_info.height;
-        this.result_node.getComponent("result").init_panel(result);
+        let result_node = result ? this.win_node : this.lose_node;
+        result_node.parent = this.result_info;
+        result_node.setPosition(cc.v2(0, 0));
+        result_node.width = this.result_info.width;
+        result_node.height = this.result_info.height;
+        result_node.getComponent("result").init_panel(result);
     },
 }
