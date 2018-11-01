@@ -30,6 +30,7 @@ export default class sub_game extends cc.Component {
     private nick_name: string = '';
     private play_time: number = 0;
     private lvl: number = 1;
+    private own_flag: boolean = false;
 
     private user_info_list: Array<user_info> = [];
 
@@ -44,6 +45,10 @@ export default class sub_game extends cc.Component {
                 self.play_time = data.play_time;
                 self.lvl = data.lvl;
                 self.show_rank();
+                if (!self.own_flag) {
+                    self.sync_user_info();
+                    self.show_rank();
+                }
             }
         });
     },
@@ -66,7 +71,7 @@ export default class sub_game extends cc.Component {
         wx.getFriendCloudStorage({
             keyList: ['t_' + self.lvl],
             success: function (res) {
-                console.log('get friend cloud storage success', res.data)
+                console.log('get friend cloud storage success', res.data);
                 for (let i = 0; i < res.data.length; i++) {
                     let avatar_info = res.data[i];
                     if (avatar_info) {
@@ -104,6 +109,7 @@ export default class sub_game extends cc.Component {
             if (this.nick_name != nick_name) {
                 continue;
             }
+            this.own_flag = true;
             if (!play_time || (this.play_time > 0 && play_time > this.play_time)) {
                 play_time = this.play_time;
                 this.sync_user_info();
@@ -183,7 +189,7 @@ export default class sub_game extends cc.Component {
 
     get_play_time_desc(avatar_info): string {
         if (avatar_info.get_play_time() < 1) {
-            return "   踩屎了";
+            return "   踩雷了";
         }
         else {
             return "   " + avatar_info.get_play_time() + "秒";
