@@ -46,7 +46,7 @@ export class wx_wrapper extends cc.Component {
 
     share_game(): void {
         wx.shareAppMessage({
-            "title": "扫雷传奇,踩不到算你赢",
+            "title": "扫雷战士,踩不到算你赢",
             "imageUrl": "res/raw-assets/share.jpg",
         });
     },

@@ -51,24 +51,6 @@ export default class head_info extends cc.Component {
         this.time_label.string = '00:00';
     },
 
-    get_lvl_desc(): string {
-        if (client_mgr.get_lvl() == 1) {
-            return "挑战入门\r\n";
-        }
-        else if (client_mgr.get_lvl() == 2) {
-            return "挑战精英\r\n";
-        }
-        else if (client_mgr.get_lvl() == 3) {
-            return "挑战大师\r\n";
-        }
-        else if (client_mgr.get_lvl() == 4) {
-            return "挑战史诗\r\n";
-        }
-        else {
-            return "挑战传奇\r\n";
-        }
-    },
-
     on_1_minute_timer(): void {
         this.play_time += 1;
         let minute = Math.floor(this.play_time / 60);

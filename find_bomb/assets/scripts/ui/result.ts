@@ -47,7 +47,7 @@ export default class result extends cc.Component {
             content_desc = "呦，赢了，本次用时: " + client_mgr.get_play_time() + "秒";
         } 
         else {
-            content_desc = "咦，踩雷了，我不服!";
+            content_desc = "呀，踩雷了，我不服!";
         }
         this.content_label.string = content_desc;
 
