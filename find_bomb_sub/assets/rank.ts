@@ -145,7 +145,7 @@ export default class sub_game extends cc.Component {
             this.rank_label.string = rank_desc;
             return;
         }
-        rank_desc += user_info_1.get_user_name() + this.get_play_time_desc(user_info_1);
+        rank_desc += this.get_user_desc(user_info_1);
         this.show_user_info(user_info_1, 1);
         let user_info_2 = null;
         for (let i=0; i<this.user_info_list.length; ++i) {
@@ -162,7 +162,7 @@ export default class sub_game extends cc.Component {
             this.rank_label.string = rank_desc;
             return;
         }
-        rank_desc += "\r\n" + user_info_2.get_user_name() + this.get_play_time_desc(user_info_2);
+        rank_desc += "\r\n" + this.get_user_desc(user_info_2);
         this.show_user_info(user_info_2, 2);
         let user_info_3 = null;
         for (let i=0; i<this.user_info_list.length; ++i) {
@@ -182,14 +182,26 @@ export default class sub_game extends cc.Component {
             this.rank_label.string = rank_desc;
             return;
         }
-        rank_desc += "\r\n" + user_info_3.get_user_name() + this.get_play_time_desc(user_info_3);
+        rank_desc += "\r\n" + this.get_user_desc(user_info_3);
         this.show_user_info(user_info_3, 3);
         this.rank_label.string = rank_desc;
     },
 
+    get_user_desc(avatar_info): string {
+        let avatar_desc = '';
+        let user_name = avatar_info.get_user_name();
+        if (user_name.length > 2) {
+            avatar_desc = user_name.substr(0, 2) + '...';
+        }
+        else {
+            avatar_desc = user_name;
+        }
+        return avatar_desc + this.get_play_time_desc(avatar_info);
+    },
+
     get_play_time_desc(avatar_info): string {
         if (avatar_info.get_play_time() < 1) {
-            return "   踩雷了";
+            return "   未通关";
         }
         else {
             return "   " + avatar_info.get_play_time() + "秒";
