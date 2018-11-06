@@ -33,16 +33,137 @@ export default class player extends cc.Component {
     private hide_node: cc.Node = null;
 
     @property(cc.Prefab)
-    word_a: cc.Prefab = null;
-
-    private word_a_pool: Array<cc.Node> = [];
+    word_a_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_a_2: cc.Prefab = null;
 
     @property(cc.Prefab)
-    word_b: cc.Prefab = null;
-
-    private word_b_pool: Array<cc.Node> = [];
+    word_b_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_b_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_c_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_c_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_d_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_d_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_e_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_e_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_f_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_f_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_g_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_g_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_h_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_h_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_i_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_i_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_j_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_j_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_k_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_k_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_l_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_l_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_m_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_m_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_n_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_n_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_o_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_o_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_p_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_p_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_q_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_q_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_r_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_r_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_s_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_s_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_t_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_t_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_u_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_u_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_v_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_v_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_w_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_w_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_x_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_x_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_y_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_y_2: cc.Prefab = null;
+    
+    @property(cc.Prefab)
+    word_z_1: cc.Prefab = null;
+    @property(cc.Prefab)
+    word_z_2: cc.Prefab = null;
 
     private finish_words: Array<string> = [];
+    private word_indexes: Array<string> = [];
 
     private click_x: Number = 0;
     private click_y: Number = 0;
@@ -53,11 +174,8 @@ export default class player extends cc.Component {
     },
 
     start () {
-        for (let i=0; i<35; ++i) {
-            this.word_a_pool[i] = cc.instantiate(this.word_a);
-            this.word_b_pool[i] = cc.instantiate(this.word_b);
-        }
         this.finish_words = [];
+        this.word_indexes = [];
         this.init_word();
     },
 
@@ -82,19 +200,18 @@ export default class player extends cc.Component {
         for (let i=0; i<words.length; ++i) {
             let random_index = this.get_random_range(0, indexes.length);
             let real_index = indexes[random_index];
-            this.show_word(words[i], real_index);
+            this.word_indexes[real_index] = words[i];
+            let prefab_node = this.get_word_prefab_1(words[i]);
+            this.show_word(prefab_node, real_index);
             indexes.splice(random_index, 1);
         }
     },
 
-    show_word(word, idx): void {
-        let replace_node = null;
-        if (word == 'a') {
-            replace_node = this.word_a_pool[idx];
+    show_word(prefab_node, idx): void {
+        if (!prefab_node) {
+            return;
         }
-        else if (word == 'b') {
-            replace_node = this.word_b_pool[idx];
-        }
+        let replace_node = cc.instantiate(prefab_node);
         let grid = this.btn_grid_list[idx]
         replace_node.parent = grid;
         replace_node.setPosition(cc.p(0, 0));
@@ -102,8 +219,54 @@ export default class player extends cc.Component {
         replace_node.height = grid.height;
     },
 
+    get_word_prefab_1(word): cc.Prefab {
+        switch(word) {
+            case 'a':
+                return this.word_a_1;
+            case 'b':
+                return this.word_b_1;
+            case 'c':
+                return this.word_c_1;
+            case 'd':
+                return this.word_d_1;
+            case 'e':
+                return this.word_e_1;
+            case 'f':
+                return this.word_f_1;
+            case 'g':
+                return this.word_g_1;
+            case 'h':
+                return this.word_h_1;
+            default:
+                return null;
+        }
+    },
+
+    get_word_prefab_2(word): cc.Prefab {
+        switch(word) {
+            case 'a':
+                return this.word_a_2;
+            case 'b':
+                return this.word_b_2;
+            case 'c':
+                return this.word_c_2;
+            case 'd':
+                return this.word_d_2;
+            case 'e':
+                return this.word_e_2;
+            case 'f':
+                return this.word_f_2;
+            case 'g':
+                return this.word_g_2;
+            case 'h':
+                return this.word_h_2;
+            default:
+                return null;
+        }
+    },
+
     random_words(): string {
-        return "aba";
+        return "beahdfcg";
     },
 
     get_random_range(min: number, max: number): number {  
@@ -137,5 +300,8 @@ export default class player extends cc.Component {
 
     on_click_grid(idx: number) : void {
         console.log("on click grid", idx);
+        let word = this.word_indexes[idx];
+        let prefab_node = this.get_word_prefab_2(word);
+        this.show_word(prefab_node, idx);
     },
 }

@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.8,
-      "y": 0.8,
+      "x": 0.2734375,
+      "y": 0.2734375,
       "z": 1
     },
     "_quat": {
@@ -3964,13 +3964,91 @@
         "__id__": 52
       }
     ],
-    "word_a": {
-      "__uuid__": "ef4567fd-0379-42a2-8430-3daf0adbdf72"
+    "word_a_1": {
+      "__uuid__": "0aac9689-f91a-4d51-a5cc-8d3c77d9551c"
     },
-    "word_b": {
-      "__uuid__": "a93a6585-2687-496e-845d-75ed6145a21c"
+    "word_a_2": {
+      "__uuid__": "23a95379-25ad-4667-9101-398e2c91fa96"
     },
-    "_id": "4cB95iqQxAbo90DEcueweV"
+    "word_b_1": {
+      "__uuid__": "84063882-1b6d-40ca-baf1-1c7623888e3c"
+    },
+    "word_b_2": {
+      "__uuid__": "a1aa1fb6-d46d-4e07-b8e1-ee067f16944c"
+    },
+    "word_c_1": {
+      "__uuid__": "effc83f0-49cd-4f73-a445-14e27bc8bb2b"
+    },
+    "word_c_2": {
+      "__uuid__": "1a596abd-18e0-4fd5-8c01-2101e66bb2f0"
+    },
+    "word_d_1": {
+      "__uuid__": "51214d0f-4359-4338-ad24-7c39d4aced79"
+    },
+    "word_d_2": {
+      "__uuid__": "9c22fff2-8b37-4f76-90d3-128925f1095f"
+    },
+    "word_e_1": {
+      "__uuid__": "fa1ad10b-d1d3-451f-94e3-d483095000a1"
+    },
+    "word_e_2": {
+      "__uuid__": "8fe23680-5e67-4858-83d5-cec087c4bb47"
+    },
+    "word_f_1": {
+      "__uuid__": "6cecb093-ba9d-4eb9-93a5-9b682118cb83"
+    },
+    "word_f_2": {
+      "__uuid__": "7381b009-79c9-4931-8636-cd30e56b620e"
+    },
+    "word_g_1": {
+      "__uuid__": "78cad010-19b9-4a1e-bb74-2f2cd612e4ef"
+    },
+    "word_g_2": {
+      "__uuid__": "eec5f07b-50d5-4ae0-a0a8-d180fcdf21af"
+    },
+    "word_h_1": {
+      "__uuid__": "6d0cf41d-c963-4e00-88ba-7e52874fd2b2"
+    },
+    "word_h_2": {
+      "__uuid__": "a37647c3-ea0a-44d7-af66-5cfe2a4b34cc"
+    },
+    "word_i_1": null,
+    "word_i_2": null,
+    "word_j_1": null,
+    "word_j_2": null,
+    "word_k_1": null,
+    "word_k_2": null,
+    "word_l_1": null,
+    "word_l_2": null,
+    "word_m_1": null,
+    "word_m_2": null,
+    "word_n_1": null,
+    "word_n_2": null,
+    "word_o_1": null,
+    "word_o_2": null,
+    "word_p_1": null,
+    "word_p_2": null,
+    "word_q_1": null,
+    "word_q_2": null,
+    "word_r_1": null,
+    "word_r_2": null,
+    "word_s_1": null,
+    "word_s_2": null,
+    "word_t_1": null,
+    "word_t_2": null,
+    "word_u_1": null,
+    "word_u_2": null,
+    "word_v_1": null,
+    "word_v_2": null,
+    "word_w_1": null,
+    "word_w_2": null,
+    "word_x_1": null,
+    "word_x_2": null,
+    "word_y_1": null,
+    "word_y_2": null,
+    "word_z_1": null,
+    "word_z_2": null,
+    "_id": "75WiwB+E1DHYdA+81OlCkZ"
   },
   {
     "__type__": "cc.Canvas",
