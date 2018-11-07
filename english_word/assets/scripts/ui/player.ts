@@ -11,6 +11,7 @@
 const {ccclass, property} = cc._decorator;
 
 import client_mgr from "./../logic/client"
+import word_1_mgr from "./../logic/word_x_1"
 
 @ccclass
 export default class player extends cc.Component {
@@ -221,6 +222,7 @@ export default class player extends cc.Component {
 
     private cur_random_words: string = '';
     private cur_click_words: string = '';
+    private cur_words_fayin: string = '';
     private cur_words_desc: string = '';
 
     private grid_status: Array<boolean> = [];
@@ -231,6 +233,148 @@ export default class player extends cc.Component {
     },
 
     start () {
+        word_1_mgr.init();
+        this.init_all_node();
+        this.finish_words = [];
+        this.restart();
+    },
+
+    // update (dt) {},
+
+    restart(): void {
+        this.word_indexes = [];
+        this.random_words();
+        this.init_word();
+    }
+
+    init_word(): void {
+        for (let i=0; i<35; ++i) {
+            this.grid_status[i] = true;
+        }
+        this.cur_click_words = '';
+        this.hide_all();
+        this.show_words();
+    },
+
+    hide_node_pool(word_pool: Array<cc.Node>): void {
+        for (let i=0; i<word_pool.length; ++i) {
+            let child_node = word_pool[i];
+            child_node.parent = this.hide_node;
+        }
+    }
+
+    show_words(): void {
+        this.finish_words.push(this.cur_random_words);
+        let indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
+        for (let i=0; i<this.cur_random_words.length; ++i) {
+            let random_index = this.get_random_range(0, indexes.length - 1);
+            let real_index = indexes[random_index];
+            this.grid_status[real_index] = false;
+            this.word_indexes[real_index] = this.cur_random_words[i];
+            let replace_node = this.get_word_node_1(this.cur_random_words[i], real_index);
+            this.show_word_area(replace_node, real_index);
+            indexes.splice(random_index, 1);
+        }
+        this.show_word_label('', false);
+    },
+
+    show_word_area(replace_node, idx): void {
+        if (!replace_node) {
+            return;
+        }
+        let grid = this.btn_grid_list[idx]
+        replace_node.parent = grid;
+        replace_node.setPosition(cc.p(0, 0));
+        replace_node.width = grid.width;
+        replace_node.height = grid.height;
+    },
+
+    show_word_label(head_desc: string, game_over_flag: boolean): void {
+        let fayin = game_over_flag ? this.cur_words_fayin : '';
+        this.word_label.string = head_desc + '\r\n' + this.cur_click_words + '\r\n' + fayin + '\r\n' + this.cur_words_desc;
+    },
+
+    random_words(): void {
+        let idx = this.get_random_range(0, word_1_mgr.words_1.length - 1);
+        console.log('random words!', idx, word_1_mgr.words_1);
+        this.cur_random_words = word_1_mgr.words_1[idx][0];
+        this.cur_words_fayin = word_1_mgr.words_1[idx][1];
+        this.cur_words_desc = word_1_mgr.words_1[idx][2];
+    },
+
+    get_random_range(min: number, max: number): number {  
+        var Range = max - min;  
+        var Rand = Math.random();  
+        return(min + Math.round(Rand * Range));  
+    },
+
+    on_touch_end(event): void {
+        this.click_x = this.btn_area.convertTouchToNodeSpaceAR(event).x;
+        this.click_y = this.btn_area.convertTouchToNodeSpaceAR(event).y;
+        this.check_click();
+    },
+
+    check_click(): void {
+        let len = this.btn_grid_list.length;
+        for (let i = 0; i < len; i ++) {
+            let grid = this.btn_grid_list[i];
+            let start_x = grid.x - grid.width / 2;
+            let start_y = grid.y - grid.height / 2;
+            let end_x = grid.x + grid.width / 2;
+            let end_y = grid.y + grid.height / 2;
+            if (start_x < this.click_x && end_x > this.click_x &&
+                start_y < this.click_y && end_y > this.click_y) {
+                this.on_click_grid(i);
+                return;
+            }
+        }
+    },
+
+    on_click_grid(idx: number) : void {
+        if (this.grid_status[idx]) {
+            return;
+        }
+
+        this.grid_status[idx] = true;
+        let word = this.word_indexes[idx];
+        this.cur_click_words += word;
+        let replace_node = this.get_word_node_2(word, idx);
+        this.show_word_area(replace_node, idx);
+        if (this.check_game_over()) {
+            let head_desc = this.cur_click_words == this.cur_random_words ? '回答正确' : '回答错误';
+            this.show_word_label(head_desc, true);
+        }
+        else {
+            this.show_word_label('', false);
+        }
+    },
+
+    check_game_over(): boolean {
+        for (let i=0; i<this.grid_status.length; ++i) {
+            if (!this.grid_status[i]) {
+                return false;
+            }
+        }
+        return true;
+    },
+    
+
+    on_click_clear(): void {
+        this.init_word();
+    },
+
+    on_click_share(): void {
+    },
+
+    on_click_study(): void {
+
+    },
+
+    on_click_next(): void {
+        this.restart();
+    },
+
+    init_all_node(): void {
         for (let i=0; i<35; ++i) {
             this.word_a_1_pool[i] = cc.instantiate(this.word_a_1);
             this.word_a_2_pool[i] = cc.instantiate(this.word_a_2);
@@ -285,26 +429,7 @@ export default class player extends cc.Component {
             this.word_z_1_pool[i] = cc.instantiate(this.word_z_1);
             this.word_z_2_pool[i] = cc.instantiate(this.word_z_2);
         }
-        this.finish_words = [];
-        this.restart();
-    },
-
-    // update (dt) {},
-
-    restart(): void {
-        this.word_indexes = [];
-        this.random_words();
-        this.init_word();
     }
-
-    init_word(): void {
-        for (let i=0; i<35; ++i) {
-            this.grid_status[i] = true;
-        }
-        this.cur_click_words = '';
-        this.hide_all();
-        this.show_words();
-    },
 
     hide_all(): void {
         this.hide_node_pool(this.word_a_1_pool);
@@ -359,43 +484,6 @@ export default class player extends cc.Component {
         this.hide_node_pool(this.word_y_2_pool);
         this.hide_node_pool(this.word_z_1_pool);
         this.hide_node_pool(this.word_z_2_pool);
-    },
-
-    hide_node_pool(word_pool: Array<cc.Node>): void {
-        for (let i=0; i<word_pool.length; ++i) {
-            let child_node = word_pool[i];
-            child_node.parent = this.hide_node;
-        }
-    }
-
-    show_words(): void {
-        this.finish_words.push(this.cur_random_words);
-        let indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
-        for (let i=0; i<this.cur_random_words.length; ++i) {
-            let random_index = this.get_random_range(0, indexes.length);
-            let real_index = indexes[random_index];
-            this.grid_status[real_index] = false;
-            this.word_indexes[real_index] = this.cur_random_words[i];
-            let replace_node = this.get_word_node_1(this.cur_random_words[i], real_index);
-            this.show_word_area(replace_node, real_index);
-            indexes.splice(random_index, 1);
-        }
-        this.show_word_label('');
-    },
-
-    show_word_area(replace_node, idx): void {
-        if (!replace_node) {
-            return;
-        }
-        let grid = this.btn_grid_list[idx]
-        replace_node.parent = grid;
-        replace_node.setPosition(cc.p(0, 0));
-        replace_node.width = grid.width;
-        replace_node.height = grid.height;
-    },
-
-    show_word_label(head_desc: string): void {
-        this.word_label.string = head_desc + '\r\n' + this.cur_click_words + '\r\n' + this.cur_words_desc;
     },
 
     get_word_node_1(word, idx): cc.Node {
@@ -514,81 +602,5 @@ export default class player extends cc.Component {
             default:
                 return null;
         }
-    },
-
-    random_words(): void {
-        this.cur_random_words = 'abcdefghijklmnopqrstuvwxyz';
-        this.cur_words_desc = 'adj: 漂亮的';
-    },
-
-    get_random_range(min: number, max: number): number {  
-        var Range = max - min;  
-        var Rand = Math.random();  
-        return(min + Math.round(Rand * Range));  
-    },
-
-    on_touch_end(event): void {
-        this.click_x = this.btn_area.convertTouchToNodeSpaceAR(event).x;
-        this.click_y = this.btn_area.convertTouchToNodeSpaceAR(event).y;
-        this.check_click();
-    },
-
-    check_click(): void {
-        let len = this.btn_grid_list.length;
-        for (let i = 0; i < len; i ++) {
-            let grid = this.btn_grid_list[i];
-            let start_x = grid.x - grid.width / 2;
-            let start_y = grid.y - grid.height / 2;
-            let end_x = grid.x + grid.width / 2;
-            let end_y = grid.y + grid.height / 2;
-            if (start_x < this.click_x && end_x > this.click_x &&
-                start_y < this.click_y && end_y > this.click_y) {
-                this.on_click_grid(i);
-                return;
-            }
-        }
-    },
-
-    on_click_grid(idx: number) : void {
-        if (this.grid_status[idx]) {
-            return;
-        }
-
-        this.grid_status[idx] = true;
-        let word = this.word_indexes[idx];
-        this.cur_click_words += word;
-        let replace_node = this.get_word_node_2(word, idx);
-        this.show_word_area(replace_node, idx);
-        if (this.check_game_over()) {
-            this.show_word_label('结束了');
-        }
-        else {
-            this.show_word_label('');
-        }
-    },
-
-    check_game_over(): boolean {
-        for (let i=0; i<this.grid_status.length; ++i) {
-            if (!this.grid_status[i]) {
-                return false;
-            }
-        }
-        return true;
-    },
-    
-
-    on_click_clear(): void {
-        this.init_word();
-    },
-
-    on_click_share(): void {
-    },
-
-    on_click_study(): void {
-
-    },
-
-    on_click_next(): void {
-        this.restart();
     },
 }
