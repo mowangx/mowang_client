@@ -1,0 +1,1171 @@
+
+
+this.words_1.push(['academy', '英音[ə\'kædəmi] 美音[ə\'kædəmi]', '名词/r/n1.私立中学，<苏格兰>（相当于文法学校的）学堂/r/n2.（中等以上）专门学校/r/n3.学院，大学，研究院/r/n4.（文艺或自然科学的）学会/r/n5.高等教育/r/n6.（某一学科领域内的）权威定论/r/n7.[the Academy]（柏拉图）学园，柏拉图学派，学园派，柏拉图学派的学说']);
+
+this.words_1.push(['accountant', '英音[ə\'kauntənt] 美音[ə\'kauntənt]', '可数名词：/r/n会计人员；会计师']);
+
+this.words_1.push(['accounting', '英音[ə\'kauntiŋ] 美音[ə\'kauntiŋ]', '名词 /r/n1.会计；会计学；会计制度 /r/n2.会计业务或能力 /r/n3.账单；借贷对照表 /r/n4.记账；结账；结算；决算 /r/n5.人各有所好。']);
+
+this.words_1.push(['acrobat', '英音[\'ækrəbæt] 美音[\'ækrəbæt]', '名词 /r/n1.杂技演员 /r/n2.立场观点善变的人，主张、政见等变化无常的人']);
+
+this.words_1.push(['actor', '英音[\'æktə] 美音[\'æktə]', '名词/r/n1.演员(尤指男演员)']);
+
+this.words_1.push(['actress', '英音[\'æktris] 美音[\'æktris]', '名词/r/n1.女演员']);
+
+this.words_1.push(['administration', '英音[ədmini\'streiʃən] 美音[ədmini\'streiʃən]', '可数名词：/r/n1.（企业、学校等的）管理部门，行政部门/r/n2.（通常为Administration）（尤指美国）政府 /r/n不可数名词：/r/n1.（英非正式亦为admin）（企业、学校等的）管理，行政/r/n2.施行，执行/r/n3.（药物的）施用/r/n4.【律】遗产管理']);
+
+this.words_1.push(['advertising', '英音[\'ædvətaiziŋ] 美音[\'ædvətaiziŋ]', '名词 /r/n1.广告，广告宣传 /r/na. /r/n1.广告的；广告业的；广告业务的']);
+
+this.words_1.push(['aerialist', '英音[\'ɛəriəlist] 美音[\'ɛəriəlist]', '名词 高空杂技师，空中飞人']);
+
+this.words_1.push(['aerospace', '英音[\'ɛərəspeis] 美音[\'ɛərəspeis]', '名词 航空宇宙']);
+
+this.words_1.push(['agriculture', '英音[\'ægrikʌltʃə(r)] 美音[\'ægrikʌltʃə(r)]', '不可数名词：/r/n农业；农学；农艺']);
+
+this.words_1.push(['aid', '英音[eid] 美音[eid]', '名词/r/n1.不可数名词：援助，救援物资，援助款项/r/n2.不可数名词：（完成某工作所需的）帮助，助手，辅助物/r/n3.不可数名词：【正式】帮助，援助/r/n4.可数名词：辅助设备/r/nv./r/n帮助，援助']);
+
+this.words_1.push(['algebra', '英音[\'ældʒibrə] 美音[\'ældʒibrə]', '不可数名词：  代数']);
+
+this.words_1.push(['allotment', '英音[ə\'lɔtmənt] 美音[ə\'lɔtmənt]', '名词 /r/n1.分配，分派，拨款 /r/n2.份额；份儿；分配物 /r/n3.（从军饷或海员薪水中扣除的）养家费']);
+
+this.words_1.push(['allowance', '英音[ə\'launs] 美音[ə\'launs]', '名词/r/n1.可数名词：允许，考虑/r/n2.可数名词：津贴/r/n3.可数名词：限额，限量/r/n4.可数名词：折扣/r/n5.不可数名词：零用钱']);
+
+this.words_1.push(['amortization', '英音[əmɔ:ti\'zeiʃən] 美音[əmɔ:ti\'zeiʃən]', '名词 /r/n1.不动产的捐赠 /r/n2.分期偿还，摊提（资产等）/r/n3.折旧；缓冲；减震 /r/n4.分期注销（费用）/r/n5.偿还金；用以分期偿还的款项 /r/n6.熄灭 /r/n7.【会计】摊销，摊还']);
+
+this.words_1.push(['amphitheater', '英音[\'æmfiθi:ətə] 美音[\'æmfiθi:ətə]', '名词 圆形剧场,斗技场,似圆形剧场的处所']);
+
+this.words_1.push(['amphitheatre', '英音[\'æmfiθiətə] 美音[\'æmfiθiətə]', '名词 圆形剧场/r/n阶梯式']);
+
+this.words_1.push(['anatomy', '英音[ə\'nætəmi] 美音[ə\'nætəmi]', '名词 /r/n1.解剖，解剖学 /r/n2.(生物体的)解剖结构 /r/n3.(详细的)分析 /r/n4.人体；骨骼；干尸']);
+
+this.words_1.push(['annuity', '英音[ə\'nju:iti] 美音[ə\'nju:iti]', '名词 年金,养老金,年金领受权']);
+
+this.words_1.push(['anthropology', '英音[ænθrə\'pɔlədʒi] 美音[ænθrə\'pɔlədʒi]', '不可数名词： /r/n人类学']);
+
+this.words_1.push(['applicant', '英音[\'æplikənt] 美音[\'æplikənt]', '名词/r/n1.申请人，求职人']);
+
+this.words_1.push(['appoint', '英音[ə\'pɔint] 美音[ə\'pɔint]', '及物动词：/r/n1.任命，指派，委派/r/n2.分派，分配/r/n3.给……提供设备']);
+
+this.words_1.push(['appointment', '英音[ə\'pɔintmənt] 美音[ə\'pɔintmənt]', '名词 /r/n1. 任命，选派/r/n2. 职位/r/n3. 约会，约定/r/n4.（尤指美国黑手党成员间的）约会/r/n5.[复数]（尤指旅馆的）家具，陈设，设备/r/n6.[复数]（尤指船舶的）设备/r/n7.[复数]（士兵、马匹的）装备；（任何）东西，物件/r/n']);
+
+this.words_1.push(['appreciation', '英音[ə\'pri:ʃi\'eiʃən] 美音[ə\'pri:ʃi\'eiʃən]', '名词 /r/n1.欣赏，鉴赏，赏识 /r/n2.评定；判断；鉴定 /r/n3.(尤指土地或财产的)增值 /r/n4.感激；感谢 /r/n5.(尤指赞赏性的)评论文字 /r/n6.理解；体谅；同情 /r/n7.理解；体谅；同情']);
+
+this.words_1.push(['apprentice', '英音[ə\'prentis] 美音[ə\'prɛntɪs]', '名词 可数名词：/r/n1.学徒，徒弟/r/n2.见习生/r/n3.初学者，生手/r/nv. 及物动词：/r/n1.使...当学徒/r/nv. 不及物动词：/r/n1.当学徒/r/n']);
+
+this.words_1.push(['apprenticeship', '英音[ə\'prentisʃip] 美音[ə\'prentisʃip]', '名词 学徒的身分,学徒的年限']);
+
+this.words_1.push(['archaeologist', '英音[ɑ:ki\'ɔlədʒist] 美音[ɑ:ki\'ɔlədʒist]', '名词/r/n1.考古学家']);
+
+this.words_1.push(['architect', '英音[\'ɑ:kitekt] 美音[\'ɑ:kitekt]', '可数名词： /r/n1.建筑师，设计师']);
+
+this.words_1.push(['architecture', '英音[\'ɑ:kitektʃə] 美音[\'ɑrkə,tɛktʃɚ]', '名词 /r/n1.不可数名词：建筑学；建筑术/r/n2.不可数名词：建筑式样，建筑风格/r/n3.[U,C]建筑物/r/n4.不可数名词：结构，构造/r/n5.电脑内部结构/r/n']);
+
+this.words_1.push(['arena', '英音[ə\'ri:nə] 美音[ə\'ri:nə]', '名词 /r/n1.圆形运动场，圆形剧场/r/n2.活动场所，竞技场所']);
+
+this.words_1.push(['arithmetic', '英音[ə\'riθmətik] 美音[ə\'riθmətik]', '不可数名词：/r/n1.算术/r/n2.算术运算，四则运算/r/n']);
+
+this.words_1.push(['artisan', '英音[ɑ:ti\'zæn] 美音[ɑ:ti\'zæn]', '名词 /r/n1.工匠，技工']);
+
+this.words_1.push(['assistant', '英音[ə\'sistənt] 美音[ə\'sistənt]', '名词 /r/n1.助手，助理，助教，店员/r/n2.起辅助作用的事物/r/n/r/na. /r/n助理的，有帮助的，辅助的，副的']);
+
+this.words_1.push(['association', '英音[ə\'səusi\'eiʃən] 美音[ə\'sosi\'eʃən]', '名词/r/n1.不可数名词：[association (with sb/sth)]联合，联系，与某人为伍；友谊，友情，交往/r/n2.可数名词：联想/r/n3.可数名词：社团；协会；学会/r/n']);
+
+this.words_1.push(['astronomy', '英音[əs\'trɔnəmi] 美音[əs\'trɔnəmi]', '名词/r/n1.天文学']);
+
+this.words_1.push(['atlas', '英音[\'ætləs] 美音[\'ætləs]', '名词 地图册，地图集']);
+
+this.words_1.push(['attendant', '英音[ə\'tendənt] 美音[ə\'tendənt]', '名词 /r/n1.服务人员，侍者，随从 /r/n2.伴随物 /r/na. /r/n1.伴随的，随之而产生的 /r/n2.护理的']);
+
+this.words_1.push(['auditor', '英音[\'ɔ:ditə] 美音[\'ɔ:ditə]', '名词 /r/n听者，收听者，稽核员']);
+
+this.words_1.push(['autarchy', '英音[\'ɔ:tɑ:ki] 美音[\'ɔ:tɑ:ki]', '名词 绝对主权/r/n自给自足；经济独立（政策、地区、国家）']);
+
+this.words_1.push(['baker', '英音[\'beikə] 美音[\'beikə]', '名词 /r/n1.面包师；糕点师 /r/n2.面包店店主；糕点店店主 /r/n3.【美】轻便烘炉 /r/n4.十三 /r/n5.面包店 /r/n6.面包店']);
+
+this.words_1.push(['balance', '英音[\'bæləns] 美音[\'bæləns]', '名词/r/n1.可数名词：天平；秤/r/n2.不可数名词：平衡，平稳；心境的平稳，心智健全/r/n3.不可数名词：[balance (in sth/between A and B)]均衡状态，均势；谐调，匀称/r/n4.可数名词：（通常作单数）【财】收支差额；余额/r/n5.可数名词：（通常作单数）余欠之（钱）数；[the balance]剩余/r/nv./r/n1.及物动词：使（某物）保持平衡；不及物动词：使自己保持平衡/r/n2.【财】及物动词： 结算；不及物动词：（指帐目﹑ 资产负债表等）显示借贷相抵（收支平衡）；及物动词： 与（某对比事物）等价，抵销/r/n3.及物动词：[balance A against B]将此一计划、主张等与彼一计划、主张等作价值上的比较；权衡二者之利弊/r/n4.及物动词：对（某事物的不同部分）给予同等的重视；等量齐观']);
+
+this.words_1.push(['balancer', '英音[\'bælənsə] 美音[\'bælənsə]', '名词 秤称的人,平衡器,走绳索者']);
+
+this.words_1.push(['ballerina', '英音[bælə\'ri:nə] 美音[bælə\'ri:nə]', '名词 /r/n1.芭蕾舞女演员（尤指主角）/r/n']);
+
+this.words_1.push(['ballet', '英音[\'bælei,bæ\'lei] 美音[\'bælei,bæ\'lei]', '名词 /r/n芭蕾舞']);
+
+this.words_1.push(['ballroom', '英音[\'bɔ:lru:m] 美音[\'bɔ:lru:m]', '名词/r/n1.舞厅']);
+
+this.words_1.push(['banger', '英音[\'bæŋə] 美音[\'bæŋə]', '名词 香肠,鞭炮,破旧货']);
+
+this.words_1.push(['bank', '英音[bæŋk] 美音[bæŋk]', '名词/r/n1.银行/r/n2.[the Bank]<英>英格兰银行，（在香港指）汇丰银行/r/n3.储蓄箱，扑满/r/n4.库（尤指储藏血液、数据等以备应用的设备），库存/r/n5.（赌博的）庄家/r/n6.庄家的赌本，全部筹码，发剩留待抽补的牌/r/n7.（长条形的）堆/r/n8.（河等的）岸/r/n9.垄，埂，堤/r/n10.（山、谷等的）陡坡/r/n11.（飞机等）转弯时的向内侧倾斜/r/n12.（转弯处）路面的向内侧倾斜，边（斜）坡，路面从内侧至外侧的向上倾斜度，边坡度/r/n及物动词：/r/n1.把（钱）存入银行/r/n2.把（血液等）储藏入库/r/n3.把…堆积起来（up）/r/n4.把（路的转弯处）筑成从内侧至外侧的向上倾斜的弯道/r/n5.使（飞机、汽车或乘坐者等）倾斜着行进/r/n6.筑堤围拦，筑堤防护，像堤岸般围拦/r/n不及物动词：/r/n1.把钱存入银行，与银行作业务往来（at,with）/r/n2.开银行，做银行家/r/n3.（在赌博中）做庄家/r/n4.堆积起来，聚集，积聚（up）/r/n5.（飞机、汽车或乘坐者等）带坡度转弯，倾斜着行进，（鸟）侧着身子飞，（鱼）侧着身子游/r/n6.（路）形成从内侧至外侧向上倾斜的弯道']);
+
+this.words_1.push(['banker', '英音[\'bæŋkə] 美音[\'bæŋkə]', '名词 /r/n1.银行家，银行主，银行经理 /r/n2.庄家']);
+
+this.words_1.push(['banking', '英音[\'bæŋkiŋ] 美音[\'bæŋkiŋ]', '名词 /r/n1.银行业务/r/n2.银行业；银行家的职业/r/n']);
+
+this.words_1.push(['banknote', '英音[\'bæŋknəut] 美音[\'bæŋknəut]', '名词 钞票']);
+
+this.words_1.push(['barber', '英音[\'bɑ:bə] 美音[\'bɑ:bə]', '名词 /r/n理发员，美容师']);
+
+this.words_1.push(['barracks', '', '名词 兵营']);
+
+this.words_1.push(['bazaar', '英音[bə\'zɑ:] 美音[bə\'zɑ:]', '名词 可数名词：/r/n1.（中东国家等的）市场；街市；集市/r/n2.洋杂店；小工艺品商店/r/n3.义卖；义卖市场/r/n']);
+
+this.words_1.push(['bazar', '英音[bə\'zɑ:] 美音[bə\'zɑ:]', '名词 [东方] 市场/r/n杂货市集']);
+
+this.words_1.push(['beadle', '英音[\'bi:dl] 美音[\'bi:dl]', '名词 小吏,游行领队']);
+
+this.words_1.push(['bear', '英音[bɛə] 美音[bɛr]', '动词 及物动词：/r/n1.支持；承受；承担/r/n2.运送；携带；带走/r/n3.忍受；经得起[+to-v][+v-ing][+that]/r/n4.容许/r/n5.佩带；拥有；具有/r/n6.写有；印有；带有/r/n7.怀有；对...抱有(+for/against)/r/n8.生(小孩)；开(花)；结(果)/r/n9.产(庄稼)；生(利息)/r/n10.值得；需要/r/n11.(与oneself连用)表现[O]/r/nv. 不及物动词：/r/n1.承受重量（或压力）/r/n2.用力推（或挤，压）/r/n3.开花结果/r/n4.（依一定方向）延伸/r/nn. 可数名词：/r/n1.熊；似熊的动物/r/n2.鲁莽的人；笨拙的人/r/n3.【美】【俚】佼佼者/r/n4.（股市中）做空头者；（对行情）看跌者/r/nv. 及物动词：/r/n1.通过卖空使行情下跌/r/nv. 不及物动词：/r/n1.做空头/r/na. /r/n1.卖空的，行情下跌的/r/n/r/n/r/n/r/n/r/n']);
+
+this.words_1.push(['beautician', '英音[bju:\'tiʃən] 美音[bju:\'tiʃən]', '名词 美容师']);
+
+this.words_1.push(['bill', '英音[bil] 美音[bil]', '名词/r/n1.（英式）帐单/r/n2. 广告；招贴；海报；告示/r/n3.（电影院、剧场等的）节目单/r/n4.（提交议会讨论的）法案/r/n5.【美】纸币/r/n6.（男子名）比尔/r/nv./r/n1.及物动词：[bill sb (for sth)] 送交某人帐单（要求为某事物付帐）/r/n2.（常用被动语态）宣布；贴广告；列入节目单/r/n']);
+
+this.words_1.push(['biochemistry', '英音[\'baiəu\'kemistri] 美音[\'baiəu\'kemistri]', '名词 生物化学']);
+
+this.words_1.push(['biologist', '英音[bai\'ɔlədʒist] 美音[bai\'ɔlədʒist]', '名词 生物学家']);
+
+this.words_1.push(['biology', '英音[bai\'ɔlədʒi] 美音[bai\'ɔlədʒi]', '不可数名词：/r/n1.生物学/r/n2.生理']);
+
+this.words_1.push(['biro', '英音[\'bairəu] 美音[\'bairəu]', '名词 圆珠笔的一种']);
+
+this.words_1.push(['blackboard', '英音[\'blækbɔ:d] 美音[\'blæk,bord]]', '名词 /r/n1.可数名词：黑板/r/n']);
+
+this.words_1.push(['blackleg', '英音[\'blækleg] 美音[\'blækleg]', '名词 骗子,骗徒,破坏罢工的工人']);
+
+this.words_1.push(['bond', '英音[bɔnd] 美音[bɔnd]', '名词 /r/n1. 捆绑物，绳索/r/n2.[bonds]枷锁/r/n3. 约束力，联系/r/n4. 公债/r/n5. 契约，合同，票据，保险单/r/n6. 保证金/r/n7.【商】缴税协议/r/n8.【建】（砖，木板等）砌合/r/n9. 粘合剂/r/n10.【化】键/r/n11.【交】导接线/r/n12.【古】农奴/r/nadj./r/n被奴役的，不自由的/r/nv./r/n及物动词：/r/n1. 存入关栈/r/n2. 粘着，使结合/r/n3. 保释/r/n4. 以…作抵押/r/n5. 以债券担保（债务）/r/n不及物动词：/r/n1. 结合，砌合/r/n2. 团结在一起/r/n3.【心理学、动物行为学】联结；父母和婴儿之间建立亲情关系']);
+
+this.words_1.push(['bonus', '英音[\'bəunəs] 美音[\'bounəs]', '名词/r/n1. 奖金；红利/r/n2. 意外收获/r/n3. 赠品，免费赠送的东西/r/n4.【口】额外令人高兴的事情/r/n5.【牌戏】加分/r/n6.【英】【俚】贿赂']);
+
+this.words_1.push(['bootblack', '英音[\'bu:tblæk] 美音[\'bu:tblæk]', '名词 擦鞋童']);
+
+this.words_1.push(['booth', '英音[bu:θ] 美音[buθ]', '名词 可数名词：/r/n1.（有篷的）货摊/r/n2.【美】公用电话亭；岗亭/r/n3.投票站/r/n4.（隔开的）小房间；（餐厅等的）雅座/r/n']);
+
+this.words_1.push(['borrower', '英音[\'bɔrəuə] 美音[\'bɔrəuə]', '名词 借用人，剽窃者']);
+
+this.words_1.push(['botanist', '英音[\'bɔtənist] 美音[\'bɔtənist]', '名词/r/n1.植物学家，研究植物的人']);
+
+this.words_1.push(['botany', '英音[\'bɔtəni] 美音[\'bɔtəni]', '名词 /r/n1.植物学']);
+
+this.words_1.push(['break', '英音[breik] 美音[brek]', '及物动词：/r/n1. 打破；折断；使碎裂/r/n2. 毁坏，弄坏；砸破 /r/n3. 兑开（大额钞票等）/r/n4. 越（狱）；从...挣脱/r/n5. 冲破（障碍等）；破...而入；闯入/r/n6. 破（土）；割破/r/n7. 打破（寂静等）；切断（电路等）；中止（旅程等）/r/n8. 使垮掉；制服；放弃（习惯）；使放弃习惯/r/n9. 破坏（约束）；违反/r/n10. 打破（记录）；超过/r/n11. 透露；说出/r/n12. 破解（密码）；破(案）；拆穿/r/n13. 使破产/r/n不及物动词：/r/n1. 破碎；破裂；断裂/r/n2. 破掉，被损坏/r/n3. 猛闯，突破/r/n强行逃脱 /r/n4. 中断，中止/r/n5.（精神等）垮掉/r/n6. 突然发生；突然传出/r/n7.（天空）破晓/r/n8.（嗓音）突变/r/nn. /r/n1.可数名词： 破损，破裂，裂缝，折断/r/n2.可数名词： 暂停；休息/r/n3.可数名词： 断绝，绝裂(+with/from)/r/n4.可数名词：（天气、话题等的）骤变(+in)/r/n5.可数名词：【口】机会，好运/r/n6.可数名词： 逃亡，越狱/r/n7.（台球）一次连续得分/r/n8.可数名词：【网】发球一方输掉的发球局/r/n9.不可数名词： 破晓']);
+
+this.words_1.push(['broker', '英音[\'brəukə] 美音[\'brəukə]', '可数名词：（股票、外汇或商品）经纪人，代理商/r/n及物动词：（国家或政府作为中间人）协调，安排']);
+
+this.words_1.push(['building', '英音[\'bildiŋ] 美音[\'bildiŋ]', '名词 /r/n1.不可数名词： 建筑（的艺术或行业） /r/n2.可数名词：【缩写=bldg】（有屋顶和墙的）结构，建筑物/r/nv. [build] 的ing形式/r/n']);
+
+this.words_1.push(['bull', '英音[bul] 美音[bul]', '可数名词：/r/n1.（未阉割的）公牛/r/n2.（鲸、象、麋、海豹等动物的）雄兽；（马戏团用语）象/r/n3.体壮（或声粗、力大）如牛的人，彪形大汉，粗汉/r/n4.【美俚】工头/r/n5.【美俚】警察；便衣警察，侦探；监狱看守/r/n6.【美俚】火车头/r/n7.买进证券（或商品）投机图利者，多头；对前景（尤指行情）乐观的人/r/n8.【口】胡说八道，废话；吹牛/r/n9.【英俚】大扫除；擦亮；（军队里）对擦洗等例行事务的过分注意；繁文缛节，清规戒律/r/nadj./r/n1.雄的/r/n2.（似）公牛的；体（或声、力）大如牛的/r/n3.（同类中）大号的/r/n4.（证券等）价格上涨的；买进证券（或商品）的，做多头的/r/n及物动词：/r/n1.对...施加强力；强使...通过；推，挤/r/n2.从事投机使（证券等）价格上涨/r/n3.【英俚】彻底打扫；把...擦得铮亮/r/n4.【美俚】吓唬；欺骗/r/n不及物动词：/r/n1.做证券（或商品）投机生意；抬高证券（或商品）价格；（股票等）价格上涨；提高身价，走运/r/n2.行动莽撞；猛力向前；用力挤/r/n3.【口】闲聊；吹牛；讲空话']);
+
+this.words_1.push(['businessman', '英音[\'biznismən] 美音[\'biznismən]', '名词 /r/n1.商人；实业家，从事工商业的人 /r/n2.具有经营者所必需素质的人，生财有道者']);
+
+this.words_1.push(['butcher', '英音[\'butʃə] 美音[\'butʃə]', '可数名词： /r/n1.屠夫；肉贩/r/n2.butcher's 肉店，肉铺/r/n3.刽子手/r/n及物动词：/r/n1.屠杀；杀戮/r/n2.屠宰，宰杀/r/n3.弄砸，糟蹋']);
+
+this.words_1.push(['buyer', '英音[\'baiə] 美音[\'baiə]', '名词 /r/n购买者，买主']);
+
+this.words_1.push(['cabaret', '英音[\'kæbərei] 美音[\'kæbərei]', '名词 (有音乐,歌舞的)酒店,酒店的歌舞表演']);
+
+this.words_1.push(['cage', '英音[keidʒ] 美音[keidʒ]', '名词 笼子/r/n及物动词：把（动物） 关在笼中']);
+
+this.words_1.push(['canteen', '英音[kæn\'ti:n] 美音[kæn\'ti:n]', '名词 /r/n军中福利社，临时流动餐馆，小卖部']);
+
+this.words_1.push(['capable', '英音[\'keipəbl] 美音[\'keipəbl]', 'adj. /r/n1. 有能力的，有技能的 /r/n2. 能力强的；足以胜任的 /r/nn. /r/n1. 有才能的；能干的 /r/nadv. /r/n1. 敢于，干得出']);
+
+this.words_1.push(['capital', '英音[\'kæpitəl] 美音[\'kæpitəl]', '名词 /r/n1.首都，首府，省会 /r/n2.资本，资金 /r/n3.大写字母 /r/n4.(工业等的)中心城市 /r/n5.资源；收益的来源 /r/n6.[总称]资本家，资方 /r/n7.【会计学】资产净值；股本总额 /r/n8.【建筑工程】柱顶 /r/na. /r/n1.资本的，与资本有关的 /r/n2.最重要的，主要的，首要的；基本的 /r/n3.极好的；第一流的，顶好的，上流的 /r/n4.大写的 /r/n5.可处死刑的 /r/n6.首都的；政府所在地的 /r/n7.非常严重的；致命的']);
+
+this.words_1.push(['career', '英音[kə\'riə] 美音[kə\'riə]', '可数名词：/r/n1.生涯，经理；职业，谋生之道/r/n2.（事业的）成功，成就/r/n3.全速；（迅速的）前进/r/n4.进程；（行动或过程的）顶点/r/n不及物动词：/r/n奔驰，猛冲/r/n及物动词：/r/n1.使（马）奔驰；驱（车）急行/r/n2.在...中急行/r/na./r/n终生从事职业的']);
+
+this.words_1.push(['carnival', '英音[\'kɑ:nivl] 美音[\'kɑ:nivl]', '名词 /r/n1.[C,U]狂欢节，嘉年华/r/n2.可数名词：露天游乐场/r/n3.可数名词：露天游乐会，义卖游乐会/r/n4.激动人心的事物组合，五彩缤纷事物的组合/r/n']);
+
+this.words_1.push(['carrousel', '英音[kæru\'zel] 美音[kæru\'zel]', '名词 旋转木马,(尤指机场的）旋转式行李传送带.']);
+
+this.words_1.push(['cartel', '英音[kɑ:\'tel] 美音[kɑ:\'tel]', '名词  卡特尔，企业联盟（通过统一价格、防止竞争来增加共同利润）']);
+
+this.words_1.push(['cash', '英音[kæʃ] 美音[kæʃ]', '名词 /r/n1.钱，现款 /r/n2.（任何形式的）金钱，资金 /r/n及物动词： /r/n1.把支票兑换成现金']);
+
+this.words_1.push(['cathedral', '英音[kə\'θi:drəl] 美音[kə\'θidrəl]', '可数名词： /r/n大教堂，（主教控制的）教区总教堂']);
+
+this.words_1.push(['cavalcade', '英音[kævl\'keid] 美音[kævl\'keid]', '名词 行列,骑马行列']);
+
+this.words_1.push(['cemetery', '英音[\'semiteri] 美音[\'semiteri]', '名词 /r/n（通常不属于某个教堂的）公墓，墓地']);
+
+this.words_1.push(['centre', '英音[\'sentə] 美音[\'sentə]', '名词 /r/n1.中心点，中心，中央 /r/n2.使人感兴趣的集中点 /r/n3.中枢 /r/n4.活动集中的地方 /r/n5.政治上的中间立场或中间党派 /r/n6.（市镇的）中心区 /r/n7.人口集中的地区；商业中心区；文化中心区 /r/n8.活动中心 /r/n9.居领先地位的中心；（某领域中成绩突出的）中心 /r/n10.中心；聚集点 /r/n11.以…为中心的；有…中心的 /r/n12.中锋 /r/n动词： /r/n1.置于中央 /r/n2.集中 /r/n3.把…当作中心；（使）成为中心']);
+
+this.words_1.push(['certificate', '英音[sə\'tifikit] 美音[sɚ\'tɪfəkɪt]', '名词 可数名词：/r/n1.证明书；执照；（没有学位的）结业证书/r/n2.凭证，单据；证券/r/n3.【美】流通券，纸币/r/n 及物动词： /r/n1.发证书给；用证书批准；用证书证明/r/n']);
+
+this.words_1.push(['change', '英音[tʃeindʒ] 美音[tʃeindʒ]', '可数名词：/r/n1.[C,U] 改变；变化；变更；变革/r/n2.[sing.] a change (from sth.)（会令人感兴趣或可喜的）变化，变更/r/n3. 替代；更换；替代物/r/n4. 替换物/r/n5. 换车；转车；换机/r/n6.[Change]【英】（旧时的）交易所（亦作'Change）/r/n7.[the change]【口】【生理】绝经（期）；更年期/r/n8.（月亮）转换月相（尤指换到新月）/r/n9.[changes] 钟乐/r/n不可数名词：/r/n1. 找给的零钱；找头/r/n2. 辅币；硬币；分币/r/n3.【美俚】金钱/r/n及物动词：/r/n1.（使）改变；更改；调动；变革/r/n2. 换去（旧鞋、帽等）；更换；改换/r/n3. 交换，互换/r/n4. 兑换/r/n5. 给（婴儿）换尿布；给（卧床病人）换衣服；给（床）换床单/r/n不及物动词：/r/n1. 改变；变更/r/n2. 换衣（或尿布等）/r/n3. 换车（或船等）/r/n4. 交换，互换/r/n5.（儿童发育时的嗓音）变低沉/r/n6.（月亮）转换月相（尤指换到新月）']);
+
+this.words_1.push(['chapel', '英音[\'tʃæpl] 美音[\'tʃæpl]', '名词 /r/n小礼拜堂，礼拜']);
+
+this.words_1.push(['check', '英音[tʃek] 美音[tʃek]', '可数名词：/r/n1.检查，查看（是否安全、正确、状况良好）/r/n2.调查；审查/r/n3.阻碍进程的事物；阻止恶化的事物/r/n4.[checks]（对政治等权利的）规定，条令，约束/r/n5.[C,U]（通常指双色的）方格图案，方格，格子/r/n6.【美】=【英】cheque 支票/r/n7.【北美】=【英】bill 账单/r/n8.【北美】（俱乐部、餐馆等衣、包的）寄存处，存放处/r/n9.【北美】（餐馆或剧院的）存物牌，存放证/r/n10.【北美】（亦为check mark）=【英】tick 核对号；对号；钩号；记号/r/n11.【棋】将军；被将军的局面/r/n12.【美】（赌博时用的）筹码/r/n及物动词：/r/n1.检查，审查；核查；检验/r/n2.控制；抑制；阻止/r/n3.克制，抑制（做某事或表露感情）/r/n4.【北美】存放；寄放/r/n5.【北美】托运（行李）/r/n6.【北美】=【英】tick 标记号；打上钩；打对号/r/n7.在……上印（或标）上格子图案；【美】把（田地）划成方格进行栽植，纵横成行地栽植（作物）/r/n8.扣发（工资等）/r/n9.使开裂；使龟裂/r/n10.【美口】取消/r/n11.【棋】将（对方的将或帅）/r/n12.【冰】阻截/r/n13.【海】把（绳索）有控制地慢慢松出/r/n不及物动词：/r/n1.查明；查看；核实；弄确实/r/n2.（逐项）相符；证明无误/r/n3.标上钩形符号/r/n4.收住；（突然）停止；（猎犬因臭迹中断而）站住/r/n5.开裂；龟裂/r/n6.【棋】将军/r/n7.【美】开支票/r/n8.【牌】（扑克牌）不下赌注（把首轮下注权让给下家）/r/na./r/n1.停止的；用于制止的/r/n2.核对用的；检查用的/r/n3.有格子图案的，方格的/r/nint./r/n1.【棋】将（军）！/r/n2.【主美口】行，好']);
+
+this.words_1.push(['checkbook', '英音[\'tʃekbuk] 美音[\'tʃekbuk]', '名词 支票簿']);
+
+this.words_1.push(['chemical', '英音[\'kemikəl] 美音[\'kemikəl]', 'adj./r/n1.与化学有关的，化学的/r/n2.用化学方法制造的，化学作用的/r/nn./r/n化学制品，化学品']);
+
+this.words_1.push(['chemist', '英音[\'kemist] 美音[\'kemist]', '名词  /r/n1.药剂师，药商/r/n2.chemist's药房；（通常也出售肥皂、化妆品等的）药店/r/n3.化学家']);
+
+this.words_1.push(['chemistry', '英音[\'kemistri] 美音[\'kemistri]', '名词/r/n1.化学/r/n2.物质的化学组成（或性质） /r/n3.（常指有强烈性吸引力的）两人间的关系']);
+
+this.words_1.push(['cheque', '英音[tʃek] 美音[tʃek]', '名词 支票']);
+
+this.words_1.push(['chequebook', '英音[\'tʃekbuk] 美音[\'tʃekbuk]', '名词 支票簿']);
+
+this.words_1.push(['Chinese', '英音[\'tʃai\'ni:z] 美音[\'tʃai\'ni:z]', '名词/r/n1.可数名词： 中国人；华裔；华人/r/n2.不可数名词：中国话，汉语，中文/r/na. 中国的']);
+
+this.words_1.push(['choreography', '英音[kɔri\'ɔgrəfi] 美音[kɔri\'ɔgrəfi]', '名词 /r/n1.舞台舞蹈设计 /r/n2.舞蹈动作的设计者 /r/na. /r/n1.舞蹈艺术的']);
+
+this.words_1.push(['church', '英音[tʃə:tʃ] 美音[tʃə:tʃ]', '名词/r/n1.可数名词：教堂/r/n2.不可数名词：教堂的）礼拜仪式；（会众的）礼拜/r/n3.[sing][theChurch]全体基督教徒；（尤指基督教的）教会，宗教；基督教牧师；教士；神职/r/n4.可数名词：基督教教派；派别']);
+
+this.words_1.push(['cinema', '英音[\'sinimə] 美音[\'sinimə]', '名词 /r/n电影院，电影，影片']);
+
+this.words_1.push(['city', '英音[\'siti] 美音[\'siti]', '名词/r/n1.可数名词：城市； 都市； 市/r/n2.可数名词：特许市（由皇家特许状赋予特权，且通常有大教堂的城市）/r/n3.可数名词：【美】特许市（由国家特许状赋予特权的城市）. /r/n4.[CGp]全市居民/r/n5.[sing][the City]伦敦商业区（伦敦最古老的部分，现为商业及金融中心）']);
+
+this.words_1.push(['class', '英音[klɑ:s] 美音[klæs]', '名词/r/n1.可数名词：班，班级/r/n2.[C,U]课，上课/r/n3.可数名词：某科目的系列课程/r/n4.可数名词：同届毕业生/r/n5.可数名词：阶级，阶层/r/n6.不可数名词：社会等级/r/n7.可数名词：种类，类别，等级/r/n8.不可数名词：优雅，典雅，高超/r/n9.可数名词：（尤用于构成复合词）等级，舱位等级/r/n10.可数名词：（尤用于构成复合词）（英国学位考试的）等级/r/n11.可数名词：（动植物等分类的）纲/r/n及物动词：归类，分类/r/na.很好的，优秀的，出色的']);
+
+this.words_1.push(['classmate', '英音[\'klɑ:smeit] 美音[\'klæsmeit]', '名词 同班同学']);
+
+this.words_1.push(['classroom', '英音[\'klɑ:sru:m] 美音[\'klæsru:m]', '名词 教室；课堂']);
+
+this.words_1.push(['clerk', '英音[klɑ:k] 美音[klɜrk]', '名词 可数名词：/r/n1.职员，簿记员，文书/r/n2.书记员/r/n3.店员/r/n4.旅馆服务台接待员/r/n不及物动词：/r/n当店员（职员等）']);
+
+this.words_1.push(['clinic', '英音[\'klinik] 美音[\'klinik]', '名词 /r/n1.门诊部，诊所/r/n2.临床教学，临床实习/r/n3.门诊时间，会诊时间/r/n4.医疗中心/r/n5.研习班，培训班']);
+
+this.words_1.push(['clown', '英音[klaun] 美音[klaun]', '名词 可数名词：/r/n1.（马戏团等的）小丑，丑角/r/n2.乡下人，农民/r/n3.粗鲁笨拙（或无知）的人/r/n4.爱开玩笑的人，诙谐的人/r/nv. 不及物动词：/r/n1.扮小丑/r/n2.开玩笑；装傻/r/n']);
+
+this.words_1.push(['collaborator', '英音[kə\'læbəreitə] 美音[kə\'læbəreitə]', '名词 /r/n1.合作者；共同研究者 /r/n2.通敌者']);
+
+this.words_1.push(['commerce', '英音[\'kɔmə:s] 美音[\'kɔmə:s]', '名词（尤指国际间的）贸易；商业；商务']);
+
+this.words_1.push(['compass', '英音[\'kʌmpəs] 美音[\'kʌmpəs]', '名词 /r/n1.罗盘，指南针 /r/n2.圆规 /r/n3.界限，范围；范畴']);
+
+this.words_1.push(['composer', '英音[kəm\'pəuzə] 美音[kəm\'pəuzə]', '名词 /r/n作曲家，作家，设计者']);
+
+this.words_1.push(['computer', '英音[kəm\'pju:tə] 美音[kəm\'pjutɚ]', '名词/r/n1.计算机；电脑/r/n2.计算员；计算者/r/n3.计算器/r/n']);
+
+this.words_1.push(['concentration', '英音[\'kɔnsen\'treiʃən] 美音[,kɑnsɛn\'treʃən]', '名词 /r/n1.[C,U]集中/r/n2.不可数名词：专心，专注/r/n3.不可数名词：浓缩；浓度/r/n']);
+
+this.words_1.push(['conductor', '英音[kən\'dʌktə] 美音[kən\'dʌktə]', '可数名词：/r/n1.（管弦乐队、合唱队等的）指挥，职业指挥/r/n2.列车长/r/n3.（公共汽车的）售票员/r/n4.【物理】导体（导电或导热等的物质） /r/n']);
+
+this.words_1.push(['confetti', '英音[kən\'feti:] 美音[kən\'feti:]', '名词 糖果,五彩纸屑']);
+
+this.words_1.push(['conjurer', '英音[kən\'dʒuərə] 美音[kən\'dʒuərə]', '名词 行咒法者/r/n魔术师']);
+
+this.words_1.push(['conjuror', '英音[kən\'dʒuərə] 美音[kən\'dʒuərə]', '名词 行咒法者/r/n魔术师']);
+
+this.words_1.push(['construction', '英音[kən\'strʌkʃən] 美音[kən\'strʌkʃən]', '名词 /r/n1.建造，构筑；建设/r/n2.可数名词：建筑物/r/n结构/r/n3.建造术；建造式样/r/n4.【语】结构（体）；（句子、从句、短语中）词的配列/r/n5.意义；解释/r/n6.【数】作图；图形/r/n7.（安排舞台布景的）机械装置/r/n8.【雕】构成派雕塑作品']);
+
+this.words_1.push(['contingencies', '', '不可预见费']);
+
+this.words_1.push(['contortionist', '英音[kən\'tɔ:ʃənist] 美音[kən\'tɔ:ʃənist]', '名词 软体舞师']);
+
+this.words_1.push(['convertibility', '英音[kənvə:tə\'biliti] 美音[kənvə:tə\'biliti]', '名词 可改变性,可变换,可兑换']);
+
+this.words_1.push(['copywriter', '英音[\'kɔpiraitə] 美音[\'kɔpiraitə]', '名词 广告文编写人']);
+
+this.words_1.push(['correspondence', '英音[\'kɔris\'pɔndəns] 美音[\'kɔris\'pɔndəns]', '名词/r/n1.不可数名词： 来往信件，往来书信/r/n2.[U,C] 通信，通信联系/r/n3.[C,U] 相关，相似']);
+
+this.words_1.push(['cost', '英音[kɔst] 美音[kɔst]', '动词/r/n1.不及物动词：【通常不用于进行时态】价钱为，需花费/r/n2.不及物动词：【通常不用于进行时态】使付出（代价），使丧失（某事物）；需做出某种努力或牺牲 /r/n3.及物动词：【商】估价，定价，估计成本，按成本作价/r/n4.及物动词：【口】 对（某人）来说代价高昂/r/n/r/nn./r/n1.[U,C]价钱，价格，费用/r/n2.不可数名词：（为得到某事物而付的）代价；努力；损失；牺牲/r/n3.[costs]【复数】【律】诉讼费用']);
+
+this.words_1.push(['costume', '英音[\'kɔstju:m] 美音[\'kɔstju:m]', '名词 /r/n1.[C,U]服装；装束/r/n2.[C,U]戏装；服装/r/n3.可数名词：英】【口】=swimming costume']);
+
+this.words_1.push(['course', '英音[kɔ:s] 美音[kors]', '名词 可数名词：/r/n1.路线；方向/r/n2.习惯的程序/r/n3.方针，做法/r/n4.（竞赛的）跑道；场地/r/n5.课程，科目(+in/on)/r/n6.系列，连续/r/n7.一道菜/r/n8.【建】层；一层砖石/r/n9.不可数名词：过程；进程/r/nv. 及物动词：/r/n1.（用猎犬）追猎；追逐/r/n2.使（马等）奔跑/r/nv. 不及物动词：/r/n1.（液体）流动/r/n2.（用猎犬）追猎/r/n']);
+
+this.words_1.push(['craft', '英音[krɑ:ft] 美音[krɑ:ft]', '名词/r/n1.[C,U]工艺，手艺/r/n2.[sing.]技巧，技能，技艺/r/n3.不可数名词：诡计，手腕，骗术/r/n4.可数名词：(pl.craft)小船，船/r/n5.可数名词：(pl.craft)飞行器，飞机，宇宙飞船/r/nv./r/n（尤指用手工）精心制作']);
+
+this.words_1.push(['craftsman', '英音[\'kræftsmən] 美音[\'kræftsmən]', '名词/r/n1.工匠；手艺人']);
+
+this.words_1.push(['creditor', '英音[\'kreditə] 美音[\'kreditə]', '名词 /r/n债权人，贷款的一方，贷方']);
+
+this.words_1.push(['crib', '英音[krib] 美音[krib]', '名词 /r/n1.婴儿小床/r/n2.食槽，栅栏/r/n3.抄袭，作弊用的夹带/r/nv./r/n1.及物动词：抄袭，关入栅栏/r/n2.不及物动词：剽窃']);
+
+this.words_1.push(['cricket', '英音[\'krikit] 美音[\'krikit]', '名词 /r/n1.可数名词：蟋蟀/r/n2.不可数名词：板球']);
+
+this.words_1.push(['culture', '英音[\'kʌltʃə(r)] 美音[\'kʌltʃə(r)]', '名词/r/n1.不可数名词：文化，文明（指国家或群体的风俗、信仰、艺术、生活方式及社会组织）/r/n2.可数名词：文化（指拥有特定信仰等的国家、群体等）/r/n3.不可数名词：文化（艺术、音乐、文学等的统称）/r/n4.[C,U]文化（某群体或组织的一致看法和态度）/r/n5.不可数名词：种植，栽培，养殖，培育/r/n6.可数名词：【生物】【医】培养物，培养细胞，培养菌；（为医疗或科研作细菌、细胞的）培养/r/n及物动词：/r/n【生物】【医】培养（细胞或细菌）']);
+
+this.words_1.push(['curriculum', '英音[kə\'rikjuləm] 美音[kə\'rikjuləm]', '名词/r/n1.总课程，（学校等的）全部课程']);
+
+this.words_1.push(['cutter', '英音[\'kʌtə] 美音[\'kʌtə]', '可数名词：/r/n1.切者；割者；裁剪者/r/n2.切刀，割刀，刀具；切割机；裁剪机/r/n3.（刻制声盘的）刻纹头，机械录音头/r/n4.【美】（通常一马拉的供一人乘坐的）轻便雪橇/r/n5.独桅纵帆船；（海岸警卫队）小型武装快艇；（海关）缉私巡逻艇；（为大船、军舰运送人和供应品的）小艇/r/n6.【美】提供次低级牛肉的牛；次低级牛肉/r/n7.【电影】剪辑师，剪接员/r/n8.【板】（善于）击旋转球的击球手；击出的旋转球/r/n9.肉用猪']);
+
+this.words_1.push(['dance', '英音[dɑ:ns] 美音[dæns]', '不及物动词：/r/n1. 跳舞；舞蹈/r/n2. 跳跃；雀跃/r/n3.（上下或左右）跳动；轻快地移动/r/n及物动词：/r/n1. 跳（舞）；跳（某一角色）的舞/r/n2. 使跳舞/r/n3. 以跳舞表示；跳舞跳得.../r/n4. 使上下摆动；使轻快移动/r/n可数名词：/r/n1. 舞，舞蹈/r/n2. 跳舞；舞蹈演出/r/n3. 舞会/r/n4.（常作the dance）舞蹈艺术/r/n5. 舞曲/r/n6. 跳跃；跳动；摇晃；闪动；翻腾/r/n7.【美俚】（黑社会帮派之间的）斗殴，派仗/r/nadj./r/n1. 舞的，舞蹈的/r/n2. 用于跳舞的/r/n']);
+
+this.words_1.push(['dean', '英音[di:n] 美音[di:n]', '可数名词：/r/n1.院长，主持牧师/r/n2.（大学的）教务长/r/n3.学院院长']);
+
+this.words_1.push(['debenture', '英音[di\'bentʃə] 美音[di\'bentʃə]', '名词 公司债,公司债券,退税证明书']);
+
+this.words_1.push(['debtor', '英音[\'detə] 美音[\'detə]', '名词 债务人；借方']);
+
+this.words_1.push(['deflation', '英音[di\'fleiʃən] 美音[di\'fleiʃən]', '名词/r/n1.通货紧缩']);
+
+this.words_1.push(['delegate', '英音[\'deligeit] 美音[\'deligeit]', '名词 /r/n代表，代表团成员/r/n及物动词：/r/n1. 任命或委派…为代表/r/n2. 托付/r/n3. 授（权）；把（工作、权力等）委托（给下级）；选派（某人做某事）']);
+
+this.words_1.push(['demonstration', '英音[\'deməns\'treiʃən] 美音[\'deməns\'treiʃən]', '名词 /r/n1.表明；证明；示范 /r/n2.【非正】游行示威 /r/n3.证明；证实；论证；说明 /r/n4.表达；表露；表现；显露']);
+
+this.words_1.push(['dentist', '英音[\'dentist] 美音[\'dentist]', '可数名词：/r/n牙科医生，牙医']);
+
+this.words_1.push(['depreciation', '英音[dipri:ʃi\'eiʃən] 美音[dipri:ʃi\'eiʃən]', '不可数名词： /r/n1.价值减低，减价/r/n2.跌落，折旧']);
+
+this.words_1.push(['designer', '英音[di\'zainə] 美音[di\'zainə]', '可数名词：/r/n1.设计者（如机器、家具、时装的设计人）']);
+
+this.words_1.push(['desk', '英音[desk] 美音[dɛsk]', '名词 可数名词：/r/n1.书桌；办公桌；写字台/r/n2.柜台；服务台/r/n3.（报社）编辑部/r/n4.【美】讲道台/r/n5.乐谱架/r/na. /r/n1.书桌的，办公桌的/r/n2.桌上用的，台式的/r/n3.伏案做的，坐办公桌的/r/n']);
+
+this.words_1.push(['detective', '英音[di\'tektiv] 美音[di\'tektiv]', '名词 侦探，警探，私人侦探']);
+
+this.words_1.push(['devaluation', '英音[di:vælju\'eiʃən] 美音[di:vælju\'eiʃən]', '名词 贬值']);
+
+this.words_1.push(['developing', '英音[di\'veləpiŋ] 美音[di\'veləpiŋ]', '副词 /r/n发展中的']);
+
+this.words_1.push(['dictation', '英音[dik\'teiʃən] 美音[dik\'teiʃən]', '名词 /r/n1.口授，听写 /r/n2.听写测验 /r/n']);
+
+this.words_1.push(['dictionary', '英音[\'dikʃənəri] 美音[\'dikʃənəri]', '可数名词：/r/n1.词典，字典，辞书/r/n2.（类似词典、内容按字母顺序编排的）术语大全/r/n3.【计】词典，字典']);
+
+this.words_1.push(['diploma', '英音[di\'pləumə] 美音[di\'pləumə]', '可数名词：/r/n1.毕业证书；毕业文凭']);
+
+this.words_1.push(['diplomacy', '英音[di\'pləuməsi] 美音[dɪ\'ploməsɪ]', '名词 不可数名词：/r/n1.外交/r/n2.外交手腕/r/n3.交际手段；策略；圆滑/r/n']);
+
+this.words_1.push(['director', '英音[di\'rektə] 美音[di\'rɛktə]', '名词 /r/n1.主管，董事，理事，经理/r/n2.（某一活动的）负责人；（公司部门的）主任，经理；（学院的）院长3.导演/r/n4.指导者，指挥者，监督人，管理人，主管人/r/n5.控制器，指示器，引向器，导向偶极子/r/n6.【军事】(射击飞机或其他移动目标等时用的)指引仪，指挥仪/r/n7.（为教徒作灵性指导的）神父']);
+
+this.words_1.push(['discipline', '英音[\'disiplin] 美音[\'disəplin]', '名词/r/n1.不可数名词： 训练, 锻练, 磨练（尤指在智力和品德方面）；纪律，风纪/r/n2.可数名词： 训练方式；行为准则/r/n3.不可数名词： 处罚；处分/r/n4.可数名词： 学科；教学科目/r/n及物动词：/r/n1. 训练, 训导, 管教（某人/某物）/r/n2. 处罚, 处分（某人）/r/n3. 控制；克制/r/n4.（通过训练和监督）使有纪律，使守纪律/r/n5. 使有条理，使有条不紊']);
+
+this.words_1.push(['discotheque', '英音[\'diskətek] 美音[\'diskətek]', '名词 以唱片伴奏的小舞厅']);
+
+this.words_1.push(['discount', '英音[\'diskaunt] 美音[\'diskaunt]', '名词/r/n1. 折扣，打折扣/r/n2. 贴现，贴现率/r/n3. 不全信/r/nv./r/n及物动词：/r/n1. 将……打折扣，将商品打去……折扣/r/n2. 将……贴现/r/n3. 不全相信，怀疑地看待/r/n4. 漠视，低估，贬损/r/n5. 预计到/r/n不及物动词：/r/n1. 打折扣出售商品/r/n2. 贴现']);
+
+this.words_1.push(['dismissal', '英音[dis\'misl] 美音[dis\'misl]', '名词 /r/n1.[C,U]解雇，开除，撤职/r/n2.不可数名词：不予考虑，不予理会，摒弃/r/n3.[C,U]【法律】驳回（诉讼），不予受理/r/n4.[C,U]解散，打发走/r/n5.[C,U]【板球】（球员或球队的）出局']);
+
+this.words_1.push(['distribution', '英音[distri\'bju:ʃən] 美音[distri\'bju:ʃən]', '名词 /r/n1.分发，分配 /r/n2.散布，分布 /r/n3.分配；分布 /r/n4.（商品）运销，经销，分销 /r/n5.按比例分配；分配法；分发方式 /r/n6.分配物，配给物；分发物 /r/n7.布置，配置，位置 /r/n8.分类；整理 /r/n9.分配系统；分配装置 /r/n10.【数学】颁，分配，广义函数，概率(密度)函数 /r/n11.【逻辑学】周延(性)']);
+
+this.words_1.push(['dividend', '英音[\'dividend] 美音[\'dividend]', '名词 /r/n1. 红利，股息，股利/r/n2.【英】（足球彩票的）彩金/r/n3.【数】被除数']);
+
+this.words_1.push(['doctor', '英音[\'dɔktə] 美音[\'dɑktɚ]', '可数名词：/r/n1.医生，大夫/r/n2.博士/r/n3.【美】用于称呼牙医/r/n及物动词：/r/n1.篡改，伪造/r/n2.将（某物质，尤指药物或毒药）放入（食物或饮料）中/r/n3.阉割（猫、狗等）/r/n']);
+
+this.words_1.push(['doctorate', '英音[\'dɔktərit] 美音[\'dɑktərɪt]', '名词 /r/n1.可数名词：博士头衔，博士学位/r/n']);
+
+this.words_1.push(['doldrums', '英音[\'dɔldrəmz] 美音[\'dɔldrəmz]', '名词 忧郁,赤道无风带/r/n萧条，消沉/r/n/r/n']);
+
+this.words_1.push(['drawer', '英音[drɔ:(r)] 美音[\'drɔ:ə(r)]', '名词/r/n1. 抽屉/r/n2. 开票人；出票人']);
+
+this.words_1.push(['drawing', '英音[\'drɔ:iŋ] 美音[\'drɔ:iŋ]', '名词 /r/n1.绘画，制图 /r/n2.图画，图样，素描画']);
+
+this.words_1.push(['dressmaker', '英音[\'dresmeikə] 美音[\'dresmeikə]', '名词 做女服的裁缝']);
+
+this.words_1.push(['druggist', '英音[\'drʌgist] 美音[\'drʌgist]', '名词 药商,药材商,药剂师']);
+
+this.words_1.push(['dull', '英音[dʌl] 美音[dʌl]', '副词 /r/n1.枯燥无味的；无聊的；令人生厌/r/n2.不明亮的，不鲜明的，无光泽的/r/n3.不清晰的，隐约的，低沉的/r/n4.阴沉的，昏暗的，多云的/r/n5.隐隐约约的/r/n6.迟钝的，愚笨的/r/n7.萧条的，不景气的，呆滞的/r/nv./r/n1.及物动词：（疼痛或感情）减轻，（使）变麻木/r/n2.及物动词：使迟钝，使不活泼/r/n3.（使）变得无光泽，变模糊，变低沉/r/n']);
+
+this.words_1.push(['dump', '英音[dʌmp] 美音[dʌmp]', '及物动词：/r/n1.（尤指在不合适的地方）丢弃，扔掉，倾倒/r/n2.丢下；抛弃；推卸/r/n3.【商】（向国外）倾销，抛售/r/n4.随便堆放，乱放/r/n5.与（某人）结束恋爱关系/r/n6.（内存信息）转储，转存/r/nn./r/n1.垃圾场，废物堆/r/n2.【非正式】脏地方，邋遢场所，令人讨厌的地方/r/n3.军需品临时存放处/r/n4.转储，转存，转储数据/r/n5.可数名词：拉屎']);
+
+this.words_1.push(['duty', '英音[\'dju:ti] 美音[\'dju:ti]', '名词/r/n1.[C,U]责任；义务；本分/r/n2.不可数名词：上班；值班/r/n3.[duties]职责；任务/r/n4.[C,U] duty on sth 税；（尤指进口货物交纳的）关税']);
+
+this.words_1.push(['dwarf', '英音[dwɔ:f] 美音[dwɔ:f]', '可数名词：/r/n1.（神话中有魔法的）小矮人/r/n2.[sometimes offensive]矮子；侏儒/r/nadj./r/n[only before noun]（植物或动物）矮小的/r/n及物动词： /r/n使显得矮小；使相形见绌']);
+
+this.words_1.push(['earnings', '英音[\'ɜ:(r)niŋz] 美音[\'ɜ:(r)niŋz]', '名词/r/n1. 薪水；工资；收入/r/n2. 利润；收益；盈利']);
+
+this.words_1.push(['ease', '英音[i:z] 美音[iz]', '名词 不可数名词：/r/n1.容易；不费力/r/n2.舒适；悠闲/r/n3.自在，不拘束 /r/n4.（限制等的）放松，缓和/r/nv. 及物动词：/r/n1.减轻，缓和/r/n2.使安心，使舒适/r/n3.小心地移置/r/nv. 不及物动词：/r/n1.减轻；缓和；放松(+off)/r/n']);
+
+this.words_1.push(['ecclesiastical', '英音[ikli:zi\'æstikl] 美音[ikli:zi\'æstikl]', '副词 教会的,神职的,牧师的']);
+
+this.words_1.push(['economics', '英音[i:kə\'nɔmiks] 美音[i:kə\'nɔmiks]', '不可数名词： /r/n1.经济学/r/n2.经济因素，经济情况']);
+
+this.words_1.push(['economist', '英音[i\'kɔnəmist] 美音[i\'kɔnəmist]', '名词  经济学家；经济专家']);
+
+this.words_1.push(['editor', '英音[\'editə(r)] 美音[\'editə(r)]', '名词/r/n1.（报刊、杂志的）主编，编辑/r/n2.（书籍的）编辑、校订者、审校者/r/n3.（影片、广播电视节目的）剪辑员、剪接师/r/n4.（广播电视节目的）记者、编辑/r/n5.（书籍的）编者/r/n6. 编辑程序/r/n']);
+
+this.words_1.push(['education', '英音[\'edju\'keiʃn] 美音[\'edju\'keiʃn]', '不可数名词：/r/n1.（尤指学校）教育/r/n2.教育；培养；训练/r/n3.教育机构；教育界人士/r/n4.教育学/r/n5.有教益的经历/r/n']);
+
+this.words_1.push(['electricity', '英音[ilek\'trisiti] 美音[ilek\'trisiti]', '不可数名词： /r/n1.电/r/n2.电流/r/n3.电学']);
+
+this.words_1.push(['emigration', '英音[emi\'greiʃən] 美音[emi\'greiʃən]', '名词 移民,移居']);
+
+this.words_1.push(['employee', '英音[implɔi\'i:] 美音[em\'plɔii:]', '可数名词：/r/n职员,员工,受雇人员']);
+
+this.words_1.push(['employer', '英音[im\'plɔiə] 美音[im\'plɔiə]', '可数名词： /r/n雇主,雇用者']);
+
+this.words_1.push(['employment', '英音[im\'plɔimənt] 美音[im\'plɔimənt]', '名词 /r/n1.不可数名词：雇用；受雇/r/n2.不可数名词：职业，工作/r/n3.不可数名词：【书】使用，运用(+of)/r/n4.可数名词：【书】事务，活动/r/n']);
+
+this.words_1.push(['encyclopedia', '英音[insaiklə\'pi:diə] 美音[insaiklə\'pi:diə]', '名词 /r/n百科全书']);
+
+this.words_1.push(['endorsement', '英音[in\'dɔ:smənt] 美音[in\'dɔ:smənt]', '名词[C,U]/r/n1.（公开的）赞同，支持，认可/r/n2.（通常为名人在广告中对某一产品的）宣传，吹嘘/r/n3.【英】（驾驶执照上的）违章记录/r/n4.（在支票背面）签名，背书']);
+
+this.words_1.push(['engineer', '英音[endʒi\'niə(r)] 美音[endʒi\'niə(r)]', '可数名词：/r/n1.工程师，设计师/r/n2.机修工；技师；技工/r/n3.（船上的）轮机手；（飞机上的）机械师/r/n4.【美】=engine driver 火车司机/r/n5.工兵/r/n及物动词：/r/n1.密谋策划/r/n2.设计制造/r/n3.改变……的基因（或遗传）结构']);
+
+this.words_1.push(['engineering', '英音[\'endʒi\'niəriŋ] 美音[,ɛndʒə\'niriŋ]', '名词 不可数名词：/r/n1.工程/r/n2.工程，工程学，工程师行业']);
+
+this.words_1.push(['English', '英音[\'iŋgliʃ] 美音[\'iŋgliʃ]', '名词  /r/n1.[C,U]英语；英文/r/n2.不可数名词：（作为一门学科的）英语语言文学；英语学科/r/n3.英格兰人（有时误用以指包括苏格兰、威尔士和北爱尔兰人在内的英国人）/r/na.英格兰的；英格兰人的；英语的/r/n']);
+
+this.words_1.push(['equestrian', '英音[i\'kwestriən] 美音[i\'kwestriən]', 'adj. 骑马的，马的，在马背上的/r/nn. 骑手']);
+
+this.words_1.push(['equitation', '英音[ekwi\'teiʃən] 美音[ekwi\'teiʃən]', '名词 骑马,骑术']);
+
+this.words_1.push(['eraser', '英音[i\'reizə] 美音[i\'reisər]', '名词 橡皮，黑板擦/r/n']);
+
+this.words_1.push(['exam', '英音[ig\'zæmeg\'zæm] 美音[ig\'zæmeg\'zæm]', '可数名词：/r/n1.【口】考试']);
+
+this.words_1.push(['examiner', '英音[ig\'zæminə] 美音[ig\'zæminə]', '可数名词：/r/n检查人，审查人，主考人']);
+
+this.words_1.push(['executive', '英音[ig\'zekjutiv] 美音[ig\'zekjutiv]', '副词 /r/n1.执行的；实施的/r/n2.行政的，行政部门的/r/n3.善于执行的；有行政能力的/r/n4.执行者的；经理人员的/r/nn./r/n1.可数名词：（政府的）行政部门；执行委员会/r/n2.[the Executive]【美】（政府的）行政当局/r/n3.可数名词：执行者；管理人员；经理/r/n4.可数名词：决策人，董事长']);
+
+this.words_1.push(['exercise', '英音[\'eksəsaiz] 美音[\'eksəsaiz]', '名词 /r/n1.[C,U]运动，锻炼/r/n2.可数名词：练习，习题/r/n3.可数名词：【军】演习，操练/r/n4.（特定的）活动，行动(+in)/r/n5.（权力，权利等的）行使，运用(+of)/r/n6.【美】仪式，典礼/r/n7.礼拜，宗教仪式/r/n及物动词：/r/n1.锻炼，操练，怜惜/r/n2.运用，行使/r/n3.使忙碌，使担忧，使惊恐/r/n不及物动词：练习，运动']);
+
+this.words_1.push(['expenditure', '英音[ik\'spenditʃə] 美音[ik\'spenditʃə]', '名词[U,C]/r/n1.花费，消费，开支/r/n2.（精力、时间、材料等的）耗费，消耗']);
+
+this.words_1.push(['extension', '英音[iks\'tenʃən] 美音[ɪk\'stɛnʃən]', '名词 /r/n1.不可数名词：伸展；伸长；扩大(+of)/r/n2.[U,C]延长；延期；缓期/r/n3.可数名词：延长部分；扩大部分；增设部分/r/n4.可数名词：电话分机/r/n']);
+
+this.words_1.push(['faculty', '英音[\'fækəlti] 美音[\'fækltɪ]', '名词 可数名词：/r/n1.（身体、精神的）机能，官能(+of)/r/n2.能力；技能(+for/of) /r/n3.（大学的）系，科；院/r/n4.【主美】（大学或院、系的）全体教职员/r/n5.【主美】（任何学校的）全体教员/r/n6.（从事某一专门职业的）全体人员/r/n']);
+
+this.words_1.push(['failure', '英音[\'feiliə] 美音[\'feiliə]', '名词/r/n1.失败/r/n2.失败的人（或事）/r/n3.缺乏，不足；不存在/r/n4.故障，失灵/r/n5.衰退/r/n6.没做到；没发生/r/n7.不及格；不及格的学生；【美】不及格的等级/r/n8.无能力支付；破产']);
+
+this.words_1.push(['fair', '英音[fɛə] 美音[fɛə]', 'adj. /r/n1. 公正的；公平的；诚实的/r/n2. 尚可的，一般的；相当的/r/n3.（皮肤）白皙的；（头发）金色的；（人）白肤金发的/r/n4.（天气）晴朗的/r/n5.（风向）顺的；顺利的/r/n6.【旧】（妇女）美丽的/r/n7.（言论、诺言等）说得好听的，花言巧语的/r/n8.【口】十足的，真正的/r/n9.（财产等）丰富的/r/nadv. /r/n1. 公平地，公正地/r/n2. 正面地，直接地/r/n3. 清楚地/r/nn. /r/n1.【旧】女人；美女；情人/r/n2.美好的事物/r/nn. /r/n1.（定期）集市，庙会/r/n2. 商品展览会；博览会/r/n3. 义卖会/r/n4.【英】公共露天游乐场/r/n']);
+
+this.words_1.push(['fairground', '英音[\'fɛəgraund] 美音[\'fɛəgraund]', '名词 举行赛会的场所,露天市场']);
+
+this.words_1.push(['fakir', '英音[\'fɑ:kiə] 美音[\'fɑ:kiə]', '名词 托钵僧']);
+
+this.words_1.push(['farming', '英音[\'fɑ:miŋ] 美音[\'fɑ:miŋ]', '名词/r/n1.农事，耕作；畜牧业']);
+
+this.words_1.push(['fellow', '英音[\'feləu] 美音[\'feləu]', '名词 可数名词：/r/n人，家伙；伙伴，同事；对等者，对手；会员，董事/r/na. /r/n同伴的，同事的']);
+
+this.words_1.push(['fellowship', '英音[\'feləuʃip] 美音[\'feləuʃip]', '名词  /r/n1.不可数名词：伙伴关系，友谊，交情/r/n2.可数名词：（具有共同利益、目的或信仰的）团体，协会，联谊会/r/n3.可数名词：（学院或大学的）董事职位/r/n4.可数名词：研究生奖学金/r/n5.[C,U]（学术或专业团体的）会员资格/r/n']);
+
+this.words_1.push(['festival', '英音[\'festəvl] 美音[\'festəvl]', 'adj./r/n1.节日的/r/n2.喜庆的/r/n3.快乐的/r/n可数名词：/r/n1.节日/r/n2.庆祝/r/n3.祭祀/r/n4.欢宴']);
+
+this.words_1.push(['finance', '英音[fai\'næns,fi\'næns] 美音[fai\'næns,fi\'næns]', '名词 /r/n1.财政，金融 /r/n2.财源，资金，财务情况 /r/n及物动词： /r/n1.为…供给资金，从事金融活动']);
+
+this.words_1.push(['fireworks', '英音[\'\'faiəwə:ks] 美音[\'faɪr,wɝks]', '名词 /r/n1. 烟火大会/r/n2. 烟火/r/n3. 一阵大怒，情绪的爆发/r/n4. 一款平面设计软件']);
+
+this.words_1.push(['flat', '英音[flæt] 美音[flæt]', 'adj. /r/n1. 平的，平坦的/r/n2.（容器等）浅的/r/n3. 平伏的，平卧的/r/n4.（轮胎），泄了气的/r/n5.（啤酒等）走了气的；走了味的/r/n6. 单调的，无聊的/r/n7.（拒绝等）断然的/r/n8.【音】降音的；降半音的/r/n9.（色彩）单调的，同样的/r/n10.（费用，价格等）均一的，一律的/r/n11.（电池）电力不足的，电用完的/r/n12.（市场等）萧条的/r/nadv. /r/n1. 平直地，仰卧地/r/n2.【音】以降调/r/n3. 恰恰，正好/r/n4. 断然地/r/n5. 无利息地/r/n可数名词：/r/n1. 平面，平坦部分/r/n2. 沼地；浅滩/r/n3. 泄了气的的轮胎/r/n4.【音】降半音；降半音符号/r/n5.【俚】傻子/r/n6. 平底鞋/r/n及物动词： /r/n1. 使变平/r/n2. 使降半音/r/n不及物动词： /r/n1. 变平/r/n2. 降半音/r/nn. 可数名词：/r/n1.（楼房的）一层/r/n2.【英】（在同一层楼上的）（一套）公寓房间/r/n3.【英】公寓大楼/r/n']);
+
+this.words_1.push(['flier', '英音[\'flaiə] 美音[\'flaiə]', '名词(also flyer)/r/n1.（常指驾驶小飞机而非客机的）飞行员/r/n2. 飞机乘客/r/n3. 地面操纵飞行器者（如玩模型或放风筝的人）/r/n4. 飞行物（尤指飞鸟或昆虫）/r/n5. 小（广告）传单/r/n6. 能飞跑的人（或动物）；能疾驰的车辆/r/n7.（赛跑、竞赛等的）快速起动']);
+
+this.words_1.push(['float', '英音[fləut] 美音[fləut]', '动词/r/n1.不及物动词：漂浮； 飘；漂流； 飘动/r/n2.及物动词：使（某物）漂浮； 使（某物）漂流或飘动/r/n3.及物动词：提出（计画、方案等）； 交出（以供取舍）/r/n4.不及物动词：（指人）游荡，无所事事/r/n5.及物动词： （以公开发行股票方式）开办（新公司）/r/n6.及物动词： 使（某货币）的对外汇率浮动/r/n7.不及物动词：（指货币）随汇率浮动/r/n可数名词：/r/n1. 漂浮物；（尤指）鱼漂，浮子/r/n2.浮板（学游泳用的）/r/n3.浮球（用以控制水、汽油等流量的）. /r/n4. 浮筒（使飞行器浮於水面的装置）/r/n5.（游行时载展品等的）卡车、大车或装有轮子的展台/r/n 花车/r/n6.低矮的平板车/r/n7.（企业的）日常零钱']);
+
+this.words_1.push(['florist', '英音[\'flɔ:rist] 美音[\'flɔ:rist]', '名词 /r/n1.花匠，花商，花卉研究者']);
+
+this.words_1.push(['flyer', '英音[\'flaiə] 美音[\'flaiə]', '名词 /r/n1.（常指驾驶小飞机而非客机的）飞行员/r/n2.飞机乘客/r/n3.地面操纵飞行器者（如玩模型或放风筝的人）/r/n4.飞行物（尤指飞鸟或昆虫）/r/n5.小（广告）传单/r/n6.能飞跑的人（或动物），能疾驰的车辆/r/n7.（赛跑、竞赛等的）快速起动/r/n']);
+
+this.words_1.push(['football', '英音[\'futbɔ:l] 美音[\'futbɔ:l]', '名词 /r/n足球，橄榄球']);
+
+this.words_1.push(['foreman', '英音[\'fɔ:mən] 美音[\'fɔ:mən]', '名词/r/n1.工头，领班']);
+
+this.words_1.push(['freelance', '英音[\'fri:lɑ:ns] 美音[ˈfriˌlæns]', '动词/r/n1.不及物动词：当自由职业者/r/n2.及物动词：作为自由职业者提供/r/n/r/na. 独立的，自由职业的，自由职业者做的/r/n/r/nad.作为自由职业者；独立地/r/n/r/nn.自由作家，自由撰稿人；自由职业者']);
+
+this.words_1.push(['funambulist', '英音[fju:\'næmbjulist] 美音[fju:\'næmbjulist]', '名词 走绳索的人，走钢丝的杂技演员']);
+
+this.words_1.push(['futurologist', '', '名词 未来学者']);
+
+this.words_1.push(['gambling', '英音[\'gæmbliŋ] 美音[\'gæmbliŋ]', '动词 [Ｉ]/r/n1.赌博；打赌(+on)/r/n2.投机；冒险(+on/with)/r/nv.[Ｔ] /r/n1.赌掉，输光(+away)/r/n2.以...为赌注；把...孤注一掷(+on) /r/n3.冒险假设/r/nn. /r/n1.可数名词：赌博；打赌/r/n2.冒险；无把握的事/r/n']);
+
+this.words_1.push(['geography', '英音[dʒi\'ɔgrəfi] 美音[dʒi\'ɔgrəfi]', '名词/r/n1.不可数名词： 地理（学）/r/n2. 地形；地貌；地势/r/n3. 地理环境']);
+
+this.words_1.push(['geologist', '英音[dʒi\'ɔlədʒist] 美音[dʒi\'ɔlədʒist]', '名词 地质学者']);
+
+this.words_1.push(['geology', '英音[dʒi\'ɔlədʒi] 美音[dʒi\'ɔlədʒi]', '名词 地质学,地质概况']);
+
+this.words_1.push(['geometry', '英音[dʒi\'ɔmitri] 美音[dʒi\'ɔmitri]', '名词 /r/n几何，几何形状，几何学']);
+
+this.words_1.push(['giant', '英音[\'dʒaiənt] 美音[\'dʒaiənt]', '可数名词：/r/n1.（童话中的）巨人/r/n2.（身材超群的）巨人/r/n3.（力量，智力超群的）伟人/r/n4. 巨物；巨大的动物（或植物）/r/nadj. /r/n1. 巨人般的；巨大的/r/n2. 卓越的，超群的，非凡的/r/n']);
+
+this.words_1.push(['globe', '英音[gləub] 美音[gloub]', '名词/r/n1.可数名词： 地球仪/r/n2.（the globe）地球、世界（尤用以强调其大）/r/n3.可数名词： 球体；球状物']);
+
+this.words_1.push(['graduate', '英音[\'grædʒueit] 美音[grædʒʊit]', '名词/r/n1.[graduate (in sth)]有学位（尤指学士学位）的人；大学毕业生/r/n2.毕业生[作定语]（a graduate nurse）/r/nv./r/n1.不及物动词：[graduate (in sth) (at/from sth)] （学完一学位课程）毕业；【美】（学完一教育课程）毕业/r/n2.及物动词：[graduate sb (from sth)]【美】授予某人学位、毕业文凭等/r/n3.及物动词：[尤用于被动语态]将（某事物）分成等级或阶段/r/n4.及物动词：[尤用于被动语态][graduate sth (in/into sth)]给某物划分度数/r/n5.不及物动词：[graduate (from sth) to sth]【褒】进步，进展，进而做较难或较重要之事']);
+
+this.words_1.push(['graduate', '英音[\'grædʒueit] 美音[grædʒʊit]', '名词/r/n1.[graduate (in sth)]有学位（尤指学士学位）的人；大学毕业生/r/n2.毕业生[作定语]（a graduate nurse）/r/nv./r/n1.不及物动词：[graduate (in sth) (at/from sth)] （学完一学位课程）毕业；【美】（学完一教育课程）毕业/r/n2.及物动词：[graduate sb (from sth)]【美】授予某人学位、毕业文凭等/r/n3.及物动词：[尤用于被动语态]将（某事物）分成等级或阶段/r/n4.及物动词：[尤用于被动语态][graduate sth (in/into sth)]给某物划分度数/r/n5.不及物动词：[graduate (from sth) to sth]【褒】进步，进展，进而做较难或较重要之事']);
+
+this.words_1.push(['grant', '英音[grɑ:nt] 美音[grænt]', '及物动词： /r/n1. 同意，准予/r/n2. 给予，授予/r/n3. 承认(+that)/r/n4.【律】授予（权利等）；转让（财产）/r/n可数名词：/r/n1. 授予物；奖学金，助学金，补助金/r/n2. 同意；给予；授予；承认/r/n3. 财产转让/r/n/r/n♦/r/n Grant date 准许日（是指远期期权开始生效的时刻，或指公司可授予雇员认股权的日期）']);
+
+this.words_1.push(['grave', '英音[greiv] 美音[greiv]', '名词 /r/n1.坟墓 /r/n2.死亡 /r/n3.钝重音符；沉音符；抑音符 /r/na. /r/n1.(指情况)严重的 /r/n2.严肃的，庄重的']);
+
+this.words_1.push(['greengrocer', '英音[\'gri:ngrəusə(r)] 美音[\'gri:ngrəusə(r)]', '名词/r/n1. 果菜商/r/n2. greengrocer's  蔬菜水果店']);
+
+this.words_1.push(['grind', '英音[graind] 美音[graind]', '动词： /r/n1.磨碎；嚼碎 /r/n及物动词： /r/n1.旋转开动 /r/n2.压迫；折磨 /r/nn. /r/n1.磨，碾 /r/n2.苦差事，苦活儿']);
+
+this.words_1.push(['group', '英音[grʊ:p] 美音[grʊ:p]', '可数名词： /r/n1.组，群，批，类，簇 /r/n2.集团  /r/n不及物动词：/r/n1.（使）成群、成组，聚集/r/n2.将…分类，把…分组']);
+
+this.words_1.push(['guild', '英音[gild] 美音[gild]', '可数名词：/r/n1.（行业）协会/r/n2.（中世纪的）行会，同业公会/r/n']);
+
+this.words_1.push(['gymnastics', '英音[dʒim\'næstiks] 美音[dʒim\'næstiks]', '不可数名词： 体操；体操训练']);
+
+this.words_1.push(['hairdresser', '英音[\'hɛədresə] 美音[\'hɛədresə]', '名词 /r/n美容师，理发师']);
+
+this.words_1.push(['hamlet', '英音[\'hæmlit] 美音[\'hæmlit]', '名词/r/n1.小村庄']);
+
+this.words_1.push(['handicrafts', '', '名词 手工艺']);
+
+this.words_1.push(['headmaster', '英音[hed\'mæstə] 美音[hed\'mæstə]', '名词/r/n1.(中小学)校长']);
+
+this.words_1.push(['headmistress', '英音[\'hed\'mistris] 美音[\'hed\'mistris]', '名词 女校长']);
+
+this.words_1.push(['headquarters', '英音[\'hed\'kwɔ:təz] 美音[\'hed\'kwɔ:təz]', '名词 司令部，指挥部；总部，总店']);
+
+this.words_1.push(['health', '英音[helθ] 美音[helθ]', '名词 不可数名词：/r/n1.健康/r/n2.健康状况 /r/n3.祝健康的干杯/r/n']);
+
+this.words_1.push(['hole', '英音[həul] 美音[həul]', '名词/r/n1.可数名词：洞，孔，坑/r/n2.可数名词：裂口，开口，孔眼/r/n3.可数名词：洞穴，巢穴/r/n4.可数名词：糟糕的住所（或处所）/r/n5.可数名词：（高尔夫）球洞，球座到球洞的区域/r/n6.可数名词：（计划、法律或报道等的）错误，缺陷，漏洞/r/n7.空缺的地方（或位置）/r/nv./r/n1.及物动词：（尤指在船上）打动，造成破洞/r/n2.[T,I]击球入洞']);
+
+this.words_1.push(['holiday', '英音[\'hɔlədi,\'hɔlədei] 美音[\'hɔlədi,\'hɔlədei]', '名词假日,节日,假期/r/nv.【英】(=vocation【美】)休假,外出度假']);
+
+this.words_1.push(['holidays', '英音[\'hɔlidis] 美音[\'hɔlidis]', 'ad. 在假日,每逢假日']);
+
+this.words_1.push(['homework', '英音[\'həumwə:k] 美音[\'həumwə:k]', '不可数名词： /r/n家庭作业，课外作业']);
+
+this.words_1.push(['house', '英音[haus] 美音[haus]', '名词 可数名词：/r/n1.房子；住宅/r/n2.家庭，家人/r/n3.（养动物的）棚/r/n4.家族（尤指皇族或贵族）/r/n5.（学校的）供膳的宿舍；（学生为体育比赛而分的）组/r/n6.机构；所，社；商号/r/n7.（大写）议院/r/n8.（用于特殊目的的）建筑物/r/n9.剧场；（剧场等的）观众 /r/n10.妓院/r/nv. 及物动词：/r/n1.给...房子住；给...房子用/r/n2.把...储藏在房内/r/n3.覆盖/r/nv. 不及物动词：/r/n1.住/r/nHouse/r/nn. /r/n1.议会；议院 （下院）/r/n2.（集合名词）议员/r/n']);
+
+this.words_1.push(['illusionist', '英音[i\'lju:ʒənist] 美音[i\'lju:ʒənist]', '名词 迷妄论者/r/n幻想家']);
+
+this.words_1.push(['illustrator', '英音[\'iləstreitə] 美音[\'iləstreitə]', '名词（书等的）插图画家']);
+
+this.words_1.push(['income', '英音[\'inkʌm] 美音[\'inkəm]', '名词[C,U]收入；收益；所得']);
+
+this.words_1.push(['infrastructure', '英音[\'infrəstrʌktʃə] 美音[\'infrəstrʌktʃə]', '名词 /r/n1.公共建设（如铁路、公路、下水道等）/r/n2.基础建设/r/n']);
+
+this.words_1.push(['ink', '英音[iŋk] 美音[iŋk]', '名词 /r/n1.墨水，油墨 /r/n及物动词： /r/n1.给…上油墨（以供印刷）；签署，签订（合同等）']);
+
+this.words_1.push(['inkwell', '英音[\'iŋkwel] 美音[\'iŋkwel]', '名词 墨水池']);
+
+this.words_1.push(['instruction', '英音[in\'strʌkʃn] 美音[in\'strʌkʃn]', '名词 /r/n1.可数名词：用法说明；操作指南/r/n2.可数名词：指示；命令/r/n3.可数名词：（计算机的）指令/r/n4.不可数名词：【正式】教授；教导；传授']);
+
+this.words_1.push(['insurance', '英音[in\'ʃɔ:rəns] 美音[in\'ʃʊrəns]', '名词/r/n1.[U, sing] [~ (against sth)]保险（契约）/r/n2.不可数名词：保险业/r/n3.不可数名词：保险费/r/n4.[C,U][~ (against sth)]保险措施，（预防损失、失败等的）安全保障/r/n/r/n']);
+
+this.words_1.push(['interest', '英音[\'intrist] 美音[\'intrist]', '名词 /r/n1. [C,U]兴趣；关注；注意，关心；爱好 /r/n2. 不可数名词：令人感兴趣的人（或事）；趣味 /r/n3. 不可数名词：利益；利害；利害关系；好处；私利 /r/n4. 不可数名词：利息, 利率 /r/n5. 可数名词：产权，所有权，股权；权益；股份 /r/n6. 不可数名词：利益相关者，利益集团；行业，同行，界 /r/n7. 不可数名词：重大，重要；重要性 /r/n8. 可数名词：个人影响；势力 /r/n9. 添加，附加；添加物 /r/n10. 超过应得的数量；加倍 /r/n11. 不可数名词：【经济学】（资本货物）利息（指不包括土地和货币的、用于生产的资本货物所付出的利息）/r/n及物动词：/r/n1. 使感兴趣；使关心；使注意/r/n2. 使参与；使有关系；使有利害关系']);
+
+this.words_1.push(['interpreter', '英音[in\'tə:pritə] 美音[in\'tə:pritə]', '名词 /r/n1.解释程序/r/n2.口译工作者，口译员/r/n3.演绎']);
+
+this.words_1.push(['interview', '英音[\'intəvju:] 美音[\'intəvju:]', '名词 /r/n1. 面谈，(对求职者等的)面试，谋职面试；口头审查/r/n2. 采访，交谈，访谈/r/n3. 会谈，会见，（私下的）面谈，会谈，晤谈/r/n4. 接见；会见/r/n5. 被面试者/r/n6. 被接见者；被会见者；被采访者/r/nv.[T/r/nI] /r/n1. 面试/r/n及物动词： /r/n1. 采访；访问；会见；（私下）提问，面谈/r/n2. 对…进行面试']);
+
+this.words_1.push(['investment', '英音[in\'vestmənt] 美音[in\'vestmənt]', '名词/r/n1.不可数名词：[ ~ (in sth)]投资/r/n2.可数名词：投资额，投资物/r/n3.可数名词：值得买的东西，有用的投资物/r/n4. [U, C]（时间，精力的）投入']);
+
+this.words_1.push(['investor', '英音[in\'vestə] 美音[in\'vestə]', '可数名词：/r/n1.投资者']);
+
+this.words_1.push(['issue', '英音[\'isju:,\'iʃju:] 美音[\'isju:,\'iʃju:]', '名词/r/n1.（血，水等）流出；流出物；冲力/r/n2. 河口；出口/r/n3. 结果，结局/r/n4.【律】后代/r/n5.[issues]【律】（地产或其他不动产的）收益/r/n6. 问题；争论；决议（阶段）/r/n7. 发给，分配/r/n8. 颁布；一次发行额；（书刊的）期/r/n9.【医】脓疮口；切口/r/n10.[issues]【口】个人问题（或困难）/r/n11.【古】结束/r/n不及物动词：/r/n1. 流出；发出；出现（forth，out）/r/n2. 由…产生（from）；导致（in）/r/n3.【律】诞生，传代/r/n4.【律】收益；生息/r/n5. 发行；颁布；出版/r/n6. 分配/r/n及物动词：/r/n1. 使流出，放出/r/n2. 分配/r/n3. 发行；颁布；出版']);
+
+this.words_1.push(['Japanese', '英音[dʒæpə\'ni:z] 美音[dʒæpə\'ni:z]', 'adj. /r/n日本的，日本人的/r/nn. /r/n日本人，日语']);
+
+this.words_1.push(['job', '英音[dʒɔb] 美音[dʒɔb]', '名词 /r/n1.工作，零活，职业，事情，职位/r/n不及物动词：/r/n1.做零工，打杂，做股票经纪，假公济私/r/n及物动词： /r/n1.代客买卖']);
+
+this.words_1.push(['journalism', '英音[\'dʒə:nəlizəm] 美音[\'dʒə:nəlizəm]', '名词 新闻业,新闻工作/r/n']);
+
+this.words_1.push(['journalist', '英音[\'dʒə:nəlist] 美音[\'dʒə:nəlist]', '名词/r/n1. 新闻工作者，新闻记者 /r/n2. 报界人士，报人；报纸撰稿人/r/n3. 记日记的人']);
+
+this.words_1.push(['judge', '英音[dʒʌdʒ] 美音[dʒʌdʒ]', '名词/r/n1.高等法院的法官/r/n2.裁判员，仲裁人，评判员/r/n3.鉴赏家，鉴定家/r/nv./r/n1.[I,T][~ (sb/sth) by/from sth]判断（某人、某事物），断定（某事物的价值、数量等）、认为/r/n2.[I,T]审理（案件），判处（某人），审判； 批评，抨击（某人）/r/n3.及物动词：评判，裁判（竞赛）/r/n']);
+
+this.words_1.push(['juggler', '英音[\'dʒʌglə] 美音[\'dʒʌglə]', '名词 变戏法者,行骗者']);
+
+this.words_1.push(['jukebox', '英音[\'dʒu:kbɔks] 美音[\'dʒu:kbɔks]', '名词 自动唱片点唱机']);
+
+this.words_1.push(['kindergarten', '英音[\'kindəgɑ:tn] 美音[\'kindəgɑ:tn]', '名词 /r/n幼儿园/r/na./r/n1.幼儿园的/r/n2.初级的，启蒙阶段的']);
+
+this.words_1.push(['labor', '英音[\'leibə] 美音[\'leibə]', '名词/r/n劳动，努力，工作，劳工，分娩，阵痛/r/nv./r/n劳动，努力争取(for)，苦干，详细分析，麻烦/r/nadj./r/n1. 劳工的；工会的 /r/n2.（常大写）（英国或英联邦国家）工党的/r/n不及物动词：/r/n（指引擎）缓慢而困难地运转']);
+
+this.words_1.push(['laborer', '英音[\'leibərə] 美音[\'leibərə]', '名词 劳动者/r/n工人']);
+
+this.words_1.push(['landlady', '英音[\'lændleidi] 美音[\'lændleidi]', '名词 女房东,女店主/r/n女地主']);
+
+this.words_1.push(['law', '英音[lɔ:] 美音[lɔ:]', '名词/r/n1.不可数名词：法律（体系）/r/n2.不可数名词：法规/r/n3.可数名词：（针对某项罪行、协议等的一条）法律，法规/r/n4.不可数名词：法学，法律学，律师业/r/n5.法律机构/r/n6.可数名词：规则，规章，条例/r/n7.可数名词：良好行为的准则，（某地或某场合下的）行为规范/r/n8.可数名词：规律，法则，原理/r/n9.可数名词：定律']);
+
+this.words_1.push(['lawyer', '英音[\'lɔ:jə] 美音[\'lɔ:jə]', '可数名词：/r/n律师,法学家']);
+
+this.words_1.push(['legal', '英音[\'li:gəl] 美音[\'li:gəl]', '副词/r/n1.法律（上）的，属于法律范围的/r/n2.（适用于）律师的，从事法律的/r/n3.合法的，依照法律的，具有法律地位的/r/n4.法定的，法律认可的，符合法律条文的，从法律上解释的/r/n5.【宗】（根据）摩西律法的，靠善行得救说的/r/nn./r/n1.法定权利，法律公告/r/n2.[legals]（储蓄银行、信托公司等依法发行的）合法证券']);
+
+this.words_1.push(['lender', '英音[lendə] 美音[lendə]', '名词【财务】放款人/r/n']);
+
+this.words_1.push(['leotard', '英音[\'li:ətɑ:d] 美音[\'li:ətɑ:d]', '名词 紧身衣']);
+
+this.words_1.push(['lesson', '英音[\'lesn] 美音[\'lesn]', '名词/r/n1.可数名词：一节课，一课时/r/n2.可数名词：课，教学单元/r/n3.教训/r/n4.选读经书']);
+
+this.words_1.push(['library', '英音[\'laibrəri] 美音[\'laibreri]', '可数名词：/r/n1.图书馆，藏书楼/r/n2.图书室；资料室/r/n3.（书、激光唱片等的）个人收藏/r/n4.系列丛书（或磁带等）；文库/r/n']);
+
+this.words_1.push(['linguist', '英音[liŋ\'gwist] 美音[liŋ\'gwist]', '名词/r/n1.通晓数国语言的人/r/n2.语言学家']);
+
+this.words_1.push(['linguistics', '英音[liŋ\'gwistiks] 美音[liŋ\'gwistiks]', '名词 /r/n1.语言学']);
+
+this.words_1.push(['literature', '英音[\'litəritʃə] 美音[\'litəritʃə]', '名词/r/n1.文学，文学作品/r/n2.文学着述或研究/r/n3.（某国或某时期的）文学作品']);
+
+this.words_1.push(['locality', '英音[ləu\'kæliti] 美音[ləu\'kæliti]', '名词 /r/n1.可数名词：地区；场所，现场/r/n2.不可数名词：方位/r/n']);
+
+this.words_1.push(['lockout', '英音[\'lɔkaut] 美音[\'lɔkaut]', '名词 闭厂，停工，关在门外，停摆（是体育界的特有名词，就是指因为各种原因造成体育联赛暂停的局面。）']);
+
+this.words_1.push(['magician', '英音[mə\'dʒiʃən] 美音[mə\'dʒiʃən]', '名词 /r/n魔术家，幻术家，术士']);
+
+this.words_1.push(['mailman', '英音[\'meilmæn] 美音[\'meilmæn]', '名词 邮差']);
+
+this.words_1.push(['maintenance', '英音[\'meintinəns] 美音[\'mentənəns]', '名词 不可数名词：/r/n1.维持，保持/r/n2.维修，保养/r/n3.坚持，主张/r/n4.抚养；生活费；赡养费/r/n']);
+
+this.words_1.push(['management', '英音[\'mænidʒmənt] 美音[\'mænidʒmənt]', '名词/r/n1.不可数名词：（企业等的）管理，经营/r/n2.可数名词：（公司﹑ 企业等的）主管人员，管理部门，资方/r/n3.不可数名词：与人交往的技巧；手腕']);
+
+this.words_1.push(['manager', '英音[\'mænidʒə] 美音[\'mænidʒə]', '可数名词：/r/n1.（企业、商店等的）经理/r/n2.当家人；管家；经营人/r/n3.【体】球队经理；田径队经理；（拳击等）运动员的经理/r/n4.（演员、剧团、乐队等的）经理；【英】（戏剧）演出人/r/n5.干事，总管/r/n6.学校运动器材和记录保管员/r/n7.【英】（议会中）处理两院共同事务的委员/r/n8.【英】【律】（财产讼案中由法院为债权人利益指定的）财务管理人/r/n9.【计】管理程序；管理系统']);
+
+this.words_1.push(['manifestation', '英音[mænifes\'teiʃən] 美音[mænifes\'teiʃən]', '名词 /r/n1.[C,U]表明，清楚显示（尤指情感，态度，品质）/r/n2.可数名词：显现']);
+
+this.words_1.push(['manufacture', '英音[mænju\'fæktʃə] 美音[mænju\'fæktʃə]', 'vt./r/n1.(用机器)大量生产，成批制造/r/n2.编造；捏造/r/n3.生成、产生（一种物质）/r/nn./r/n1.不可数名词：大量制造；批量生产/r/n2.[复数]（术语）工业品']);
+
+this.words_1.push(['manufacturer', '英音[mænju\'fæktʃərə] 美音[mænju\'fæktʃərə]', '名词/r/n1.制造商，制造厂，制造者，生产商']);
+
+this.words_1.push(['market', '英音[\'mɑ:kit] 美音[\'mɑ:kit]', '名词/r/n1.可数名词：集市； 市场/r/n2.可数名词：某种货物的交易情况； 行情/r/n3.[sing,U]需求/r/n4.可数名词：行销地区； 市场/r/n5.[the market][sing]买者与卖者； 市场/r/n及物动词：/r/n1.在市场上出售（某物）/r/n2.推销某物（尤指藉助广告宣传）']);
+
+this.words_1.push(['marketing', '英音[\'mɑ:kiti:ŋ] 美音[\'mɑ:kiti:ŋ]', '不可数名词： /r/n促销，营销，销售活动']);
+
+this.words_1.push(['mathematician', '英音[\'mæθəmə\'tiʃn] 美音[mæθəmə\'tiʃn]', '名词 数学家']);
+
+this.words_1.push(['mathematics', '英音[mæθi\'mætiks] 美音[mæθi\'mætiks]', '名词 /r/n数学']);
+
+this.words_1.push(['matriculation', '英音[mətrikju\'leiʃən] 美音[mətrikju\'leiʃən]', '名词 大学入学许可,入学,入学考试，入学典礼']);
+
+this.words_1.push(['maturity', '英音[mə\'tjuəriti] 美音[mə\'tjuəriti]', '名词 /r/n1.成熟；成熟期；发育完全 /r/n2.(金融)到期 /r/n3.(人或动植物)成熟；成年；完全长成 /r/n4.(保险单等)到期（应付款）']);
+
+this.words_1.push(['mechanics', '英音[mə\'kæniks] 美音[mə\'kæniks]', '名词/r/n1.力学/r/n2.机械学/r/n4.方法，手段/r/n']);
+
+this.words_1.push(['medical', '英音[\'medikl] 美音[\'medikl]', '副词/r/n1.医学的；医用的；医疗的/r/n2.内科的/r/n3.（古）治疗的；医药的/r/n可数名词：/r/n1.体格检查/r/n2.医科学生；医生/r/n']);
+
+this.words_1.push(['medicine', '英音[\'medisn] 美音[\'mɛdəsn]', '名词 /r/n1.[C,U]药，内服药/r/n2.[U医学；医术；内科学/r/n3.[C,U]【喻】良药/r/n4.不可数名词：（原始民族迷信的）符咒，巫术，魔力/r/nv. 及物动词：/r/n1.给...服药；用药物治疗/r/n']);
+
+this.words_1.push(['merchant', '英音[\'mə:tʃənt] 美音[\'mə:tʃənt]', '名词 /r/n1.商人 /r/n2.（某活动的）爱好者；热衷于…的人 /r/na. /r/n1.海上货运的 /r/n']);
+
+this.words_1.push(['metallurgy', '英音[\'metələ:dʒi] 美音[\'metələ:dʒi]', '名词 冶金,冶金术']);
+
+this.words_1.push(['meteorology', '英音[mi:tjə\'rɔlədʒi] 美音[mi:tjə\'rɔlədʒi]', '不可数名词：/r/n1.气象学/r/n2.气象']);
+
+this.words_1.push(['metropolis', '英音[məˈtrɒpəlɪs] 美音[məˈtrɑ:pəlɪs]', '名词 /r/n1. 一国的主要城市（不一定是首都）/r/n2. 中心 /r/n3. 大都会；大城市；首都；首府']);
+
+this.words_1.push(['midget', '英音[\'midʒit] 美音[\'midʒit]', '名词 侏儒副词 小型的']);
+
+this.words_1.push(['military', '英音[\'militəri] 美音[\'mɪlə,tɛrɪ]', '名词 /r/n1.军队，军方，陆军/r/n2.军人/r/na. /r/n1.军事的，军方的/r/n2.军人的，军队的/r/n3.好战的/r/n4.陆军的']);
+
+this.words_1.push(['milkman', '英音[\'milkmən] 美音[\'milkmən]', '名词/r/n1.送牛奶的人']);
+
+this.words_1.push(['model', '英音[\'mɔdl] 美音[\'mɑdl]', '可数名词：/r/n1. 模型（通常小於原物）[attrib 作定语]（a model train）；（供用他种材料做复制品的）模型/r/n2.（产品的某种）设计, 型号/r/n3.（供讲解、计算等的）模型/r/n4. 模式/r/n5.[model (of sth)]【褒】（值得仿效的）优秀的人或物；模范 [attrib 作定语]（a model pupil）/r/n6.（艺术家、摄影家等用的）模特儿；时装模特儿/r/n7. 著名服装设计师设计并展览的衣、帽等或其复制品/r/nv./r/n1.及物动词：[model oneself/sth on sb/sth ] 以某人/某事物作榜样；仿效/r/n2.[I,T] 当模特儿；（亲身穿戴）展示（衣帽等）/r/n3.[I,T] 用泥、蜡等做（某物）的模型；用（泥、蜡等）塑造某物/r/nadj./r/n1. 模范的，榜样的/r/n2. 用作模型的/r/n3. 产品型号的/r/n4. 典型的']);
+
+this.words_1.push(['money', '英音[\'mʌni] 美音[\'mʌni]', '名词/r/n1.不可数名词：钱，薪水，收入/r/n2.不可数名词：钱币，钞票/r/n3.不可数名词：财产，财富/r/n4.[pl.]【旧】【法律】款项']);
+
+this.words_1.push(['monument', '英音[\'mɔnjumənt] 美音[\'mɔnjumənt]', '名词 /r/n1.纪念碑 /r/n2.遗迹，遗址，名胜古迹 /r/n3.丰碑，有历史价值的建筑或纪念物']);
+
+this.words_1.push(['mortgage', '英音[\'mɔ:gidʒ] 美音[\'mɔ:gidʒ]', '名词/r/n1.抵押贷款；按揭/r/n2.抵押契据/r/n3.抵押权；被抵押状态/r/n4.约束性义务/r/n及物动词：/r/n1.抵押/r/n2.（口）以…作担保；把…许给/r/n3.损害（未来利益）/r/n']);
+
+this.words_1.push(['mountebank', '英音[\'mauntəbæŋk] 美音[\'mauntəbæŋk]', '名词 江湖郎中,骗子']);
+
+this.words_1.push(['municipal', '英音[mju:\'nisipl] 美音[mju:\'nisipl]', 'adj. /r/n市政的，地方政府的']);
+
+this.words_1.push(['municipality', '英音[mju:nisi\'pæliti] 美音[mju:nisi\'pæliti]', '可数名词： /r/n自治区，市当局，全市民']);
+
+this.words_1.push(['museum', '英音[mju(:)\'ziəm] 美音[mju(:)\'ziəm]', '名词/r/n1.博物馆']);
+
+this.words_1.push(['music', '英音[\'mju:zik] 美音[\'mju:zik]', '可数名词：/r/n1.音乐/r/n2.【总称】音乐作品，乐曲/r/n3.音乐伴奏/r/n4.乐谱，曲谱；【总称】乐曲集/r/n5.和谐悦耳的声音/r/n6.音乐欣赏能力，音乐感/r/n7.军乐队/r/n8.（猎犬发现猎物时的）吠叫声/r/n9.闹声；喧哗/r/n10.【方】乐器']);
+
+this.words_1.push(['musician', '英音[mju:\'ziʃən] 美音[mju\'ziʃən]', '名词/r/n1. 音乐家，音乐人，乐师，音乐大师']);
+
+this.words_1.push(['myth', '英音[miθ] 美音[miθ]', '名词 /r/n1. 神话，神话故事 /r/n2. 杜撰出来的人（事物）；虚构的东西；荒诞的说法；不真实的事']);
+
+this.words_1.push(['mythology', '英音[mi\'θɔlədʒi] 美音[mi\'θɔlədʒi]', '名词 /r/n神话']);
+
+this.words_1.push(['nautical', '英音[\'nɔ:tikl] 美音[\'nɔ:tikl]', 'adj.  船舶的；航海的；船员的']);
+
+this.words_1.push(['negotiation', '英音[nigəuʃi\'eiʃən] 美音[nigəuʃi\'eiʃən]', '名词/r/n[U,C]【为可数名词时，常作复数】商议，谈判，让与，流通']);
+
+this.words_1.push(['net', '英音[net] 美音[net]', '可数名词：/r/n1.[C,U]网，网状物，网状制品/r/n2.罗网，陷阱/r/n3.网状系统，通信网，广播网，间谍网/r/n4.（网球等的）落网球/r/n5.净数，净重，净利，净值/r/n6.最终结果/r/n7.要点，要旨/r/n及物动词：/r/n1.用网捕/r/n2.用网覆盖，用网拦住/r/n3.打（球）落网/r/n4.把……编成网状物，用网制作/r/n5.使净得，使净赚/r/n6.得到，使得到/r/n不及物动词：编网/r/na./r/n1.纯净的，纯的，净值的/r/n2.最终的/r/nabbr./r/n1.NET=National Education Television（美国）全国教育电视网（现名教育广播中心）/r/n2.net.=nuclear electronic transistor 核电子晶体管']);
+
+this.words_1.push(['newsagent', '英音[\'nju:zeidʒənt] 美音[\'nju:zeidʒənt]', '名词 报纸或定期刊物之经销商']);
+
+this.words_1.push(['newscaster', '英音[\'nju:zkɑ:stə] 美音[\'nju:zkɑ:stə]', '名词 新闻广播员,新闻评论广播员']);
+
+this.words_1.push(['newsstand', '英音[\'nju:zstænd] 美音[\'nju:zstænd]', '名词 报摊,杂志摊']);
+
+this.words_1.push(['novelist', '英音[\'nɔvəlist] 美音[\'nɔvəlist]', '名词 小说家']);
+
+this.words_1.push(['nurse', '英音[nɜ:s] 美音[nɜ:rs]', '名词/r/n1.护士/r/n2.（旧时雇主家的）女保育员，保姆，女仆/r/nv./r/n1.看护，照料（病人或伤者）/r/n2.调治，调养（伤病）/r/n3.怀抱，怀有，心藏/r/n4.培育，培养，悉心照料/r/n5.搂抱，小心抱着/r/n6.（妇女或雌性动物）喂奶，哺育/r/n7.（婴儿）吃奶，吸奶']);
+
+this.words_1.push(['occupation', '英音[ɔkju\'peiʃən] 美音[ɔkju\'peiʃən]', '名词 /r/n1.工作；职业 /r/n2.消遣，业余活动 /r/n3.占领，侵占，占领期 /r/n4.（土地、房屋、建筑等的）使用，居住，占用']);
+
+this.words_1.push(['officer', '英音[\'ɔfisə] 美音[\'ɔfisə]', '名词 /r/n1.军官/r/n2.（政府或大机构的）官员，高级职员/r/n3.=police officer/r/n5.【美】警察的头衔']);
+
+this.words_1.push(['operator', '英音[\'ɔpəreitə] 美音[\'ɔpəretɚ]', '名词/r/n1.（设备、机器等的）操作者/r/n2. 电话接线员/r/n3. 驾驶员/r/n4. 经营者（尤指私人工商业的）/r/n5.（外科）手术者，执刀医生/r/n6.【口】（尤作贬义) 有某种（尤指狡滑的）行为的人/r/n7.【语言学】作用词']);
+
+this.words_1.push(['outgoings', '', '开销/r/n 开支']);
+
+this.words_1.push(['outskirts', '英音[\'autskɜ:ts] 美音[\'autskɜ:rts]', '名词 （市镇的）边缘地带；市郊']);
+
+this.words_1.push(['overtime', '英音[\'əuvətaim] 美音[\'əuvətaim]', '名词 /r/n1. 超时，加班，延长时/r/n2. 加时赛，延长赛/r/nadj. /r/n超时的，加班的/r/nadv. /r/n加班地/r/n及物动词： /r/n使超时/r/n']);
+
+this.words_1.push(['packaging', '英音[\'pækidʒiŋ] 美音[\'pækidʒiŋ]', '名词 /r/n1.包装（业）；包装术；包装风格；包装材料/r/n2.（产品，候选人，作者，提案等呈现于人前的）包装/r/n']);
+
+this.words_1.push(['packer', '英音[pækə] 美音[pækə]', '名词 包装者/r/n打包商/r/n批发商/r/n包装机']);
+
+this.words_1.push(['painter', '英音[\'peintə] 美音[\'peintə]', '名词 /r/n1.画家 /r/n2.油漆匠 /r/n3.（系船的）缆绳']);
+
+this.words_1.push(['parade', '英音[pə\'reid] 美音[pə\'reid]', '动词： /r/n1.(使)集合接受检阅 /r/n2.游行；列队行进 /r/n及物动词： /r/n1.展示；炫耀 /r/nn. /r/n1.(部队的)检阅 /r/n2.游行']);
+
+this.words_1.push(['party', '英音[\'pɑ:ti] 美音[\'pɑ:ti]', '可数名词：/r/n1.党，政党，党派；党性，派性/r/n2.（共同工作或活动的）队，组，群/r/n3.社交聚会/r/n4.（条约、诉讼、争论等中的）一方，当事人；【口】（电话通话的）对方/r/n5.参与者；有关连的人/r/n6.餐馆食客/r/n7.【口】【谑】人/r/n8.【军】（分遣）队，组/r/n9.【废】部分/r/na./r/n1.社交聚会的，聚会的/r/n2.政党的，党派的/r/n3.共有的，共用的/r/n不及物动词：/r/n1.参加社交聚会；举行社交聚会/r/n2.【口】尽情欢乐，放荡不羁/r/n及物动词：/r/n为...举行社交聚会/r/n']);
+
+this.words_1.push(['pass', '英音[pæs] 美音[pæs]', '不及物动词：/r/n1.前进；通过；经过；超过/r/n2.（路）延伸；（消息）传开/r/n3.终止，消失；离开，死亡(+away)/r/n4.（球类运动中）传递(+to)/r/n5.（时间）推移，流逝；变化，转化(+from/to/into)/r/n6.（考试等）及格；通过；被批准 /r/n7.（财产、权力等）转让；相传(+to/into)/r/n8.不叫牌，放弃叫牌/r/n9.（事情）发生/r/n及物动词：/r/n1.经过，穿过，越过，超过/r/n2.超出，超越（能力、范围、限度等）/r/n3.传递；传达；传（球）(+to)/r/n4.度过（时间等）/r/n5.通过（考试、检查等）；使及格；批准（议案等）/r/n6.使（货币等）流通；传播（谣言等）/r/n7.宣布（判决等）；提出（批评、意见等）(+on/upon)/r/n8.排泄；通（大小便）/r/nn. /r/n1.可数名词：穿过，经过/r/n2.可数名词：通行证；护照；入场证/r/n3.可数名词：及格；及格分数/r/n4.可数名词：传球动作/r/n5.可数名词：山隘；关口；海峡/r/n6.困境，难关/r/n7.可数名词：一次操作，一次动作/r/n8.勾引手段，过分举动(+at)/r/nabbr. /r/n1.=passage/r/n2.=passenger/r/n3.=passive/r/n4.=passport/r/n']);
+
+this.words_1.push(['path', '英音[pɑ:θ] 美音[pɑ:θ]', '名词 /r/n1.路径，小道，小径；道路，途径；路线,轨道；(指讨论信从甲计算机传到乙计算机时,所有参与传递的计算机连成的路径)']);
+
+this.words_1.push(['pathology', '英音[pəˈθɒlədʒi] 美音[pəˈθɑ:lədʒi]', '名词 病理学，病理，病状/r/n']);
+
+this.words_1.push(['pay', '英音[pei] 美音[pei]', '及物动词：/r/n1.付钱给，给...报酬；出钱雇/r/n2.付，支付；缴纳；偿还/r/n3.把（钱）存入（或转入）（银行、银行账户等）/r/n4.给予（注意等）；致以（问候等）；进行（访问等）/r/n5.对...有利，对...有好处/r/n6.产生...利润；（工作等）有...报酬/r/n7.报偿；（因做坏事而）受到（处罚）/r/n8【海】放松（绳索等）/r/n不及物动词：/r/n1.付款；交款；偿还债务/r/n2.有利，值得/r/n3.生利；（工作等）有报偿/r/n4.付出代价，受到惩罚/r/nn./r/n1.工资，薪金/r/n2.报偿；报应，惩罚/r/n3.付钱/r/n4.受雇（状态），被收买（状态）/r/n5.有偿付能力的人，能按时付款的人/r/n6.【矿】可采矿石；（产）油层，生产层/r/na./r/n1.（含）富矿的，有开采价值的/r/n2.需付费的，收费的；有自动收费装置的/r/n3.与付钱有关的；用于付钱的']);
+
+this.words_1.push(['payday', '英音[\'peidei] 美音[\'peidei]', '名词 发薪日/r/n支付日/r/n交割日']);
+
+this.words_1.push(['payroll', '英音[\'peirəul] 美音[\'peirəul]', '名词/r/n1.（公司员工的）工资名单/r/n2.[usually sing.]（公司的）工资总支出']);
+
+this.words_1.push(['pedagogue', '英音[\'pedəgɔg] 美音[\'pedəgɔg]', '名词 教师,教育者,爱假装博学者']);
+
+this.words_1.push(['pen', '英音[pen] 美音[pen]', '名词 /r/n1. 笔；钢笔；圆珠笔 /r/n2. 写作 /r/n3. 圈，围栏 /r/nv./r/n及物动词： /r/n写（信等） /r/n及物动词： /r/n把…关入栏中']);
+
+this.words_1.push(['pencil', '英音[\'pensl] 美音[\'pensl]', '名词[C,U]/r/n铅笔，色笔，画笔/r/n及物动词： /r/n用铅笔写或涂']);
+
+this.words_1.push(['personnel', '英音[pə:sə\'nel] 美音[pə:sə\'nel]', '名词 [G]/r/n1.（总称）人员，员工/r/n2.不可数名词：人事部门；人事课（或室等）']);
+
+this.words_1.push(['pharmacist', '英音[\'fɑ:məsist] 美音[\'fɑ:məsist]', '名词/r/n1.药剂师/r/n2.药店，药房/r/n']);
+
+this.words_1.push(['philosopher', '英音[fə\'lɔsəfə, fi\'lɔsəfə] 美音[fə\'lɔsəsəfɚ, fi\'lɔsəsəfɚ]', '可数名词： /r/n1.哲学家/r/n2.深思的人；善于思考的人/r/n']);
+
+this.words_1.push(['philosophy', '英音[fə\'lɔsəfi, fi\'lɔsəfi] 美音[fə\'lɑsəfi, fi\'lɑsəfi]', '名词 /r/n1. 哲学 /r/n2. 人生哲学，人生观 /r/n3. 达观 /r/n4. 哲学体系，思想体系；生活的信条（或态度） /r/n5. 对知识的热爱（或探究）/r/n6.（某一门学科的）基本原理 /r/n7. 哲学家的态度；达观；泰然自若；悟道 /r/n8.（除医学、法律、神学外的）所有学科 /r/n9. 宗旨；见解；观点']);
+
+this.words_1.push(['phonetics', '英音[fəu\'netiks] 美音[fəu\'netiks]', '名词 语音学,发音学']);
+
+this.words_1.push(['photographer', '英音[fə\'tɔgrəfə] 美音[fə\'tɔgrəfə]', '名词 /r/n摄影师，照相师，摄影家']);
+
+this.words_1.push(['photography', '英音[fə\'tɔgrəfi] 美音[fə\'tɑ:grəfi]', '不可数名词：照相术，摄影/r/n /r/n']);
+
+this.words_1.push(['physicist', '英音[\'fizisist] 美音[\'fizisist]', '名词/r/n1.物理学家']);
+
+this.words_1.push(['physics', '英音[\'fiziks] 美音[\'fiziks]', '不可数名词：物理学']);
+
+this.words_1.push(['physiologist', '英音[fizi\'ɔlədʒist] 美音[fizi\'ɔlədʒist]', '名词 生理学者']);
+
+this.words_1.push(['physiology', '英音[fizi\'ɔlədʒi] 美音[fizi\'ɔlədʒi]', '名词 /r/n1.生理学 /r/n2.生理机能']);
+
+this.words_1.push(['pilot', '英音[\'pailət] 美音[\'pailət]', '名词 /r/n1.飞行员，宇航员/r/n2.引航员；舵手/r/n3.（电视的）试播节目/r/n4.向导；带路人；带（瞎）乞丐走路的狗（或小孩）/r/n5.（火箭发射的）起动人员；指导员；领导人/r/n6.自动驾驶仪；操纵设备/r/n7.【机械学】导向器(或轴)，导杆；控制器；内径塞规/r/n8.【交通、建筑学】导洞/r/n及物动词：/r/n1.驾驶/r/n2.带领，指引，引导/r/n3.试验，试用/r/n4.试点；试行/r/n5.为（船舶）引航(或操舵)；当…的引航员/r/nadj. /r/n1.试验性的/r/n 引导的/r/n2.导向的；领航的/r/n3.辅助的；控制的/r/n4.驾驶员的；与飞行员有关的/r/n5.（小规模）试验性的；试点的；实验的']);
+
+this.words_1.push(['playground', '英音[\'pleigraund] 美音[\'pleigraund]', '名词 /r/n运动场，游戏场']);
+
+this.words_1.push(['playtime', '英音[\'pleitaim] 美音[\'pleitaim]', '名词 游戏时间,娱乐时间,开幕时刻']);
+
+this.words_1.push(['playwright', '英音[\'pleirait] 美音[\'pleirait]', '名词 /r/n1.剧作家']);
+
+this.words_1.push(['poet', '英音[pəuit,pəuet] 美音[pəuit,pəuet]', '名词 /r/n诗人，空想家']);
+
+this.words_1.push(['policeman', '英音[pə\'li:smən] 美音[pə\'li:smən]', '名词 男警察']);
+
+this.words_1.push(['politician', '英音[pɔli\'tiʃən] 美音[pɔli\'tiʃən]', '可数名词：/r/n1.积极从事政治活动的人，政治家/r/n2.政客，玩弄权术的人']);
+
+this.words_1.push(['politics', '英音[\'pɔlitiks] 美音[\'pɑlətɪks]', '名词 /r/n1.不可数名词：政治/r/n2.不可数名词：政治学/r/n3.政治信条；政见/r/n4.不可数名词：政治活动；政治职业/r/n5.不可数名词：党派关系，手腕，权术/r/n']);
+
+this.words_1.push(['porter', '英音[\'pɔ:tə] 美音[\'pɔ:tə]', '名词 /r/n1.搬运工人/r/n2.守门人，门房']);
+
+this.words_1.push(['post', '英音[pəust] 美音[post]', '名词 /r/n1.不可数名词：【主英】邮政（制度）；邮寄/r/n2.不可数名词：邮件；（一次投递的）邮件/r/n3.【英】邮筒，邮箱/r/n4.【英】邮局/r/n5.（大写）（作名称用）邮报，报纸/r/n6.可数名词： 柱；桩；杆/r/n7.（比赛的）标杆/r/n8.【口】足球的门柱/r/nv. 及物动词：/r/n1. 邮寄，投寄/r/n2. 使熟悉，使了解/r/n3.（会计）登入（分类帐等）/r/n4. 贴出（布告等）；把（布告等）贴在...上(+up)/r/n5. 宣告，发表(+as)/r/n6. 布置（岗哨等）/r/n7. 分发（某人）(+to)/r/nn. 可数名词：/r/n1. 岗位；哨所；站/r/n2.（军队的）驻扎地；兵营；驻扎部队/r/n3. 职位；职守/r/n4.【美】（退伍军人协会的）地方分会/r/n5. 贸易站，交易所/r/n6.【英】【军】熄灯号/r/npost-/r/npref. /r/n1. 表示后；在后/r/n']);
+
+this.words_1.push(['postman', '英音[\'pəustmən] 美音[\'pəustmən]', '可数名词：/r/n【英】邮递员，投递员/r/n']);
+
+this.words_1.push(['premium', '英音[\'pri:miəm] 美音[\'primiəm]', '可数名词：/r/n1. 奖品，奖金/r/n2. 额外补贴，津贴，酬金/r/n3.【商】加价，溢价/r/n4.【商】优惠（让价），附赠礼品/r/n5. 保险费/r/n6.【商】贴水，升水/r/n7. 习艺费，学费/r/nadj. 高价的，优质的/r/n/r/n']);
+
+this.words_1.push(['president', '英音[\'prezidənt] 美音[\'prezidənt]', '名词/r/n1.总统，国家主席/r/n2.（学院的）院长、（政府部门或机构的）首长、（社会团体等的）会长等/r/n3.（银行的）行长、（公司等的）总经理、总裁、董事长等']);
+
+this.words_1.push(['press', '英音[pres] 美音[prɛs]', '及物动词：/r/n1.按，挤，压，推，顶，以……按（或挤，压，推等）/r/n2.挤压，挤取，榨取/r/n3.挤出（路）/r/n4.压平，熨平/r/n5.把……压（或捏）成型，压制/r/n6.使……紧贴，（表示亲热或鼓励）紧抱，紧握/r/n7.驱赶，推动/r/n8.竭力推行，执行/r/n9.竭力要求，坚持，强调/r/n10.催促，敦促，竭力劝说/r/n11.催逼，逼迫/r/n12.硬给，把……强加于/r/n13.进逼，进攻/r/n14.使……感到负担沉重，使……紧迫，使……窘迫/r/n15.【体】（举重中）推举/r/n16.生搬硬套（或牵强附会）地使用（词语、比喻等）/r/n17.【古】挤满/r/n不及物动词：/r/n1.按，挤，压，推，顶/r/n2.挤拢，拥挤/r/n3.挤着走，奋力前进/r/n4.熨，（衣服等）被压平，被熨平/r/n5.成为紧迫，成为紧急/r/n6.【篮】紧逼，做紧逼动作，【高尔夫】长挥击球过猛/r/nn./r/n1.按，挤，压，推，顶/r/n2.压力，驱赶，推动/r/n3.压平，熨平，（衣服熨烫后的）平整（或挺括）状态，烫出的折痕/r/n4.压平器，压力机，压床（或冲床），压榨机，冲压车间/r/n5.夹具（如书夹，球拍夹等），（中世纪的）夹刑刑具/r/n6.印刷，印刷术，印刷机，印刷机构，出版机构，印刷品/r/n7.the press【总称】报刊，报业，新闻业，记者们/r/n8.新闻舆论，报刊评论/r/n9.人群【古】厮杀混战的士兵/r/n10.紧急，急迫/r/n11.【心】压力/r/n12.【体】（举重的）推举']);
+
+this.words_1.push(['principal', '英音[\'prinsəpəl] 美音[\'prinsəpəl]', '副词/r/n1.（一般作为定语）最重要的；首要的；主要的/r/n2.资本的；母金的，本金的；可生息的财产；基金的/r/n3.【地】主震的/r/n可数名词：/r/n1.为首的人；首领；长官，首长；负责人；起主要作用的人/r/n2.【英】大学校长；学院院长/r/n3.【北美】= head master（中小学的）校长/r/n4.主要演员，主角；（乐队中除首席小提琴手之外的各种乐器组的）首席演奏者；独唱者；独奏者/r/n5.【主英】主管（指次于大臣的文职人员）/r/n6.[usually sing.]【经】母金，本金；可生息（或有收益）的资本（或财产）；股票（或债券）的票面价值/r/n7.【律】（代理关系中的）委托人，本人，被代理人/r/n8.【律】主犯，首犯/r/n9.【律】主债务人，被保应付款的本人']);
+
+this.words_1.push(['producer', '英音[prə\'dju:sə] 美音[prə\'du:sə]', '可数名词： /r/n1.生产商,制造商,产地/r/n2.（电影的）制片人，监制人，舞台监督/r/n3.（广播、电视、唱片等的）制作人，制作公司，监制']);
+
+this.words_1.push(['production', '英音[prə\'dʌkʃən] 美音[prə\'dʌkʃən]', '名词/r/n1.不可数名词：制造，生产（尤指大批量）/r/n2.不可数名词：产量/r/n3.可数名词： 推出的作品（尤指戏剧、影片等）/r/n']);
+
+this.words_1.push(['profession', '英音[prə\'feʃən] 美音[prə\'feʃən]', '可数名词：/r/n1.（尤指需要专门知识或特殊训练的）职业/r/n2.(the profession)【总称】同业，同行/r/n3.(the profession)【俚】演员们/r/n4.（信念、意见、感情等的）表示；表白；诈称/r/n5.立誓信教；信奉的宗教；入教的誓言，修道誓约']);
+
+this.words_1.push(['professor', '英音[prə\'fesə] 美音[prə\'fesə]', '名词/r/n1.教授/r/n2.大学的讲师，教员/r/n']);
+
+this.words_1.push(['profitability', '英音[prɔfitə\'biliti] 美音[prɔfitə\'biliti]', '名词 /r/n1.有利；有益；获利/r/n2.【经】收益性；利益率/r/n']);
+
+this.words_1.push(['programmer', '英音[\'prəugræmə] 美音[\'prəugræmə]', '名词 排节目者,订计划者']);
+
+this.words_1.push(['programming', '英音[\'prəugræmiŋ] 美音[\'prəugræmiŋ]', '不可数名词：/r/n1.编程，程序设计/r/n2.（广播，电视节目）编排，选编']);
+
+this.words_1.push(['project', '英音[\'prɔdʒekt] 美音[prə\'dʒɛkt]', 'vt. /r/n1.计划；规划/r/n2.投掷，发射，喷射(+at/into)/r/n3.投射（光线等）；映(+on/onto)/r/n4.突出；使凸出/r/n5.阐述；表明...的特性，使呈现特性/r/n6.预计，推断/r/n7.【心】把（自己的感情等）投射给（别人）(+on/upon/onto)/r/nv. 不及物动词：/r/n1.突出，伸出(+from/into)/r/n2.【心】投射/r/nn. 可数名词：/r/n1.方案，计划，规划 /r/n2.工程/r/n3.科研项目/r/n4.【美】国民住宅/r/n']);
+
+this.words_1.push(['proletarian', '英音[prəulə\'tɛəriən] 美音[prəulə\'tɛəriən]', '副词 无产阶级的名词 无产者']);
+
+this.words_1.push(['proletariat', '英音[prəulə\'tɛəriət] 美音[prəulə\'tɛəriət]', '名词 无产阶级']);
+
+this.words_1.push(['protectionism', '英音[prə\'tekʃənizəm] 美音[prə\'tekʃənizəm]', '不可数名词： （贸易）保护主义']);
+
+this.words_1.push(['protractor', '英音[prəu\'træktə] 美音[prəu\'træktə]', '名词/r/n1.延长者；拖延者/r/n2.量角器，分度规/r/n3.【解】牵引肌/r/n4.【医】钳取器']);
+
+this.words_1.push(['psychology', '英音[sai\'kɔlədʒi] 美音[sai\'kɔlədʒi]', '名词 /r/n1.不可数名词： 心理学/r/n2. 心理，心理特征/r/n3. 心理影响']);
+
+this.words_1.push(['publisher', '英音[\'pʌbliʃə] 美音[\'pʌbliʃə]', '名词/r/n1.出版者；出版商；出版社']);
+
+this.words_1.push(['publishing', '英音[\'pʌbliʃiŋ] 美音[\'pʌbliʃiŋ]', '副词 /r/n出版的']);
+
+this.words_1.push(['pupil', '英音[\'pju:pl] 美音[\'pju:pl]', '可数名词：/r/n1. 学生，（尤指）小学生/r/n2. 弟子，门生，门徒/r/n3. 瞳孔，眸子，瞳仁']);
+
+this.words_1.push(['purchaser', '英音[\'pə:tʃəsə] 美音[\'pə:tʃəsə]', '可数名词： /r/n买方，购买者']);
+
+this.words_1.push(['purchasing', '英音[\'pə:tʃeisiŋ] 美音[\'pə:tʃeisiŋ]', '不可数名词：/r/n【商】购买，采购']);
+
+this.words_1.push(['qualification', '英音[\'kwɔlifi\'keiʃən] 美音[\'kwɔlifi\'keiʃən]', '名词/r/n1.可数名词：（通过考试或学习课程取得的）资格，学历/r/n2.可数名词：（通过经验或具备技能而取得的）资格，资历/r/n3.[C,U]限定条件/r/n4.不可数名词：获得资格，合格，达到标准']);
+
+this.words_1.push(['quotation', '英音[kwəu\'teiʃən] 美音[kwəu\'teiʃən]', '名词/r/n1.可数名词：[非正式用法中为quote]引语；引文；语录/r/n2.不可数名词：引用；引述；引证/r/n3.可数名词：[非正式用法中为quote]报价；估价/r/n4.可数名词：【财】（货物或股票的）行情，市价，牌价']);
+
+this.words_1.push(['racing', '英音[\'reisiŋ] 美音[\'reisiŋ]', '名词/r/n竞赛']);
+
+this.words_1.push(['radio', '英音[\'reidiəu] 美音[\'reidiəu]', '名词 /r/n1.收音机，无线电设备 /r/n2.无线电广播台 /r/n3.无线电，无线电传送，无线电广播 /r/n4.无线电收发报机 /r/n动词： /r/n1.用无线电发送讯息']);
+
+this.words_1.push(['receptionist', '英音[ri\'sepʃənist] 美音[ri\'sepʃənist]', '名词 /r/n接待员']);
+
+this.words_1.push(['recommend', '英音[rekə\'mend] 美音[rekə\'mend]', '及物动词： /r/n1. [~sb/sth(to sb)(for/as sth)]推荐；举荐；介绍/r/n2. 劝告；建议/r/n3. [~sb/sth (to sb)]使显得吸引人；市受人欢迎']);
+
+this.words_1.push(['rector', '英音[\'rektə] 美音[\'rektə]', '名词 教区长,校长,院长']);
+
+this.words_1.push(['redemption', '英音[ri\'dempʃən] 美音[ri\'dempʃən]', '不可数名词： /r/n1.拯救，救赎/r/n2.赎回']);
+
+this.words_1.push(['rediscount', '英音[ri:\'diskaunt] 美音[ri:\'diskaunt]', 'vt. 再打折扣,重贴现名词 再折扣,重贴现票据']);
+
+this.words_1.push(['redundancy', '英音[ri\'dʌndənsi] 美音[ri\'dʌndənsi]', '名词/r/n1. [U,C]（因劳动力过剩而造成的）裁员，解雇/r/n2. 不可数名词：【术语】多余，累赘']);
+
+this.words_1.push(['redundant', '英音[ri\'dʌndənt] 美音[ri\'dʌndənt]', 'adj./r/n1.【英】被裁减的/r/n2.多余的，不需要的']);
+
+this.words_1.push(['rehabilitation', '英音[\'ri:həbili\'teiʃən] 美音[\'ri:həbili\'teiʃən][ˌrihəˌbɪlə\'teʃən]', '名词 不可数名词：/r/n1.修复；复兴/r/n2.复职；恢复名誉，昭雪/r/n3.（病残人的）康复，更新；（罪犯的）改过迁善/r/n']);
+
+this.words_1.push(['remuneration', '英音[riˌmju:nə\'reiʃən] 美音[riˌmju:nə\'reiʃən]', '名词[U,C] /r/n酬金，薪水，报酬']);
+
+this.words_1.push(['reorientation', '英音[\'ri:ɔ:rien\'teiʃən] 美音[\'ri:ɔ:rien\'teiʃən]', '名词 再定位']);
+
+this.words_1.push(['representative', '英音[repri\'zentətiv] 美音[repri\'zentətiv]', '可数名词：/r/n1.代表/r/n2.(非正式亦为rep)销售代表；销售代理；代销人/r/n3.代表他人者/r/n4.【律】（代位）继承人/r/n4.有代表性的事物，典型事例；代表物/r/n5.议员；（常作Representative，缩略为Rep.）【美】众议院议员；州议员/r/na./r/n1.代表的；代理的/r/n2.代表制的，代议制的/r/n3.代表性的，典型的/r/n4.表现的；（美术）具象派的']);
+
+this.words_1.push(['reserve', '英音[ri\'zə:v] 美音[ri\'zə:v]', '动词 及物动词：/r/n1.储备，保存；保留(+for)/r/n2.预约，预订/r/n3.推迟作出；暂时不作/r/nn. /r/n1.[C,U]储备（物）；储备金；保留（物）；储藏量(+of)/r/n2.可数名词：保留地；保护区；禁猎区/r/n3.可数名词：储备选手，候补/r/n4.不可数名词：克制；沉默寡言；含蓄；冷淡/r/n5.预备军，后备队；预备役军人/r/n']);
+
+this.words_1.push(['resign', '英音[ri\'zain] 美音[ri\'zain]', '不及物动词：/r/n1.辞职；引退/r/n2.听任，顺从/r/n3.【棋】认输/r/n4.投降/r/n及物动词：/r/n1.辞，辞去/r/n2.放弃，抛弃/r/n3.把...交托给/r/n4.使顺从/r/n']);
+
+this.words_1.push(['resume', '英音[rɪ\'zu:m] 美音[ri\'zum]', '及物动词：/r/n1.（中断后）重新开始，继续/r/n2. 恢复；重回，重返；重新得到；重新使用/r/n3. 取回，收回/r/n4. 接着说，继续说/r/n不及物动词：/r/n1. 重新开始，继续/r/nn./r/n1. 简历，梗概（résumé的另一写法，主要用于美式英语）']);
+
+this.words_1.push(['retailer', '英音[\'ri:teilə] 美音[\'ri:teilə]', '名词 /r/n1.零售商；零售店 /r/nn. /r/n1.详述者；复述者；传播者']);
+
+this.words_1.push(['retire', '英音[ri\'taiə] 美音[ri\'taiə]', '动词： /r/n1.退职；退役；(使)退休 /r/n不及物动词： /r/n1.退下；撤退 /r/n2.就寝 /r/n3.离开（尤指去僻静处）']);
+
+this.words_1.push(['retirement', '英音[ri\'taiəmənt] 美音[ri\'taiəmənt]', '名词  /r/n1.[C,U]退休，退职，退休年龄/r/n2.不可数名词：退休生活/r/n3.不可数名词：（尤指从体育、政治等方面的）退出，引退，退职/r/n']);
+
+this.words_1.push(['revaluation', '英音[ri:vælju\'eiʃən] 美音[ri:vælju\'eiʃən]', '名词 再评价']);
+
+this.words_1.push(['rider', '英音[\'raidə] 美音[\'raidə]', '名词 /r/n1.骑(马、自行车等)的人 /r/n2.乘客 /r/n3.附文，附加条款']);
+
+this.words_1.push(['riding', '英音[\'raidiŋ] 美音[\'raidiŋ]', '名词/r/n1.不可数名词：(also horse/horseback riding) 骑马/r/n2. 区（英格兰约克郡以前的东、西、北三个行政分区之一）']);
+
+this.words_1.push(['ring', '英音[riŋ] 美音[riŋ]', '名词 可数名词：/r/n1.圈；环；环形物/r/n2.戒指；耳环/r/n3.年轮；围成一圈的人（或物）/r/n4.圆形灶盘/r/n5.马戏场；拳击场/r/n6.（不法）集团，帮派/r/nv. 及物动词：/r/n1.包围；围住(+with)/r/n2.使成环形/r/nv. 不及物动词：/r/n1.成环形/r/n1.按铃；摇铃；敲钟(+at/for)/r/n2.（钟、铃等）鸣，响/r/n3.【主英】打电话/r/n4.回响；响彻(+with/to)/r/n5.响个不停，一再响起/r/n6.听上去，听起来/r/nv. 不及物动词：/r/n1.按（铃）；摇（铃）；敲（钟）/r/n2.【主英】打电话给(+up)/r/n3.发（鸣响）；以钟声宣告；钟声报（时）/r/nn. /r/n1.可数名词：铃声，钟声；按铃，敲钟(+of)/r/n2.语气；口气(+of)/r/n3.【主英】【口】打电话/r/n/r/n♦/r/n mengagement ring 男士订婚戒指']);
+
+this.words_1.push(['rocket', '英音[\'rɔkit] 美音[\'rɔ:kit]', '名词  /r/n1.可数名词：火箭/r/n2.可数名词：火箭武器；火箭（弹）/r/n3.可数名词：焰火，烟花/r/n4.不可数名词：大蒜芥；芝麻菜，紫花南芥/r/nv./r/n1.不及物动词：快速增长，猛增/r/n2.不及物动词：迅速移动/r/n3.[I,T]使迅速成功，迅速提高地位/r/n4.及物动词：用火箭弹攻击/r/n']);
+
+this.words_1.push(['roundabout', '英音[\'raundə\'baut] 美音[\'raundə\'baut]', '副词 /r/n1.绕道的，不直截了当的，婉转的 /r/n2.圆滚滚的，胖嘟嘟的 /r/n3.（外衣）下摆圆的/r/n可数名词： /r/n1.【英】绕道，绕行路线 /r/n2.绕圈子的话，迂回说法 /r/n3.【美】（尤指十九世纪男用）紧身短上衣 /r/n4.【英】（游乐场等的）旋转木马 /r/n5.【英】环形交通枢纽,环形交叉']);
+
+this.words_1.push(['rubber', '英音[\'rʌbə] 美音[\'rʌbə]', '名词 /r/n1.橡胶；合成橡胶/r/n2.橡皮，（天然或合成的）橡胶制品；【英】（擦铅笔字迹等的）橡皮擦子；橡皮轮胎；【总称】【主美】（一辆车的）橡皮轮胎；[rubbers]【美】【浅口】橡胶套鞋；【英】橡胶底帆布运动鞋/r/n3.【棒】投手板；本垒板/r/n4.摩擦（或磨平、上光、擦净等）的人（或物）；按摩者，（浴室）按摩员；摩擦器/r/n5.防摩擦物/r/n6.摹拓者/r/n7.【体】（板球、草地网球等的）胜局比赛；【牌】一盘胜局/r/n8.平局决赛/r/na./r/n1.橡胶制成的/r/n2.制造橡胶的/r/n不及物动词：/r/n【俚】伸长脖子望；扭转脖子看/r/n及物动词：/r/n1.用橡胶制造/r/n2.给...涂上橡胶；用橡胶处理']);
+
+this.words_1.push(['rugger', '英音[\'rʌgə] 美音[\'rʌgə]', '名词 橄榄球']);
+
+this.words_1.push(['rule', '英音[ru:l] 美音[ru:l]', '名词 /r/n1.可数名词：规则，惯例/r/n2.不可数名词：统治，控制，支配/r/nv.[T,I] /r/n规定，统治']);
+
+this.words_1.push(['sack', '英音[sæk] 美音[sæk]', '可数名词：/r/n1. 袋；粗布袋；麻袋/r/n2. 一袋（的量）(+of)/r/n3.【口】开除；解雇/r/n4.【棒】垒/r/n5.【美】【俚】床；睡袋/r/n6. 劫掠/r/n7.（16-17世纪产于西班牙及加那利群岛的）萨克葡萄酒（尤指sherry）/r/nv./r/n及物动词：/r/n1. 装...入袋/r/n2.【口】开除；解雇/r/n3.（在竞赛等中）胜过/r/n4. 劫掠；洗劫（被攻陷的城市等）/r/n不及物动词：/r/n【美】【俚】上床，睡觉(+out/in/up)']);
+
+this.words_1.push(['salary', '英音[\'sæləri] 美音[\'sæləri]', '名词 /r/n薪水；薪金（尤指按月发放的）']);
+
+this.words_1.push(['sales', '英音[\'seils] 美音[\'seils]', 'adj./r/n售货的/r/n销售的/r/nn./r/n销售(额)']);
+
+this.words_1.push(['salesman', '英音[\'seilzmən] 美音[\'seilzmən]', '名词 /r/n1.售货员，推销员']);
+
+this.words_1.push(['saleswoman', '英音[\'seilzwumən] 美音[\'seilzwumən]', '名词 女售货员,女店员']);
+
+this.words_1.push(['sanction', '英音[\'sæŋkʃən] 美音[\'sæŋkʃən]', '名词 /r/n1.【正】批准，认可 /r/n2.【正】制裁 /r/n3.【正】约束力 /r/n及物动词： /r/n1.批准；认可 /r/n2.实施惩罚；实施制裁']);
+
+this.words_1.push(['satchel', '英音[\'sætʃəl] 美音[\'sætʃəl]', '名词 书包,小背包']);
+
+this.words_1.push(['saving', '英音[\'seiviŋ] 美音[\'seiviŋ]', '名词  /r/n1.可数名词：节省物，节省，节约/r/n2.【复数】储蓄金，存款/r/n3.【构成形容词】节约的，节省...的/r/n']);
+
+this.words_1.push(['scarcity', '英音[\'skeəsəti] 美音[\'skeəsəti]', '名词[C,U] 缺乏，不足，稀少/r/n']);
+
+this.words_1.push(['scholar', '英音[\'skɔlə] 美音[\'skɔlə]', '可数名词：/r/n1.学者/r/n2.获奖学金的学生']);
+
+this.words_1.push(['scholarship', '英音[\'skɔləʃip] 美音[\'skɔləʃip]', '名词 /r/n1.可数名词：奖学金/r/n2.不可数名词：学问，学术，学术研究/r/n']);
+
+this.words_1.push(['school', '英音[sku:l] 美音[sku:l]', '名词/r/n1.可数名词：（中、小）学校../r/n2.不可数名词：上学，上学阶段/r/n3.不可数名词：上课（或上学）时间/r/n4.学校全体师生/r/n5.可数名词：专业学校，专科学校 /r/n6.[C,U]【美】【非正式】学院，大学，上大学时期/r/n7.可数名词：（高等院校的）学院，系/r/n8.可数名词：学派，流派/r/n9.可数名词：群/r/n及物动词：/r/n1.【正式】训练，使学会/r/n2.【正式】教育，培养']);
+
+this.words_1.push(['schoolboy', '英音[\'sku:lbɔi] 美音[\'sku:lbɔi]', '名词 男学生']);
+
+this.words_1.push(['schoolgirl', '英音[\'sku:lgə:l] 美音[\'sku:lgə:l]', '名词 女生,女学生']);
+
+this.words_1.push(['schooling', '英音[\'sku:liŋ] 美音[\'sku:liŋ]', '名词 不可数名词：/r/n1.学校教育；培养/r/n2.学费；学校膳宿费/r/n3.【古】谴责/r/n']);
+
+this.words_1.push(['schoolmate', '英音[\'sku:lmeit] 美音[\'sku:lmeit]', '名词 同窗,同学']);
+
+this.words_1.push(['science', '英音[\'saiəns] 美音[\'saiəns]', '名词/r/n1.不可数名词：科学，科学研究；[C,U] 某一门科学，学科；不可数名词： 自然科学（统称），理科；[attrib 作定语] （a science teacher）/r/n2.不可数名词：专门技术或技巧；（通常单数）需运用技巧的活动/r/n']);
+
+this.words_1.push(['scientist', '英音[\'saiəntist] 美音[\'saiəntist]', '可数名词：/r/n科学家']);
+
+this.words_1.push(['sculptor', '英音[\'skʌlptə(r)] 美音[\'skʌlptə(r)]', '名词  /r/n雕刻家；雕塑家']);
+
+this.words_1.push(['secretary', '英音[\'sekrətəri] 美音[\'sekrətəri]', '可数名词：/r/n1.秘书/r/n2.（俱乐部，社团等的）干事，文书/r/n3.=Secretary of State 大臣/r/n4.【美】部长/r/n5.【英】（英国的部长、大使等的）助理/r/n']);
+
+this.words_1.push(['securities', '英音[si\'kjuəritis] 美音[si\'kjuəritis]', '可数名词：/r/n1.股票证券总称/r/n']);
+
+this.words_1.push(['semester', '英音[si\'mestə] 美音[si\'mestə]', '名词 可数名词：/r/n1.（尤指美国的大专院校的）学期（半学年）']);
+
+this.words_1.push(['seminar', '英音[\'seminɑ:] 美音[\'seminɑ:]', '可数名词：/r/n1.研讨班/r/n2.研讨会，培训会']);
+
+this.words_1.push(['sewer', '英音[\'su:ə] 美音[\'su:ə]', '可数名词： /r/n1.下水道，阴沟/r/n2.裁缝师/r/n及物动词： /r/n用下水道排，安下水道于']);
+
+this.words_1.push(['shantytown', '英音[\'ʃæntitaun] 美音[\'ʃæntitaun]', '名词 以临时搭盖的陋屋为主的地区，棚户区，贫民窟']);
+
+this.words_1.push(['share', '英音[ʃɛə] 美音[ʃɛr]', '名词 /r/n1.一份，份儿；（分担的）一部分(+in/of)/r/n2.可数名词：股份；股票(+in)/r/n3.不可数名词：市场占有率/r/n4.（工作、费用等的）分摊；分担；贡献 /r/n5.可数名词：犁头，犁刃/r/n及物动词： /r/n1.均分；分摊；分配(+out/among/between)/r/n2.分享，晒；分担；/r/n共有；共同使用(+with/among/between)/r/n不及物动词：/r/n1.分享；分担(+in)/r/n']);
+
+this.words_1.push(['shareholder', '英音[\'ʃeəhəʊldə(r)] 美音[\'ʃerhoʊldr]', '名词 股东，股票持有人']);
+
+this.words_1.push(['shop', '英音[ʃɔp] 美音[ʃɔp]', '名词/r/n1.可数名词：商店，店铺/r/n2.可数名词：工厂，工场，作坊，（尤指）车间/r/n3.【英】【非正式】购物，采买/r/n4.不可数名词：=shop class/r/n5.可数名词：【美】工具贮藏室/r/nv./r/n1.不及物动词：去商店买，在商店购物/r/n2.不及物动词：逛商店/r/n3.及物动词：【英】【非正式】（向警察等）告发']);
+
+this.words_1.push(['shopkeeper', '英音[\'ʃɔpki:pə(r)] 美音[\'ʃɑ:pki:pə]', '名词(also storekeeper)/r/n（通常指小商店的）店主']);
+
+this.words_1.push(['show', '英音[ʃəu] 美音[ʃəu]', '及物动词：/r/n1.出示/r/n2.陈列；展出；展销/r/n3.显示；表现，露出/r/n4.演出；放映/r/n5.指出，指示/r/n6.带领/r/n7.阐述，说明；解释/r/n8.（图片等的）描述/r/n9.证明，证实/r/n10.给予，赐予/r/n11.（通过示范）教，告知/r/n12.【律】陈述；辩护/r/n不及物动词：/r/n1.显出，显露；显而易见/r/n2.显得/r/n3.【口】展出商品/r/n4.【口】演出，上演/r/n5.【口】如约而来，露面/r/n6.（表决时）举手/r/n7.【美】（在赛马等中）得第三名/r/nn./r/n1.展览会；展览品/r/n2.炫耀；卖弄/r/n3.演出；节目；电影；电影院，剧团/r/n4.外观；表面；印象/r/n5.（地下有石油等的）迹象/r/n6.假象；托辞/r/n7.景象；奇观/r/n8.洋相；出丑的人/r/n9.显示威力/r/n11.【口】[用作单数]表白机会/r/n12.【英口】事业；活动，组织/r/n13.【美】第三名/r/n14.【医】现血，见红/r/n15.【军】交战，战斗/r/n16.[the Show]【口】棒球联合总会/r/na./r/n1.用于展览的/r/n2.戏剧演出的']);
+
+this.words_1.push(['simultaneous', '英音[siml\'teinjəs] 美音[siml\'teinjəs]', 'adj.【无比较级，最高级】同时的，同时发生的']);
+
+this.words_1.push(['singer', '英音[\'siŋə] 美音[\'sɪŋɚ]', '名词 可数名词：/r/n1.歌唱家，歌手/r/n2.鸣禽/r/n3.诗人/r/nn. 可数名词：/r/n1.（屠宰场的）烫毛工/r/n2.【纺】烧毛工；烧毛机']);
+
+this.words_1.push(['situation', '英音[sitju\'eiʃən] 美音[sitju\'eiʃən]', '可数名词：/r/n1. 情况；状况；形势；局面/r/n2.【书】（建筑物或城镇的）地理环境，环境特点/r/n3.【书】职业；工作岗位/r/n4.（戏剧，小说等的）紧张情节或场面/r/n']);
+
+this.words_1.push(['skyscraper', '英音[\'skaiskreipə] 美音[\'skaiskreipə]', '可数名词： 摩天大楼']);
+
+this.words_1.push(['slide', '英音[slaid] 美音[slaid]', '名词 可数名词：/r/n1.滑行，滑落 /r/n2.幻灯片 /r/n3.降低；跌落；衰落 /r/n4.滑梯 /r/n5.山崩；岩崩；土崩；崩塌 /r/n6.载物玻璃片 /r/n7.（乐器上的）拉管，滑管，滑动装置 /r/n8. 滑道；滑槽；滑面；滑轨；(儿童)滑墙上梯 /r/n9.(两室间墙上的)递物窗口 /r/n10.【音乐】滑音；(长号的)U形滑管；(吉他演奏中的)滑音演奏 /r/n11.【机械学】滑动；滑道，滑轨，滑糟；滑阀；导板 /r/n12.【地质学】崩塌；崩塌的土块(或石块、雪块等)；滑坡发生地 /r/n13.【棒球】滑垒 /r/n动词：/r/n1.滑动；滑行 /r/n不及物动词： /r/n1.滑落，跌落 /r/n2.打滑；滑落 /r/n3.徐徐而行；悄悄地走 /r/n4.逐渐变为；不知不觉中陷入(into) /r/n5.下跌，跌落 /r/n6.【音乐】演奏滑音；唱滑音 /r/n7.【棒球】滑垒 /r/n及物动词： /r/n1.（使）快捷而悄声地移动 /r/n2.逐渐降低；贬值 /r/n3.衰落（成）；逐渐陷入；逐渐衰退（到） /r/n4.使悄悄转动；偷偷放；使滑入；使顺滑地装入']);
+
+this.words_1.push(['society', '英音[sə\'saiəti] 美音[sə\'saiəti]', '名词 /r/n1.[C,U]社会/r/n2.可数名词：社团，协会，公会，俱乐部/r/n3.[C,U]社交界；上流社会/r/n4.不可数名词：交际，交往，友谊/r/n5.可数名词：群栖，,群集/r/n']);
+
+this.words_1.push(['sociology', '英音[səusi\'ɔlədʒi] 美音[səusi\'ɔlədʒi]', '不可数名词： 社会学']);
+
+this.words_1.push(['specialist', '英音[\'speiʃəlist] 美音[\'speiʃəlist]', '名词 /r/n1.专家，行家 /r/n2.专科医生']);
+
+this.words_1.push(['speculation', '英音[spekju\'leiʃən] 美音[spɛkjə\'leʃən]', '名词/r/n1.不可数名词：[speculation (over/about/upon/on sth)] 思考，思索，推断，推测/r/n2.可数名词：推测结论，猜测/r/n3.不可数名词：[speculation (in sth)]投机活动/r/n4.可数名词：投机买卖，投机生意']);
+
+this.words_1.push(['sport', '英音[spɔ:t] 美音[spɔ:t]', '名词/r/n1.不可数名词：【英】体育运动/r/n2.可数名词：（某项）体育运动/r/n3.可数名词：【非正式】【澳】（用作友好称呼，尤指男子）老兄，哥们儿/r/n4.不可数名词：【正式】娱乐，消遣，玩笑，逗乐/r/n5.可数名词：【术语】突变，芽变，变种/r/nv./r/n1.及物动词：故意显示，夸示，炫耀/r/n2.不及物动词：【文学】开心活泼地玩，嬉戏']);
+
+this.words_1.push(['springboard', '英音[\'spriŋbɔ:d] 美音[\'spriŋbɔ:d]', '名词 /r/n1.（跳水或体操中）的跳板/r/n2. ~ (for/to sth)（有助于开展某事的）基础、出发点']);
+
+this.words_1.push(['stadium', '英音[\'steidiəm] 美音[\'steidiəm]', '名词体育场，运动场/r/n']);
+
+this.words_1.push(['staff', '英音[stɑ:f] 美音[stæf]', '名词/r/n1.[C,U] 全体职工（或雇员）/r/n2.【北美】（大、中、小学的）管理人员，行政人员（单数）/r/n3.（军队的）全体参谋人员/r/n4.（辅助州长、总统等的）工作班子/r/n5. 拐杖；棍棒/r/n6.（主教的）牧杖；权杖；官杖；魔杖；指挥棒；警棍/r/n7.【音】=stave 五线谱（复数为staves）/r/n8. 长杆；旗标；标杆，标尺；（钟表的）小轴杆；（梯子，椅子等的）横档/r/n9. 支撑，支柱/r/n10.（铁路的）路签/r/n11.【古】（枪等的）长柄/r/n12.【废】（诗）节/r/n13.【军】=staff sergeant （美国）参谋军士，文书军士；（英国、澳大利亚、加拿大等国的）陆军上士/r/nadj./r/n1. 职员的，雇员的；作为正式雇员的/r/n2. 参谋人员的，参谋的/r/n及物动词：/r/n1.（通常为被动态）在……工作；任职于；为……配备职员/r/n2. 雇用，雇有']);
+
+this.words_1.push(['stagnation', '英音[stæg\'neiʃn] 美音[stæg\'neiʃn]', '不可数名词：  经济停滞时期']);
+
+this.words_1.push(['stall', '英音[stɔ:l] 美音[stɔ:l]', '名词 /r/n1.厩，畜栏 /r/n2.摊，棚 /r/n3.熄火，停止转动 /r/n4.（房间内的）小隔间，淋浴间，洗手间 /r/n5.（剧场的）正厅前排座位 /r/n6.（教堂内）唱诗班和牧师的座位 /r/n7.（车辆发动机的）熄火；（车辆的）抛锚 /r/n8.（飞机的）失速 /r/n动词： /r/n1.(使)熄火，(使)停止转动 /r/n不及物动词： /r/n1.拖延 /r/n及物动词： /r/n1.搪塞 /r/n2.暂缓；搁置；停顿']);
+
+this.words_1.push(['station', '英音[\'steiʃən] 美音[\'steʃən]', '名词 /r/n1.可数名词：车站/r/n2.可数名词：（各种机构的）站，所，局，署/r/n3.可数名词：广播电台，电视台；电视频道/r/n4.可数名词：驻地，基地；驻地人员/r/n5.可数名词：岗位；站立的位置/r/n6.可数名词：身份，地位/r/n7.不可数名词：静止状态/r/n8.可数名词：【澳】大牧场/r/nv. 及物动词：/r/n1.驻扎，部署，配置']);
+
+this.words_1.push(['statistician', '英音[stætis\'tiʃən] 美音[stætis\'tiʃən]', '名词 统计员,统计学家']);
+
+this.words_1.push(['stenographer', '英音[stə\'nɔgrəfə] 美音[stə\'nɔgrəfə]', '名词 速记员']);
+
+this.words_1.push(['stewardess', '英音[stju:ə\'dəs] 美音[stju:ə\'dəs]', '名词/r/n1.（飞机上的）女乘务员，空中小姐/r/n2.（轮船或火车上的）女乘务员，女服务员']);
+
+this.words_1.push(['stockholder', '英音[stɔkhəuldə] 美音[stɔkhəuldə]', '名词 股东']);
+
+this.words_1.push(['store', '英音[stɔ:] 美音[stɔ:]', '名词/r/n商店，贮藏，仓库，备用品，存储器/r/nv. /r/n1.及物动词：储存，贮藏，供给/r/n2.不及物动词：贮藏/r/na. /r/n贮藏的']);
+
+this.words_1.push(['strike', '英音[straik] 美音[straik]', '及物动词：/r/n1.打击，击中，撞击/r/n2.砍掉，击断/r/n3.（疾病等）突然侵袭，使受折磨，攻击/r/n4.把…刺入，使穿透（into）/r/n5.（植物等）生（根）/r/n6.使突然想起，使认为/r/n7.给…以（深刻）印象，感动，引起/r/n8.使受吸引/r/n9.使处于特定状态/r/n10.（光线）照到…上，（声音）传入/r/n11.铸造，印制，触发（电弧）/r/n12.擦（火柴），打（火）/r/n13.咬伤，抓伤/r/n14.（鱼）咬（饵）/r/n15.到达，来到/r/n16.邂逅，偶然发现/r/n17.达成（交易等）/r/n18.结算，算出/r/n19.删掉，取消/r/n20.（钟等）敲响报（时）/r/n21.降（帆，旗等）/r/n22.拆除（帐篷等）/r/n23.取…的姿态，装出/r/n24.罢工/r/n25.（用餐或下班时）停止工作/r/n26.弹奏，发出/r/n27.刮平/r/n28.搬掉（布景，道具等），把灯光调小（或关掉）/r/n29.改变成（较快的步伐）/r/n30.对…突然提出紧急要求/r/n31.（昆虫）产卵于/r/n32.组成（陪审团）/r/n不及物动词：/r/n1.打击，（船）触礁/r/n2.袭击，战斗，（疾病）侵袭/r/n3.敲响，鸣/r/n4.给人以（深刻）印象，突然想到/r/n5.刺穿/r/n6.被点燃/r/n7.（光线）照射，（声音）被听到，（心脏）跳动/r/n8.（蛇等）咬，抓，上钩/r/n9.（尤指朝新方向）前进/r/n10.罢工/r/n11.降旗，挂白旗/r/n12.急冲，突进/r/n13.（植物）生根，发芽，（药物）起作用/r/n14.【军】努力工作，力争/r/n15.取消，删去/r/n16.划水/r/n可数名词：/r/n1.打，击，敲/r/n2.罢课，罢工/r/n3.尤指空袭/r/n4.（矿藏的）发现，意外成功/r/n5.刮板/r/n6.（鱼的）上钩/r/n7.一批铸造的硬币（或徽章）/r/n8.（时钟的）打点机构，（门窗的）门鼻子/r/n9.【棒】好球/r/n10.【地】（矿的）走向/r/n11.生根/r/n12.（羊的）皮肤病/r/n13.【美】不利，挫折']);
+
+this.words_1.push(['strikebreaker', '英音[\'straikbreikə] 美音[\'straikbreikə]', '名词 破坏罢工']);
+
+this.words_1.push(['striker', '英音[\'straikə(r)] 美音[\'straikə]', '名词/r/n1. 罢工者；罢课者；罢市者/r/n2.（足球）前锋']);
+
+this.words_1.push(['student', '英音[\'stju:dənt] 美音[\'stju:dənt]', '可数名词： /r/n学生，学习者，研究者']);
+
+this.words_1.push(['subject', '英音[\'sʌbdʒikt] 美音[\'sʌbdʒikt]', '名词 /r/n1.主题；题目；问题 /r/n2.话题，考虑的问题 /r/n3.学科，科目；课程 /r/n4.主语，主词 /r/n5.表现对象；绘画（或拍摄）题材 /r/n6.接受试验者；实验对象 /r/n7.（尤指君主制国家的）国民，臣民 /r/n8.动机，原因，理由 /r/na. /r/n1.常有[常患，常遭受]…的；倾向于…的 /r/n2.须服从…的；受…支配的 /r/n3.受约束[管辖]的, 不独立的 /r/n4.取决于…的，有待于…的 /r/n5.(在君主等)统治下的；(在国家等)控制下的(常与 to 连用) /r/n6.依…而定的，取决于…的；依照，按照(常与 to 连用) /r/n7.难免要…的，必然会…的(常与 to 连用) /r/n及物动词： 其他读音：[səbˈdʒekt] /r/n1.使服从，征服，制伏 /r/n2.使从属；使受…的影响(常与 to 连用) /r/n3.使经受，使受到(常与 to 连用) /r/n4.使遭受，使蒙受；使易受(常与 to 连用) /r/n5.提交，呈交；交给']);
+
+this.words_1.push(['subsidy', '英音[\'sʌbsidi] 美音[\'sʌbsidi]', '名词 /r/n补助金，津贴/r/n']);
+
+this.words_1.push(['suburb', '英音[\'sʌbə:b] 美音[\'sʌbɝb]', '名词 可数名词：/r/n1.（城市周围的）近郊住宅区（或村，镇）/r/n2.郊区[the P]/r/n3.边缘，外围[the P]/r/n']);
+
+this.words_1.push(['supervisor', '英音[\'sju:pəvaizə] 美音[\'sju:pəvaizə]', '可数名词：/r/n监督人；指导者；主管人']);
+
+this.words_1.push(['switchback', '英音[\'switʃbæk] 美音[\'switʃbæk]', '名词 在Z形路轨向原来的方向返驶，改变角度，过山车']);
+
+this.words_1.push(['swot', '英音[swɔt] 美音[swɑ:t]', '名词 /r/n1. 只知一味用功学习的人；书呆子/r/n不及物动词：/r/n1. swot for sth （尤指为准备考试）刻苦学习（某门课程）/r/n']);
+
+this.words_1.push(['tailor', '英音[\'teilə] 美音[\'teilə]', '名词 /r/n（尤指为顾客个别定制男装的）裁缝 /r/nv./r/n及物动词：专门制作，订做/r/n']);
+
+this.words_1.push(['talent', '英音[\'tælənt] 美音[\'tælənt]', '名词/r/n1.[U,C] 天才；天资；天赋/r/n2.[U,C] 有才能的人；人才；天才/r/n3.不可数名词：（统称）性感的人']);
+
+this.words_1.push(['taxation', '英音[tæk\'seiʃn] 美音[tæk\'seiʃn]', '不可数名词：/r/n1. 税，税款，税金，税收/r/n2. 税制，征税，课税/r/n']);
+
+this.words_1.push(['taxpayer', '英音[\'tækspeiə] 美音[\'tækspeiə]', '名词 纳税人']);
+
+this.words_1.push(['tennis', '英音[\'tenis] 美音[\'tɛnis]', '名词/r/n1.不可数名词：网球']);
+
+this.words_1.push(['tent', '英音[tent] 美音[tent]', '可数名词：/r/n1.帐篷，天幕，住处/r/n2.塞条，塞子/r/nv./r/n1.不及物动词：住帐蓬，宿营，暂时居住/r/n2.及物动词：用帐篷遮盖']);
+
+this.words_1.push(['term', '英音[tɜ:m] 美音[tɜ:m]', '可数名词：/r/n1.专门名词，名称，术语/r/n2.（一般的）词，名称，词语/r/n3.期，期限/r/n4.任期/r/n5.（工资、房租等的）付款日；结账日/r/n6.学期；【口】赛季/r/n7.(terms)（契约、谈判等的）条件；条款/r/n8.(terms)价格，费用/r/n9.(terms)说话的方式，措辞/r/n10.(terms)关系，交谊；地位/r/n11.（澳大利亚式橄榄球运动的）节（一场比赛时间的四分之一）/r/n12.足月，足孕/r/n及物动词：/r/n把...称为，把...叫做']);
+
+this.words_1.push(['test', '英音[test] 美音[tɛst]', '可数名词：/r/n1.试验/r/n2.化验；化验法；化验剂/r/n3.检验；检验标准/r/n4.测验；考察；小考/r/n5.考验/r/n及物动词：/r/n1.试验；检验；测验(+for/in/on)/r/n2.化验；分析(+for)/r/n3.考验；考察/r/nv不及物动词：. /r/n1.受试验；受测验/r/n2.测得结果/r/n3.（为鉴定而）进行测验(+for)/r/nabbr. /r/n1.=testator/r/n2.=testatrix/r/n3.=testimony/r/n4.=Testament/r/n']);
+
+this.words_1.push(['theatre', '英音[\'θiətə] 美音[\'θiətə]', '名词 /r/n1.戏院；剧院；露天剧场； /r/n2.戏剧；戏剧界 /r/n3.阶梯教室，放映室，礼堂 /r/n4.场所，战区 /r/n5.手术室']);
+
+this.words_1.push(['thesis', '英音[\'θi:sis] 美音[\'θisis]', '名词/r/n1.论题、论文./r/n2.毕业论文、学位论文']);
+
+this.words_1.push(['tier', '英音[tiə] 美音[tiə]', '名词 /r/n列，行，排，层，等级']);
+
+this.words_1.push(['tightrope', '英音[\'taitrəup] 美音[\'taitrəup]', '名词/r/n1.（供走索者表演用的）绷索，钢丝']);
+
+this.words_1.push(['tights', '英音[taits] 美音[taits]', '名词 贴身衬衣/r/n紧身衣']);
+
+this.words_1.push(['timetable', '英音[\'taimteibl] 美音[\'taimteibl]', '名词 /r/n时间表']);
+
+this.words_1.push(['tomb', '英音[tu:m] 美音[tu:m]', '可数名词：坟墓/r/n及物动词：埋葬']);
+
+this.words_1.push(['tombola', '英音[\'tɔmbələ] 美音[\'tɔmbələ]', '名词 一种彩券']);
+
+this.words_1.push(['tracer', '英音[\'treisə] 美音[\'treisə]', '名词 追踪者,描图者,誊写员']);
+
+this.words_1.push(['trade', '英音[treid] 美音[treid]', '名词/r/n1.贸易；生意/r/n2.交换/r/n3.职业；手艺/r/n4.同行/r/n5.（口）顾客/r/n6.营业额；交易量/r/n7.（the trade）（英口）酒商/r/n8.（the trades）贸易风/r/n9.（the trades）行业杂志/r/n10.（the trade）海军潜艇部队/r/n11.小道；足迹/r/n12.惯例/r/n13.（政府的）特务机关/r/n14.男性同性恋搭档/r/n15.（球员）转会/r/n不及物动词：/r/n1.进行交易；运商品/r/n2.进行交换/r/n3.（常去一家店）购物/r/n4.来来去去/r/n及物动词：/r/n1.互相交换/r/n2.从事（股票等）交易/r/n3.使转会/r/n4.与…做生意/r/na./r/n1.贸易的/r/n2.行业的；同行的/r/n3.（trades）工会的/r/n4.贸易风的/r/n/r/n']);
+
+this.words_1.push(['trainee', '英音[trei\'ni:] 美音[trei\'ni:]', '名词 /r/n练习生，新兵，训练中的动物']);
+
+this.words_1.push(['training', '英音[\'treiniŋ] 美音[\'treiniŋ]', '不可数名词：/r/n1.训练；培训/r/n2.（为参加体育比赛而进行的）训练，锻炼']);
+
+this.words_1.push(['trampoline', '英音[\'træmpəlin] 美音[\'træmpəlin]', '名词 跳跃床，蹦蹦床']);
+
+this.words_1.push(['transfer', '英音[træns\'fə:] 美音[træns\'fɝ]', '及物动词： /r/n1.搬；转换；调动/r/n2.使换车；使转校/r/n3.改变，转变/r/n4.转印，描摹/r/n5.转让，让渡/r/n不及物动词：/r/n1.搬迁，转移；调任/r/n2.换车，转车/r/n3.转校，转学科/r/nn. /r/n1.[C,U]迁移；移交；转让；转账/r/n2.[C,U]调任（者）；转校（生）/r/n3.[C,U]转运/r/n4.可数名词：转车车票；转车地点/r/n5.可数名词：摆渡处；渡轮/r/n6.可数名词：转让证书；转校证书/r/n7.[C,U]汇兑；（股票等的）过户，过户凭单/r/n']);
+
+this.words_1.push(['translator', '英音[træns\'leitə] 美音[trænz\'leitər]', '名词 （尤指专职）翻译，译员，译者，翻译家']);
+
+this.words_1.push(['trapeze', '英音[trə\'pi:z] 美音[trə\'pi:z]', '名词 吊秋千']);
+
+this.words_1.push(['trigonometry', '英音[trigə\'nɔmitri] 美音[trigə\'nɔmitri]', '名词 三角法']);
+
+this.words_1.push(['trimester', '英音[trai\'mestə] 美音[trai\'mestə]', '名词 三个月,学期']);
+
+this.words_1.push(['trot', '英音[trɔt] 美音[trɔt]', '名词 /r/n快步/r/nv./r/n[T,I]快步走，小跑步走/r/n']);
+
+this.words_1.push(['trust', '英音[trʌst] 美音[trʌst]', '不可数名词：/r/n1.信任，信赖/r/n2.可信赖的人（或事物）/r/n3.信心；希望/r/n4.受托物；代管物/r/n5.受托，受委任，受信任/r/n6.（因受托等而产生的）义务，责任/r/n7.保管；照管/r/n8.赊账/r/n9.【律】信托，信托财产；受托人，受托团体；受益人对信托财产的应享权利/r/n10.【经】托拉斯，垄断企业/r/n11.商业信贷/r/n12.（为促进或保护等目的而设立的）信托基金机构/r/n13.【古】忠诚，可靠/r/na./r/n1.信托的；代管的，代客保管的/r/n2.托拉斯的/r/n3.【心】（个人在社会活动中的表现）可信任的；评估可信性的；获取信任的/r/n及物动词：/r/n1.信任，信赖，相信/r/n2.依靠，依赖/r/n3.想；确信；盼望/r/n4.赊给/r/n5.托付，托交；把...委托给别人办理（或照管）/r/n6.敢于让...（做），对...放心/r/n不及物动词：/r/n1.信任，信赖，相信/r/n2.确信/r/n3.依靠，依赖/r/n4.赊售']);
+
+this.words_1.push(['tumble', '英音[tʌmbl] 美音[tʌmbl]', '可数名词：跌倒，摔跤，翻斤斗/r/n不及物动词：/r/n1.翻倒，摔倒，倒塌/r/n2.翻斤斗/r/n3.仓促地行动/r/n及物动词：/r/n1.使摔倒/r/n2（价格）暴跌']);
+
+this.words_1.push(['tumbler', '英音[\'tʌmblə] 美音[\'tʌmblə]', '名词 /r/n1.玻璃酒杯 /r/n2.翻筋斗者；杂技演员 /r/n3.（机枪的）机心 /r/n4.锁的制动栓 /r/n5.【机】转臂；转筒；摆动换向齿轮；转向轮 /r/n6.滚筒式烘干机 /r/n7.（玩具）不倒翁 /r/n8.翻头鸽']);
+
+this.words_1.push(['tutu', '英音[\'tu:tu:] 美音[\'tu:tu:]', '名词 由腰部撑开的芭蕾舞用短裙']);
+
+this.words_1.push(['typist', '英音[\'taipist] 美音[\'taipist]', '名词 打字员']);
+
+this.words_1.push(['underdeveloped', '英音[ʌndədi\'veləpt] 美音[ʌndədi\'veləpt]', '副词 开发不充分的']);
+
+this.words_1.push(['underdevelopment', '英音[\'ʌndədi\'veləpmənt] 美音[\'ʌndədi\'veləpmənt]', '名词 未开发']);
+
+this.words_1.push(['underemployment', '英音[\'ʌndərim\'plɔimənt] 美音[\'ʌndərim\'plɔimənt]', '名词 低就业']);
+
+this.words_1.push(['understanding', '英音[ʌndə\'stændiŋ] 美音[ʌndə\'stændiŋ]', '名词 /r/n1.了解；相互理解，谅解；(非正式)协议 /r/n2.理解(力)；认识 /r/n3.理解；看法；解释；意见 /r/na. /r/n1.体谅的；谅解的；通情达理的']);
+
+this.words_1.push(['unemployment', '英音[ʌnim\'plɔimənt] 美音[ʌnim\'plɔimənt]', '不可数名词：/r/n1.失业，失业人数/r/n2.无业，没有工作/r/n']);
+
+this.words_1.push(['union', '英音[\'ju:niən] 美音[\'ju:niən]', '名词/r/n可数名词： /r/n协会，同盟,工会/r/n不可数名词： /r/n1. 团结，和睦/r/n2. 合并，联合']);
+
+this.words_1.push(['university', '英音[ju:ni\'və:siti] 美音[ju:ni\'və:siti]', '名词/r/n1.可数名词：大学，综合性高等学府（的学院、建筑物等）/r/n2.[CGp]大学师生员工']);
+
+this.words_1.push(['urban', '英音[\'ɜ:bən] 美音[\'ɜ:bən]', '副词 /r/n1.城市的；居住在城市的/r/n2.具有城市特征的；习惯于（或倾向于）城市生活的']);
+
+this.words_1.push(['vacancy', '英音[\'veikənsi] 美音[\'veikənsi]', '名词 /r/n1.可数名词：（职位的）空缺，空职，空额/r/n2.可数名词：（旅馆等）空房，空间/r/n3.不可数名词：空虚，无主意，无兴趣/r/n']);
+
+this.words_1.push(['vacation', '英音[və\'keiʃən] 美音[və\'keiʃən]', '名词 /r/n1.（一年中定期的）休息，休假，假期/r/n2.【律】（法庭的）休庭期/r/n3.【美】假日，休息天，节日/r/n4. 空出，撤出，辞去/r/n不及物动词：/r/n【美】度假']);
+
+this.words_1.push(['ventriloquist', '英音[ven\'triləkwist] 美音[ven\'triləkwist]', '名词 口技者，腹语术者']);
+
+this.words_1.push(['village', '英音[\'vilidʒ] 美音[\'vilidʒ]', '可数名词：/r/n1.【英】乡村，村庄/r/n2.[the village] 全体村民']);
+
+this.words_1.push(['wage', '英音[weidʒ] 美音[weidʒ]', '可数名词：/r/n（通常指按周领的）工资，工钱/r/n及物动词：/r/n开始，发动，进行，继续（战争、战斗等）']);
+
+this.words_1.push(['walker', '英音[\'wɔ:kə] 美音[\'wɔ:kə]', '名词 /r/n1. 步行者/r/n2. 学步车']);
+
+this.words_1.push(['whip', '英音[wip] 美音[wip]', '名词  /r/n1.可数名词： 鞭子/r/n2.可数名词： 纪律委员，组织秘书（在政党中负责确保党员出席政府重要辩论并表决）/r/n3.可数名词：（政党发给党员的）投票通知书，投票指示/r/n4.[C,U] 搅打奶油甜食（用奶油、鸡蛋、糖和水果搅打而成）/r/nv./r/n1.及物动词： 鞭打；鞭策；以鞭打责罚；鞭笞/r/n2.[I,T]（使朝某一方向）猛然移动/r/n3.及物动词：（突然迅速地）除去，拉动，抽出/r/n4.及物动词： 搅打（奶油等）/r/n5.及物动词：【英，非正式】偷；盗窃/r/n']);
+
+this.words_1.push(['wholesaler', '英音[\'həulseilə] 美音[\'həulseilə]', '名词/r/n1.批发商']);
+
+this.words_1.push(['workday', '英音[\'wə:kdei] 美音[\'wə:kdei]', '名词 工作日/r/n上班时间']);
+
+this.words_1.push(['worker', '英音[\'wə:kə] 美音[\'wə:kə]', '名词 /r/n1.工作的人，工作者；研究者 /r/n2.员工，工人，雇员；劳工 /r/n3.努力工作的人；工作得…的人 /r/n4.工蜂']);
+
+this.words_1.push(['workforce', '英音[\'wə:kfɔ:s] 美音[\'wə:kfɔ:s]', '不可数名词：/r/n1.（工厂等在职的）工人总数，职工总数/r/n2.劳动人口，劳动力，劳动大军']);
+
+this.words_1.push(['workman', '英音[\'wə:kmən] 美音[\'wə:kmən]', '名词 工人,工匠,技工']);
+
+this.words_1.push(['workshop', '英音[\'wə:kʃɔp] 美音[\'wɜ:kʃɑ:p]', '名词/r/n1. 车间；工场；作坊/r/n2. 研讨会；讲习班/r/n']);
+
+this.words_1.push(['yield', '英音[ji:ld] 美音[ji:ld]', '及物动词：/r/n1.出产/r/n2.产生（效果等）；带来/r/n3.给予/r/n4.让出，放弃/r/n5.[yield oneself]使屈服；使顺从（up）/r/n6.【古】酬劳/r/n7.【棒】失分/r/n8.泄露（秘密）（up）/r/n不及物动词：/r/n1.出产；（投资等）生息/r/n2.屈服；投降；顺从（to）/r/n3.失去优先地位；让权；让路/r/n4.（在力量或重压下）垮掉（to）/r/nn./r/n1.出产/r/n2.产量；产物/r/n3.利润，红利/r/n4.【化】核收获率；（热核的）当量']);
+
+this.words_1.push(['zoologist', '英音[zəu\'ɔlədʒist] 美音[zəu\'ɔlədʒist]', '名词 动物学家']);
+
+this.words_1.push(['zoology', '英音[zəu\'ɔlədʒi] 美音[zəu\'ɔlədʒi]', '名词/r/n1.动物学；动物学课程']);
+
+this.words_1.push(['application', '英音[,æpli\'keiʃən] 美音[,æpli\'keiʃən]', '名词 /r/n1.申请，请求，申请表，申请书 /r/n2.实际应用，用途，（尤指理论、发现等的）应用，运用 /r/n3.施用，敷用，涂抹 /r/n4.动用；生效 /r/n5.应用程序；应用软件；应用程式；应用软体 /r/n6.用功，勤奋，勤勉；专注，专心，(密切)注意；努力 /r/n7.(故事等引出的)实际结论；寓意，教益 /r/n8.适用性；合用；实用性；有用性 /r/n9.【计算机】应用；应用程序(软件)(包括文字处理程序、图形处理程序和数据表格程序等) /r/n10.用法；用途，用处 /r/n11.搽剂，敷剂，敷用物(尤指冷霜、软膏、油膏、药膏) /r/n12.【数学、逻辑学】应用；贴合']);
+
+this.words_1.push(['degree', '英音[di\'gri:] 美音[di\'gri:]', '名词 度,度数,程度/r/n学位/r/n阶层']);
+
+this.words_1.push(['dismiss', '英音[dis\'mis] 美音[dis\'mis]', 'vt. 解散/r/n消除,不考虑,免…的职,解雇,开除/r/n遣散']);
+
+this.words_1.push(['electronics', '英音[ilek\'trɔniks] 美音[ilek\'trɔniks]', '名词 电子学']);
+
+this.words_1.push(['grammar', '英音[\'græmə] 美音[\'græmə]', '名词 语法,基本原理']);
+
+this.words_1.push(['guide', '英音[gaid] 美音[gaid]', '名词 辅助线名词 引导者,指南,路标/r/nvt. 指导,支配,管理,带领,操纵/r/nvi. 任向导']);
+
+this.words_1.push(['Hamlet', '英音[\'hæmlit] 美音[\'hæmlit]', '名词/r/n1.小村庄']);
+
+this.words_1.push(['history', '英音[\'histəri] 美音[\'histəri]', '名词 历史记录名词 历史,经历,历史学,过去的事']);
+
+this.words_1.push(['major', '英音[\'meidʒə] 美音[\'meidʒə]', '副词 较大的,较重要的/r/n主要的/r/n主修的名词 专业,专业学生/r/n陆军少校/r/nvi. 主修,专攻']);
+
+this.words_1.push(['minor', '英音[\'mainə] 美音[\'mainə]', '名词 【英格兰人姓氏】 迈纳']);
+
+this.words_1.push(['note', '英音[nəut] 美音[nəut]', '名词 笔记,记录,注解,评论,符号,显要,备忘录,便笺,照会/r/nvt. 记录,注解,注意']);
+
+this.words_1.push(['printing', '英音[\'printiŋ] 美音[\'printiŋ]', '名词 印刷,印刷术,印花']);
+
+this.words_1.push(['question', '英音[\'kwestʃən] 美音[\'kwestʃən]', 'vt. /r/nvi. 询问,审问,怀疑名词 询问名词 问题,疑问,疑问句']);
+
+this.words_1.push(['ruler', '英音[\'ru:lə] 美音[\'ru:lə]', '名词 标尺名词 统治者,管理者,尺,直尺']);
+
+this.words_1.push(['telecommunications', '', '电信']);
+
+this.words_1.push(['arith', '', '名词 数学']);
+
+this.words_1.push(['astropologist', '', '名词 人类学家']);
+
+this.words_1.push(['ballpoint', '', '名词 圆珠笔']);
+
+this.words_1.push(['borrowing', '英音[\'bɔrəuiŋ] 美音[\'bɔrəuiŋ]', '可数名词：/r/n1.借，借入/r/n2.借用；采用；借用物；借用词语/r/n3.对其他民族风俗习惯的仿效；向其他民族仿效的风俗习惯']);
+
+this.words_1.push(['dodgems', '', '碰碰车']);
+
+this.words_1.push(['fiscality', '', '名词 检查']);
+
+this.words_1.push(['forman', '', '名词 工头']);
+
+this.words_1.push(['jurisprdence', '', '名词 法学']);
+
+this.words_1.push(['prizegiving', '', '名词 分配奖品']);
+
+this.words_1.push(['retraining', '', '名词 再训练']);
+
+this.words_1.push(['overheads', '', '名词 企业的经常开支, 企业的日常管理费用']);
+
+this.words_1.push(['buffets', '', '[ buffeting ]的第三人称单数']);
+
+this.words_1.push(['on-set', '', '名词开始,动手']);
+
+this.words_1.push(['supernaturalistic', '', 'adj. 超自然主义的']);
+
+this.words_1.push(['rinkhals', '', '林克哈尔斯牌汽车(南非']);
+
+this.words_1.push(['songfully', '', '[ songful ]的相关副词']);
+
+this.words_1.push(['closing_price', '', '收盘价，收市价']);
+
+this.words_1.push(['pencil_sharpener', '', '名词/r/n1.铅笔刀，转笔刀']);
+
+this.words_1.push(['private_sector', '', '私营成分,私营部门']);
+
+this.words_1.push(['do_sb._a_good_turn', '', '']);
+
+this.words_1.push(['miniature_pinscher', '', 'phr. 迷你品，迷你杜宾犬']);
+
+this.words_1.push(['mexican_bean_beetle', '', 'phr. 墨西哥豆瓢虫']);
+
+this.words_1.push(['a_level', '', '名词 英国GCE考试甲级标准']);
+
+this.words_1.push(['subfamily_bassariscidae', '', 'phr. 物种的一个亚科']);
+
+this.words_1.push(['capital_of_south_africa', '', 'phr. 南非行政首都']);
+
+this.words_1.push(['retinal_scanning', '', 'phr. 视网膜扫描']);
