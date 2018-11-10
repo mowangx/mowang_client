@@ -30,7 +30,7 @@ export default class sub_game extends cc.Component {
     private nick_name: string = '';
     private play_time: number = 0;
     private lvl: number = 1;
-    private own_flag: boolean = false;
+    private update_times: number = 0;
 
     private user_info_list: Array<user_info> = [];
 
@@ -45,10 +45,6 @@ export default class sub_game extends cc.Component {
                 self.play_time = data.play_time;
                 self.lvl = data.lvl;
                 self.show_rank();
-                if (!self.own_flag) {
-                    self.sync_user_info();
-                    self.show_rank();
-                }
             }
         });
     },
@@ -56,6 +52,7 @@ export default class sub_game extends cc.Component {
     // update (dt) {}
 
     show_rank(): void {
+        this.update_times = 0;
         this.clear_rank()
 
         let self = this;
@@ -65,20 +62,31 @@ export default class sub_game extends cc.Component {
             success: (res) => {
                 console.log('get user info success', res.data);
                 self.nick_name = res.data[0].nickName ? res.data[0].nickName : res.data[0].nickname;
+                self.get_friend_cloud_storage();
             },
         });
+    },
 
+    get_friend_cloud_storage(): void {
+        let self = this;
         wx.getFriendCloudStorage({
-            keyList: ['t_' + self.lvl],
+            keyList: ['saoleizhanshi_t_' + self.lvl],
             success: function (res) {
                 console.log('get friend cloud storage success', res.data);
+                let own_flag: boolean = false; 
                 for (let i = 0; i < res.data.length; i++) {
                     let avatar_info = res.data[i];
-                    if (avatar_info) {
-                        self.add_user_info(avatar_info);
+                    if (avatar_info && self.add_user_info(avatar_info)) {
+                        own_flag = true;
                     }
                 }
-                self.on_show_rank();
+                if (own_flag || self.update_times > 0) {
+                    self.on_show_rank();
+                } else {
+                    self.sync_user_info();
+                    self.get_friend_cloud_storage();
+                    self.update_times += 1;
+                }
             },
         });
     },
@@ -91,12 +99,13 @@ export default class sub_game extends cc.Component {
         this.user_icon_3.spriteFrame = null;
     },
 
-    add_user_info(user): void {
+    add_user_info(user): boolean {
+        let own_flag: boolean = false;
         let avatar_info = new user_info();
         avatar_info.set_avatar_url(user.avatarUrl);
         let nick_name = user.nickName ? user.nickName : user.nickname;
         avatar_info.set_user_name(nick_name);
-        let key_name = 't_' + this.lvl;
+        let key_name = 'saoleizhanshi_t_' + this.lvl;
         for (let i=0; i<user.KVDataList.length; ++i) {
             let play_time = Number(user.KVDataList[i].value);
             if (!play_time) {
@@ -109,7 +118,7 @@ export default class sub_game extends cc.Component {
             if (this.nick_name != nick_name) {
                 continue;
             }
-            this.own_flag = true;
+            own_flag = true;
             if (!play_time || (this.play_time > 0 && play_time > this.play_time)) {
                 play_time = this.play_time;
                 this.sync_user_info();
@@ -117,10 +126,11 @@ export default class sub_game extends cc.Component {
             }
         }
         this.user_info_list.push(avatar_info);
+        return own_flag ? true : false;
     },
 
     sync_user_info(): void {
-        let key_name = 't_' + this.lvl;
+        let key_name = 'saoleizhanshi_t_' + this.lvl;
         let play_time = '' + this.play_time;
         console.log('set user cloud storage 222:', play_time);
         wx.setUserCloudStorage({
