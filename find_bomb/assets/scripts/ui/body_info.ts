@@ -34,7 +34,6 @@ export default class body_info extends cc.Component {
     bomb_lvl_5: cc.Node = null;
 
     private hide_node: cc.Node = null;
-    private grid_list: Array<cc.Node> = [];
 
     private bomb_node_list: Array<cc.Node> = [];
     private flag_node_list: Array<cc.Node> = [];
@@ -121,6 +120,7 @@ export default class body_info extends cc.Component {
     private num_4_pool: Array<cc.Node> = [];
     private num_5_pool: Array<cc.Node> = [];
     private num_6_pool: Array<cc.Node> = [];
+    private normal_pool: Array<cc.Node> = [];
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -152,6 +152,7 @@ export default class body_info extends cc.Component {
             this.num_6_pool[i] = cc.instantiate(this.num_6);
             this.bomb_node_list[i] = cc.instantiate(this.bomb_node);
             this.flag_node_list[i] = cc.instantiate(this.flag_node);
+            this.normal_pool[i] = cc.instantiate(this.normal_grid);
             this.grid_status[i] = false;
         }
         dispatcher.add_dispatch(EventType.EVENT_CLICK_OPEN_BTN, this.on_change_open, this);
@@ -187,8 +188,8 @@ export default class body_info extends cc.Component {
     },
 
     hide_all(): void {
-        for (let i=0; i<this.grid_list.length; ++i) {
-            let child_node = this.grid_list[i];
+        for (let i=0; i<this.normal_pool.length; ++i) {
+            let child_node = this.normal_pool[i];
             child_node.parent = this.hide_node;
         }
         for (let i=0; i<this.num_0_pool.length; ++i) {
@@ -237,8 +238,7 @@ export default class body_info extends cc.Component {
 
     init_grid_list(grid_lvl_list): void {
         for (let i = 0 ; i < grid_lvl_list.length; i ++) {
-            this.grid_list[i] = cc.instantiate(this.normal_grid);
-            let node = this.grid_list[i];
+            let node = this.normal_pool[i];
             let parent_node = grid_lvl_list[i];
             node.parent = parent_node;
             node.setPosition(cc.p(0, 0));
@@ -477,7 +477,7 @@ export default class body_info extends cc.Component {
     update_grid_node(idx: number, ignore_indexes: Array<number>) : void {
         this.grid_status[idx] = true;
 
-        let child_node = this.grid_list[idx];
+        let child_node = this.normal_pool[idx];
         child_node.parent = this.hide_node;
 
         let replace_node = null;

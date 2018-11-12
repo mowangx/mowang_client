@@ -27,7 +27,7 @@ export class wx_wrapper extends cc.Component {
 
         wx.onShareAppMessage(function() {
             return {
-                "title": "扫雷传奇",
+                "title": "扫雷战士",
                 "imageUrl": "res/raw-assets/share.jpg",
             };
         });
