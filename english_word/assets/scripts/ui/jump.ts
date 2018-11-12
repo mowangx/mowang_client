@@ -24,10 +24,10 @@ export default class jump extends cc.Component {
     // update (dt) {}
 
     on_click_study(): void {
-
+        cc.director.loadScene("study");
     },
 
     on_click_fight(): void {
-
+        cc.director.loadScene("game");
     },
 }

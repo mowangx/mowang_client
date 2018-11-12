@@ -34,13 +34,13 @@
     "orientation": "portrait"
   },
   "startScene": "54511e6c-5caa-4eca-a9e1-4a8f2cba050a",
-  "title": "find_bomb",
+  "title": "english_w",
   "webOrientation": "auto",
   "wechatgame": {
     "appid": "wxd97796b14725318d",
     "isSubdomain": false,
     "orientation": "portrait",
-    "subContext": "find_bomb_sub"
+    "subContext": ""
   },
   "xxteaKey": "faf0b2aa-0bd4-4b",
   "zipCompressJs": true

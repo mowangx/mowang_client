@@ -17,12 +17,14 @@ import {EventType} from "./consts"
 @ccclass
 export class client extends cc.Component {
 
-    private result: boolean = false;
     private lvl: number = 1;
-    private play_time: number = 0;
-    private tip_times: number = 3;
-    private relive_times: number = 3;
-    private gold: number = 0;
+    private section: number = 0;
+    private word_idx: number = 0;
+    private user_flag_1: string = '';
+    private user_flag_2: string = '';
+    private user_flag_3: string = '';
+    private user_flag_4: string = '';
+    private user_flag_5: string = '';
 
     constructor() {
         super();
@@ -36,14 +38,6 @@ export class client extends cc.Component {
         //wx_mgr.share_game();
     },
 
-    set_result(result: boolean): void {
-        this.result = result;
-    },
-
-    get_result(): boolean {
-        return this.result;
-    },
-
     set_lvl(lvl: number): void {
         this.lvl = lvl;
     },
@@ -52,57 +46,78 @@ export class client extends cc.Component {
         return this.lvl;
     },
 
-    set_play_time(play_time: number): void {
-        this.play_time = play_time;
+    set_section(section: number): void {
+        this.section = section;
     },
 
-    get_play_time(): number {
-        return this.play_time;
+    get_section(section: number): number {
+        return this.section;
     },
 
-    add_tip_times(): void {
-        this.tip_times += 1;
+    set_word_idx(idx: number): void {
+        this.word_idx = idx;
     },
 
-    desc_tip_times(): void {
-        this.tip_times -= 1;
-        if (this.tip_times < 0) {
-            this.tip_times = 0;
+    get_word_idx(): number {
+        return this.word_idx;
+    },
+
+    set_right_flag(idx: number, flag: boolean): void {
+        let value  = flag ? '1' : '0';
+        let replace_value = '';
+        if (this.lvl == 1) {
+            replace_value = this.user_flag_1;
+        }
+        else if (this.lvl == 2) {
+            replace_value = this.user_flag_2;
+        }
+        else if (this.lvl == 3) {
+            replace_value = this.user_flag_3;
+        }
+        else if (this.lvl == 4) {
+            replace_value = this.user_flag_4;
+        }
+        else {
+            replace_value = this.user_flag_5;
+        }
+        let left_value = replace_value.substr(0, idx-1);
+        let right_value = this.user_flag_1.substr(idx, this.user_flag_1.length - idx);
+        replace_value = left_value + value + right_value;
+        if (this.lvl == 1) {
+            this.user_flag_1 = replace_value;
+        }
+        else if (this.lvl == 2) {
+            this.user_flag_2 = replace_value;
+        }
+        else if (this.lvl == 3) {
+            this.user_flag_3 = replace_value;
+        }
+        else if (this.lvl == 4) {
+            this.user_flag_4 = replace_value;
+        }
+        else {
+            this.user_flag_5 = replace_value;
         }
     },
 
-    get_tip_times(): number {
-        return this.tip_times;
-    },
-
-    add_relive_times(): void {
-        this.relive_times += 1;
-    },
-
-    desc_relive_times(): void {
-        this.relive_times -= 1;
-        if (this.relive_times < 0) {
-            this.relive_times = 0;
+    get_right_flag(idx: number): boolean {
+        let value = '';
+        if (this.lvl == 1) {
+            value = this.user_flag_1[idx];
         }
-    },
-
-    get_relive_times(): number {
-        return this.relive_times;
-    },
-
-    add_gold_num(num: number): void {
-        this.gold += num;
-    },
-
-    desc_gold_num(num: number): void {
-        this.gold -= num;
-        if (this.gold < 0) {
-            this.gold = 0;
+        else if (this.lvl == 2) {
+            value = this.user_flag_2[idx];
         }
-    }
-    
-    get_gold_num(): number {
-        return this.gold;
+        else if (this.lvl == 3) {
+            value = this.user_flag_3[idx];
+        }
+        else if (this.lvl == 4) {
+            value = this.user_flag_4[idx];
+        }
+        else {
+            value = this.user_flag_5[idx];
+        }
+        return value == '1';
     },
 }
 

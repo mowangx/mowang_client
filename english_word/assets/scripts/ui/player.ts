@@ -313,10 +313,11 @@ export default class player extends cc.Component {
     },
 
     on_click_share(): void {
+        client_mgr.share_game();
     },
 
     on_click_study(): void {
-
+        cc.director.loadScene("study");
     },
 
     on_click_next(): void {
@@ -324,6 +325,9 @@ export default class player extends cc.Component {
     },
 
     init_all_node(): void {
+        for (let i=0; i<52; ++i) {
+            this.word_list_pool[i] = new Array();
+        }
         for (let i=0; i<35; ++i) {
             this.word_list_pool[0][i] = cc.instantiate(this.word_a_1);
             this.word_list_pool[1][i] = cc.instantiate(this.word_a_2);
@@ -387,12 +391,12 @@ export default class player extends cc.Component {
     },
 
     get_word_node_1(word, idx): cc.Node {
-        let word_idx = word.charCodeAt() - 97;
+        let word_idx = (word.charCodeAt() - 97) * 2;
         return this.word_list_pool[word_idx][idx];
     },
 
     get_word_node_2(word, idx): cc.Node {
-        let word_idx = word.charCodeAt() - 97 + 26;
+        let word_idx = (word.charCodeAt() - 97) * 2 + 1;
         return this.word_list_pool[word_idx][idx];
     },
 }
