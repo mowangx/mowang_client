@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.3458333333333333,
-      "y": 0.3458333333333333,
+      "x": 0.4114420572916667,
+      "y": 0.4114420572916667,
       "z": 1
     },
     "_quat": {
@@ -79,7 +79,7 @@
     "_level": 0,
     "_components": [
       {
-        "__id__": 81
+        "__id__": 82
       }
     ],
     "_prefab": null,
@@ -319,10 +319,10 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 79
+        "__id__": 80
       },
       {
-        "__id__": 80
+        "__id__": 81
       }
     ],
     "_prefab": null,
@@ -724,7 +724,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "lvl_layout",
+    "_name": "lvl_node",
     "_objFlags": 0,
     "_parent": {
       "__id__": 7
@@ -732,7 +732,69 @@
     "_children": [
       {
         "__id__": 17
-      },
+      }
+    ],
+    "_active": true,
+    "_level": 2,
+    "_components": [
+      {
+        "__id__": 79
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 360,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_quat": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_zIndex": 0,
+    "groupIndex": 0,
+    "_id": "255iZkGyBHKZ0UrcP22ar9"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "lvl_layout",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 16
+    },
+    "_children": [
       {
         "__id__": 18
       },
@@ -909,14 +971,14 @@
       },
       {
         "__id__": 76
+      },
+      {
+        "__id__": 77
       }
     ],
     "_active": true,
-    "_level": 2,
+    "_level": 3,
     "_components": [
-      {
-        "__id__": 77
-      },
       {
         "__id__": 78
       }
@@ -943,7 +1005,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 137.5,
+      "y": -222.5,
       "z": 0
     },
     "_scale": {
@@ -972,7 +1034,7 @@
     "_name": "grid_1_1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1029,7 +1091,7 @@
     "_name": "grid_1_2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1086,7 +1148,7 @@
     "_name": "grid_1_3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1143,7 +1205,7 @@
     "_name": "grid_1_4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1200,7 +1262,7 @@
     "_name": "grid_1_5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1257,7 +1319,7 @@
     "_name": "grid_1_6",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1314,7 +1376,7 @@
     "_name": "grid_2_1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1371,7 +1433,7 @@
     "_name": "grid_2_2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1428,7 +1490,7 @@
     "_name": "grid_2_3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1485,7 +1547,7 @@
     "_name": "grid_2_4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1542,7 +1604,7 @@
     "_name": "grid_2_5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1599,7 +1661,7 @@
     "_name": "grid_2_6",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1656,7 +1718,7 @@
     "_name": "grid_3_1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1713,7 +1775,7 @@
     "_name": "grid_3_2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1770,7 +1832,7 @@
     "_name": "grid_3_3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1827,7 +1889,7 @@
     "_name": "grid_3_4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1884,7 +1946,7 @@
     "_name": "grid_3_5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1941,7 +2003,7 @@
     "_name": "grid_3_6",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -1998,7 +2060,7 @@
     "_name": "grid_4_1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2055,7 +2117,7 @@
     "_name": "grid_4_2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2112,7 +2174,7 @@
     "_name": "grid_4_3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2169,7 +2231,7 @@
     "_name": "grid_4_4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2226,7 +2288,7 @@
     "_name": "grid_4_5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2283,7 +2345,7 @@
     "_name": "grid_4_6",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2340,7 +2402,7 @@
     "_name": "grid_5_1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2397,7 +2459,7 @@
     "_name": "grid_5_2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2454,7 +2516,7 @@
     "_name": "grid_5_3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2511,7 +2573,7 @@
     "_name": "grid_5_4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2568,7 +2630,7 @@
     "_name": "grid_5_5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2625,7 +2687,7 @@
     "_name": "grid_5_6",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2682,7 +2744,7 @@
     "_name": "grid_6_1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2739,7 +2801,7 @@
     "_name": "grid_6_2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2796,7 +2858,7 @@
     "_name": "grid_6_3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2853,7 +2915,7 @@
     "_name": "grid_6_4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2910,7 +2972,7 @@
     "_name": "grid_6_5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -2967,7 +3029,7 @@
     "_name": "grid_6_6",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3024,7 +3086,7 @@
     "_name": "grid_7_1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3081,7 +3143,7 @@
     "_name": "grid_7_2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3138,7 +3200,7 @@
     "_name": "grid_7_3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3195,7 +3257,7 @@
     "_name": "grid_7_4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3252,7 +3314,7 @@
     "_name": "grid_7_5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3309,7 +3371,7 @@
     "_name": "grid_7_6",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3366,7 +3428,7 @@
     "_name": "grid_8_1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3423,7 +3485,7 @@
     "_name": "grid_8_2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3480,7 +3542,7 @@
     "_name": "grid_8_3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3537,7 +3599,7 @@
     "_name": "grid_8_4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3594,7 +3656,7 @@
     "_name": "grid_8_5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3651,7 +3713,7 @@
     "_name": "grid_8_6",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3708,7 +3770,7 @@
     "_name": "grid_9_1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3765,7 +3827,7 @@
     "_name": "grid_9_2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3822,7 +3884,7 @@
     "_name": "grid_9_3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3879,7 +3941,7 @@
     "_name": "grid_9_4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3936,7 +3998,7 @@
     "_name": "grid_9_5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -3993,7 +4055,7 @@
     "_name": "grid_9_6",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -4050,7 +4112,7 @@
     "_name": "grid_10_1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -4107,7 +4169,7 @@
     "_name": "grid_10_2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -4164,7 +4226,7 @@
     "_name": "grid_10_3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -4221,7 +4283,7 @@
     "_name": "grid_10_4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -4278,7 +4340,7 @@
     "_name": "grid_10_5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -4335,7 +4397,7 @@
     "_name": "grid_10_6",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 16
+      "__id__": 17
     },
     "_children": [],
     "_active": true,
@@ -4392,7 +4454,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 16
+      "__id__": 17
     },
     "_enabled": true,
     "_layoutSize": {
@@ -4433,7 +4495,7 @@
     "_left": 0,
     "_right": 0,
     "_top": 100,
-    "_bottom": 0,
+    "_bottom": 460,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
     "_isAbsLeft": true,
@@ -4444,7 +4506,7 @@
     "_isAbsVerticalCenter": true,
     "_originalWidth": 0,
     "_originalHeight": 0,
-    "_id": "f6pQ7ZlEVFRrYTiyGBzsxi"
+    "_id": "fcG/7Vbr5E7LCBVMnNnb9G"
   },
   {
     "__type__": "cc.Widget",
@@ -4482,9 +4544,6 @@
     },
     "_enabled": true,
     "grid_list": [
-      {
-        "__id__": 17
-      },
       {
         "__id__": 18
       },
@@ -4661,9 +4720,15 @@
       },
       {
         "__id__": 76
+      },
+      {
+        "__id__": 77
       }
     ],
     "num_1": null,
+    "lvl_node": {
+      "__id__": 16
+    },
     "_id": "d0cMsfkZZOZ4AUrcsmUpBP"
   },
   {
