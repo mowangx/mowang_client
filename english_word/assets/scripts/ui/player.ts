@@ -163,16 +163,15 @@ export default class player extends cc.Component {
 
     private word_list_pool: Array<Array<cc.Node>> = [];
 
-    private finish_words: Array<string> = [];
     private word_indexes: Array<string> = [];
 
     private click_x: Number = 0;
     private click_y: Number = 0;
 
-    private cur_random_words: string = '';
     private cur_click_words: string = '';
-    private cur_words_fayin: string = '';
-    private cur_words_desc: string = '';
+    private show_fayin_flag: boolean = false;
+    private show_word_idx: number = 0;
+    private wait_fight_indexes: Array<number> = []
 
     private grid_status: Array<boolean> = [];
 
@@ -184,13 +183,17 @@ export default class player extends cc.Component {
     start () {
         word_1_mgr.init();
         this.init_all_node();
-        this.finish_words = [];
+        this.wait_fight_indexes = [];
+        for (let i=0; i<20; ++i) {
+            this.wait_fight_indexes.push(i);
+        }
         this.restart();
     },
 
     // update (dt) {},
 
     restart(): void {
+        this.show_fayin_flag = false;
         this.word_indexes = [];
         this.random_words();
         this.init_word();
@@ -213,18 +216,18 @@ export default class player extends cc.Component {
     }
 
     show_words(): void {
-        this.finish_words.push(this.cur_random_words);
         let indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
-        for (let i=0; i<this.cur_random_words.length; ++i) {
+        let cur_random_words = word_1_mgr.words_1[this.show_word_idx][0];
+        for (let i=0; i<cur_random_words.length; ++i) {
             let random_index = this.get_random_range(0, indexes.length - 1);
             let real_index = indexes[random_index];
             this.grid_status[real_index] = false;
-            this.word_indexes[real_index] = this.cur_random_words[i];
-            let replace_node = this.get_word_node_1(this.cur_random_words[i], real_index);
+            this.word_indexes[real_index] = cur_random_words[i];
+            let replace_node = this.get_word_node_1(cur_random_words[i], real_index);
             this.show_word_area(replace_node, real_index);
             indexes.splice(random_index, 1);
         }
-        this.show_word_label('', false);
+        this.show_word_label('');
     },
 
     show_word_area(replace_node, idx): void {
@@ -238,23 +241,21 @@ export default class player extends cc.Component {
         replace_node.height = grid.height;
     },
 
-    show_word_label(head_desc: string, game_over_flag: boolean): void {
-        let fayin = game_over_flag ? this.cur_words_fayin : '';
-        this.word_label.string = head_desc + '\r\n' + this.cur_click_words + '\r\n' + fayin + '\r\n' + this.cur_words_desc;
+    show_word_label(head_desc: string): void {
+        let fayin = this.show_fayin_flag ? word_1_mgr.words_1[this.show_word_idx][1] : '';
+        this.word_label.string = head_desc + '\r\n' + this.cur_click_words + '\r\n' + fayin + '\r\n' + word_1_mgr.words_1[this.show_word_idx][2];
     },
 
     random_words(): void {
-        let idx = this.get_random_range(0, word_1_mgr.words_1.length - 1);
-        console.log('random words!', idx, word_1_mgr.words_1);
-        this.cur_random_words = word_1_mgr.words_1[idx][0];
-        this.cur_words_fayin = word_1_mgr.words_1[idx][1];
-        this.cur_words_desc = word_1_mgr.words_1[idx][2];
+        let idx = this.get_random_range(0, this.wait_fight_indexes.length - 1);
+        this.show_word_idx = this.wait_fight_indexes[idx];
+        this.wait_fight_indexes.splice(idx, 1);
     },
 
     get_random_range(min: number, max: number): number {  
-        var Range = max - min;  
-        var Rand = Math.random();  
-        return(min + Math.round(Rand * Range));  
+        let range_value = max - min;  
+        let rand_value = Math.random();  
+        return(min + Math.round(rand_value * range_value));  
     },
 
     on_touch_end(event): void {
@@ -289,13 +290,19 @@ export default class player extends cc.Component {
         this.cur_click_words += word;
         let replace_node = this.get_word_node_2(word, idx);
         this.show_word_area(replace_node, idx);
+        let head_desc = '';
         if (this.check_game_over()) {
-            let head_desc = this.cur_click_words == this.cur_random_words ? '回答正确' : '回答错误';
-            this.show_word_label(head_desc, true);
+            this.show_fayin_flag = true;
+            if (this.cur_click_words == word_1_mgr.words_1[this.show_word_idx][0]) {
+                head_desc = '回答正确';
+                client_mgr.set_right_flag(this.show_word_idx, true);
+            }
+            else {
+                head_desc = '回答错误';
+                client_mgr.set_right_flag(this.show_word_idx, false);
+            }
         }
-        else {
-            this.show_word_label('', false);
-        }
+        this.show_word_label(head_desc);
     },
 
     check_game_over(): boolean {
@@ -321,7 +328,17 @@ export default class player extends cc.Component {
     },
 
     on_click_next(): void {
-        this.restart();
+        if (this.wait_fight_indexes.length > 0) {
+            this.restart();
+        }
+        else {
+            cc.director.loadScene("jump");
+        }
+    },
+
+    on_click_tip(): void {
+        this.show_fayin_flag = true;
+        this.show_word_label('');
     },
 
     init_all_node(): void {
