@@ -61,6 +61,10 @@ export class client extends cc.Component {
         return this.section;
     },
 
+    is_pass_fight(idx: number): boolean {
+        return false;
+    },
+
     set_word_idx(idx: number): void {
         this.word_idx = idx;
     },

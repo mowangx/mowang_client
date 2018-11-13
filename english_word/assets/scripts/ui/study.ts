@@ -19,11 +19,26 @@ export default class study extends cc.Component {
     @property(cc.Label)
     word_label: cc.Label = null;
 
+    @property(cc.Node)
+    pass_node: cc.Node = null;
+
+    @property(cc.Prefab)
+    pass_fight_prefab: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    unpass_fight_prefab: cc.Prefab = null;
+
+    private pass_fight_node: cc.Node = null;
+    private unpass_fight_node: cc.Node = null;
+    private hide_node: cc.Node = null;
+
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
 
     start () {
+        this.pass_fight_node = cc.instantiate(this.pass_fight_prefab);
+        this.unpass_fight_node = cc.instantiate(this.unpass_fight_prefab);
         word_1_mgr.init();
         let word_idx = 0;
         client_mgr.set_word_idx(word_idx);
@@ -69,6 +84,18 @@ export default class study extends cc.Component {
     },
 
     show_words(idx: number): void {
+        let replace_node = null;
+        if (client_mgr.is_pass_fight(idx)) {
+            replace_node = this.pass_fight_node;
+        }
+        else {
+            replace_node = this.unpass_fight_node;
+        }
+        replace_node.parent = this.pass_node;
+        replace_node.setPosition(cc.p(0, 0));
+        replace_node.width = this.pass_node.width;
+        replace_node.height = this.pass_node.height;
+
         let word_desc = word_1_mgr.words_1[idx][0];
         word_desc += '\r\n' + word_1_mgr.words_1[idx][1];
         word_desc += '\r\n' + word_1_mgr.words_1[idx][2];

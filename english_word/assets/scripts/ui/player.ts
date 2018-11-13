@@ -234,7 +234,7 @@ export default class player extends cc.Component {
         if (!replace_node) {
             return;
         }
-        let grid = this.btn_grid_list[idx]
+        let grid = this.btn_grid_list[idx];
         replace_node.parent = grid;
         replace_node.setPosition(cc.p(0, 0));
         replace_node.width = grid.width;
@@ -313,7 +313,10 @@ export default class player extends cc.Component {
         }
         return true;
     },
-    
+
+    on_click_back(): void {
+        cc.director.loadScene("start");
+    },
 
     on_click_clear(): void {
         this.init_word();
