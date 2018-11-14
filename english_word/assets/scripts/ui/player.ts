@@ -244,7 +244,6 @@ export default class player extends cc.Component {
 
     show_words(): void {
         let indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
-        console.log("show fight words", this.show_word_idx);
         let cur_random_words = client_mgr.get_word_info(this.show_word_idx, 0);
         for (let i=0; i<cur_random_words.length; ++i) {
             let random_index = this.get_random_range(0, indexes.length - 1);

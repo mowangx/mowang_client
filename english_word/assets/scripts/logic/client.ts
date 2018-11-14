@@ -12,7 +12,11 @@ const {ccclass, property} = cc._decorator;
 
 import dispatcher from "./dispatcher"
 import {EventType} from "./consts"
-import word_1_mgr from "./word_x_1"
+import word_xiao_mgr from "./word_xiao"
+import word_chu_mgr from "./word_chu"
+import word_gao_mgr from "./word_gao"
+import word_da_mgr from "./word_da"
+import word_job_mgr from "./word_job"
 
 //import wx_mgr from "./wx_wrapper"
 
@@ -37,7 +41,11 @@ export class client extends cc.Component {
 
     init(): void {
         //wx_mgr.init();
-        word_1_mgr.init();
+        word_xiao_mgr.init();
+        word_chu_mgr.init();
+        word_gao_mgr.init();
+        word_da_mgr.init();
+        word_job_mgr.init();
         for (let i=0; i<1024; ++i) {
             this.user_flag_1 += '0';
             this.user_flag_2 += '0';
@@ -56,7 +64,19 @@ export class client extends cc.Component {
         let max_word_idx = this.get_config_word_idx();
         let len = 0;
         if (this.lvl == 1) {
-            len = word_1_mgr.words_1.length;
+            len = word_xiao_mgr.words_ary.length;
+        }
+        else if (this.lvl == 2) {
+            len = word_chu_mgr.words_ary.length;
+        }
+        else if (this.lvl == 3) {
+            len = word_gao_mgr.words_ary.length;
+        }
+        else if (this.lvl == 4) {
+            len = word_da_mgr.words_ary.length;
+        }
+        else {
+            len = word_job_mgr.words_ary.length;
         }
         this.last_word_section = Math.ceil(len / max_word_idx);
         this.last_word_idx = len - (this.last_word_section - 1) * max_word_idx;
@@ -108,7 +128,7 @@ export class client extends cc.Component {
     },
 
     get_config_word_idx(): number {
-        if (this.lvl = 1) {
+        if (this.lvl == 1) {
             return 10;
         }
         else if (this.lvl == 2) {
@@ -179,9 +199,20 @@ export class client extends cc.Component {
 
     get_word_info(word_idx: number, info_idx: number): string {
         if (this.lvl == 1) {
-            return word_1_mgr.words_1[word_idx][info_idx];
+            return word_xiao_mgr.words_ary[word_idx][info_idx];
         }
-        return 'xty';
+        else if (this.lvl == 2) {
+            return word_chu_mgr.words_ary[word_idx][info_idx];
+        }
+        else if (this.lvl == 3) {
+            return word_gao_mgr.words_ary[word_idx][info_idx];
+        }
+        else if (this.lvl == 4) {
+            return word_da_mgr.words_ary[word_idx][info_idx];
+        }
+        else {
+            return word_job_mgr.words_ary[word_idx][info_idx];
+        }
     },
 }
 
