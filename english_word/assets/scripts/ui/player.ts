@@ -24,6 +24,22 @@ export default class player extends cc.Component {
 
     @property(cc.Node)
     tail_info: cc.Node = null;
+    
+    @property(cc.Node)
+    bg_info: cc.Node = null;
+
+    @property(cc.Prefab)
+    bg_panel: cc.Prefab = null;
+
+    private bg_node: cc.Node = null;
+
+    @property(cc.Node)
+    result_info: cc.Node = null;
+
+    @property(cc.Prefab)
+    result_panel: cc.Prefab = null;
+
+    private result_node: cc.Node = null;
 
     @property(cc.Label)
     word_label: cc.Label = null;
@@ -176,7 +192,9 @@ export default class player extends cc.Component {
     private cur_click_words: string = '';
     private show_fayin_flag: boolean = false;
     private show_word_idx: number = 0;
-    private wait_fight_indexes: Array<number> = []
+    private wait_fight_indexes: Array<number> = [];
+
+    private game_over_flag: boolean = false;
 
     private grid_status: Array<boolean> = [];
 
@@ -186,8 +204,11 @@ export default class player extends cc.Component {
     },
 
     start () {
+        this.game_over_flag = false;
         this.unit_node = this.unit_info.getComponent("unit");
         this.unit_node.show_unit();
+        this.bg_node = cc.instantiate(this.bg_panel);
+        this.result_node = cc.instantiate(this.result_panel);
         this.init_all_node();
         this.wait_fight_indexes = [];
         for (let i=0; i<client_mgr.get_max_word_idx(); ++i) {
@@ -223,6 +244,7 @@ export default class player extends cc.Component {
 
     show_words(): void {
         let indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
+        console.log("show fight words", this.show_word_idx);
         let cur_random_words = client_mgr.get_word_info(this.show_word_idx, 0);
         for (let i=0; i<cur_random_words.length; ++i) {
             let random_index = this.get_random_range(0, indexes.length - 1);
@@ -265,6 +287,9 @@ export default class player extends cc.Component {
     },
 
     on_touch_end(event): void {
+        if (this.game_over_flag) {
+            return;
+        }
         this.click_x = this.btn_area.convertTouchToNodeSpaceAR(event).x;
         this.click_y = this.btn_area.convertTouchToNodeSpaceAR(event).y;
         this.check_click();
@@ -321,33 +346,80 @@ export default class player extends cc.Component {
     },
 
     on_click_back(): void {
+        if (this.game_over_flag) {
+            return;
+        }
         cc.director.loadScene("start");
     },
 
     on_click_clear(): void {
+        if (this.game_over_flag) {
+            return;
+        }
         this.init_word();
     },
 
     on_click_share(): void {
+        if (this.game_over_flag) {
+            return;
+        }
         client_mgr.share_game();
     },
 
     on_click_study(): void {
+        if (this.game_over_flag) {
+            return;
+        }
         cc.director.loadScene("study");
     },
 
     on_click_next(): void {
+        if (this.game_over_flag) {
+            return;
+        }
         if (this.wait_fight_indexes.length > 0) {
             this.restart();
         }
         else {
-            cc.director.loadScene("jump");
+            this.on_game_over();
         }
     },
 
     on_click_tip(): void {
         this.show_fayin_flag = true;
         this.show_word_label('');
+    },
+
+    hide_all(): void {
+        for (let i=0; i<52; ++i) {
+            this.hide_node_pool(this.word_list_pool[i]);
+        }
+    },
+
+    get_word_node_1(word, idx): cc.Node {
+        let word_idx = (word.charCodeAt() - 97) * 2;
+        return this.word_list_pool[word_idx][idx];
+    },
+
+    get_word_node_2(word, idx): cc.Node {
+        let word_idx = (word.charCodeAt() - 97) * 2 + 1;
+        return this.word_list_pool[word_idx][idx];
+    },
+
+    on_game_over(): void {
+        this.game_over_flag = true;
+        this.bg_node = cc.instantiate(this.bg_panel);
+        this.bg_node.parent = this.bg_info;
+        this.bg_node.setPosition(cc.v2(0, 0));
+        this.bg_node.width = this.bg_info.width;
+        this.bg_node.height = this.bg_info.height;
+
+        let result = 6;
+        this.result_node.parent = this.result_info;
+        this.result_node.setPosition(cc.v2(0, 0));
+        this.result_node.width = this.result_info.width;
+        this.result_node.height = this.result_info.height;
+        this.result_node.getComponent("result").init_panel(result);
     },
 
     init_all_node(): void {
@@ -408,21 +480,5 @@ export default class player extends cc.Component {
             this.word_list_pool[50][i] = cc.instantiate(this.word_z_1);
             this.word_list_pool[51][i] = cc.instantiate(this.word_z_2);
         }
-    }
-
-    hide_all(): void {
-        for (let i=0; i<52; ++i) {
-            this.hide_node_pool(this.word_list_pool[i]);
-        }
-    },
-
-    get_word_node_1(word, idx): cc.Node {
-        let word_idx = (word.charCodeAt() - 97) * 2;
-        return this.word_list_pool[word_idx][idx];
-    },
-
-    get_word_node_2(word, idx): cc.Node {
-        let word_idx = (word.charCodeAt() - 97) * 2 + 1;
-        return this.word_list_pool[word_idx][idx];
     },
 }

@@ -34,29 +34,26 @@ export default class result extends cc.Component {
     // },
 
     on_click_continue(): void {
-        cc.director.loadScene("game");
+        let cur_section = client_mgr.get_cur_section();
+        cur_section += 1;
+        if (cur_section <= client_mgr.get_last_word_section()) {
+            client_mgr.set_cur_section(cur_section);
+        }
+        cc.director.loadScene("study");
     },
 
     on_click_share(): void {
         client_mgr.share_game();
     },
 
-    init_panel(result: boolean): void {
-        let content_desc = "";
-        if (result) {
-            content_desc = "呦，赢了，本次用时: " + client_mgr.get_play_time() + "秒";
-        } 
-        else {
-            content_desc = "呀，踩雷了，我不服!";
-        }
+    init_panel(result: number): void {
+        let content_desc = "恭喜完成挑战成功:" + result + "个单词";
         this.content_label.string = content_desc;
-
-        let play_game_time = result ? client_mgr.get_play_time() : 0;
         
-        wx.getOpenDataContext().postMessage({
-            lvl: client_mgr.get_lvl(),
-            play_time: play_game_time
-        });
+        // wx.getOpenDataContext().postMessage({
+        //     lvl: client_mgr.get_lvl(),
+        //     play_time: play_game_time
+        // });
 
         console.log("send play msg to sub contnet");
         

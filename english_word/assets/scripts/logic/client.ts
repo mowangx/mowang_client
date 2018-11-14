@@ -59,7 +59,7 @@ export class client extends cc.Component {
             len = word_1_mgr.words_1.length;
         }
         this.last_word_section = Math.ceil(len / max_word_idx);
-        this.last_word_idx = len % max_word_idx;
+        this.last_word_idx = len - (this.last_word_section - 1) * max_word_idx;
     },
     
     get_lvl(): number {
