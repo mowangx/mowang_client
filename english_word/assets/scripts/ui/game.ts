@@ -14,10 +14,7 @@ import client_mgr from "./../logic/client"
 
 @ccclass
 export default class game extends cc.Component {
-
-    @property(cc.Node)
-    player: cc.Node = null;
-
+    
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {

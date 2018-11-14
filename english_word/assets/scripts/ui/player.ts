@@ -11,12 +11,17 @@
 const {ccclass, property} = cc._decorator;
 
 import client_mgr from "./../logic/client"
-import word_1_mgr from "./../logic/word_x_1"
 
 @ccclass
 export default class player extends cc.Component {
 
     // LIFE-CYCLE CALLBACKS:
+
+    @property(cc.Node)
+    unit_info: cc.Node = null;
+
+    private unit_node:cc.Node = null;
+
     @property(cc.Node)
     tail_info: cc.Node = null;
 
@@ -181,9 +186,11 @@ export default class player extends cc.Component {
     },
 
     start () {
+        this.unit_node = this.unit_info.getComponent("unit");
+        this.unit_node.show_unit();
         this.init_all_node();
         this.wait_fight_indexes = [];
-        for (let i=0; i<20; ++i) {
+        for (let i=0; i<client_mgr.get_max_word_idx(); ++i) {
             this.wait_fight_indexes.push(i);
         }
         this.restart();
@@ -216,7 +223,7 @@ export default class player extends cc.Component {
 
     show_words(): void {
         let indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
-        let cur_random_words = word_1_mgr.words_1[this.show_word_idx][0];
+        let cur_random_words = client_mgr.get_word_info(this.show_word_idx, 0);
         for (let i=0; i<cur_random_words.length; ++i) {
             let random_index = this.get_random_range(0, indexes.length - 1);
             let real_index = indexes[random_index];
@@ -241,13 +248,13 @@ export default class player extends cc.Component {
     },
 
     show_word_label(head_desc: string): void {
-        let fayin = this.show_fayin_flag ? word_1_mgr.words_1[this.show_word_idx][1] : '';
-        this.word_label.string = head_desc + '\r\n' + this.cur_click_words + '\r\n' + fayin + '\r\n' + word_1_mgr.words_1[this.show_word_idx][2];
+        let fayin = this.show_fayin_flag ? client_mgr.get_word_info(this.show_word_idx, 1) : '';
+        this.word_label.string = head_desc + '\r\n' + this.cur_click_words + '\r\n' + fayin + '\r\n' + client_mgr.get_word_info(this.show_word_idx, 2);
     },
 
     random_words(): void {
         let idx = this.get_random_range(0, this.wait_fight_indexes.length - 1);
-        this.show_word_idx = this.wait_fight_indexes[idx];
+        this.show_word_idx = client_mgr.get_real_word_idx(this.wait_fight_indexes[idx]);
         this.wait_fight_indexes.splice(idx, 1);
     },
 
@@ -292,7 +299,7 @@ export default class player extends cc.Component {
         let head_desc = '';
         if (this.check_game_over()) {
             this.show_fayin_flag = true;
-            if (this.cur_click_words == word_1_mgr.words_1[this.show_word_idx][0]) {
+            if (this.cur_click_words == client_mgr.get_word_info(this.show_word_idx, 0)) {
                 head_desc = '回答正确';
                 client_mgr.set_word_pass(this.show_word_idx, true);
             }

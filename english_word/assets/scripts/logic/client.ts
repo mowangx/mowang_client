@@ -21,7 +21,9 @@ export class client extends cc.Component {
 
     private lvl: number = 1;
     private cur_section: number = 1;
-    private max_section: number = 1;
+    private max_section: number = 1;    // pass fight max section
+    private last_word_section: number = 0;   // last word section
+    private last_word_idx: number = 0; // last word index
     private word_idx: number = 0;
     private user_flag_1: string = '';
     private user_flag_2: string = '';
@@ -51,10 +53,25 @@ export class client extends cc.Component {
 
     set_lvl(lvl: number): void {
         this.lvl = lvl;
+        let max_word_idx = this.get_config_word_idx();
+        let len = 0;
+        if (this.lvl == 1) {
+            len = word_1_mgr.words_1.length;
+        }
+        this.last_word_section = Math.ceil(len / max_word_idx);
+        this.last_word_idx = len % max_word_idx;
     },
     
     get_lvl(): number {
         return this.lvl;
+    },
+
+    get_last_word_section(): number {
+        return this.last_word_section;
+    },
+
+    get_last_word_idx(): number {
+        return this.last_word_idx;
     },
 
     set_cur_section(section: number): void {
@@ -81,32 +98,43 @@ export class client extends cc.Component {
         return this.word_idx;
     },
 
-    get_real_word_idx(idx: number): number {
-        let param = 0;
-        if (this.lvl = 1) {
-            param = 10;
-        }
-        else if (this.lvl == 2) {
-            param = 15;
-        }
-        else if (this.lvl == 3) {
-            param = 20;
-        }
-        else if (this.lvl == 4) {
-            param = 30;
+    get_max_word_idx(): number {
+        if (this.cur_section == this.last_word_section) {
+            return this.last_word_idx;
         }
         else {
-            param = 30;
+            return this.get_config_word_idx();
         }
+    },
+
+    get_config_word_idx(): number {
+        if (this.lvl = 1) {
+            return 10;
+        }
+        else if (this.lvl == 2) {
+            return 15;
+        }
+        else if (this.lvl == 3) {
+            return 20;
+        }
+        else if (this.lvl == 4) {
+            return 30;
+        }
+        else {
+            return 30;
+        }
+    },
+
+    get_real_word_idx(idx: number): number {
+        let param = this.get_config_word_idx();
         return (this.cur_section - 1) * param + idx;
     },
 
     set_word_pass(idx: number, flag: boolean): void {
         let value  = flag ? '1' : '0';
         let replace_value = this.get_user_flag();
-        let real_idx = this.get_real_word_idx(idx);
-        let left_value = replace_value.substr(0, real_idx);
-        let right_value = replace_value.substr(real_idx+1, replace_value.length - real_idx);
+        let left_value = replace_value.substr(0, idx);
+        let right_value = replace_value.substr(idx+1, replace_value.length - idx);
         replace_value = left_value + value + right_value;
         if (this.lvl == 1) {
             this.user_flag_1 = replace_value;
@@ -123,13 +151,11 @@ export class client extends cc.Component {
         else {
             this.user_flag_5 = replace_value;
         }
-        console.log('set word pass!', real_idx, replace_value);
     },
 
     is_word_pass(idx: number): boolean {
         let user_flag = this.get_user_flag();
         let real_idx = this.get_real_word_idx(idx);
-        console.log('is word pass', real_idx, user_flag)
         return user_flag[real_idx] == '1';
     },
 
@@ -149,7 +175,14 @@ export class client extends cc.Component {
         else {
             return this.user_flag_5;
         }
-    }
+    },
+
+    get_word_info(word_idx: number, info_idx: number): string {
+        if (this.lvl == 1) {
+            return word_1_mgr.words_1[word_idx][info_idx];
+        }
+        return 'xty';
+    },
 }
 
 var client_mgr = new client();
