@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.323617323069842,
-      "y": 0.323617323069842,
+      "x": 0.35520833333333335,
+      "y": 0.35520833333333335,
       "z": 1
     },
     "_quat": {
@@ -223,7 +223,7 @@
     },
     "_children": [],
     "_active": true,
-    "_level": 0,
+    "_level": 1,
     "_components": [
       {
         "__id__": 6
@@ -273,7 +273,7 @@
     "_skewY": 0,
     "_zIndex": 0,
     "groupIndex": 0,
-    "_id": "74DAGY1sBHEZaEO83ZHApZ"
+    "_id": "29kdxIpwpH57Z9vxyFrkQL"
   },
   {
     "__type__": "cc.Sprite",
@@ -286,10 +286,10 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "54a7769e-c73f-4607-98da-7621ee94db02"
+      "__uuid__": "5f6d420e-3fd5-4559-bb5b-7b345afb8f66"
     },
     "_type": 0,
-    "_sizeMode": 0,
+    "_sizeMode": 1,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -301,7 +301,7 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": null,
-    "_id": "b07noWg+xGyaaDVhYNwdzp"
+    "_id": "2do2ZZ7r9Ja7dUqrxrCYAr"
   },
   {
     "__type__": "cc.Node",

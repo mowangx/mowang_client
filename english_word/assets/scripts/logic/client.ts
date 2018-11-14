@@ -12,13 +12,16 @@ const {ccclass, property} = cc._decorator;
 
 import dispatcher from "./dispatcher"
 import {EventType} from "./consts"
+import word_1_mgr from "./word_x_1"
+
 //import wx_mgr from "./wx_wrapper"
 
 @ccclass
 export class client extends cc.Component {
 
     private lvl: number = 1;
-    private section: number = 1;
+    private cur_section: number = 1;
+    private max_section: number = 1;
     private word_idx: number = 0;
     private user_flag_1: string = '';
     private user_flag_2: string = '';
@@ -32,6 +35,7 @@ export class client extends cc.Component {
 
     init(): void {
         //wx_mgr.init();
+        word_1_mgr.init();
         for (let i=0; i<1024; ++i) {
             this.user_flag_1 += '0';
             this.user_flag_2 += '0';
@@ -53,17 +57,21 @@ export class client extends cc.Component {
         return this.lvl;
     },
 
-    set_section(section: number): void {
-        this.section = section;
+    set_cur_section(section: number): void {
+        this.cur_section = section;
     },
 
-    get_section(section: number): number {
-        return this.section;
+    get_cur_section(): number {
+        return this.cur_section;
     },
 
-    is_pass_fight(idx: number): boolean {
-        return false;
+    set_max_section(section: number): void {
+        this.max_section = section;
     },
+
+    get_max_section(): number {
+        return this.max_section;
+    }
 
     set_word_idx(idx: number): void {
         this.word_idx = idx;
@@ -90,30 +98,15 @@ export class client extends cc.Component {
         else {
             param = 30;
         }
-        return (this.section - 1) * param + idx;
+        return (this.cur_section - 1) * param + idx;
     },
 
-    set_right_flag(idx: number, flag: boolean): void {
+    set_word_pass(idx: number, flag: boolean): void {
         let value  = flag ? '1' : '0';
-        let replace_value = '';
-        if (this.lvl == 1) {
-            replace_value = this.user_flag_1;
-        }
-        else if (this.lvl == 2) {
-            replace_value = this.user_flag_2;
-        }
-        else if (this.lvl == 3) {
-            replace_value = this.user_flag_3;
-        }
-        else if (this.lvl == 4) {
-            replace_value = this.user_flag_4;
-        }
-        else {
-            replace_value = this.user_flag_5;
-        }
+        let replace_value = this.get_user_flag();
         let real_idx = this.get_real_word_idx(idx);
         let left_value = replace_value.substr(0, real_idx);
-        let right_value = this.user_flag_1.substr(real_idx+1, this.user_flag_1.length - real_idx);
+        let right_value = replace_value.substr(real_idx+1, replace_value.length - real_idx);
         replace_value = left_value + value + right_value;
         if (this.lvl == 1) {
             this.user_flag_1 = replace_value;
@@ -130,28 +123,33 @@ export class client extends cc.Component {
         else {
             this.user_flag_5 = replace_value;
         }
-        console.log('set right flag!', real_idx, this.user_flag_1);
+        console.log('set word pass!', real_idx, replace_value);
     },
 
-    get_right_flag(idx: number): boolean {
-        let value = '';
+    is_word_pass(idx: number): boolean {
+        let user_flag = this.get_user_flag();
+        let real_idx = this.get_real_word_idx(idx);
+        console.log('is word pass', real_idx, user_flag)
+        return user_flag[real_idx] == '1';
+    },
+
+    get_user_flag(): string {
         if (this.lvl == 1) {
-            value = this.user_flag_1[idx];
+            return this.user_flag_1;
         }
         else if (this.lvl == 2) {
-            value = this.user_flag_2[idx];
+            return this.user_flag_2;
         }
         else if (this.lvl == 3) {
-            value = this.user_flag_3[idx];
+            return this.user_flag_3;
         }
         else if (this.lvl == 4) {
-            value = this.user_flag_4[idx];
+            return this.user_flag_4;
         }
         else {
-            value = this.user_flag_5[idx];
+            return this.user_flag_5;
         }
-        return value == '1';
-    },
+    }
 }
 
 var client_mgr = new client();

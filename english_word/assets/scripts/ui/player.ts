@@ -181,7 +181,6 @@ export default class player extends cc.Component {
     },
 
     start () {
-        word_1_mgr.init();
         this.init_all_node();
         this.wait_fight_indexes = [];
         for (let i=0; i<20; ++i) {
@@ -255,7 +254,7 @@ export default class player extends cc.Component {
     get_random_range(min: number, max: number): number {  
         let range_value = max - min;  
         let rand_value = Math.random();  
-        return(min + Math.round(rand_value * range_value));  
+        return (min + Math.round(rand_value * range_value));  
     },
 
     on_touch_end(event): void {
@@ -295,11 +294,11 @@ export default class player extends cc.Component {
             this.show_fayin_flag = true;
             if (this.cur_click_words == word_1_mgr.words_1[this.show_word_idx][0]) {
                 head_desc = '回答正确';
-                client_mgr.set_right_flag(this.show_word_idx, true);
+                client_mgr.set_word_pass(this.show_word_idx, true);
             }
             else {
                 head_desc = '回答错误';
-                client_mgr.set_right_flag(this.show_word_idx, false);
+                client_mgr.set_word_pass(this.show_word_idx, false);
             }
         }
         this.show_word_label(head_desc);
