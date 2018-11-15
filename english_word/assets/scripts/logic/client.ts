@@ -13,9 +13,9 @@ const {ccclass, property} = cc._decorator;
 import dispatcher from "./dispatcher"
 import {EventType} from "./consts"
 import word_xiao_mgr from "./word_xiao"
-import word_chu_mgr from "./word_chu"
-import word_gao_mgr from "./word_gao"
-import word_da_mgr from "./word_da"
+import word_zhong_mgr from "./word_zhong"
+import word_four_mgr from "./word_four"
+import word_six_mgr from "./word_six"
 import word_job_mgr from "./word_job"
 
 //import wx_mgr from "./wx_wrapper"
@@ -42,9 +42,9 @@ export class client extends cc.Component {
     init(): void {
         //wx_mgr.init();
         word_xiao_mgr.init();
-        word_chu_mgr.init();
-        word_gao_mgr.init();
-        word_da_mgr.init();
+        word_zhong_mgr.init();
+        word_four_mgr.init();
+        word_six_mgr.init();
         word_job_mgr.init();
         for (let i=0; i<1024; ++i) {
             this.user_flag_1 += '0';
@@ -67,13 +67,13 @@ export class client extends cc.Component {
             len = word_xiao_mgr.words_ary.length;
         }
         else if (this.lvl == 2) {
-            len = word_chu_mgr.words_ary.length;
+            len = word_zhong_mgr.words_ary.length;
         }
         else if (this.lvl == 3) {
-            len = word_gao_mgr.words_ary.length;
+            len = word_four_mgr.words_ary.length;
         }
         else if (this.lvl == 4) {
-            len = word_da_mgr.words_ary.length;
+            len = word_six_mgr.words_ary.length;
         }
         else {
             len = word_job_mgr.words_ary.length;
@@ -202,13 +202,13 @@ export class client extends cc.Component {
             return word_xiao_mgr.words_ary[word_idx][info_idx];
         }
         else if (this.lvl == 2) {
-            return word_chu_mgr.words_ary[word_idx][info_idx];
+            return word_zhong_mgr.words_ary[word_idx][info_idx];
         }
         else if (this.lvl == 3) {
-            return word_gao_mgr.words_ary[word_idx][info_idx];
+            return word_four_mgr.words_ary[word_idx][info_idx];
         }
         else if (this.lvl == 4) {
-            return word_da_mgr.words_ary[word_idx][info_idx];
+            return word_six_mgr.words_ary[word_idx][info_idx];
         }
         else {
             return word_job_mgr.words_ary[word_idx][info_idx];

@@ -11,7 +11,7 @@
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export class word_da extends cc.Component {
+export class word_four extends cc.Component {
 
     public words_ary: Array<Array<string>> = [];
 
@@ -20,5 +20,5 @@ export class word_da extends cc.Component {
     }
 }
 
-var word_da_mgr = new word_da();
-export default word_da_mgr;
+var word_four_mgr = new word_four();
+export default word_four_mgr;

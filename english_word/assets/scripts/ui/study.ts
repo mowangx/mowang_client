@@ -79,11 +79,17 @@ export default class study extends cc.Component {
         let word_idx = client_mgr.get_word_idx();
         word_idx += 1;
         if (word_idx == client_mgr.get_max_word_idx()) {
-            cc.director.loadScene("jump");
+            let cur_section = client_mgr.get_cur_section()
+            if (cur_section == client_mgr.get_max_section()) {
+                cc.director.loadScene("jump");
+                return;
+            }
+
+            cur_section += 1;
+            client_mgr.set_cur_section(cur_section);
+            word_idx = 0;
         }
-        else {
-            this.show_words(word_idx);
-        }
+        this.show_words(word_idx);
     },
 
     on_click_back(): void {

@@ -36,7 +36,10 @@ export default class result extends cc.Component {
     on_click_continue(): void {
         let cur_section = client_mgr.get_cur_section();
         cur_section += 1;
-        if (cur_section <= client_mgr.get_last_word_section()) {
+        let max_section = client_mgr.get_max_section();
+        if (cur_section > client_mgr.get_max_section() && max_section < client_mgr.get_last_word_section()) {
+            max_section += 1;
+            client_mgr.set_max_section(max_section);
             client_mgr.set_cur_section(cur_section);
         }
         cc.director.loadScene("study");
