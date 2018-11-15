@@ -25,7 +25,7 @@ export class client extends cc.Component {
 
     private lvl: number = 1;
     private cur_section: number = 1;
-    private max_section: number = 1;    // pass fight max section
+    private history_section: number = 1;    // pass fight history section
     private last_word_section: number = 0;   // last word section
     private last_word_idx: number = 0; // last word index
     private word_idx: number = 0;
@@ -102,12 +102,12 @@ export class client extends cc.Component {
         return this.cur_section;
     },
 
-    set_max_section(section: number): void {
-        this.max_section = section;
+    set_history_section(section: number): void {
+        this.history_section = section;
     },
 
-    get_max_section(): number {
-        return this.max_section;
+    get_history_section(): number {
+        return this.history_section;
     }
 
     set_word_idx(idx: number): void {

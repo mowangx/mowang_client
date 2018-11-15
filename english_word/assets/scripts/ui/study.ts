@@ -59,8 +59,7 @@ export default class study extends cc.Component {
             }
 
             cur_section -= 1;
-            client_mgr.set_cur_section(cur_section);
-            this.unit_node.show_unit();
+            this.update_section(cur_section);
             word_idx = client_mgr.get_max_word_idx();
         }
         word_idx -= 1;
@@ -80,16 +79,21 @@ export default class study extends cc.Component {
         word_idx += 1;
         if (word_idx == client_mgr.get_max_word_idx()) {
             let cur_section = client_mgr.get_cur_section()
-            if (cur_section == client_mgr.get_max_section()) {
+            if (cur_section == client_mgr.get_history_section()) {
                 cc.director.loadScene("jump");
                 return;
             }
 
             cur_section += 1;
-            client_mgr.set_cur_section(cur_section);
+            this.update_section(cur_section);
             word_idx = 0;
         }
         this.show_words(word_idx);
+    },
+
+    update_section(cur_section: number): void {
+        client_mgr.set_cur_section(cur_section);
+        this.unit_node.show_unit();
     },
 
     on_click_back(): void {
