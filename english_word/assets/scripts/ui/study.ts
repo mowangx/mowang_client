@@ -51,7 +51,7 @@ export default class study extends cc.Component {
     // update (dt) {}
 
     on_click_last(): void {
-        let word_idx = client_mgr.get_word_idx();
+        let word_idx = client_mgr.get_cur_word_idx();
         if (word_idx == 0) {
             let cur_section = client_mgr.get_cur_section();
             if (cur_section == 1) {
@@ -75,7 +75,7 @@ export default class study extends cc.Component {
     },
 
     on_click_next(): void {
-        let word_idx = client_mgr.get_word_idx();
+        let word_idx = client_mgr.get_cur_word_idx();
         word_idx += 1;
         if (word_idx == client_mgr.get_max_word_idx()) {
             let cur_section = client_mgr.get_cur_section()
@@ -101,7 +101,7 @@ export default class study extends cc.Component {
     },
 
     show_words(idx: number): void {
-        client_mgr.set_word_idx(idx);
+        client_mgr.set_cur_word_idx(idx);
         let real_idx = client_mgr.get_real_word_idx(idx);
 
         let replace_node = null;

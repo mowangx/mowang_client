@@ -17,46 +17,40 @@ import word_zhong_mgr from "./word_zhong"
 import word_four_mgr from "./word_four"
 import word_six_mgr from "./word_six"
 import word_job_mgr from "./word_job"
-
-//import wx_mgr from "./wx_wrapper"
+import wx_mgr from "./wx_wrapper"
 
 @ccclass
 export class client extends cc.Component {
 
+    private init_flag: boolean = false;
     private lvl: number = 1;
     private cur_section: number = 1;
-    private history_section: number = 1;    // pass fight history section
+    private cur_word_idx: number = 0;
     private last_word_section: number = 0;   // last word section
     private last_word_idx: number = 0; // last word index
-    private word_idx: number = 0;
-    private user_flag_1: string = '';
-    private user_flag_2: string = '';
-    private user_flag_3: string = '';
-    private user_flag_4: string = '';
-    private user_flag_5: string = '';
 
     constructor() {
         super();
     },
 
     init(): void {
-        //wx_mgr.init();
+        if (this.init_flag) {
+            return;
+        }
+        
+        this.init_flag = true;
+
+        wx_mgr.init();
+
         word_xiao_mgr.init();
         word_zhong_mgr.init();
         word_four_mgr.init();
         word_six_mgr.init();
         word_job_mgr.init();
-        for (let i=0; i<1024; ++i) {
-            this.user_flag_1 += '0';
-            this.user_flag_2 += '0';
-            this.user_flag_3 += '0';
-            this.user_flag_4 += '0';
-            this.user_flag_5 += '0';
-        }
     },
 
     share_game(): void {
-        //wx_mgr.share_game();
+        wx_mgr.share_game();
     },
 
     set_lvl(lvl: number): void {
@@ -103,19 +97,47 @@ export class client extends cc.Component {
     },
 
     set_history_section(section: number): void {
-        this.history_section = section;
+        if (this.lvl == 1) {
+            wx_mgr.history_section_1 = section;
+        }
+        else if (this.lvl == 2) {
+            wx_mgr.history_section_2 = section;
+        }
+        else if (this.lvl == 3) {
+            wx_mgr.history_section_3 = section;
+        }
+        else if (this.lvl == 4) {
+            wx_mgr.history_section_4 = section;
+        }
+        else {
+            wx_mgr.history_section_5 = section;
+        }
     },
 
     get_history_section(): number {
-        return this.history_section;
+        if (this.lvl == 1) {
+            return wx_mgr.history_section_1;
+        }
+        else if (this.lvl == 2) {
+            return wx_mgr.history_section_2;
+        }
+        else if (this.lvl == 3) {
+            return wx_mgr.history_section_3;
+        }
+        else if (this.lvl == 4) {
+            return wx_mgr.history_section_4;
+        }
+        else {
+            return wx_mgr.history_section_5;
+        }
     }
 
-    set_word_idx(idx: number): void {
-        this.word_idx = idx;
+    set_cur_word_idx(idx: number): void {
+        this.cur_word_idx = idx;
     },
 
-    get_word_idx(): number {
-        return this.word_idx;
+    get_cur_word_idx(): number {
+        return this.cur_word_idx;
     },
 
     get_max_word_idx(): number {
@@ -157,19 +179,19 @@ export class client extends cc.Component {
         let right_value = replace_value.substr(idx+1, replace_value.length - idx);
         replace_value = left_value + value + right_value;
         if (this.lvl == 1) {
-            this.user_flag_1 = replace_value;
+            wx_mgr.user_flag_1 = replace_value;
         }
         else if (this.lvl == 2) {
-            this.user_flag_2 = replace_value;
+            wx_mgr.user_flag_2 = replace_value;
         }
         else if (this.lvl == 3) {
-            this.user_flag_3 = replace_value;
+            wx_mgr.user_flag_3 = replace_value;
         }
         else if (this.lvl == 4) {
-            this.user_flag_4 = replace_value;
+            wx_mgr.user_flag_4 = replace_value;
         }
         else {
-            this.user_flag_5 = replace_value;
+            wx_mgr.user_flag_5 = replace_value;
         }
     },
 
@@ -181,19 +203,19 @@ export class client extends cc.Component {
 
     get_user_flag(): string {
         if (this.lvl == 1) {
-            return this.user_flag_1;
+            return wx_mgr.user_flag_1;
         }
         else if (this.lvl == 2) {
-            return this.user_flag_2;
+            return wx_mgr.user_flag_2;
         }
         else if (this.lvl == 3) {
-            return this.user_flag_3;
+            return wx_mgr.user_flag_3;
         }
         else if (this.lvl == 4) {
-            return this.user_flag_4;
+            return wx_mgr.user_flag_4;
         }
         else {
-            return this.user_flag_5;
+            return wx_mgr.user_flag_5;
         }
     },
 
@@ -212,6 +234,12 @@ export class client extends cc.Component {
         }
         else {
             return word_job_mgr.words_ary[word_idx][info_idx];
+        }
+    },
+
+    save_user_info(): void {
+        if (wx_mgr.init_finish_flag) {
+            wx_mgr.save_cloud_value(this.lvl);
         }
     },
 }
