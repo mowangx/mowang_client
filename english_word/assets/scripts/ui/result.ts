@@ -70,5 +70,7 @@ export default class result extends cc.Component {
         if (client_mgr.get_history_section() < cur_section) {
             client_mgr.set_history_section(cur_section);
         }
+
+        client_mgr.save_user_info();
     },
 }

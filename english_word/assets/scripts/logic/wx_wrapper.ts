@@ -29,8 +29,8 @@ export class wx_wrapper extends cc.Component {
         super();
     },
 
-    init(): void {
-        this.init_value();
+    init(words_size_ary: Array<number>): void {
+        this.init_value(words_size_ary);
 
         var self = this;
         // wx.login({
@@ -58,13 +58,26 @@ export class wx_wrapper extends cc.Component {
         });
     },
 
-    init_value(): void {
-        for (let i=0; i<1024; ++i) {
-            this.user_flag_1 += '0';
-            this.user_flag_2 += '0';
-            this.user_flag_3 += '0';
-            this.user_flag_4 += '0';
-            this.user_flag_5 += '0';
+    init_value(words_size_ary: Array<number>): void {
+        for (let i=0; i<words_size_ary.length; ++i) {
+            let len = words_size_ary[i];
+            for (let j=0; j<len; ++j) {
+                if (i == 0) {
+                    this.user_flag_1 += '0';
+                }
+                else if (i == 1) {
+                    this.user_flag_2 += '0';
+                }
+                else if (i == 2) {
+                    this.user_flag_3 += '0';
+                }
+                else if (i == 3) {
+                    this.user_flag_4 += '0';
+                }
+                else {
+                    this.user_flag_5 += '0';
+                }
+            }
         }
         this.load_cloud_value();
     },
@@ -146,44 +159,6 @@ export class wx_wrapper extends cc.Component {
         console.log("on share complete");
     },
 
-    on_get_cloud_value_success(res): void {
-        for (let i=0; i<res.KVDataList.length; ++i) {
-            let key_name = res.KVDataList[i].key;
-            if (key_name == "english_word_game_flag_1") {
-                this.user_flag_1 = res.KVDataList[i].value;
-            }
-            else if (key_name == "english_word_game_flag_2") {
-                this.user_flag_2 = res.KVDataList[i].value;
-            }
-            else if (key_name == "english_word_game_flag_3") {
-                this.user_flag_3 = res.KVDataList[i].value;
-            }
-            else if (key_name == "english_word_game_flag_4") {
-                this.user_flag_4 = res.KVDataList[i].value;
-            }
-            else if (key_name == "english_word_game_flag_5") {
-                this.user_flag_5 = res.KVDataList[i].value;
-            }
-            else if (key_name == "english_word_game_word_1") {
-                this.history_section_1 = Number(res.KVDataList[i].value);
-            }
-            else if (key_name == "english_word_game_word_2") {
-                this.history_section_2 = Number(res.KVDataList[i].value);
-            }
-            else if (key_name == "english_word_game_word_3") {
-                this.history_section_3 = Number(res.KVDataList[i].value);
-            }
-            else if (key_name == "english_word_game_word_4") {
-                this.history_section_4 = Number(res.KVDataList[i].value);
-            }
-            else if (key_name == "english_word_game_word_5") {
-                this.history_section_5 = Number(res.KVDataList[i].value);
-            }
-        }
-        this.init_finish_flag = true;
-        console.log("load clound value success");
-    },
-
     load_cloud_value(): void {
         let key_name_list = [];
         for (let i=1; i<6; ++i) {
@@ -192,44 +167,99 @@ export class wx_wrapper extends cc.Component {
         }
 
         let self = this;
-        let file_path = `${wx.env.USER_DATA_PATH}/english_word`;
+        let file_path = this.get_save_file_path();
         let fs = wx.getFileSystemManager();
         let res = fs.access({
             path: file_path,
             success: function(res) {
                 console.log("load success", res);
+                self.read_file();
             },
             fail: function(res) {
-                console.log("load fail", res);
-                self.create_dir();
+                console.log("load fail", res.errMsg);
+                self.write_file();
             },
             complete: function(res) {
                 console.log("load complete", res);
             },
         });
-        
-        // wx.getUserCloudStorage({
-        //     keyList: key_name_list,
-        //     success: function (res) {
-        //         console.log('get cloud storage success', res);
-        //         self.on_get_cloud_value_success(res);
-        //     },
-        // });
     },
 
-    create_dir() {
+    write_file(): void {
+        let self = this;
         let fs = wx.getFileSystemManager();
-        let file_path = `${wx.env.USER_DATA_PATH}/english_word`;
-        fs.mkdir({
-            dirPath: file_path,
+        let file_path = this.get_save_file_path();
+        let file_data = this.get_save_file_data();
+        fs.writeFile({
+            filePath: file_path,
+            data: file_data,
             recursive: true,
             success: function(res) {
-                console.log("create dir success", res);
+                console.log("write file success", res);
+                self.init_finish_flag = true;
             },
             fail: function(res) {
-                console.log("create dir failed", res);
+                console.log("write file failed", res.errMsg);
             },
         })
+    },
+
+    read_file(): void {
+        let self = this;
+        let fs = wx.getFileSystemManager();
+        let file_path = this.get_save_file_path();
+        fs.readFile({
+            filePath: file_path,
+            encoding: 'utf-8',
+            success: function(res) {
+                console.log("read file success!", res.data);
+                self.on_read_file_success(res.data);
+            },
+            fail: function(res) {
+                console.log("read file failed!", res.errMsg);
+            }
+        });
+    },
+
+    on_read_file_success(file_data: string): void {
+        let file_object = JSON.parse(file_data);
+        this.user_flag_1 = this.load_user_flag(this.user_flag_1, file_object[1].flag);
+        this.history_section_1 = file_object[1].section;
+        this.user_flag_2 = this.load_user_flag(this.user_flag_2, file_object[2].flag);
+        this.history_section_2 = file_object[2].section;
+        this.user_flag_3 = this.load_user_flag(this.user_flag_3, file_object[3].flag);
+        this.history_section_3 = file_object[3].section;
+        this.user_flag_4 = this.load_user_flag(this.user_flag_4, file_object[4].flag);
+        this.history_section_4 = file_object[4].section;
+        this.user_flag_5 = this.load_user_flag(this.user_flag_5, file_object[5].flag);
+        this.history_section_5 = file_object[5].section;
+        this.init_finish_flag = true;
+        console.log("load cloud value success");
+    },
+
+    load_user_flag(user_flag: string, read_flag: string): string {
+        if (user_flag.length <= read_flag.length) {
+            return read_flag;
+        }
+        else {
+            return read_flag + user_flag.substr(read_flag.length, user_flag.length - read_flag.length);
+        }
+    },
+
+    get_save_file_path(): string {
+        return `${wx.env.USER_DATA_PATH}/game_english_word.txt`;
+    },
+
+    get_save_file_data(): string {
+        let file_object = {
+            1: {'flag': this.user_flag_1, 'section': this.history_section_1},
+            2: {'flag': this.user_flag_2, 'section': this.history_section_2},
+            3: {'flag': this.user_flag_3, 'section': this.history_section_3},
+            4: {'flag': this.user_flag_4, 'section': this.history_section_4},
+            5: {'flag': this.user_flag_5, 'section': this.history_section_5},
+        };
+        let file_data = JSON.stringify(file_object);
+        return file_data;
     },
 
     save_cloud_value(lvl: number): void {
@@ -256,7 +286,9 @@ export class wx_wrapper extends cc.Component {
             history_section = this.history_section_5;
         }
 
-        console.log("save clound info!", lvl, history_section, user_flag);
+        console.log("save cloud info!", lvl, history_section, user_flag);
+
+        this.write_file();
 
         wx.setUserCloudStorage({
             KVDataList: [

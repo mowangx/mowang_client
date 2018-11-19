@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.18229166666666666,
-      "y": 0.18229166666666666,
+      "x": 0.451156486743159,
+      "y": 0.451156486743159,
       "z": 1
     },
     "_quat": {
@@ -93,8 +93,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 640,
-      "height": 960
+      "width": 540,
+      "height": 720
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -103,8 +103,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 320,
-      "y": 480,
+      "x": 270,
+      "y": 360,
       "z": 0
     },
     "_scale": {
@@ -237,8 +237,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 640,
-      "height": 960
+      "width": 540,
+      "height": 720
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -286,7 +286,7 @@
       "__uuid__": "5f6d420e-3fd5-4559-bb5b-7b345afb8f66"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -333,8 +333,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 540,
-      "height": 860
+      "width": 440,
+      "height": 620
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -398,7 +398,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 440,
+      "width": 340,
       "height": 0
     },
     "_anchorPoint": {
@@ -409,7 +409,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 400,
+      "y": 290,
       "z": 0
     },
     "_scale": {
@@ -459,7 +459,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 384,
+      "width": 320,
       "height": 60
     },
     "_anchorPoint": {
@@ -507,7 +507,7 @@
     "_useOriginalSize": false,
     "_string": "英语单词开心游戏",
     "_N$string": "英语单词开心游戏",
-    "_fontSize": 48,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -532,7 +532,7 @@
     "_alignFlags": 41,
     "_left": 50,
     "_right": 50,
-    "_top": 30,
+    "_top": 20,
     "_bottom": 0,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
@@ -579,7 +579,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 440,
+      "width": 340,
       "height": 0
     },
     "_anchorPoint": {
@@ -590,7 +590,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 310,
+      "y": 190,
       "z": 0
     },
     "_scale": {
@@ -1637,8 +1637,8 @@
     "_enabled": true,
     "_designResolution": {
       "__type__": "cc.Size",
-      "width": 640,
-      "height": 960
+      "width": 540,
+      "height": 720
     },
     "_fitWidth": false,
     "_fitHeight": true,

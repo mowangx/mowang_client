@@ -24,27 +24,30 @@ export default class start_game extends cc.Component {
     // update (dt) {}
 
     on_click_lvl_1() {
-        client_mgr.set_lvl(1);
-        cc.director.loadScene("study");
+        this.on_click_lvl_core(1);
     },
 
     on_click_lvl_2() {
-        client_mgr.set_lvl(2);
-        cc.director.loadScene("study");
+        this.on_click_lvl_core(2);
     },
 
     on_click_lvl_3() {
-        client_mgr.set_lvl(3);
-        cc.director.loadScene("study");
+        this.on_click_lvl_core(3);
     },
 
     on_click_lvl_4() {
-        client_mgr.set_lvl(4);
-        cc.director.loadScene("study");
+        this.on_click_lvl_core(4);
     },
 
     on_click_lvl_5() {
-        client_mgr.set_lvl(5);
-        cc.director.loadScene("study");
+        this.on_click_lvl_core(5);
     },
+
+    on_click_lvl_core(lvl: number): void {
+        if (!client_mgr.inited_finish()) {
+            return;
+        }
+        client_mgr.set_lvl(lvl);
+        cc.director.loadScene("study");
+    }
 }

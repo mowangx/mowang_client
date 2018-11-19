@@ -17,7 +17,7 @@ import word_zhong_mgr from "./word_zhong"
 import word_four_mgr from "./word_four"
 import word_six_mgr from "./word_six"
 import word_job_mgr from "./word_job"
-import wx_mgr from "./wx_wrapper"
+import wx_mgr, { wx_wrapper } from "./wx_wrapper"
 
 @ccclass
 export class client extends cc.Component {
@@ -40,14 +40,27 @@ export class client extends cc.Component {
         
         this.init_flag = true;
 
-        wx_mgr.init();
-
         word_xiao_mgr.init();
         word_zhong_mgr.init();
         word_four_mgr.init();
         word_six_mgr.init();
         word_job_mgr.init();
+
+        let words_size_ary = [];
+        words_size_ary.push(word_xiao_mgr.words_ary.length);
+        words_size_ary.push(word_zhong_mgr.words_ary.length);
+        words_size_ary.push(word_four_mgr.words_ary.length);
+        words_size_ary.push(word_six_mgr.words_ary.length);
+        words_size_ary.push(word_job_mgr.words_ary.length);
+        wx_mgr.init(words_size_ary);
     },
+
+    inited_finish(): boolean {
+        if (!this.init_flag) {
+            return false;
+        }
+        return wx_mgr.init_finish_flag;
+    }
 
     share_game(): void {
         wx_mgr.share_game();
@@ -55,6 +68,9 @@ export class client extends cc.Component {
 
     set_lvl(lvl: number): void {
         this.lvl = lvl;
+
+        this.cur_section = this.get_history_section();
+
         let max_word_idx = this.get_config_word_idx();
         let len = 0;
         if (this.lvl == 1) {
@@ -74,6 +90,7 @@ export class client extends cc.Component {
         }
         this.last_word_section = Math.ceil(len / max_word_idx);
         this.last_word_idx = len - (this.last_word_section - 1) * max_word_idx;
+        console.log("set lvl!", this.lvl, this.cur_section, this.last_word_section, this.last_word_idx);
     },
     
     get_lvl(): number {
