@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.2593967013888889,
-      "y": 0.2593967013888889,
+      "x": 0.4003567445050702,
+      "y": 0.4003567445050702,
       "z": 1
     },
     "_quat": {
@@ -459,7 +459,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 320,
+      "width": 240,
       "height": 60
     },
     "_anchorPoint": {
@@ -505,8 +505,8 @@
     "_srcBlendFactor": 1,
     "_dstBlendFactor": 771,
     "_useOriginalSize": false,
-    "_string": "英语单词开心游戏",
-    "_N$string": "英语单词开心游戏",
+    "_string": "爱记英语单词",
+    "_N$string": "爱记英语单词",
     "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
@@ -766,7 +766,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "d3ec8c43-5f8e-461c-b7a9-3374811de518"
+      "__uuid__": "c56d139f-c35e-40a2-80b3-21f71c5d61ef"
     },
     "_type": 1,
     "_sizeMode": 0,
@@ -934,7 +934,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "442d2f23-818a-4d12-b670-9165b8c06b1b"
+      "__uuid__": "4f651902-d7cb-4892-bd1d-6f5f8e5abd4d"
     },
     "_type": 1,
     "_sizeMode": 0,
@@ -1102,7 +1102,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "09fda48e-5ccc-48d7-ac02-9175aa9c8054"
+      "__uuid__": "2eb61de6-2746-4b46-a68e-f8b95437fd15"
     },
     "_type": 1,
     "_sizeMode": 0,
@@ -1270,7 +1270,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "dc605abe-f8d5-4c19-ba8c-74e515921d36"
+      "__uuid__": "12e0c881-7a64-450f-a961-ece95f2fdee5"
     },
     "_type": 1,
     "_sizeMode": 0,
@@ -1438,7 +1438,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "19a6d942-ee92-45a0-8054-01404b720e59"
+      "__uuid__": "43a01b79-d0e1-4f58-9fc4-1dd1de9d77fb"
     },
     "_type": 1,
     "_sizeMode": 0,

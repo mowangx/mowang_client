@@ -346,7 +346,7 @@ this.words_ary.push(['end', '[end]', '1.末端，尽头\r\n2.结束，结论，�
 this.words_ary.push(['engineer', '[endʒi\'niə(r)]', '1.工程师，设计师']);
 this.words_ary.push(['enjoy', '[in\'dʒɔi]', '1.欣赏，享受，享有']);
 this.words_ary.push(['enough', '[i\'nʌf]', '1.足够，充分']);
-this.words_ary.push(['entrance', '[\'entrəns]', '1.入口\r\n2.进入，登场\']);
+this.words_ary.push(['entrance', '[\'entrəns]', '1.入口\r\n2.进入，登场']);
 this.words_ary.push(['environment', '[in\'vaiərənmənt]', '1.自然环境']);
 this.words_ary.push(['eraser', '[i\'reizə]', '1.橡皮，黑板擦']);
 this.words_ary.push(['escape', '[is\'keip]', '1.逃跑，逃脱\r\n2.避免']);

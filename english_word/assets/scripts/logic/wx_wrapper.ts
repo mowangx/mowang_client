@@ -41,7 +41,7 @@ export class wx_wrapper extends cc.Component {
 
         wx.onShareAppMessage(function() {
             return {
-                "title": "英语单词开心游戏",
+                "title": "爱记英语单词,我也可以变学霸",
                 "imageUrl": "res/raw-assets/share.jpg",
             };
         });
@@ -84,7 +84,7 @@ export class wx_wrapper extends cc.Component {
 
     share_game(): void {
         wx.shareAppMessage({
-            "title": "英语单词开心游戏,每天进步一点点",
+            "title": "爱记英语单词,每天进步一点点",
             "imageUrl": "res/raw-assets/share.jpg",
         });
     },

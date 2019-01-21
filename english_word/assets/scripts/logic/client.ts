@@ -13,10 +13,10 @@ const {ccclass, property} = cc._decorator;
 import dispatcher from "./dispatcher"
 import {EventType} from "./consts"
 import word_xiao_mgr from "./word_xiao"
-import word_zhong_mgr from "./word_zhong"
+import word_chu_mgr from "./word_chu"
+import word_gao_mgr from "./word_gao"
 import word_four_mgr from "./word_four"
 import word_six_mgr from "./word_six"
-import word_job_mgr from "./word_job"
 import wx_mgr, { wx_wrapper } from "./wx_wrapper"
 
 @ccclass
@@ -41,17 +41,17 @@ export class client extends cc.Component {
         this.init_flag = true;
 
         word_xiao_mgr.init();
-        word_zhong_mgr.init();
+        word_chu_mgr.init();
+        word_gao_mgr.init();
         word_four_mgr.init();
         word_six_mgr.init();
-        word_job_mgr.init();
 
         let words_size_ary = [];
         words_size_ary.push(word_xiao_mgr.words_ary.length);
-        words_size_ary.push(word_zhong_mgr.words_ary.length);
+        words_size_ary.push(word_chu_mgr.words_ary.length);
+        words_size_ary.push(word_gao_mgr.words_ary.length);
         words_size_ary.push(word_four_mgr.words_ary.length);
         words_size_ary.push(word_six_mgr.words_ary.length);
-        words_size_ary.push(word_job_mgr.words_ary.length);
         wx_mgr.init(words_size_ary);
     },
 
@@ -77,16 +77,16 @@ export class client extends cc.Component {
             len = word_xiao_mgr.words_ary.length;
         }
         else if (this.lvl == 2) {
-            len = word_zhong_mgr.words_ary.length;
+            len = word_chu_mgr.words_ary.length;
         }
         else if (this.lvl == 3) {
-            len = word_four_mgr.words_ary.length;
+            len = word_gao_mgr.words_ary.length;
         }
         else if (this.lvl == 4) {
-            len = word_six_mgr.words_ary.length;
+            len = word_four_mgr.words_ary.length;
         }
         else {
-            len = word_job_mgr.words_ary.length;
+            len = word_six_mgr.words_ary.length;
         }
         this.last_word_section = Math.ceil(len / max_word_idx);
         this.last_word_idx = len - (this.last_word_section - 1) * max_word_idx;
@@ -241,16 +241,16 @@ export class client extends cc.Component {
             return word_xiao_mgr.words_ary[word_idx][info_idx];
         }
         else if (this.lvl == 2) {
-            return word_zhong_mgr.words_ary[word_idx][info_idx];
+            return word_chu_mgr.words_ary[word_idx][info_idx];
         }
         else if (this.lvl == 3) {
-            return word_four_mgr.words_ary[word_idx][info_idx];
+            return word_gao_mgr.words_ary[word_idx][info_idx];
         }
         else if (this.lvl == 4) {
-            return word_six_mgr.words_ary[word_idx][info_idx];
+            return word_four_mgr.words_ary[word_idx][info_idx];
         }
         else {
-            return word_job_mgr.words_ary[word_idx][info_idx];
+            return word_six_mgr.words_ary[word_idx][info_idx];
         }
     },
 
