@@ -34,13 +34,13 @@
     "orientation": "portrait"
   },
   "startScene": "54511e6c-5caa-4eca-a9e1-4a8f2cba050a",
-  "title": "english_w",
+  "title": "love_english",
   "webOrientation": "auto",
   "wechatgame": {
     "appid": "wx59300dbf63177601",
     "isSubdomain": false,
     "orientation": "portrait",
-    "subContext": ""
+    "subContext": "love_english_sub"
   },
   "xxteaKey": "faf0b2aa-0bd4-4b",
   "zipCompressJs": true

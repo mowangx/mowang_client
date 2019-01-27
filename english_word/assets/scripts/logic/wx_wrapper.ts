@@ -1,3 +1,5 @@
+import { random0To1 } from "../../../creator";
+
 // Learn TypeScript:
 //  - [Chinese] http://www.cocos.com/docs/creator/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/typescript/index.html
@@ -40,8 +42,16 @@ export class wx_wrapper extends cc.Component {
         // });
 
         wx.onShareAppMessage(function() {
+            let title_ary = [
+                "我在爱记英语单词等你来挑战",
+                "背英语单词，原来这么简单",
+                "有人@你，来和我一起学英语吧",
+                "只有学霸才能通关的游戏",
+                "学英语，背单词，我选爱记英语单词"
+            ];
+            let idx = Math.round(Math.random() * 5);
             return {
-                "title": "爱记英语单词,我也可以变学霸",
+                "title": title_ary[idx],
                 "imageUrl": "res/raw-assets/share.jpg",
             };
         });
@@ -83,8 +93,16 @@ export class wx_wrapper extends cc.Component {
     },
 
     share_game(): void {
+        let title_ary = [
+            "我在爱记英语单词等你来挑战",
+            "背英语单词，原来这么简单",
+            "有人@你，来和我一起学英语吧",
+            "只有学霸才能通关的游戏",
+            "学英语，背单词，我选爱记英语单词"
+        ];
+        let idx = Math.round(Math.random() * 5);
         wx.shareAppMessage({
-            "title": "爱记英语单词,每天进步一点点",
+            "title": title_ary[idx],
             "imageUrl": "res/raw-assets/share.jpg",
         });
     },

@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.2918212890625,
-      "y": 0.2918212890625,
+      "x": 0.472818377214305,
+      "y": 0.472818377214305,
       "z": 1
     },
     "_quat": {
@@ -446,8 +446,8 @@
     "_srcBlendFactor": 1,
     "_dstBlendFactor": 771,
     "_useOriginalSize": false,
-    "_string": "恭喜你完成当前单元单词的学习！\n每日进步一点点\n铸就人生的辉煌",
-    "_N$string": "恭喜你完成当前单元单词的学习！\n每日进步一点点\n铸就人生的辉煌",
+    "_string": "很棒!\n本单元学习完成\n每日进步一点点\n铸就人生的辉煌",
+    "_N$string": "很棒!\n本单元学习完成\n每日进步一点点\n铸就人生的辉煌",
     "_fontSize": 32,
     "_lineHeight": 60,
     "_enableWrapText": true,

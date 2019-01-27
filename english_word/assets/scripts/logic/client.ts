@@ -168,19 +168,19 @@ export class client extends cc.Component {
 
     get_config_word_idx(): number {
         if (this.lvl == 1) {
-            return 10;
+            return 5;
         }
         else if (this.lvl == 2) {
-            return 15;
+            return 10;
         }
         else if (this.lvl == 3) {
-            return 20;
+            return 15;
         }
         else if (this.lvl == 4) {
-            return 30;
+            return 15;
         }
         else {
-            return 30;
+            return 15;
         }
     },
 
@@ -217,6 +217,18 @@ export class client extends cc.Component {
         let real_idx = this.get_real_word_idx(idx);
         return user_flag[real_idx] == '1';
     },
+
+
+    get_pass_word_num(): number {
+        let pass_num = 0;
+        let user_flag = this.get_user_flag();
+        for (let i=0; i<user_flag.length; ++i) {
+            if (user_flag[i] == '1') {
+                pass_num += 1;
+            }
+        }
+        return pass_num;
+    }
 
     get_user_flag(): string {
         if (this.lvl == 1) {

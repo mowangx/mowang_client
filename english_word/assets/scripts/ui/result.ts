@@ -48,13 +48,13 @@ export default class result extends cc.Component {
     },
 
     init_panel(result: number): void {
-        let content_desc = "恭喜完成挑战成功:" + result + "个单词";
+        let content_desc = "恭喜本单元挑战成功:" + result + "个\r\n挑战成功总数榜：";
         this.content_label.string = content_desc;
         
-        // wx.getOpenDataContext().postMessage({
-        //     lvl: client_mgr.get_lvl(),
-        //     play_time: play_game_time
-        // });
+        wx.getOpenDataContext().postMessage({
+            lvl: client_mgr.get_lvl(),
+            play_time: client_mgr.get_pass_word_num()
+        });
 
         console.log("send play msg to sub contnet");
         
