@@ -28,7 +28,7 @@ export default class sub_game extends cc.Component {
     rank_label: cc.Label = null;
 
     private nick_name: string = '';
-    private play_time: number = 0;
+    private pass_num: number = 0;
     private lvl: number = 1;
     private update_times: number = 0;
 
@@ -40,9 +40,9 @@ export default class sub_game extends cc.Component {
         console.log("start load sub content!!!!!!!");
         let self = this;
         wx.onMessage(data => {
-            console.log("recv main msg!!!!", data.lvl, data.play_time);
+            console.log("recv main msg!!!!", data.lvl, data.pass_num);
             if (data && data.lvl) {
-                self.play_time = data.play_time;
+                self.pass_num = data.pass_num;
                 self.lvl = data.lvl;
                 self.show_rank();
             }
@@ -70,7 +70,7 @@ export default class sub_game extends cc.Component {
     get_friend_cloud_storage(): void {
         let self = this;
         wx.getFriendCloudStorage({
-            keyList: ['saoleizhanshi_t_' + self.lvl],
+            keyList: ['loveenglishword_t_' + self.lvl],
             success: function (res) {
                 console.log('get friend cloud storage success', res.data);
                 let own_flag: boolean = false; 
@@ -105,13 +105,13 @@ export default class sub_game extends cc.Component {
         avatar_info.set_avatar_url(user.avatarUrl);
         let nick_name = user.nickName ? user.nickName : user.nickname;
         avatar_info.set_user_name(nick_name);
-        let key_name = 'saoleizhanshi_t_' + this.lvl;
+        let key_name = 'loveenglishword_t_' + this.lvl;
         for (let i=0; i<user.KVDataList.length; ++i) {
-            let play_time = Number(user.KVDataList[i].value);
-            if (!play_time) {
-                play_time = 0;
+            let pass_num = Number(user.KVDataList[i].value);
+            if (!pass_num) {
+                pass_num = 0;
             }
-            avatar_info.set_play_time(play_time);
+            avatar_info.set_play_time(pass_num);
             if (user.KVDataList[i].key != key_name) {
                 continue;
             }
@@ -119,10 +119,10 @@ export default class sub_game extends cc.Component {
                 continue;
             }
             own_flag = true;
-            if (!play_time || (this.play_time > 0 && play_time > this.play_time)) {
-                play_time = this.play_time;
+            if (pass_num < this.pass_num) {
+                pass_num = this.pass_num;
                 this.sync_user_info();
-                avatar_info.set_play_time(play_time);
+                avatar_info.set_play_time(pass_num);
             }
         }
         this.user_info_list.push(avatar_info);
@@ -130,13 +130,13 @@ export default class sub_game extends cc.Component {
     },
 
     sync_user_info(): void {
-        let key_name = 'saoleizhanshi_t_' + this.lvl;
-        let play_time = '' + this.play_time;
-        console.log('set user cloud storage 222:', play_time);
+        let key_name = 'loveenglishword_t_' + this.lvl;
+        let pass_num = '' + this.pass_num;
+        console.log('set user cloud storage 222:', pass_num);
         wx.setUserCloudStorage({
             KVDataList: [{
                 key: key_name,
-                value: play_time
+                value: pass_num
             }]
         });
     },
@@ -147,7 +147,7 @@ export default class sub_game extends cc.Component {
         for (let i=0; i<this.user_info_list.length; ++i) {
             let avatar_info = this.user_info_list[i];
             if (!user_info_1 || user_info_1.get_play_time() < 1 || 
-            (avatar_info.get_play_time() < user_info_1.get_play_time() && avatar_info.get_play_time() > 0)) {
+            (avatar_info.get_play_time() > user_info_1.get_play_time())) {
                 user_info_1 = avatar_info;
             }
         }
@@ -164,7 +164,7 @@ export default class sub_game extends cc.Component {
                 continue;
             }
             if (!user_info_2 || user_info_2.get_play_time() < 1 || 
-            (avatar_info.get_play_time() < user_info_2.get_play_time() && avatar_info.get_play_time() > 0)) {
+            (avatar_info.get_play_time() > user_info_2.get_play_time())) {
                 user_info_2 = avatar_info;
             }
         }
@@ -184,7 +184,7 @@ export default class sub_game extends cc.Component {
                 continue;
             }
             if (!user_info_3 || user_info_3.get_play_time() < 1 || 
-            (avatar_info.get_play_time() < user_info_3.get_play_time() && avatar_info.get_play_time() > 0)) {
+            (avatar_info.get_play_time() > user_info_3.get_play_time())) {
                 user_info_3 = avatar_info;
             }
         }
@@ -211,10 +211,10 @@ export default class sub_game extends cc.Component {
 
     get_play_time_desc(avatar_info): string {
         if (avatar_info.get_play_time() < 1) {
-            return "   未通关";
+            return "   0个";
         }
         else {
-            return "   " + avatar_info.get_play_time() + "秒";
+            return "   " + avatar_info.get_play_time() + "个";
         }
     },
 
