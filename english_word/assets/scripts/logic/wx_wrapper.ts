@@ -230,7 +230,6 @@ export class wx_wrapper extends cc.Component {
             filePath: file_path,
             encoding: 'utf-8',
             success: function(res) {
-                console.log("read file success!", res.data);
                 self.on_read_file_success(res.data);
             },
             fail: function(res) {

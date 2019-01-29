@@ -40,6 +40,9 @@ export default class result extends cc.Component {
         if (cur_section < max_section) {
             client_mgr.set_cur_section(cur_section);
         }
+        else {
+            cc.director.loadScene("finish");
+        }
         cc.director.loadScene("study");
     },
 
