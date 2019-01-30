@@ -218,8 +218,20 @@ export class client extends cc.Component {
         return user_flag[real_idx] == '1';
     },
 
+    get_current_pass_word_num(): number {
+        let pass_num = 0;
+        let user_flag = this.get_user_flag();
+        let max_num = this.get_config_word_idx();
+        for (let idx=0; idx<max_num; ++idx) {
+            let real_idx = this.get_real_word_idx(idx);
+            if (user_flag[real_idx] == '1') {
+                pass_num += 1;
+            }
+        }
+        return pass_num;
+    },
 
-    get_pass_word_num(): number {
+    get_total_pass_word_num(): number {
         let pass_num = 0;
         let user_flag = this.get_user_flag();
         for (let i=0; i<user_flag.length; ++i) {

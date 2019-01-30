@@ -413,12 +413,11 @@ export default class player extends cc.Component {
         this.bg_node.width = this.bg_info.width;
         this.bg_node.height = this.bg_info.height;
 
-        let result = 6;
         this.result_node.parent = this.result_info;
         this.result_node.setPosition(cc.v2(0, 0));
         this.result_node.width = this.result_info.width;
         this.result_node.height = this.result_info.height;
-        this.result_node.getComponent("result").init_panel(result);
+        this.result_node.getComponent("result").init_panel();
     },
 
     init_all_node(): void {

@@ -50,13 +50,15 @@ export default class result extends cc.Component {
         client_mgr.share_game();
     },
 
-    init_panel(result: number): void {
-        let content_desc = "恭喜本单元挑战成功:" + result + "个\r\n挑战成功总数榜：";
+    init_panel(): void {
+        let current_num = client_mgr.get_current_pass_word_num();
+        let total_num = client_mgr.get_total_pass_word_num();
+        let content_desc = "本单元成功:" + current_num + "个，总成功:"+ total_num + "个\r\n挑战成功总数榜：";
         this.content_label.string = content_desc;
         
         wx.getOpenDataContext().postMessage({
             lvl: client_mgr.get_lvl(),
-            play_time: client_mgr.get_pass_word_num()
+            pass_num: total_num
         });
 
         console.log("send play msg to sub contnet");
