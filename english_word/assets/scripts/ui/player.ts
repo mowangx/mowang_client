@@ -182,6 +182,15 @@ export default class player extends cc.Component {
     @property(cc.Prefab)
     word_z_2: cc.Prefab = null;
 
+    @property(cc.Sprite)
+    guide_test_sprite: cc.Sprite = null;
+
+    @property(cc.Sprite)
+    guide_love_sprite: cc.Sprite = null;
+
+    @property(cc.Sprite)
+    guide_next_sprite: cc.Sprite = null;
+
     private word_list_pool: Array<Array<cc.Node>> = [];
 
     private word_indexes: Array<string> = [];
@@ -224,6 +233,20 @@ export default class player extends cc.Component {
         this.word_indexes = [];
         this.random_words();
         this.init_word();
+        this.guide_next_sprite.enabled = false;
+        if (client_mgr.is_guide()) {
+            if (client_mgr.get_word_info(this.show_word_idx, 0) == 'test') {
+                this.guide_test_sprite.enabled = true;
+                this.guide_love_sprite.enabled = false;
+            }
+            else {
+                this.guide_love_sprite.enabled = true;
+                this.guide_test_sprite.enabled = false;
+            }
+        } else {
+            this.guide_test_sprite.enabled = false;
+            this.guide_love_sprite.enabled = false;
+        }
     }
 
     init_word(): void {
@@ -330,6 +353,11 @@ export default class player extends cc.Component {
             else {
                 head_desc = '回答错误';
                 client_mgr.set_word_pass(this.show_word_idx, false);
+            }
+            if (client_mgr.is_guide()) {
+                this.guide_test_sprite.enabled = false;
+                this.guide_love_sprite.enabled = false;
+                this.guide_next_sprite.enabled = true;
             }
         }
         this.show_word_label(head_desc);

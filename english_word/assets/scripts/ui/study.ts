@@ -34,6 +34,12 @@ export default class study extends cc.Component {
     @property(cc.Node)
     unit_info: cc.Node = null;
 
+    @property(cc.Sprite)
+    tips_sprit: cc.Sprite = null;
+
+    @property(cc.Sprite)
+    guide_next_sprite: cc.Sprite = null;
+
     private unit_node:cc.Node = null;
 
     // LIFE-CYCLE CALLBACKS:
@@ -46,6 +52,13 @@ export default class study extends cc.Component {
         this.unit_node = this.unit_info.getComponent("unit");
         this.unit_node.show_unit();
         this.show_words(0);
+        if (client_mgr.is_guide()) {
+            this.tips_sprit.enabled = false;
+            this.guide_next_sprite.enabled = true;
+        } else {
+            this.tips_sprit.enabled = true;
+            this.guide_next_sprite.enabled = false;
+        }
     },
 
     // update (dt) {}

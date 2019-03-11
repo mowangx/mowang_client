@@ -12,12 +12,13 @@ const {ccclass, property} = cc._decorator;
 
 import dispatcher from "./dispatcher"
 import {EventType} from "./consts"
+import word_guide_mgr from "./word_guide"
 import word_xiao_mgr from "./word_xiao"
 import word_chu_mgr from "./word_chu"
 import word_gao_mgr from "./word_gao"
 import word_four_mgr from "./word_four"
 import word_six_mgr from "./word_six"
-import wx_mgr, { wx_wrapper } from "./wx_wrapper"
+import wx_mgr from "./wx_wrapper"
 
 @ccclass
 export class client extends cc.Component {
@@ -40,6 +41,7 @@ export class client extends cc.Component {
         
         this.init_flag = true;
 
+        word_guide_mgr.init();
         word_xiao_mgr.init();
         word_chu_mgr.init();
         word_gao_mgr.init();
@@ -64,6 +66,10 @@ export class client extends cc.Component {
 
     share_game(): void {
         wx_mgr.share_game();
+    },
+
+    is_guide(): boolean {
+        return true;
     },
 
     set_lvl(lvl: number): void {
