@@ -11,6 +11,7 @@
 const {ccclass, property} = cc._decorator;
 
 import client_mgr from "./../logic/client"
+import wx_mgr from "../logic/wx_wrapper";
 
 @ccclass
 export default class study extends cc.Component {
@@ -66,6 +67,10 @@ export default class study extends cc.Component {
     on_click_last(): void {
         let word_idx = client_mgr.get_cur_word_idx();
         if (word_idx == 0) {
+            if (client_mgr.is_guide()) {
+                return;
+            }
+
             let cur_section = client_mgr.get_cur_section();
             if (cur_section == 1) {
                 return;
@@ -91,6 +96,11 @@ export default class study extends cc.Component {
         let word_idx = client_mgr.get_cur_word_idx();
         word_idx += 1;
         if (word_idx == client_mgr.get_max_word_idx()) {
+            if (client_mgr.is_guide()) {
+                cc.director.loadScene("jump");
+                return;
+            }
+            
             let cur_section = client_mgr.get_cur_section()
             if (cur_section == client_mgr.get_history_section()) {
                 cc.director.loadScene("jump");

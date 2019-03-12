@@ -27,8 +27,8 @@ export class client extends cc.Component {
     private lvl: number = 1;
     private cur_section: number = 1;
     private cur_word_idx: number = 0;
-    private last_word_section: number = 0;   // last word section
-    private last_word_idx: number = 0; // last word index
+    private last_word_section: number = 0;   // max(last) word section
+    private last_word_idx: number = 0; // max(last) word index
 
     constructor() {
         super();
@@ -69,8 +69,12 @@ export class client extends cc.Component {
     },
 
     is_guide(): boolean {
-        return true;
+        return wx_mgr.guide_flag;
     },
+
+    set_guide_flag(): void {
+        wx_mgr.update_guide_flag();
+    }
 
     set_lvl(lvl: number): void {
         this.lvl = lvl;
@@ -164,6 +168,10 @@ export class client extends cc.Component {
     },
 
     get_max_word_idx(): number {
+        if (this.is_guide()) {
+            return word_guide_mgr.words_ary.length;
+        }
+
         if (this.cur_section == this.last_word_section) {
             return this.last_word_idx;
         }
@@ -191,11 +199,19 @@ export class client extends cc.Component {
     },
 
     get_real_word_idx(idx: number): number {
+        if (this.is_guide()) {
+            return idx;
+        }
+        
         let param = this.get_config_word_idx();
         return (this.cur_section - 1) * param + idx;
     },
 
     set_word_pass(idx: number, flag: boolean): void {
+        if (this.is_guide()) {
+            return ;
+        }
+
         let value  = flag ? '1' : '0';
         let replace_value = this.get_user_flag();
         let left_value = replace_value.substr(0, idx);
@@ -219,12 +235,20 @@ export class client extends cc.Component {
     },
 
     is_word_pass(idx: number): boolean {
+        if (this.is_guide()) {
+            return true;
+        }
+
         let user_flag = this.get_user_flag();
         let real_idx = this.get_real_word_idx(idx);
         return user_flag[real_idx] == '1';
     },
 
     get_current_pass_word_num(): number {
+        if (this.is_guide()) {
+            return word_guide_mgr.words_ary.length;
+        }
+
         let pass_num = 0;
         let user_flag = this.get_user_flag();
         let max_num = this.get_config_word_idx();
@@ -267,7 +291,10 @@ export class client extends cc.Component {
     },
 
     get_word_info(word_idx: number, info_idx: number): string {
-        if (this.lvl == 1) {
+        if (this.is_guide()) {
+            return word_guide_mgr.words_ary[word_idx][info_idx];
+        }
+        else if (this.lvl == 1) {
             return word_xiao_mgr.words_ary[word_idx][info_idx];
         }
         else if (this.lvl == 2) {

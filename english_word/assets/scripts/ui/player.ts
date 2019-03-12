@@ -243,7 +243,8 @@ export default class player extends cc.Component {
                 this.guide_love_sprite.enabled = true;
                 this.guide_test_sprite.enabled = false;
             }
-        } else {
+        } 
+        else {
             this.guide_test_sprite.enabled = false;
             this.guide_love_sprite.enabled = false;
         }

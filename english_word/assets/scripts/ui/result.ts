@@ -53,7 +53,11 @@ export default class result extends cc.Component {
     init_panel(): void {
         let current_num = client_mgr.get_current_pass_word_num();
         let total_num = client_mgr.get_total_pass_word_num();
-        let content_desc = "本单元成功:" + current_num + "个，总成功:"+ total_num + "个\r\n挑战成功总数榜：";
+        let tips_total_num = total_num;
+        if (client_mgr.is_guide()) {
+            tips_total_num += 2;
+        }
+        let content_desc = "本单元成功:" + current_num + "个，总成功:"+ tips_total_num + "个\r\n挑战成功总数榜：";
         this.content_label.string = content_desc;
         
         wx.getOpenDataContext().postMessage({
@@ -77,5 +81,9 @@ export default class result extends cc.Component {
         }
 
         client_mgr.save_user_info();
+
+        if (client_mgr.is_guide()) {
+            client_mgr.set_guide_flag();
+        }
     },
 }

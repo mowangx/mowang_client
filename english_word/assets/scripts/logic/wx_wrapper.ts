@@ -26,6 +26,7 @@ export class wx_wrapper extends cc.Component {
     public user_flag_3: string = '';
     public user_flag_4: string = '';
     public user_flag_5: string = '';
+    public guide_flag: boolean = true;
 
     constructor() {
         super();
@@ -250,6 +251,13 @@ export class wx_wrapper extends cc.Component {
         this.history_section_4 = file_object[4].section;
         this.user_flag_5 = this.load_user_flag(this.user_flag_5, file_object[5].flag);
         this.history_section_5 = file_object[5].section;
+        if (this.check_pass_guide(this.user_flag_1) 
+            || this.check_pass_guide(this.user_flag_2)
+            || this.check_pass_guide(this.user_flag_3)
+            || this.check_pass_guide(this.user_flag_4)
+            || this.check_pass_guide(this.user_flag_5)) {
+            this.guide_flag = false;
+        }
         this.init_finish_flag = true;
         console.log("load cloud value success");
     },
@@ -262,6 +270,15 @@ export class wx_wrapper extends cc.Component {
             return read_flag + user_flag.substr(read_flag.length, user_flag.length - read_flag.length);
         }
     },
+
+    check_pass_guide(user_flag: string): boolean {
+        for (let i=0; i<user_flag.length; ++i) {
+            if (user_flag[i] == '1') {
+                return true;
+            }
+        }
+        return false;
+    }
 
     get_save_file_path(): string {
         return `${wx.env.USER_DATA_PATH}/game_english_word.txt`;
@@ -320,6 +337,10 @@ export class wx_wrapper extends cc.Component {
             ]
         });
     },
+
+    update_guide_flag(): void {
+        this.guide_flag = false;
+    }
 }
 
 var wx_mgr = new wx_wrapper();
