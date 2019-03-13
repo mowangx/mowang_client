@@ -29,6 +29,11 @@ export class client extends cc.Component {
     private cur_word_idx: number = 0;
     private last_word_section: number = 0;   // max(last) word section
     private last_word_idx: number = 0; // max(last) word index
+    private random_xiao_ary: Array<number> = [];
+    private random_chu_ary: Array<number> = [];
+    private random_gao_ary: Array<number> = [];
+    private random_four_ary: Array<number> = [];
+    private random_six_ary: Array<number> = [];
 
     constructor() {
         super();
@@ -55,6 +60,23 @@ export class client extends cc.Component {
         words_size_ary.push(word_four_mgr.words_ary.length);
         words_size_ary.push(word_six_mgr.words_ary.length);
         wx_mgr.init(words_size_ary);
+
+        let xiao_ary = [];
+        for (let i=0; i<word_xiao_mgr.words_ary.length; ++i) {
+            xiao_ary.push(i);
+        }
+        for (let i=0; i<word_xiao_mgr.words_ary.length; ++i) {
+            let idx = this.get_random_range(0, xiao_ary.length-1);
+            this.random_xiao_ary.push(xiao_ary[idx]);
+            xiao_ary.splice(idx, 1);
+        }
+        console.log("random xiao ary", this.random_xiao_ary);
+    },
+
+    get_random_range(min: number, max: number): number {  
+        let range_value = max - min;  
+        let rand_value = Math.random();  
+        return (min + Math.round(rand_value * range_value));  
     },
 
     inited_finish(): boolean {
