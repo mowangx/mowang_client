@@ -65,6 +65,7 @@ export default class study extends cc.Component {
     // update (dt) {}
 
     on_click_last(): void {
+        this.clear_sound();
         let word_idx = client_mgr.get_cur_word_idx();
         if (word_idx == 0) {
             if (client_mgr.is_guide()) {
@@ -93,6 +94,7 @@ export default class study extends cc.Component {
     },
 
     on_click_next(): void {
+        this.clear_sound();
         let word_idx = client_mgr.get_cur_word_idx();
         word_idx += 1;
         if (word_idx == client_mgr.get_max_word_idx()) {
@@ -120,7 +122,36 @@ export default class study extends cc.Component {
     },
 
     on_click_back(): void {
+        this.clear_sound();
         cc.director.loadScene("start");
+    },
+
+    on_click_sound(): void {
+        let sound_data = client_mgr.get_sound_data();
+        if (sound_data) {
+            cc.audioEngine.play(sound_data, false, 1);
+        }
+        else {
+            let word_idx = client_mgr.get_cur_word_idx();
+            let real_idx = client_mgr.get_real_word_idx(word_idx);
+            let sound_url = 'https://fanyi.baidu.com/gettts?lan=en&spd=3&text=' + client_mgr.get_word_info(real_idx, 0);
+            cc.loader.load({url: sound_url, type: 'mp3'}, function (err, data) {
+                if (err) {
+                    return;
+                }
+
+                cc.audioEngine.play(data, false, 1);
+                client_mgr.set_sound_data(data);
+            });
+        }
+    },
+
+    clear_sound(): void {
+        let sound_data = client_mgr.get_sound_data();
+        if (sound_data) {
+            cc.loader.release(sound_data);
+            client_mgr.set_sound_data(null);
+        }
     },
 
     show_words(idx: number): void {

@@ -34,6 +34,7 @@ export class client extends cc.Component {
     private random_gao_ary: Array<number> = [];
     private random_four_ary: Array<number> = [];
     private random_six_ary: Array<number> = [];
+    private sound_data: object = null;
 
     constructor() {
         super();
@@ -328,6 +329,14 @@ export class client extends cc.Component {
         if (wx_mgr.init_finish_flag) {
             wx_mgr.save_cloud_value(this.lvl);
         }
+    },
+
+    set_sound_data(sdata): void {
+        this.sound_data = sdata;
+    },
+
+    get_sound_data(): object {
+        return this.sound_data;
     },
 
     init_xiao_random_ary(): void {
